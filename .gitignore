@@ -23,6 +23,7 @@ xcuserdata/
 *.xcscmblueprint
 See+/See+.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
 See+/See+.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap

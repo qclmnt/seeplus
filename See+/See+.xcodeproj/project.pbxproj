@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906285B20C6BA3400187E21 /* AppDelegate.swift */; };
 		3906285E20C6BA3400187E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906285D20C6BA3400187E21 /* ViewController.swift */; };
-		3906286120C6BA3400187E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3906285F20C6BA3400187E21 /* Main.storyboard */; };
 		3906286320C6BA3600187E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3906286220C6BA3600187E21 /* Assets.xcassets */; };
 		3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3906286420C6BA3600187E21 /* LaunchScreen.storyboard */; };
 		3906286F20C6BC5600187E21 /* QCAppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906286E20C6BC5600187E21 /* QCAppEnvironment.swift */; };
@@ -17,13 +16,20 @@
 		3906287420C6BCED00187E21 /* QCRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287320C6BCED00187E21 /* QCRouting.swift */; };
 		3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287520C6BD2500187E21 /* QCRoutingEntry.swift */; };
 		3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287720C6BF1900187E21 /* QCNavigationStyle.swift */; };
+		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
+		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
+		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
+		39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDE20C6C50000235B48 /* SeeConnectionLoginViewModel.swift */; };
+		39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE120C6C51400235B48 /* QCViewModel.swift */; };
+		39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE220C6C51400235B48 /* QCViewControllerViewModel.swift */; };
+		39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */; };
+		39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3906285820C6BA3400187E21 /* See+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "See+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3906285B20C6BA3400187E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3906285D20C6BA3400187E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3906286020C6BA3400187E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3906286220C6BA3600187E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3906286520C6BA3600187E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3906286720C6BA3600187E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +38,14 @@
 		3906287320C6BCED00187E21 /* QCRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCRouting.swift; sourceTree = "<group>"; };
 		3906287520C6BD2500187E21 /* QCRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCRoutingEntry.swift; sourceTree = "<group>"; };
 		3906287720C6BF1900187E21 /* QCNavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCNavigationStyle.swift; sourceTree = "<group>"; };
+		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
+		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
+		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
+		39944DDE20C6C50000235B48 /* SeeConnectionLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionLoginViewModel.swift; sourceTree = "<group>"; };
+		39944DE120C6C51400235B48 /* QCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCViewModel.swift; sourceTree = "<group>"; };
+		39944DE220C6C51400235B48 /* QCViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeSignupRoutinEntry.swift; sourceTree = "<group>"; };
+		39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeLoginRoutinEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +78,12 @@
 		3906285A20C6BA3400187E21 /* See+ */ = {
 			isa = PBXGroup;
 			children = (
+				39944DE020C6C51400235B48 /* ViewModel */,
+				39944DD520C6C4A500235B48 /* UI */,
 				3906287020C6BC9200187E21 /* Navigation */,
 				3906286D20C6BC2500187E21 /* AppEnvironment */,
 				3906285B20C6BA3400187E21 /* AppDelegate.swift */,
 				3906285D20C6BA3400187E21 /* ViewController.swift */,
-				3906285F20C6BA3400187E21 /* Main.storyboard */,
 				3906286220C6BA3600187E21 /* Assets.xcassets */,
 				3906286420C6BA3600187E21 /* LaunchScreen.storyboard */,
 				3906286720C6BA3600187E21 /* Info.plist */,
@@ -87,12 +102,66 @@
 		3906287020C6BC9200187E21 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				39944DE520C6CB2400235B48 /* RoutingEntry */,
 				3906287120C6BCB400187E21 /* QCNavigator.swift */,
 				3906287320C6BCED00187E21 /* QCRouting.swift */,
 				3906287520C6BD2500187E21 /* QCRoutingEntry.swift */,
 				3906287720C6BF1900187E21 /* QCNavigationStyle.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		39944DD520C6C4A500235B48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				39944DD620C6C4A500235B48 /* Connection */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		39944DD620C6C4A500235B48 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				39944DDB20C6C4AD00235B48 /* ViewModel */,
+				39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */,
+				39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		39944DDB20C6C4AD00235B48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */,
+				39944DDE20C6C50000235B48 /* SeeConnectionLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39944DE020C6C51400235B48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39944DE120C6C51400235B48 /* QCViewModel.swift */,
+				39944DE220C6C51400235B48 /* QCViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39944DE520C6CB2400235B48 /* RoutingEntry */ = {
+			isa = PBXGroup;
+			children = (
+				39944DE620C6CB3000235B48 /* Connection */,
+			);
+			path = RoutingEntry;
+			sourceTree = "<group>";
+		};
+		39944DE620C6CB3000235B48 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */,
+				39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */,
+			);
+			path = Connection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +222,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
-				3906286120C6BA3400187E21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,27 +235,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */,
+				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
+				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
+				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
 				3906286F20C6BC5600187E21 /* QCAppEnvironment.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
+				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
+				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
 				3906287420C6BCED00187E21 /* QCRouting.swift in Sources */,
+				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3906285F20C6BA3400187E21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3906286020C6BA3400187E21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3906286420C6BA3600187E21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
