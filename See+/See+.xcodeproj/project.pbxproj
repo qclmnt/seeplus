@@ -29,6 +29,12 @@
 		39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DF120C6D53600235B48 /* SeeProfilePicViewController.xib */; };
 		39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DF420C6D7E700235B48 /* UIView+See.swift */; };
 		39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DF820C6D89100235B48 /* SeeProfilePicRoutingEntry.swift */; };
+		39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DFC20C6DA9100235B48 /* SeeWelcomeViewController.swift */; };
+		39944DFF20C6DA9100235B48 /* SeeWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DFD20C6DA9100235B48 /* SeeWelcomeViewController.xib */; };
+		39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0120C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift */; };
+		39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0320C6DC1500235B48 /* SeeStartViewController.swift */; };
+		39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944E0420C6DC1500235B48 /* SeeStartViewController.xib */; };
+		39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		39944DF120C6D53600235B48 /* SeeProfilePicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeProfilePicViewController.xib; sourceTree = "<group>"; };
 		39944DF420C6D7E700235B48 /* UIView+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+See.swift"; sourceTree = "<group>"; };
 		39944DF820C6D89100235B48 /* SeeProfilePicRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfilePicRoutingEntry.swift; sourceTree = "<group>"; };
+		39944DFC20C6DA9100235B48 /* SeeWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeWelcomeViewController.swift; sourceTree = "<group>"; };
+		39944DFD20C6DA9100235B48 /* SeeWelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeWelcomeViewController.xib; sourceTree = "<group>"; };
+		39944E0120C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeWelcomeRoutingEntry.swift; sourceTree = "<group>"; };
+		39944E0320C6DC1500235B48 /* SeeStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartViewController.swift; sourceTree = "<group>"; };
+		39944E0420C6DC1500235B48 /* SeeStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeStartViewController.xib; sourceTree = "<group>"; };
+		39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartRoutingEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,8 @@
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				39944DFB20C6DA7C00235B48 /* Start */,
+				39944DFA20C6DA7300235B48 /* Welcome */,
 				39944DEF20C6D4FC00235B48 /* Profile Pic */,
 				39944DD620C6C4A500235B48 /* Connection */,
 			);
@@ -162,6 +176,8 @@
 		39944DE520C6CB2400235B48 /* RoutingEntry */ = {
 			isa = PBXGroup;
 			children = (
+				39944E0720C6DD9600235B48 /* Start */,
+				39944E0020C6DBD000235B48 /* Welcome */,
 				39944DF720C6D87800235B48 /* Profile Pic */,
 				39944DE620C6CB3000235B48 /* Connection */,
 			);
@@ -217,6 +233,40 @@
 				39944DF820C6D89100235B48 /* SeeProfilePicRoutingEntry.swift */,
 			);
 			path = "Profile Pic";
+			sourceTree = "<group>";
+		};
+		39944DFA20C6DA7300235B48 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				39944DFC20C6DA9100235B48 /* SeeWelcomeViewController.swift */,
+				39944DFD20C6DA9100235B48 /* SeeWelcomeViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		39944DFB20C6DA7C00235B48 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				39944E0320C6DC1500235B48 /* SeeStartViewController.swift */,
+				39944E0420C6DC1500235B48 /* SeeStartViewController.xib */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		39944E0020C6DBD000235B48 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				39944E0120C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		39944E0720C6DD9600235B48 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */,
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
+				39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */,
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
+				39944DFF20C6DA9100235B48 /* SeeWelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +345,18 @@
 			files = (
 				39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */,
 				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
+				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
 				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
+				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
 				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
 				3906286F20C6BC5600187E21 /* QCAppEnvironment.swift in Sources */,
+				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
+				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,

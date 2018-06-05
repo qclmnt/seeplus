@@ -31,6 +31,7 @@ class SeeProfilePicViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         self.gradientLayer?.frame = self.view.bounds
+        self.profilePicImageView.layer.cornerRadius = self.profilePicImageView.frame.width/2
     }
     
     // MARK: - Configure
@@ -50,5 +51,10 @@ class SeeProfilePicViewController: UIViewController {
         self.uploadPhotoButton.setTitle("Upload a photo", for: .normal)
         self.validateButton.setTitle("enter", for: .normal)
     }
+    
+    // MARK: - Actions
 
+    @IBAction func validateButtonTouchUpInside(_ sender: UIButton) {
+        QCAppEnvironment.shared().routing?.route(to: SeeWelcomeRoutingEntry())
+    }
 }

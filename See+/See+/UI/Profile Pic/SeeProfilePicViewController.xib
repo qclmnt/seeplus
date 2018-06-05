@@ -45,6 +45,9 @@
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="validateButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CS1-MX-ufJ"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
                     <rect key="frame" x="123" y="138" width="128" height="128"/>
