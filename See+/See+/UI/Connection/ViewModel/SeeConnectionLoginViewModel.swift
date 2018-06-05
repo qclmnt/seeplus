@@ -22,6 +22,14 @@ class SeeConnectionLoginViewModel: SeeConnectionSignUpViewModel {
         return "Sign up"
     }
     
+    override var topBackgroundColor: UIColor {
+        return UIColor.appPurple()
+    }
+    
+    override var bottomBackgroundColor: UIColor {
+        return UIColor.appRed()
+    }
+    
     override func switchConnectionMode() {
         AppDelegate.shared()?.window??.rootViewController = SeeSignupRoutinEntry().viewController
     }

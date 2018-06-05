@@ -22,6 +22,14 @@ class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
         return "Login"
     }
     
+    var topBackgroundColor: UIColor {
+        return UIColor.appRed()
+    }
+    
+    var bottomBackgroundColor: UIColor {
+        return UIColor.appPurple()
+    }
+    
     // MARK: - Actions
     
     func validateConnection(usernameText: String?, completion: (_ succeded: Bool)->()) {

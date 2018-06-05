@@ -24,6 +24,7 @@
 		39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE220C6C51400235B48 /* QCViewControllerViewModel.swift */; };
 		39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */; };
 		39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */; };
+		39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DEC20C6D1B200235B48 /* UIColor+See.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		39944DE220C6C51400235B48 /* QCViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCViewControllerViewModel.swift; sourceTree = "<group>"; };
 		39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeSignupRoutinEntry.swift; sourceTree = "<group>"; };
 		39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeLoginRoutinEntry.swift; sourceTree = "<group>"; };
+		39944DEC20C6D1B200235B48 /* UIColor+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+See.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		3906285A20C6BA3400187E21 /* See+ */ = {
 			isa = PBXGroup;
 			children = (
+				39944DEB20C6D19C00235B48 /* Helper */,
 				39944DE020C6C51400235B48 /* ViewModel */,
 				39944DD520C6C4A500235B48 /* UI */,
 				3906287020C6BC9200187E21 /* Navigation */,
@@ -164,6 +167,22 @@
 			path = Connection;
 			sourceTree = "<group>";
 		};
+		39944DEB20C6D19C00235B48 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				39944DEE20C6D1B600235B48 /* Color */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		39944DEE20C6D1B600235B48 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				39944DEC20C6D1B200235B48 /* UIColor+See.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +257,7 @@
 				39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */,
 				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
+				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
 				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,

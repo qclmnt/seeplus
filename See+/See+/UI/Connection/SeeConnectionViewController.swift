@@ -11,6 +11,7 @@ import UIKit
 class SeeConnectionViewController: UIViewController {
     
     // MARK: - ViewModel
+    
     let viewModel: SeeConnectionSignUpViewModel
     
     // MARK: - View
@@ -27,6 +28,8 @@ class SeeConnectionViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var switchButton: UIButton!
+    
+    var gradientLayer: CAGradientLayer?
     
     // MARK: - Initialization
     
@@ -48,6 +51,12 @@ class SeeConnectionViewController: UIViewController {
         self.configureLayout()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        self.gradientLayer?.frame = self.view.bounds
+    }
+    
     // MARK: - Configure
     
     func configureLayout() {
@@ -64,8 +73,8 @@ class SeeConnectionViewController: UIViewController {
         self.passwordLabel.text = "Password"
         self.confirmPasswordLabel.text = "Confirm password"
         
-        self.confirmPasswordLabel.isHidden = self.viewModel.shouldShowConfirmPassword
-        self.confirmPasswordTextField.isHidden = self.viewModel.shouldShowConfirmPassword
+        self.confirmPasswordLabel.isHidden = !self.viewModel.shouldShowConfirmPassword
+        self.confirmPasswordTextField.isHidden = !self.viewModel.shouldShowConfirmPassword
         
         // Buttons
         self.enterButton.setTitle("Enter", for: .normal)
@@ -93,9 +102,10 @@ class SeeConnectionViewController: UIViewController {
     func applyGradientLayer(view: UIView) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
-        gradientLayer.colors = [UIColor.red.cgColor, UIColor.yellow.cgColor]
+        gradientLayer.colors = [self.viewModel.topBackgroundColor.cgColor, self.viewModel.bottomBackgroundColor.cgColor]
         
         view.layer.insertSublayer(gradientLayer, at: 0)
+        self.gradientLayer = gradientLayer
     }
 
 }
