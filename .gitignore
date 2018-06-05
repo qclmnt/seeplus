@@ -21,6 +21,8 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+See+/See+.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+See+/See+.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 
 ## Obj-C/Swift specific
 *.hmap
