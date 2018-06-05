@@ -41,10 +41,11 @@ class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
         
         print("Username \(username)")
         completion(true)
+        QCAppEnvironment.shared().routing?.route(to: SeeProfilePicRoutingEntry())
     }
     
     func switchConnectionMode() {
-        AppDelegate.shared()?.window??.rootViewController = SeeLoginRoutinEntry().viewController
+        AppDelegate.shared()?.window??.rootViewController = UINavigationController(rootViewController: SeeLoginRoutinEntry().viewController ?? UIViewController())
     }
 
 }

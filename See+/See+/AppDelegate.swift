@@ -25,7 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.frame = UIScreen.main.bounds
         
         let signupRoutingEntry = SeeSignupRoutinEntry()
-        self.window?.rootViewController = signupRoutingEntry.viewController
+        let navigationController = UINavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController())
+        self.window?.rootViewController = navigationController
+        
+        // Configure App Environment
+        QCAppEnvironment.shared().configureAppEnvironment()
         
         return true
     }

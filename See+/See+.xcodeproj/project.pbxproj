@@ -25,6 +25,10 @@
 		39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */; };
 		39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */; };
 		39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DEC20C6D1B200235B48 /* UIColor+See.swift */; };
+		39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DF020C6D53600235B48 /* SeeProfilePicViewController.swift */; };
+		39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DF120C6D53600235B48 /* SeeProfilePicViewController.xib */; };
+		39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DF420C6D7E700235B48 /* UIView+See.swift */; };
+		39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DF820C6D89100235B48 /* SeeProfilePicRoutingEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		39944DE720C6CB5B00235B48 /* SeeSignupRoutinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeSignupRoutinEntry.swift; sourceTree = "<group>"; };
 		39944DE920C6CB6B00235B48 /* SeeLoginRoutinEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeLoginRoutinEntry.swift; sourceTree = "<group>"; };
 		39944DEC20C6D1B200235B48 /* UIColor+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+See.swift"; sourceTree = "<group>"; };
+		39944DF020C6D53600235B48 /* SeeProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfilePicViewController.swift; sourceTree = "<group>"; };
+		39944DF120C6D53600235B48 /* SeeProfilePicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeProfilePicViewController.xib; sourceTree = "<group>"; };
+		39944DF420C6D7E700235B48 /* UIView+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+See.swift"; sourceTree = "<group>"; };
+		39944DF820C6D89100235B48 /* SeeProfilePicRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfilePicRoutingEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				39944DEF20C6D4FC00235B48 /* Profile Pic */,
 				39944DD620C6C4A500235B48 /* Connection */,
 			);
 			path = UI;
@@ -153,6 +162,7 @@
 		39944DE520C6CB2400235B48 /* RoutingEntry */ = {
 			isa = PBXGroup;
 			children = (
+				39944DF720C6D87800235B48 /* Profile Pic */,
 				39944DE620C6CB3000235B48 /* Connection */,
 			);
 			path = RoutingEntry;
@@ -170,6 +180,7 @@
 		39944DEB20C6D19C00235B48 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				39944DF620C6D7EE00235B48 /* View */,
 				39944DEE20C6D1B600235B48 /* Color */,
 			);
 			path = Helper;
@@ -181,6 +192,31 @@
 				39944DEC20C6D1B200235B48 /* UIColor+See.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		39944DEF20C6D4FC00235B48 /* Profile Pic */ = {
+			isa = PBXGroup;
+			children = (
+				39944DF020C6D53600235B48 /* SeeProfilePicViewController.swift */,
+				39944DF120C6D53600235B48 /* SeeProfilePicViewController.xib */,
+			);
+			path = "Profile Pic";
+			sourceTree = "<group>";
+		};
+		39944DF620C6D7EE00235B48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39944DF420C6D7E700235B48 /* UIView+See.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39944DF720C6D87800235B48 /* Profile Pic */ = {
+			isa = PBXGroup;
+			children = (
+				39944DF820C6D89100235B48 /* SeeProfilePicRoutingEntry.swift */,
+			);
+			path = "Profile Pic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
+				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
 			);
@@ -256,6 +293,7 @@
 			files = (
 				39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */,
 				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
+				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
 				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
@@ -266,9 +304,11 @@
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
+				39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */,
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
 				3906287420C6BCED00187E21 /* QCRouting.swift in Sources */,
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
+				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

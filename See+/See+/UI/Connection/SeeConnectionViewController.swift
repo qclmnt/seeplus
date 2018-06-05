@@ -62,7 +62,8 @@ class SeeConnectionViewController: UIViewController {
     func configureLayout() {
         
         // Background
-        self.applyGradientLayer(view: self.view)
+        self.gradientLayer = self.view.addGradientLayer(bottomColor: self.viewModel.bottomBackgroundColor,
+                                                        topColor: self.viewModel.topBackgroundColor)
         
         // Title
         self.titleLabel.text = self.viewModel.title
@@ -95,17 +96,6 @@ class SeeConnectionViewController: UIViewController {
     
     @IBAction func switchButtonTouchUpInside(_ sender: Any) {
         self.viewModel.switchConnectionMode()
-    }
-    
-    // MARK: - Helper
-    
-    func applyGradientLayer(view: UIView) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [self.viewModel.topBackgroundColor.cgColor, self.viewModel.bottomBackgroundColor.cgColor]
-        
-        view.layer.insertSublayer(gradientLayer, at: 0)
-        self.gradientLayer = gradientLayer
     }
 
 }

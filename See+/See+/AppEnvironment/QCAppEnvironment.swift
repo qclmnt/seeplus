@@ -17,3 +17,10 @@ class QCAppEnvironment: NSObject {
     
     var routing: QCNavigator?
 }
+
+extension QCAppEnvironment {
+    
+    func configureAppEnvironment() {
+        self.routing = QCRouting()
+    }
+}
