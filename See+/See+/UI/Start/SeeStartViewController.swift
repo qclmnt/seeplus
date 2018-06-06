@@ -33,7 +33,17 @@ class SeeStartViewController: UIViewController {
         
         // Buttons
         self.liveButton.setTitle("Live an experience", for: .normal)
-        self.liveButton.setTitle("Propose an experience", for: .normal)
+        self.proposeButton.setTitle("Propose an experience", for: .normal)
     }
-
+    
+    // MARK: - Actions
+    
+    @IBAction func liveButtonTouchUpInside(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func proposeButtonTouchUpInside(_ sender: UIButton) {
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController()
+    }
+    
 }

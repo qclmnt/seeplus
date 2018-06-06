@@ -11,10 +11,10 @@ import UIKit
 extension UIColor {
     
     class func appRed() -> UIColor {
-        return UIColor(red: 244/255, green: 47/255, blue: 52/255, alpha: 1)
+        return UIColor(red: 255/255, green: 51/255, blue: 51/255, alpha: 1)
     }
     
     class func appPurple() -> UIColor {
-        return UIColor(red: 241/255, green: 54/255, blue: 187/255, alpha: 1)
+        return UIColor(red: 255/255, green: 51/255, blue: 204/255, alpha: 1)
     }
 }

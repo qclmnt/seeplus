@@ -35,6 +35,9 @@
 		39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0320C6DC1500235B48 /* SeeStartViewController.swift */; };
 		39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944E0420C6DC1500235B48 /* SeeStartViewController.xib */; };
 		39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */; };
+		39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */; };
+		39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */; };
+		39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		39944E0320C6DC1500235B48 /* SeeStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartViewController.swift; sourceTree = "<group>"; };
 		39944E0420C6DC1500235B48 /* SeeStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeStartViewController.xib; sourceTree = "<group>"; };
 		39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartRoutingEntry.swift; sourceTree = "<group>"; };
+		39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarController.swift; sourceTree = "<group>"; };
+		39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarResidentControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarTravellerControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				39D8951B20C869D000782F3D /* TabBar */,
 				39944DFB20C6DA7C00235B48 /* Start */,
 				39944DFA20C6DA7300235B48 /* Welcome */,
 				39944DEF20C6D4FC00235B48 /* Profile Pic */,
@@ -269,6 +276,24 @@
 			path = Start;
 			sourceTree = "<group>";
 		};
+		39D8951B20C869D000782F3D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				39D8951E20C86A2F00782F3D /* ViewModel */,
+				39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		39D8951E20C86A2F00782F3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */,
+				39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,6 +374,7 @@
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
 				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
+				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
 				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
@@ -356,12 +382,14 @@
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
 				3906286F20C6BC5600187E21 /* QCAppEnvironment.swift in Sources */,
 				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
+				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
 				39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */,
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
+				39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */,
 				3906287420C6BCED00187E21 /* QCRouting.swift in Sources */,
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
