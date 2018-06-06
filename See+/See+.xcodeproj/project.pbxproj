@@ -38,6 +38,20 @@
 		39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */; };
 		39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */; };
 		39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */; };
+		39D8952720C86D6C00782F3D /* SeeNewExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8952520C86D6C00782F3D /* SeeNewExperienceViewController.swift */; };
+		39D8952820C86D6C00782F3D /* SeeNewExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D8952620C86D6C00782F3D /* SeeNewExperienceViewController.xib */; };
+		39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8952A20C86DC500782F3D /* SeeMessagingViewController.swift */; };
+		39D8952D20C86DC500782F3D /* SeeMessagingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D8952B20C86DC500782F3D /* SeeMessagingViewController.xib */; };
+		39D8953120C86DEC00782F3D /* SeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8952F20C86DEC00782F3D /* SeeProfileViewController.swift */; };
+		39D8953220C86DEC00782F3D /* SeeProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D8953020C86DEC00782F3D /* SeeProfileViewController.xib */; };
+		39D8953620C86E1600782F3D /* SeeFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8953420C86E1600782F3D /* SeeFavoritesViewController.swift */; };
+		39D8953720C86E1600782F3D /* SeeFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D8953520C86E1600782F3D /* SeeFavoritesViewController.xib */; };
+		39D8953B20C8710900782F3D /* SeeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8953A20C8710900782F3D /* SeeTabBarViewController.swift */; };
+		39D8953E20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8953D20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift */; };
+		39D8954020C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8953F20C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift */; };
+		39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */; };
+		39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */; };
+		39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954520C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +88,20 @@
 		39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarController.swift; sourceTree = "<group>"; };
 		39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarResidentControllerViewModel.swift; sourceTree = "<group>"; };
 		39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarTravellerControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8952520C86D6C00782F3D /* SeeNewExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNewExperienceViewController.swift; sourceTree = "<group>"; };
+		39D8952620C86D6C00782F3D /* SeeNewExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeNewExperienceViewController.xib; sourceTree = "<group>"; };
+		39D8952A20C86DC500782F3D /* SeeMessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingViewController.swift; sourceTree = "<group>"; };
+		39D8952B20C86DC500782F3D /* SeeMessagingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessagingViewController.xib; sourceTree = "<group>"; };
+		39D8952F20C86DEC00782F3D /* SeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileViewController.swift; sourceTree = "<group>"; };
+		39D8953020C86DEC00782F3D /* SeeProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeProfileViewController.xib; sourceTree = "<group>"; };
+		39D8953420C86E1600782F3D /* SeeFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeFavoritesViewController.swift; sourceTree = "<group>"; };
+		39D8953520C86E1600782F3D /* SeeFavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeFavoritesViewController.xib; sourceTree = "<group>"; };
+		39D8953A20C8710900782F3D /* SeeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarViewController.swift; sourceTree = "<group>"; };
+		39D8953D20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8953F20C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNewExperienceViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8954520C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeFavoritesViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +171,10 @@
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				39D8953320C86E0600782F3D /* Favorites */,
+				39D8952E20C86DDE00782F3D /* Profile */,
+				39D8952920C86DAB00782F3D /* Messaging */,
+				39D8952320C86D4A00782F3D /* Experience */,
 				39D8951B20C869D000782F3D /* TabBar */,
 				39944DFB20C6DA7C00235B48 /* Start */,
 				39944DFA20C6DA7300235B48 /* Welcome */,
@@ -279,6 +311,7 @@
 		39D8951B20C869D000782F3D /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				39D8953920C870F500782F3D /* ViewController */,
 				39D8951E20C86A2F00782F3D /* ViewModel */,
 				39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */,
 			);
@@ -290,6 +323,71 @@
 			children = (
 				39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */,
 				39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39D8952320C86D4A00782F3D /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				39D8952420C86D5300782F3D /* New */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		39D8952420C86D5300782F3D /* New */ = {
+			isa = PBXGroup;
+			children = (
+				39D8952520C86D6C00782F3D /* SeeNewExperienceViewController.swift */,
+				39D8952620C86D6C00782F3D /* SeeNewExperienceViewController.xib */,
+				39D8953F20C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		39D8952920C86DAB00782F3D /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				39D8952A20C86DC500782F3D /* SeeMessagingViewController.swift */,
+				39D8952B20C86DC500782F3D /* SeeMessagingViewController.xib */,
+				39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		39D8952E20C86DDE00782F3D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39D8952F20C86DEC00782F3D /* SeeProfileViewController.swift */,
+				39D8953020C86DEC00782F3D /* SeeProfileViewController.xib */,
+				39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		39D8953320C86E0600782F3D /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				39D8953420C86E1600782F3D /* SeeFavoritesViewController.swift */,
+				39D8953520C86E1600782F3D /* SeeFavoritesViewController.xib */,
+				39D8954520C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		39D8953920C870F500782F3D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39D8953C20C8717900782F3D /* ViewModel */,
+				39D8953A20C8710900782F3D /* SeeTabBarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		39D8953C20C8717900782F3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				39D8953D20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -352,9 +450,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D8953720C86E1600782F3D /* SeeFavoritesViewController.xib in Resources */,
 				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
+				39D8952D20C86DC500782F3D /* SeeMessagingViewController.xib in Resources */,
+				39D8953220C86DEC00782F3D /* SeeProfileViewController.xib in Resources */,
 				39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */,
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
+				39D8952820C86D6C00782F3D /* SeeNewExperienceViewController.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
 				39944DFF20C6DA9100235B48 /* SeeWelcomeViewController.xib in Resources */,
@@ -370,13 +472,21 @@
 			files = (
 				39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */,
 				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
+				39D8954020C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift in Sources */,
 				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
+				39D8952720C86D6C00782F3D /* SeeNewExperienceViewController.swift in Sources */,
+				39D8953120C86DEC00782F3D /* SeeProfileViewController.swift in Sources */,
 				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
+				39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */,
+				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
+				39D8953620C86E1600782F3D /* SeeFavoritesViewController.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
+				39D8953B20C8710900782F3D /* SeeTabBarViewController.swift in Sources */,
 				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
+				39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
 				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
@@ -384,6 +494,7 @@
 				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
 				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
+				39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
@@ -391,6 +502,7 @@
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
 				39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */,
 				3906287420C6BCED00187E21 /* QCRouting.swift in Sources */,
+				39D8953E20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift in Sources */,
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
 			);

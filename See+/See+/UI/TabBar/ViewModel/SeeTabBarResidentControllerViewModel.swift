@@ -10,14 +10,14 @@ import UIKit
 
 class SeeTabBarResidentControllerViewModel: QCViewControllerViewModel {
     
-    var viewControllers: [UINavigationController] {
-        return [UINavigationController(rootViewController: self.newExperienceViewController),
-                UINavigationController(rootViewController: self.messagingViewController),
-                UINavigationController(rootViewController: self.profileViewController)]
+    var viewControllers: [SeeTabBarViewController] {
+        return [self.newExperienceViewController,
+                self.messagingViewController,
+                self.profileViewController]
     }
     
-    lazy var newExperienceViewController = UIViewController()
-    lazy var messagingViewController = UIViewController()
-    lazy var profileViewController = UIViewController()
+    lazy var newExperienceViewController = SeeNewExperienceViewController()
+    lazy var messagingViewController = SeeMessagingViewController()
+    lazy var profileViewController = SeeProfileViewController()
 
 }

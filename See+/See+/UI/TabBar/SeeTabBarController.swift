@@ -29,7 +29,21 @@ class SeeTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setViewControllers(self.viewModel.viewControllers, animated: true)
+        let navigationViewControllers = self.viewModel.viewControllers.map { (viewController) -> UINavigationController in
+            return UINavigationController(rootViewController: viewController)
+        }
+        self.setViewControllers(navigationViewControllers, animated: true)
+        
+//        if let viewControllers = self.viewControllers {
+//            for viewController in viewControllers {
+//                if let tabBarViewController = viewController as? SeeTabBarViewController {
+//                    viewController.tabBarItem = UITabBarItem(title: tabBarViewController.viewModel.title,
+//                                                             image: nil,
+//                                                             selectedImage: nil)
+//                }
+//            }
+//        }
+        
     }
 
 }

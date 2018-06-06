@@ -10,12 +10,12 @@ import UIKit
 
 class SeeTabBarTravellerControllerViewModel: SeeTabBarResidentControllerViewModel {
 
-    override var viewControllers: [UINavigationController] {
-        return [UINavigationController(rootViewController: self.favoritesViewController),
-                UINavigationController(rootViewController: self.newExperienceViewController),
-                UINavigationController(rootViewController: self.messagingViewController),
-                UINavigationController(rootViewController: self.profileViewController)]
+    override var viewControllers: [SeeTabBarViewController] {
+        return [self.favoritesViewController,
+                self.newExperienceViewController,
+                self.messagingViewController,
+                self.profileViewController]
     }
     
-    lazy var favoritesViewController = UIViewController()
+    lazy var favoritesViewController = SeeFavoritesViewController()
 }
