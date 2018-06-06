@@ -52,6 +52,8 @@
 		39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */; };
 		39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */; };
 		39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954520C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift */; };
+		39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954920C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift */; };
+		39D8954C20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D8954A20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingViewControllerViewModel.swift; sourceTree = "<group>"; };
 		39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileViewControllerViewModel.swift; sourceTree = "<group>"; };
 		39D8954520C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeFavoritesViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39D8954920C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingCollectionViewCell.swift; sourceTree = "<group>"; };
+		39D8954A20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessagingCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +352,7 @@
 		39D8952920C86DAB00782F3D /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				39D8954720C87A7500782F3D /* CollectionView */,
 				39D8952A20C86DC500782F3D /* SeeMessagingViewController.swift */,
 				39D8952B20C86DC500782F3D /* SeeMessagingViewController.xib */,
 				39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */,
@@ -390,6 +395,23 @@
 				39D8953D20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		39D8954720C87A7500782F3D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				39D8954820C87A8100782F3D /* Cell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		39D8954820C87A8100782F3D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39D8954920C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift */,
+				39D8954A20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +480,7 @@
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
 				39D8952820C86D6C00782F3D /* SeeNewExperienceViewController.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
+				39D8954C20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
 				39944DFF20C6DA9100235B48 /* SeeWelcomeViewController.xib in Resources */,
 			);
@@ -495,6 +518,7 @@
 				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
 				39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */,
+				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,

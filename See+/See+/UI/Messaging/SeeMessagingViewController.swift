@@ -14,6 +14,12 @@ class SeeMessagingViewController: SeeTabBarViewController {
         return SeeMessagingViewControllerViewModel()
     }
     
+    // MARK: - Views
+    
+    @IBOutlet weak var messagingImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var messagingCollectionView: UICollectionView!
+    
     // MARK: - Initialization
     
     override init() {
@@ -30,6 +36,15 @@ class SeeMessagingViewController: SeeTabBarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.configureLayout()
+    }
+    
+    // MARK: - Configure
+    
+    func configureLayout() {
+        
+        // Title View
+        self.titleLabel.text = "My messages"
     }
 
 }

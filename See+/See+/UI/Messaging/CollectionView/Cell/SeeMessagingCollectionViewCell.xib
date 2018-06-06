@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SeeMessagingCollectionViewCell" customModule="See_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-LR-2ar">
+                        <rect key="frame" x="9" y="8" width="54" height="54"/>
+                        <color key="backgroundColor" red="1" green="0.20784313730000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UMd-LR-2ar" secondAttribute="height" multiplier="1:1" id="6Xa-2s-ujK"/>
+                            <constraint firstAttribute="width" constant="54" id="OY2-kx-G5l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Uc-fql">
+                        <rect key="frame" x="75" y="8" width="346" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dpQ-Bl-fGp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-r8-NHw">
+                        <rect key="frame" x="75" y="41" width="346" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OaK-wk-17m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="aaR-r8-NHw" firstAttribute="width" secondItem="rNg-Uc-fql" secondAttribute="width" id="En6-PJ-TwD"/>
+                <constraint firstItem="aaR-r8-NHw" firstAttribute="leading" secondItem="rNg-Uc-fql" secondAttribute="leading" id="Wod-wb-Tiy"/>
+                <constraint firstItem="UMd-LR-2ar" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="9" id="iA2-ej-gtE"/>
+                <constraint firstItem="aaR-r8-NHw" firstAttribute="bottom" secondItem="UMd-LR-2ar" secondAttribute="bottom" id="iak-iC-2nw"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="rNg-Uc-fql" secondAttribute="trailing" constant="20" id="m7u-jf-pWf"/>
+                <constraint firstItem="UMd-LR-2ar" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="nUL-Vl-SFH"/>
+                <constraint firstItem="rNg-Uc-fql" firstAttribute="top" secondItem="UMd-LR-2ar" secondAttribute="top" id="wGv-Ai-tMF"/>
+                <constraint firstItem="rNg-Uc-fql" firstAttribute="leading" secondItem="UMd-LR-2ar" secondAttribute="trailing" constant="12" id="yxP-9l-KWW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="441" height="70"/>
+            <connections>
+                <outlet property="messageLabel" destination="aaR-r8-NHw" id="CG8-FO-muZ"/>
+                <outlet property="profilePicImageView" destination="UMd-LR-2ar" id="KDP-ki-gaY"/>
+                <outlet property="usernameLabel" destination="rNg-Uc-fql" id="s35-82-XnS"/>
+            </connections>
+            <point key="canvasLocation" x="87.5" y="64"/>
+        </collectionViewCell>
+    </objects>
+</document>
