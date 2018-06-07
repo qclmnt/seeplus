@@ -14,6 +14,15 @@ class SeeProfileViewController: SeeTabBarViewController {
         return SeeProfileViewControllerViewModel()
     }
     
+    lazy var experiencesViewModel = SeeProfileExperiencesCollectionViewModel()
+    
+    // MARK: - Views
+    
+    @IBOutlet weak var profilPicImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var plusImageView: UIImageView!
+    @IBOutlet weak var experiencesCollectionView: UICollectionView!
+    
     // MARK: - Initialization
     
     override init() {
@@ -30,6 +39,50 @@ class SeeProfileViewController: SeeTabBarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.experiencesViewModel.delegate = self
+        self.experiencesViewModel.load()
+    }
+    
+    // MARK: - Configure
+    
+    func configureLayout() {
+        
+        // Username
+        self.usernameLabel.text = "My profile"
+    }
+    
+    func reloadDataView() {
+        UIView.performWithoutAnimation {
+            self.experiencesCollectionView.reloadData()
+        }
     }
 
+}
+
+extension SeeProfileViewController: QCViewModelDelegate {
+    
+    func viewModelDidStartLoad() {
+        self.experiencesViewModel.registerCellsAndReusableViews(on:self.experiencesCollectionView)
+        
+        if self.experiencesCollectionView.delegate == nil {
+            self.experiencesCollectionView.delegate = self.experiencesViewModel
+        }
+        
+        if self.experiencesCollectionView.dataSource == nil {
+            self.experiencesCollectionView.dataSource = self.experiencesViewModel
+        }
+        
+        self.experiencesCollectionView?.reloadData()
+    }
+    
+    func viewModelDidLoad() {
+        self.experiencesViewModel.registerCellsAndReusableViews(on:self.experiencesCollectionView)
+        
+        UIView.animate(withDuration: 0, animations: {
+            self.reloadDataView()
+        }) { (finished) in
+        }
+        
+        self.navigationItem.title = self.viewModel.title
+    }
 }

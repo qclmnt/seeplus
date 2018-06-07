@@ -10,6 +10,15 @@ import UIKit
 
 class QCCollectionViewSection: NSObject {
     
+    // MARK: - Initialization
+    
+    override init() {
+        super.init()
+        self.setup()
+    }
+    
+    // MARK: - Configuration
+    
     lazy var items = [QCCollectionCellViewModel]()
 
     var edgeInsets: UIEdgeInsets {

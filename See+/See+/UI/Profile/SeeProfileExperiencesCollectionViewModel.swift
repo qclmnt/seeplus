@@ -1,5 +1,5 @@
 //
-//  SeeMessagingListCollectionViewModel.swift
+//  SeeProfileExperiencesCollectionViewModel.swift
 //  See+
 //
 //  Created by Quentin CLEMENT on 07/06/2018.
@@ -8,18 +8,16 @@
 
 import UIKit
 
-class SeeMessagingListCollectionViewModel: QCCollectionViewModel {
-    
-    // MARK: - QCCollectionViewModel
+class SeeProfileExperiencesCollectionViewModel: QCCollectionViewModel {
     
     override func load() {
         self.delegate?.viewModelDidStartLoad()
-        self.loadSections()
+        self.loadSection()
         self.delegate?.viewModelDidLoad()
     }
     
-    func loadSections() {
-        self.sections = [SeeMessagingCollectionViewSection()]
+    func loadSection() {
+        self.sections = [SeeProfileExperiencesSection()]
     }
 
 }

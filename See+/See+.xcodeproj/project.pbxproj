@@ -61,6 +61,11 @@
 		39EA127820C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127720C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift */; };
 		39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127A20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift */; };
 		39EA127D20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127C20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift */; };
+		39EA128220C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA128020C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift */; };
+		39EA128320C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EA128120C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib */; };
+		39EA128520C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA128420C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift */; };
+		39EA128820C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA128720C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift */; };
+		39EA128A20C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA128920C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +125,11 @@
 		39EA127720C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingListCollectionViewModel.swift; sourceTree = "<group>"; };
 		39EA127A20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingCollectionViewSection.swift; sourceTree = "<group>"; };
 		39EA127C20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		39EA128020C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperienceCollectionViewCell.swift; sourceTree = "<group>"; };
+		39EA128120C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeProfileExperienceCollectionViewCell.xib; sourceTree = "<group>"; };
+		39EA128420C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperienceCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		39EA128720C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperiencesSection.swift; sourceTree = "<group>"; };
+		39EA128920C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperiencesCollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,7 +390,9 @@
 		39D8952E20C86DDE00782F3D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				39EA127E20C9D0F600BB6387 /* CollectionView */,
 				39D8952F20C86DEC00782F3D /* SeeProfileViewController.swift */,
+				39EA128920C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift */,
 				39D8953020C86DEC00782F3D /* SeeProfileViewController.xib */,
 				39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */,
 			);
@@ -451,6 +463,33 @@
 			path = Section;
 			sourceTree = "<group>";
 		};
+		39EA127E20C9D0F600BB6387 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				39EA128620C9D2E600BB6387 /* Section */,
+				39EA127F20C9D10000BB6387 /* Cell */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		39EA127F20C9D10000BB6387 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39EA128020C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift */,
+				39EA128120C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib */,
+				39EA128420C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		39EA128620C9D2E600BB6387 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				39EA128720C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -509,6 +548,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EA128320C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib in Resources */,
 				39D8953720C86E1600782F3D /* SeeFavoritesViewController.xib in Resources */,
 				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
 				39D8952D20C86DC500782F3D /* SeeMessagingViewController.xib in Resources */,
@@ -541,19 +581,23 @@
 				39D8952720C86D6C00782F3D /* SeeNewExperienceViewController.swift in Sources */,
 				39D8953120C86DEC00782F3D /* SeeProfileViewController.swift in Sources */,
 				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
+				39EA128820C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift in Sources */,
 				39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */,
 				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
 				39D8953620C86E1600782F3D /* SeeFavoritesViewController.swift in Sources */,
 				39D8954F20C87D8500782F3D /* QCCollectionViewModel.swift in Sources */,
+				39EA128220C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift in Sources */,
 				3906285E20C6BA3400187E21 /* ViewController.swift in Sources */,
 				39D8953B20C8710900782F3D /* SeeTabBarViewController.swift in Sources */,
+				39EA128A20C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift in Sources */,
 				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
 				39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
 				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
 				3906286F20C6BC5600187E21 /* QCAppEnvironment.swift in Sources */,
+				39EA128520C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift in Sources */,
 				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
 				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,

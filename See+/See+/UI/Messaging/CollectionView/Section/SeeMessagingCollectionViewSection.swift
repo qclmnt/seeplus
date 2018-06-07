@@ -10,11 +10,6 @@ import UIKit
 
 class SeeMessagingCollectionViewSection: QCCollectionViewSection {
     
-    override init() {
-        super.init()
-        self.setup()
-    }
-    
     override func setup() {
         self.items = [SeeMessagingCollectionViewCellViewModel(username: "Benoit22",
                                                               message: "See you soon !"),

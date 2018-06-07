@@ -10,6 +10,7 @@ import UIKit
 
 class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    var delegate: QCViewModelDelegate?
     lazy var flowLayout = UICollectionViewFlowLayout()
     lazy var sections = [QCCollectionViewSection]()
     
