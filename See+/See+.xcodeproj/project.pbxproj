@@ -57,6 +57,10 @@
 		39D8954F20C87D8500782F3D /* QCCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954E20C87D8500782F3D /* QCCollectionViewModel.swift */; };
 		39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8955020C87E7100782F3D /* QCCollectionViewSection.swift */; };
 		39EA127420C9C41800BB6387 /* QCCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127320C9C41800BB6387 /* QCCollectionCellViewModel.swift */; };
+		39EA127620C9C95200BB6387 /* QCViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127520C9C95200BB6387 /* QCViewModelDelegate.swift */; };
+		39EA127820C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127720C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift */; };
+		39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127A20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift */; };
+		39EA127D20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127C20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +116,10 @@
 		39D8954E20C87D8500782F3D /* QCCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCCollectionViewModel.swift; sourceTree = "<group>"; };
 		39D8955020C87E7100782F3D /* QCCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCCollectionViewSection.swift; sourceTree = "<group>"; };
 		39EA127320C9C41800BB6387 /* QCCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		39EA127520C9C95200BB6387 /* QCViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCViewModelDelegate.swift; sourceTree = "<group>"; };
+		39EA127720C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingListCollectionViewModel.swift; sourceTree = "<group>"; };
+		39EA127A20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingCollectionViewSection.swift; sourceTree = "<group>"; };
+		39EA127C20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessagingCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +227,7 @@
 				39D8954D20C87D1600782F3D /* CollectionView */,
 				39944DE120C6C51400235B48 /* QCViewModel.swift */,
 				39944DE220C6C51400235B48 /* QCViewControllerViewModel.swift */,
+				39EA127520C9C95200BB6387 /* QCViewModelDelegate.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -363,6 +372,7 @@
 				39D8952A20C86DC500782F3D /* SeeMessagingViewController.swift */,
 				39D8952B20C86DC500782F3D /* SeeMessagingViewController.xib */,
 				39D8954120C8721400782F3D /* SeeMessagingViewControllerViewModel.swift */,
+				39EA127720C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -407,6 +417,7 @@
 		39D8954720C87A7500782F3D /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				39EA127920C9CB7E00BB6387 /* Section */,
 				39D8954820C87A8100782F3D /* Cell */,
 			);
 			path = CollectionView;
@@ -417,6 +428,7 @@
 			children = (
 				39D8954920C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift */,
 				39D8954A20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib */,
+				39EA127C20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -429,6 +441,14 @@
 				39EA127320C9C41800BB6387 /* QCCollectionCellViewModel.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		39EA127920C9CB7E00BB6387 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				39EA127A20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift */,
+			);
+			path = Section;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +534,7 @@
 				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
 				39D8954020C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift in Sources */,
 				39EA127420C9C41800BB6387 /* QCCollectionCellViewModel.swift in Sources */,
+				39EA127820C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift in Sources */,
 				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
@@ -540,7 +561,9 @@
 				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
+				39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
+				39EA127D20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift in Sources */,
 				39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */,
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
 				39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */,
@@ -549,6 +572,7 @@
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
 				39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
+				39EA127620C9C95200BB6387 /* QCViewModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

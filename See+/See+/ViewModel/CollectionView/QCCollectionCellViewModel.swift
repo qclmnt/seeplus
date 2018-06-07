@@ -17,7 +17,7 @@ class QCCollectionCellViewModel: NSObject {
     }
     
     var reuseIdentifier: String {
-        return "UICollectionViewCell"
+        return String(describing: UICollectionViewCell.self)
     }
     
     lazy var cellNib: UINib = {
@@ -68,7 +68,7 @@ class QCCollectionCellViewModel: NSObject {
     }
     
     func didSelect(from: UIViewController?) {
-        // Override in subclasses
+        QCAppEnvironment.shared().routing?.route(to: self.routingEntry)
     }
     
     // MARK: - YMMCellViewModel

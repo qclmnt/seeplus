@@ -14,6 +14,8 @@ class SeeMessagingViewController: SeeTabBarViewController {
         return SeeMessagingViewControllerViewModel()
     }
     
+    lazy var messagingViewModel = SeeMessagingListCollectionViewModel()
+    
     // MARK: - Views
     
     @IBOutlet weak var messagingImageView: UIImageView!
@@ -37,6 +39,9 @@ class SeeMessagingViewController: SeeTabBarViewController {
         super.viewDidLoad()
 
         self.configureLayout()
+        
+        self.messagingViewModel.delegate = self
+        self.messagingViewModel.load()
     }
     
     // MARK: - Configure
@@ -46,5 +51,39 @@ class SeeMessagingViewController: SeeTabBarViewController {
         // Title View
         self.titleLabel.text = "My messages"
     }
+    
+    func reloadDataView() {
+        UIView.performWithoutAnimation {
+            self.messagingCollectionView.reloadData()
+        }
+    }
 
+}
+
+extension SeeMessagingViewController: QCViewModelDelegate {
+    
+    func viewModelDidStartLoad() {
+        self.messagingViewModel.registerCellsAndReusableViews(on:self.messagingCollectionView)
+        
+        if self.messagingCollectionView.delegate == nil {
+            self.messagingCollectionView.delegate = self.messagingViewModel
+        }
+        
+        if self.messagingCollectionView.dataSource == nil {
+            self.messagingCollectionView.dataSource = self.messagingViewModel
+        }
+        
+        self.messagingCollectionView?.reloadData()
+    }
+    
+    func viewModelDidLoad() {
+        self.messagingViewModel.registerCellsAndReusableViews(on:self.messagingCollectionView)
+        
+        UIView.animate(withDuration: 0, animations: {
+            self.reloadDataView()
+        }) { (finished) in
+        }
+        
+        self.navigationItem.title = self.viewModel.title
+    }
 }

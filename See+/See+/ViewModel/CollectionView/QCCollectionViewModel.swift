@@ -12,13 +12,6 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
     
     lazy var flowLayout = UICollectionViewFlowLayout()
     lazy var sections = [QCCollectionViewSection]()
-
-//    weak var collectionViewModelDelegate: QCCollectionViewModelDelegate? {
-//        get {
-//            return self.delegate as? QCCollectionViewModelDelegate
-//        }
-//        set {}
-//    }
     
     // MARK: - UICollectionViewDataSource
     
@@ -60,7 +53,6 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
         }
         let item = currentSection.items[indexPath.row]
         item.willDisplayCell(cell)
-//        self.visibleItems.add(item)
     }
     
     public func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -71,34 +63,7 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
         }
         let item = currentSection.items[indexPath.row]
         item.didEndDisplaying(cell)
-//        if self.visibleItems.contains(item) {
-//            self.visibleItems.remove(item)
-//        }
     }
-    
-//    public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        guard self.sections.count > indexPath.section,
-//            let currentSection = self.sections[indexPath.section] as? QCCollectionViewSection else {
-//                return UICollectionReusableView()
-//        }
-//
-//        if kind == UICollectionElementKindSectionHeader {
-//            guard let headerModel = currentSection.header else { return UICollectionReusableView() }
-//
-//            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: headerModel.supplementaryElementKind,
-//                                                                             withReuseIdentifier: headerModel.reuseIdentifier, for: indexPath)
-//            headerModel.configureView(view: headerView)
-//            return headerView
-//        } else {
-//            guard let footerModel = currentSection.footer else { return UICollectionReusableView() }
-//
-//            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: footerModel.supplementaryElementKind,
-//                                                                             withReuseIdentifier: footerModel.reuseIdentifier, for: indexPath)
-//            footerModel.configureView(view: footerView)
-//            return footerView
-//        }
-//
-//    }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard self.sections.count > indexPath.section else {
@@ -107,25 +72,8 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
         
         let currentSection = self.sections[indexPath.section]
         let item = currentSection.items[indexPath.row]
-        item.didSelect(from: nil)//self.delegate as? UIViewController)
+        item.didSelect(from: nil)
     }
-    
-    // MARK: - UICollectionViewDelegate
-    
-//    public func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-//        guard self.sections.count > indexPath.section,
-//            let currentSection = self.sections[indexPath.section] as? QCCollectionViewSection else {
-//                return
-//        }
-//
-//        if elementKind == QCDecorationCollectionReusableViewModel.decorationViewOfKind {
-//            guard let headerModel = currentSection.decoration,
-//                let headerView = view as? QCDecorationCollectionReusableView else { return }
-//
-//            headerView.configure(viewModel: headerModel)
-//        }
-//    }
-    
     
     // MARK: - UICollectionViewDelegateFlowLayout
     
@@ -169,40 +117,8 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
         let maxWidth = widthMinusInterItemSpacing/CGFloat(currentSection.numberOfColumns) - 1
         let itemSize = item.cellSize(maxSize: CGSize(width: maxWidth, height: collectionView.bounds.size.height))
         
-//        if DeviceHelper.isIpad(),
-//            let decoration = currentSection.decoration {
-//            if decoration.decorationViewInfos == nil {
-//                decoration.decorationViewInfos = QCDecorationViewInfos(collectionViewWidth: collectionWidth,
-//                                                                        numberOfColumns: currentSection.numberOfColumns,
-//                                                                        sectionEdgeInsets: currentSection.edgeInsets)
-//                let indexPathKey = NSIndexPath(row: 0, section: indexPath.section)
-//                self.flowLayout.decorationsInfos[indexPathKey] = decoration.decorationViewInfos
-//            }
-//            decoration.decorationViewInfos?.addSectionItemHeight(item: indexPath.item, height: itemSize.height)
-//        }
-        
         return itemSize
     }
-    
-//    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-//        guard self.sections.count > section,
-//            let currentSection = self.sections[section] as? QCCollectionViewSection else {
-//                return CGSize.zero
-//        }
-//
-//        guard let headerModel = currentSection.header else { return CGSize.zero }
-//        return headerModel.viewSize(maxSize: collectionView.bounds.size)
-//    }
-//
-//    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-//        guard self.sections.count > section,
-//            let currentSection = self.sections[section] as? QCCollectionViewSection else {
-//                return CGSize.zero
-//        }
-//
-//        guard let footerModel = currentSection.footer else { return CGSize.zero }
-//        return footerModel.viewSize(maxSize: collectionView.bounds.size)
-//    }
     
     // MARK: - Register Cell
     
@@ -212,10 +128,6 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
         }
         
         for section in sections {
-            // Header
-//            if let header = section.header {
-//                header.register(on: collectionView)
-//            }
             
             // Cells
             if let items = section.items as NSArray as? [QCCollectionCellViewModel]  {
@@ -223,23 +135,7 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
                     item.registerCell(collectionView)
                 }
             }
-            
-            // Footer
-//            if let footer = section.footer {
-//                footer.register(on: collectionView)
-//            }
-            
-            // Decoration view
-//            if let decoration = section.decoration {
-//                decoration.register(on: collectionView)
-//            }
         }
     }
-    
-    // MARK: - UIScrollViewDelegate
-    
-//    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        self.delegate?.scrollViewDidScroll?(scrollView)
-//    }
     
 }
