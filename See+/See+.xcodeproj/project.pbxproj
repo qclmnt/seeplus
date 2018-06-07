@@ -56,6 +56,7 @@
 		39D8954C20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D8954A20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib */; };
 		39D8954F20C87D8500782F3D /* QCCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8954E20C87D8500782F3D /* QCCollectionViewModel.swift */; };
 		39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8955020C87E7100782F3D /* QCCollectionViewSection.swift */; };
+		39EA127420C9C41800BB6387 /* QCCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA127320C9C41800BB6387 /* QCCollectionCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		39D8954A20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessagingCollectionViewCell.xib; sourceTree = "<group>"; };
 		39D8954E20C87D8500782F3D /* QCCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCCollectionViewModel.swift; sourceTree = "<group>"; };
 		39D8955020C87E7100782F3D /* QCCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCCollectionViewSection.swift; sourceTree = "<group>"; };
+		39EA127320C9C41800BB6387 /* QCCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCCollectionCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +426,7 @@
 			children = (
 				39D8954E20C87D8500782F3D /* QCCollectionViewModel.swift */,
 				39D8955020C87E7100782F3D /* QCCollectionViewSection.swift */,
+				39EA127320C9C41800BB6387 /* QCCollectionCellViewModel.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */,
 				39944DE420C6C51400235B48 /* QCViewControllerViewModel.swift in Sources */,
 				39D8954020C871F300782F3D /* SeeNewExperienceViewControllerViewModel.swift in Sources */,
+				39EA127420C9C41800BB6387 /* QCCollectionCellViewModel.swift in Sources */,
 				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,

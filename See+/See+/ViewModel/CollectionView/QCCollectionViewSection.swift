@@ -10,7 +10,7 @@ import UIKit
 
 class QCCollectionViewSection: NSObject {
     
-    lazy var items = [QCCollectionViewCellModel]()
+    lazy var items = [QCCollectionCellViewModel]()
 
     var edgeInsets: UIEdgeInsets {
         return UIEdgeInsets.zero
