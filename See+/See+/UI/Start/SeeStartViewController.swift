@@ -39,11 +39,11 @@ class SeeStartViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func liveButtonTouchUpInside(_ sender: UIButton) {
-        
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
     }
     
     @IBAction func proposeButtonTouchUpInside(_ sender: UIButton) {
-        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController()
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
     }
     
 }

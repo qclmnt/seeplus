@@ -14,8 +14,8 @@ class SeeTabBarController: UITabBarController {
     
     // MARK: - Initialization
     
-    init() {
-        self.viewModel = SeeTabBarResidentControllerViewModel()
+    init(viewModel: SeeTabBarResidentControllerViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: String(describing: SeeTabBarController.self),
                    bundle: nil)
     }
