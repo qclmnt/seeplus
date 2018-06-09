@@ -20,6 +20,8 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     @IBOutlet weak var newExperienceButton: UIButton!
     var gradientLayer: CAGradientLayer?
     
+    @IBOutlet weak var mapScrollView: UIScrollView!
+    
     // MARK: - Initialization
     
     override init() {
@@ -52,6 +54,16 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         // Bottom view
         self.gradientLayer = self.bottomView.addHorizontalGradientLayer(leftColor: UIColor.appRed(),
                                                               rightColor: UIColor.appPurple())
+        
+        // Map scroll view
+        let deviceSize = UIScreen.main.bounds.size
+        let mapContentSize = CGSize(width: deviceSize.width*1.5, height: deviceSize.height*1.1)
+        self.mapScrollView.contentSize = mapContentSize
+        let image = UIImage(named: "map")
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = CGRect(x: 0, y: 0, width: mapContentSize.width, height: mapContentSize.height)
+        self.mapScrollView.addSubview(imageView)
         
     }
     
