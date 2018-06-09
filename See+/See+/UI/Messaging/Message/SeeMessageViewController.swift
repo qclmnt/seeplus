@@ -22,10 +22,15 @@ class SeeMessageViewController: UIViewController {
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var messageToolBarBottomConstraint: NSLayoutConstraint!
     
+    lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
+    
     // MARK: - View life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.messagesCollectionViewModel.delegate = self
+        self.messagesCollectionViewModel.load()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -53,5 +58,39 @@ class SeeMessageViewController: UIViewController {
     @objc func keyboardWillHide(notification: NSNotification) {
         self.messageToolBarBottomConstraint.constant = 0
     }
+    
+    func reloadDataView() {
+        UIView.performWithoutAnimation {
+            self.messagingCollectionView.reloadData()
+        }
+    }
 
+}
+
+extension SeeMessageViewController: QCViewModelDelegate {
+    
+    func viewModelDidStartLoad() {
+        self.messagesCollectionViewModel.registerCellsAndReusableViews(on:self.messagingCollectionView)
+        
+        if self.messagingCollectionView.delegate == nil {
+            self.messagingCollectionView.delegate = self.messagesCollectionViewModel
+        }
+        
+        if self.messagingCollectionView.dataSource == nil {
+            self.messagingCollectionView.dataSource = self.messagesCollectionViewModel
+        }
+        
+        self.messagingCollectionView.reloadData()
+    }
+    
+    func viewModelDidLoad() {
+        self.messagesCollectionViewModel.registerCellsAndReusableViews(on:self.messagingCollectionView)
+        
+        UIView.animate(withDuration: 0, animations: {
+            self.reloadDataView()
+        }) { (finished) in
+        }
+        
+//        self.navigationItem.title = self.viewModel.title
+    }
 }
