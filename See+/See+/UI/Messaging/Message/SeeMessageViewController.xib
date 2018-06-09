@@ -13,7 +13,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeMessageViewController" customModule="See_" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="Q7P-wP-gYN" id="u3S-da-xdc"/>
+                <outlet property="messageTextField" destination="7Fl-IL-yZ4" id="SG2-LK-psn"/>
+                <outlet property="messageToolBar" destination="vLX-Z2-yp5" id="PoM-6p-iKv"/>
+                <outlet property="messageToolBarBottomConstraint" destination="5mB-TH-DHy" id="ZIU-r0-UgO"/>
+                <outlet property="messagingCollectionView" destination="DaT-N9-1Sj" id="DRt-zk-CkX"/>
+                <outlet property="noButton" destination="dP8-rv-bLt" id="nMu-zo-O0G"/>
+                <outlet property="profilePicImageView" destination="eUx-IQ-iog" id="He7-GY-Be6"/>
+                <outlet property="usernameLabel" destination="sUf-fx-dCp" id="Oua-sg-ajT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yesButton" destination="Rjh-y4-5Io" id="pl0-F2-Hub"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
