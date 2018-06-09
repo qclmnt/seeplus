@@ -65,6 +65,12 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         imageView.frame = CGRect(x: 0, y: 0, width: mapContentSize.width, height: mapContentSize.height)
         self.mapScrollView.addSubview(imageView)
         
+        // Add Experience
+        let view = UIView(frame: CGRect(x: mapContentSize.width-300, y: 200, width: 100, height: 100))
+        view.backgroundColor = .gray
+        self.mapScrollView.addSubview(view)
+        view.createTapGesture(target: self, selector: #selector(self.experienceViewTapped))
+        
     }
     
     // MARK: - Actions
@@ -74,5 +80,8 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         newExperienceViewModel.showHeadings()
     }
     
+    @objc func experienceViewTapped() {
+        QCAppEnvironment.shared().routing?.route(to: SeeExperienceRoutingEntry())
+    }
 
 }
