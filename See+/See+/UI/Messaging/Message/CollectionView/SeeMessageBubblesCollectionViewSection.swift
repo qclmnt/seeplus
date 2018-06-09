@@ -15,7 +15,12 @@ class SeeMessageBubblesCollectionViewSection: QCCollectionViewSection {
     override func setup() {
         self.items = [SeeMessageWriterBubbleCollectionViewCellViewModel(),
                       SeeMessageWriterBubbleCollectionViewCellViewModel(),
-                      SeeMessageWriterBubbleCollectionViewCellViewModel()]
+                      SeeMessageRecipientBubbleCollectionViewCellViewModel(),
+                      SeeMessageWriterBubbleCollectionViewCellViewModel(),
+                      SeeMessageRecipientBubbleCollectionViewCellViewModel(),
+                      SeeMessageRecipientBubbleCollectionViewCellViewModel(),
+                      SeeMessageWriterBubbleCollectionViewCellViewModel(),
+                      SeeMessageRecipientBubbleCollectionViewCellViewModel()]
     }
 
 }

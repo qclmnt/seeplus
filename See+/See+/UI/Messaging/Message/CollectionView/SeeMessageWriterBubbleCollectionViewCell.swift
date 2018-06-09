@@ -24,7 +24,6 @@ class SeeMessageWriterBubbleCollectionViewCell: UICollectionViewCell {
     // MARK: - Configure
     
     func configureLayout() {
-        self.messageLabel.backgroundColor = UIColor.appPinkBackground()
         self.messageLabel.layer.borderColor = UIColor.appPurple().cgColor
         self.messageLabel.layer.cornerRadius = self.messageLabel.frame.size.height / 2
         self.messageLabel.layer.masksToBounds = true

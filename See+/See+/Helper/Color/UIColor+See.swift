@@ -21,4 +21,8 @@ extension UIColor {
     class func appPurple() -> UIColor {
         return UIColor(red: 255/255, green: 51/255, blue: 204/255, alpha: 1)
     }
+    
+    class func appSalmonBackground() -> UIColor {
+        return UIColor(red: 254/255, green: 228/255, blue: 228/255, alpha: 1)
+    }
 }

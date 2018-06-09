@@ -24,6 +24,9 @@
 		39488C2820CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C2720CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift */; };
 		39488C2A20CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C2920CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift */; };
 		39488C2C20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C2B20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift */; };
+		39488C3220CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C3020CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib */; };
+		39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C3320CC063B0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift */; };
+		39488C3620CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C3520CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -104,6 +107,9 @@
 		39488C2720CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageWriterBubbleCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		39488C2920CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageBubblesCollectionViewSection.swift; sourceTree = "<group>"; };
 		39488C2B20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageBubblesCollectionViewModel.swift; sourceTree = "<group>"; };
+		39488C3020CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageRecipientBubbleCollectionViewCell.xib; sourceTree = "<group>"; };
+		39488C3320CC063B0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRecipientBubbleCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		39488C3520CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRecipientBubbleCollectionViewCell.swift; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -250,8 +256,11 @@
 			isa = PBXGroup;
 			children = (
 				39488C2320CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.swift */,
+				39488C3020CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib */,
 				39488C2420CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.xib */,
 				39488C2720CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift */,
+				39488C3320CC063B0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift */,
+				39488C3520CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift */,
 				39488C2920CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift */,
 				39488C2B20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift */,
 			);
@@ -668,6 +677,7 @@
 				39D8953220C86DEC00782F3D /* SeeProfileViewController.xib in Resources */,
 				39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */,
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
+				39488C3220CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib in Resources */,
 				39D8952820C86D6C00782F3D /* SeeNewExperienceViewController.xib in Resources */,
 				39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */,
 				39488C2620CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.xib in Resources */,
@@ -695,6 +705,7 @@
 				39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */,
 				39D6119A20CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
+				39488C3620CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift in Sources */,
 				39488C2820CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift in Sources */,
 				39D6119020CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift in Sources */,
 				39488C1D20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift in Sources */,
@@ -727,6 +738,7 @@
 				39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */,
 				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
+				39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
