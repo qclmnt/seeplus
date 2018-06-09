@@ -6,12 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeNewExperienceViewController" customModule="See_" customModuleProvider="target">
             <connections>
+                <outlet property="bottomView" destination="Js3-v3-91n" id="fa5-hh-WMO"/>
+                <outlet property="newExperienceButton" destination="aHN-nc-VJq" id="ZPX-IG-uHh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,16 +24,33 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-JC-KUQ">
-                    <rect key="frame" x="126" y="323" width="123" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Js3-v3-91n">
+                    <rect key="frame" x="0.0" y="631" width="375" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="JuB-lP-TgF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHN-nc-VJq">
+                    <rect key="frame" x="164" y="608" width="46" height="46"/>
+                    <color key="backgroundColor" red="1" green="0.84541095249999998" blue="0.52590183950000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="YO2-e6-Ltv"/>
+                        <constraint firstAttribute="width" secondItem="aHN-nc-VJq" secondAttribute="height" multiplier="1:1" id="q7v-Ed-VT0"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Js3-v3-91n" secondAttribute="trailing" id="33W-Ay-y2Q"/>
+                <constraint firstItem="aHN-nc-VJq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="LAO-7N-yJV"/>
+                <constraint firstItem="Js3-v3-91n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MCX-6F-WX9"/>
+                <constraint firstItem="aHN-nc-VJq" firstAttribute="centerY" secondItem="Js3-v3-91n" secondAttribute="top" id="R3W-Lu-2Em"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Js3-v3-91n" secondAttribute="bottom" id="cU3-gs-jqI"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

@@ -14,6 +14,12 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         return SeeNewExperienceViewControllerViewModel()
     }
     
+    // MARK: - Views
+    
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var newExperienceButton: UIButton!
+    var gradientLayer: CAGradientLayer?
+    
     // MARK: - Initialization
     
     override init() {
@@ -30,6 +36,23 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.configureLayout()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        self.gradientLayer?.frame = self.bottomView.bounds
+    }
+    
+    // MARK: - Configure
+    
+    func configureLayout() {
+        
+        // Bottom view
+        self.gradientLayer = self.bottomView.addHorizontalGradientLayer(leftColor: UIColor.appRed(),
+                                                              rightColor: UIColor.appPurple())
+        
     }
 
 }
