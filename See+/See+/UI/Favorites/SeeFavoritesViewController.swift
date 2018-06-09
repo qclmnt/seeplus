@@ -8,21 +8,10 @@
 
 import UIKit
 
-class SeeFavoritesViewController: SeeTabBarViewController {
+class SeeFavoritesViewController: SeeProfileViewController {
     
     override var viewModel: SeeTabBarViewControllerViewModel {
         return SeeFavoritesViewControllerViewModel()
-    }
-    
-    // MARK: - Initialization
-    
-    override init() {
-        super.init(nibName: String(describing: SeeFavoritesViewController.self),
-                   bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - View life cycle

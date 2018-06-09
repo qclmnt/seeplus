@@ -10,6 +10,15 @@ import UIKit
 
 class SeeProfileExperiencesSection: QCCollectionViewSection {
     
+    let shouldShowDeleteButton: Bool
+    
+    // MARK: - Initialization
+    
+    init(shouldShowDeleteButton: Bool) {
+        self.shouldShowDeleteButton = shouldShowDeleteButton
+        super.init()
+    }
+    
     // MARK: - QCCollectionViewSection
     
     override var edgeInsets: UIEdgeInsets {
@@ -30,29 +39,41 @@ class SeeProfileExperiencesSection: QCCollectionViewSection {
     
     override func setup() {
         self.items = [SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Tour Eiffel",
-                                                                      experienceLocation: "Paris"),
+                                                                      experienceLocation: "Paris",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Empire State Building",
-                                                                      experienceLocation: "New York"),
+                                                                      experienceLocation: "New York",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Golden Gate",
-                                                                      experienceLocation: "San Francisco"),
+                                                                      experienceLocation: "San Francisco",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Louvre",
-                                                                      experienceLocation: "Paris"),
+                                                                      experienceLocation: "Paris",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Picadilly Circus",
-                                                                      experienceLocation: "London"),
+                                                                      experienceLocation: "London",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Tour Eiffel",
-                                                                      experienceLocation: "Paris"),
+                                                                      experienceLocation: "Paris",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Tour Eiffel",
-                                                                      experienceLocation: "Paris"),
+                                                                      experienceLocation: "Paris",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Empire State Building",
-                                                                      experienceLocation: "New York"),
+                                                                      experienceLocation: "New York",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Golden Gate",
-                                                                      experienceLocation: "San Francisco"),
+                                                                      experienceLocation: "San Francisco",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Louvre",
-                                                                      experienceLocation: "Paris"),
+                                                                      experienceLocation: "Paris",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Picadilly Circus",
-                                                                      experienceLocation: "London"),
+                                                                      experienceLocation: "London",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
                       SeeProfileExperienceCollectionViewCellViewModel(experienceName: "Tour Eiffel",
-                                                                      experienceLocation: "Paris")]
+                                                                      experienceLocation: "Paris",
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton)]
     }
 
 }

@@ -8,10 +8,22 @@
 
 import UIKit
 
-class SeeFavoritesViewControllerViewModel: SeeTabBarViewControllerViewModel {
+class SeeFavoritesViewControllerViewModel: SeeProfileViewControllerViewModel {
+    
+    // MARK: - SeeTabBarViewControllerViewModel
     
     override var title: String {
         return "Favorites"
+    }
+    
+    // MARK: - SeeProfileViewControllerViewModel
+    
+    override var pageTitle: String {
+        return "My crushes"
+    }
+    
+    override var shouldShowLoggedOut: Bool {
+        return false
     }
 
 }

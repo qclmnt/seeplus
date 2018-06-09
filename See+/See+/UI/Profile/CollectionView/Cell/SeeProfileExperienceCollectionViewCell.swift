@@ -15,6 +15,7 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var experienceImageView: UIImageView!
     @IBOutlet weak var experienceNameLabel: UILabel!
     @IBOutlet weak var experienceLocationLabel: UILabel!
+    @IBOutlet weak var deleteButton: UIButton!
     
     // MARK: - View life cycle
 

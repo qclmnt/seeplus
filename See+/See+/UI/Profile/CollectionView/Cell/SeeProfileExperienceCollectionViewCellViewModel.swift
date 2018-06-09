@@ -12,13 +12,17 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
     
     let experienceName: String
     let experienceLocation: String
+    let shouldShowDeleteButton: Bool
     
     // MARK: - Initialization
     
     init(experienceName: String,
-         experienceLocation: String) {
+         experienceLocation: String,
+         shouldShowDeleteButton: Bool) {
+        self.shouldShowDeleteButton = shouldShowDeleteButton
         self.experienceName = experienceName
         self.experienceLocation = experienceLocation
+        super.init()
     }
     
     // MARK: - QCCollectionCellViewModel
@@ -36,6 +40,7 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
         
         experienceCell.experienceNameLabel.text = self.experienceName
         experienceCell.experienceLocationLabel.text = self.experienceLocation
+        experienceCell.deleteButton.isHidden = !self.shouldShowDeleteButton
     }
 
 }

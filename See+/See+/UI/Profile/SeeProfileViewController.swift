@@ -14,7 +14,11 @@ class SeeProfileViewController: SeeTabBarViewController {
         return SeeProfileViewControllerViewModel()
     }
     
-    lazy var experiencesViewModel = SeeProfileExperiencesCollectionViewModel()
+    var profileViewModel: SeeProfileViewControllerViewModel? {
+        return self.viewModel as? SeeProfileViewControllerViewModel
+    }
+    
+    lazy var experiencesViewModel = SeeProfileExperiencesCollectionViewModel(shouldShowDeleteButton: self.profileViewModel?.shouldShowDeleteButtonOnExperience ?? false)
     
     // MARK: - Views
     
@@ -39,6 +43,8 @@ class SeeProfileViewController: SeeTabBarViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.configureLayout()
+        
         self.experiencesViewModel.delegate = self
         self.experiencesViewModel.load()
     }
@@ -47,8 +53,13 @@ class SeeProfileViewController: SeeTabBarViewController {
     
     func configureLayout() {
         
+        guard let profileViewModel = self.profileViewModel else { return }
+        
         // Username
-        self.usernameLabel.text = "My profile"
+        self.usernameLabel.text = profileViewModel.pageTitle
+        
+        // Logged out
+        self.plusImageView.isHidden = !profileViewModel.shouldShowLoggedOut
     }
     
     func reloadDataView() {

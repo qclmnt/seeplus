@@ -10,6 +10,17 @@ import UIKit
 
 class SeeProfileExperiencesCollectionViewModel: QCCollectionViewModel {
     
+    let shouldShowDeleteButton: Bool
+    
+    // MARK: - Initialization
+    
+    init(shouldShowDeleteButton: Bool) {
+        self.shouldShowDeleteButton = shouldShowDeleteButton
+        super.init()
+    }
+    
+    // MARK: - QCCollectionViewModel
+    
     override func load() {
         self.delegate?.viewModelDidStartLoad()
         self.loadSection()
@@ -17,7 +28,7 @@ class SeeProfileExperiencesCollectionViewModel: QCCollectionViewModel {
     }
     
     func loadSection() {
-        self.sections = [SeeProfileExperiencesSection()]
+        self.sections = [SeeProfileExperiencesSection(shouldShowDeleteButton: self.shouldShowDeleteButton)]
     }
 
 }
