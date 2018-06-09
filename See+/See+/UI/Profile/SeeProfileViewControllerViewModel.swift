@@ -29,5 +29,11 @@ class SeeProfileViewControllerViewModel: SeeTabBarViewControllerViewModel {
     var shouldShowDeleteButtonOnExperience: Bool {
         return !self.shouldShowLoggedOut
     }
+    
+    // MARK: - Action
+    
+    func logOut() {
+        QCAppEnvironment.shared().routing?.route(to: SeeDeleteExperienceRoutingEntry(viewModel: SeeLogOutViewControllerViewModel()))
+    }
 
 }

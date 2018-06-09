@@ -41,6 +41,13 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
         experienceCell.experienceNameLabel.text = self.experienceName
         experienceCell.experienceLocationLabel.text = self.experienceLocation
         experienceCell.deleteButton.isHidden = !self.shouldShowDeleteButton
+        experienceCell.viewModel = self
+    }
+    
+    // MARK: Delete action
+    
+    func deleteExperience() {
+        QCAppEnvironment.shared().routing?.route(to: SeeDeleteExperienceRoutingEntry(viewModel: SeeDeleteExperienceViewControllerViewModel()))
     }
 
 }

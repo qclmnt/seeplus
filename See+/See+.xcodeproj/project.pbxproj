@@ -35,6 +35,14 @@
 		39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0320C6DC1500235B48 /* SeeStartViewController.swift */; };
 		39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944E0420C6DC1500235B48 /* SeeStartViewController.xib */; };
 		39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */; };
+		39D6118920CBC7F300237DCA /* SeeDeleteExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */; };
+		39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */; };
+		39D6118E20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */; };
+		39D6119020CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118F20CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift */; };
+		39D6119220CBCC2E00237DCA /* UIView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6119120CBCC2E00237DCA /* UIView+Gesture.swift */; };
+		39D6119520CBCD3600237DCA /* SeeDismissRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6119420CBCD3600237DCA /* SeeDismissRoutingEntry.swift */; };
+		39D6119720CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6119620CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift */; };
+		39D6119A20CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6119920CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift */; };
 		39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */; };
 		39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */; };
 		39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */; };
@@ -99,6 +107,14 @@
 		39944E0320C6DC1500235B48 /* SeeStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartViewController.swift; sourceTree = "<group>"; };
 		39944E0420C6DC1500235B48 /* SeeStartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeStartViewController.xib; sourceTree = "<group>"; };
 		39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartRoutingEntry.swift; sourceTree = "<group>"; };
+		39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceViewController.swift; sourceTree = "<group>"; };
+		39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeDeleteExperienceViewController.xib; sourceTree = "<group>"; };
+		39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceRoutingEntry.swift; sourceTree = "<group>"; };
+		39D6118F20CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperiencePresentationController.swift; sourceTree = "<group>"; };
+		39D6119120CBCC2E00237DCA /* UIView+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gesture.swift"; sourceTree = "<group>"; };
+		39D6119420CBCD3600237DCA /* SeeDismissRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDismissRoutingEntry.swift; sourceTree = "<group>"; };
+		39D6119620CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceViewControllerViewModel.swift; sourceTree = "<group>"; };
+		39D6119920CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeLogOutViewControllerViewModel.swift; sourceTree = "<group>"; };
 		39D8951C20C86A1C00782F3D /* SeeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarController.swift; sourceTree = "<group>"; };
 		39D8951F20C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarResidentControllerViewModel.swift; sourceTree = "<group>"; };
 		39D8952120C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTabBarTravellerControllerViewModel.swift; sourceTree = "<group>"; };
@@ -245,6 +261,8 @@
 		39944DE520C6CB2400235B48 /* RoutingEntry */ = {
 			isa = PBXGroup;
 			children = (
+				39D6119320CBCD1C00237DCA /* Dismiss */,
+				39D6118B20CBC86100237DCA /* Experience */,
 				39944E0720C6DD9600235B48 /* Start */,
 				39944E0020C6DBD000235B48 /* Welcome */,
 				39944DF720C6D87800235B48 /* Profile Pic */,
@@ -292,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				39944DF420C6D7E700235B48 /* UIView+See.swift */,
+				39D6119120CBCC2E00237DCA /* UIView+Gesture.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +357,49 @@
 			path = Start;
 			sourceTree = "<group>";
 		};
+		39D6118620CBC7BF00237DCA /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */,
+				39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */,
+				39D6118F20CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift */,
+				39D6119620CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift */,
+			);
+			path = Delete;
+			sourceTree = "<group>";
+		};
+		39D6118B20CBC86100237DCA /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				39D6118C20CBC86700237DCA /* Delete */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		39D6118C20CBC86700237DCA /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */,
+			);
+			path = Delete;
+			sourceTree = "<group>";
+		};
+		39D6119320CBCD1C00237DCA /* Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				39D6119420CBCD3600237DCA /* SeeDismissRoutingEntry.swift */,
+			);
+			path = Dismiss;
+			sourceTree = "<group>";
+		};
+		39D6119820CBD30B00237DCA /* Log out */ = {
+			isa = PBXGroup;
+			children = (
+				39D6119920CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift */,
+			);
+			path = "Log out";
+			sourceTree = "<group>";
+		};
 		39D8951B20C869D000782F3D /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +422,7 @@
 		39D8952320C86D4A00782F3D /* Experience */ = {
 			isa = PBXGroup;
 			children = (
+				39D6118620CBC7BF00237DCA /* Delete */,
 				39D8952420C86D5300782F3D /* New */,
 			);
 			path = Experience;
@@ -390,6 +453,7 @@
 		39D8952E20C86DDE00782F3D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				39D6119820CBD30B00237DCA /* Log out */,
 				39EA127E20C9D0F600BB6387 /* CollectionView */,
 				39D8952F20C86DEC00782F3D /* SeeProfileViewController.swift */,
 				39EA128920C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift */,
@@ -556,6 +620,7 @@
 				39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */,
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
 				39D8952820C86D6C00782F3D /* SeeNewExperienceViewController.xib in Resources */,
+				39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
 				39D8954C20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
@@ -577,11 +642,15 @@
 				39EA127820C9CA5800BB6387 /* SeeMessagingListCollectionViewModel.swift in Sources */,
 				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
+				39D6119A20CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
+				39D6119020CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift in Sources */,
 				39D8952720C86D6C00782F3D /* SeeNewExperienceViewController.swift in Sources */,
+				39D6118920CBC7F300237DCA /* SeeDeleteExperienceViewController.swift in Sources */,
 				39D8953120C86DEC00782F3D /* SeeProfileViewController.swift in Sources */,
 				39944DED20C6D1B200235B48 /* UIColor+See.swift in Sources */,
 				39EA128820C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift in Sources */,
+				39D6119520CBCD3600237DCA /* SeeDismissRoutingEntry.swift in Sources */,
 				39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */,
 				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
@@ -613,9 +682,12 @@
 				39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */,
 				3906287420C6BCED00187E21 /* QCRouting.swift in Sources */,
 				39D8953E20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift in Sources */,
+				39D6119220CBCC2E00237DCA /* UIView+Gesture.swift in Sources */,
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
 				39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
+				39D6119720CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift in Sources */,
+				39D6118E20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift in Sources */,
 				39EA127620C9C95200BB6387 /* QCViewModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

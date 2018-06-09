@@ -10,6 +10,8 @@ import UIKit
 
 class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     
+    var viewModel: SeeProfileExperienceCollectionViewCellViewModel?
+    
     // MARK: - Views
     
     @IBOutlet weak var experienceImageView: UIImageView!
@@ -23,5 +25,10 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     
     }
+    
+    // MARK: - Action
 
+    @IBAction func deleteButtonTouchUpInside(_ sender: UIButton) {
+        self.viewModel?.deleteExperience()
+    }
 }

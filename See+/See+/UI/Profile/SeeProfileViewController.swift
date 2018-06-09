@@ -24,7 +24,7 @@ class SeeProfileViewController: SeeTabBarViewController {
     
     @IBOutlet weak var profilPicImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var plusImageView: UIImageView!
+    @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var experiencesCollectionView: UICollectionView!
     
     // MARK: - Initialization
@@ -59,13 +59,20 @@ class SeeProfileViewController: SeeTabBarViewController {
         self.usernameLabel.text = profileViewModel.pageTitle
         
         // Logged out
-        self.plusImageView.isHidden = !profileViewModel.shouldShowLoggedOut
+        self.moreButton.isHidden = !profileViewModel.shouldShowLoggedOut
     }
     
     func reloadDataView() {
         UIView.performWithoutAnimation {
             self.experiencesCollectionView.reloadData()
         }
+    }
+    
+    // MARK: - Actions
+
+    @IBAction func moreButtonTouchUpInside(_ sender: UIButton) {
+        guard let profileViewModel = self.viewModel as? SeeProfileViewControllerViewModel else { return }
+        profileViewModel.logOut()
     }
 
 }
