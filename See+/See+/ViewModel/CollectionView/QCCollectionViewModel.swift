@@ -14,6 +14,14 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
     lazy var flowLayout = UICollectionViewFlowLayout()
     lazy var sections = [QCCollectionViewSection]()
     
+    // MARK: - QCViewModel
+    
+    override func load() {
+        self.delegate?.viewModelDidStartLoad()
+        self.loadSections()
+        self.delegate?.viewModelDidLoad()
+    }
+    
     // MARK: - UICollectionViewDataSource
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -137,6 +145,12 @@ class QCCollectionViewModel: QCViewControllerViewModel, UICollectionViewDataSour
                 }
             }
         }
+    }
+    
+    // MARK: - Sections
+    
+    func loadSections() {
+        // Override in subclasses
     }
     
 }

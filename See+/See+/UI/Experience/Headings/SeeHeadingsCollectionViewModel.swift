@@ -1,5 +1,5 @@
 //
-//  SeeMessageBubblesCollectionViewModel.swift
+//  SeeHeadingsCollectionViewModel.swift
 //  See+
 //
 //  Created by Quentin CLEMENT on 09/06/2018.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SeeMessageBubblesCollectionViewModel: QCCollectionViewModel {
+class SeeHeadingsCollectionViewModel: QCCollectionViewModel {
     
     // MARK: - QCCollectionViewModel
     
     override func loadSections() {
-        self.sections = [SeeMessageBubblesCollectionViewSection()]
+        self.sections = [SeeHeadingsCollectionViewSection()]
     }
 
 }

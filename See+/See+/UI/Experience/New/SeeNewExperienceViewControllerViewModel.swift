@@ -13,5 +13,11 @@ class SeeNewExperienceViewControllerViewModel: SeeTabBarViewControllerViewModel 
     override var title: String {
         return "Experience"
     }
+    
+    // MARK: - Headings
+    
+    func showHeadings() {
+        QCAppEnvironment.shared().routing?.route(to: SeeHeadingsRoutingEntry())
+    }
 
 }

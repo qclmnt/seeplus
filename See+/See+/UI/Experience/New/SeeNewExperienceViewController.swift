@@ -54,5 +54,13 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
                                                               rightColor: UIColor.appPurple())
         
     }
+    
+    // MARK: - Actions
+    
+    @IBAction func newButtonTouchUpInside(_ sender: UIButton) {
+        guard let newExperienceViewModel = self.viewModel as? SeeNewExperienceViewControllerViewModel else {return}
+        newExperienceViewModel.showHeadings()
+    }
+    
 
 }

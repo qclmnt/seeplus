@@ -39,6 +39,9 @@
                         <constraint firstAttribute="width" secondItem="aHN-nc-VJq" secondAttribute="height" multiplier="1:1" id="q7v-Ed-VT0"/>
                     </constraints>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="newButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="lR9-9z-Wab"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

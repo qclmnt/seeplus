@@ -21,13 +21,7 @@ class SeeProfileExperiencesCollectionViewModel: QCCollectionViewModel {
     
     // MARK: - QCCollectionViewModel
     
-    override func load() {
-        self.delegate?.viewModelDidStartLoad()
-        self.loadSection()
-        self.delegate?.viewModelDidLoad()
-    }
-    
-    func loadSection() {
+    override func loadSections() {
         self.sections = [SeeProfileExperiencesSection(shouldShowDeleteButton: self.shouldShowDeleteButton)]
     }
 

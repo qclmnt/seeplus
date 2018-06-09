@@ -12,13 +12,7 @@ class SeeMessagingListCollectionViewModel: QCCollectionViewModel {
     
     // MARK: - QCCollectionViewModel
     
-    override func load() {
-        self.delegate?.viewModelDidStartLoad()
-        self.loadSections()
-        self.delegate?.viewModelDidLoad()
-    }
-    
-    func loadSections() {
+    override func loadSections() {
         self.sections = [SeeMessagingCollectionViewSection()]
     }
 
