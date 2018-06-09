@@ -29,7 +29,7 @@ class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
     }
     
     override var routingEntry: QCRoutingEntry {
-        return QCRoutingEntry()
+        return SeeMessageRoutingEntry()
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
