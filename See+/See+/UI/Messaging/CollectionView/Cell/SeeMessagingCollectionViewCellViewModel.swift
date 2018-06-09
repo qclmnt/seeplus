@@ -41,6 +41,14 @@ class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
         
         messagingCell.usernameLabel.text = self.username
         messagingCell.messageLabel.text = self.message
+        messagingCell.viewModel = self
+    }
+    
+    // MARK: - Delete
+    
+    func delete() {
+        let deleteMessageRoutingEntry = SeeDeleteExperienceRoutingEntry(viewModel: SeeDeleteMessageViewControllerViewModel())
+        QCAppEnvironment.shared().routing?.route(to: deleteMessageRoutingEntry)
     }
 
 }

@@ -15,6 +15,9 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var profilePicImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var deleteButton: UIButton!
+    
+    var viewModel: SeeMessagingCollectionViewCellViewModel?
     
     // MARK: - View life cycle
 
@@ -24,5 +27,10 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
         self.usernameLabel.text = "Emmanuel Macron"
         self.messageLabel.text = "Paris c'est la plus belle ville du monde !"
     }
+    
+    // MARK: - Action
 
+    @IBAction func deleteButtonTouchUpInside(_ sender: UIButton) {
+        self.viewModel?.delete()
+    }
 }

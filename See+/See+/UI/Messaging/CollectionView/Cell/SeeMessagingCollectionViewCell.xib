@@ -29,7 +29,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Uc-fql">
-                        <rect key="frame" x="75" y="8" width="346" height="21"/>
+                        <rect key="frame" x="75" y="8" width="290" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="dpQ-Bl-fGp"/>
                         </constraints>
@@ -38,7 +38,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-r8-NHw">
-                        <rect key="frame" x="75" y="41" width="346" height="21"/>
+                        <rect key="frame" x="75" y="41" width="290" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="OaK-wk-17m"/>
                         </constraints>
@@ -46,14 +46,27 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-67-LeW">
+                        <rect key="frame" x="375" y="20" width="46" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.20784313730000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="F3f-kD-Qd0"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="deleteButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Dpt-sx-w0Y"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="mRl-67-LeW" firstAttribute="leading" secondItem="rNg-Uc-fql" secondAttribute="trailing" constant="10" id="3fl-od-KYG"/>
+                <constraint firstItem="mRl-67-LeW" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="Bgp-Xf-cOV"/>
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="width" secondItem="rNg-Uc-fql" secondAttribute="width" id="En6-PJ-TwD"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="mRl-67-LeW" secondAttribute="trailing" constant="20" id="Gbg-wr-SwM"/>
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="leading" secondItem="rNg-Uc-fql" secondAttribute="leading" id="Wod-wb-Tiy"/>
                 <constraint firstItem="UMd-LR-2ar" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="9" id="iA2-ej-gtE"/>
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="bottom" secondItem="UMd-LR-2ar" secondAttribute="bottom" id="iak-iC-2nw"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="rNg-Uc-fql" secondAttribute="trailing" constant="20" id="m7u-jf-pWf"/>
                 <constraint firstItem="UMd-LR-2ar" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="nUL-Vl-SFH"/>
                 <constraint firstItem="rNg-Uc-fql" firstAttribute="top" secondItem="UMd-LR-2ar" secondAttribute="top" id="wGv-Ai-tMF"/>
                 <constraint firstItem="rNg-Uc-fql" firstAttribute="leading" secondItem="UMd-LR-2ar" secondAttribute="trailing" constant="12" id="yxP-9l-KWW"/>
@@ -61,6 +74,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="441" height="70"/>
             <connections>
+                <outlet property="deleteButton" destination="mRl-67-LeW" id="ulc-B6-pcg"/>
                 <outlet property="messageLabel" destination="aaR-r8-NHw" id="CG8-FO-muZ"/>
                 <outlet property="profilePicImageView" destination="UMd-LR-2ar" id="KDP-ki-gaY"/>
                 <outlet property="usernameLabel" destination="rNg-Uc-fql" id="s35-82-XnS"/>

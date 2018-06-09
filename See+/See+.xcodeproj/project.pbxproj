@@ -27,6 +27,7 @@
 		39488C3220CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C3020CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib */; };
 		39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C3320CC063B0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift */; };
 		39488C3620CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C3520CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift */; };
+		39488C3920CC0A480069AC8A /* SeeDeleteMessageViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C3820CC0A480069AC8A /* SeeDeleteMessageViewControllerViewModel.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -110,6 +111,7 @@
 		39488C3020CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageRecipientBubbleCollectionViewCell.xib; sourceTree = "<group>"; };
 		39488C3320CC063B0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRecipientBubbleCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		39488C3520CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRecipientBubbleCollectionViewCell.swift; sourceTree = "<group>"; };
+		39488C3820CC0A480069AC8A /* SeeDeleteMessageViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteMessageViewControllerViewModel.swift; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -265,6 +267,14 @@
 				39488C2B20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		39488C3720CC0A350069AC8A /* Delete */ = {
+			isa = PBXGroup;
+			children = (
+				39488C3820CC0A480069AC8A /* SeeDeleteMessageViewControllerViewModel.swift */,
+			);
+			path = Delete;
 			sourceTree = "<group>";
 		};
 		39944DD520C6C4A500235B48 /* UI */ = {
@@ -550,6 +560,7 @@
 		39D8954720C87A7500782F3D /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				39488C3720CC0A350069AC8A /* Delete */,
 				39EA127920C9CB7E00BB6387 /* Section */,
 				39D8954820C87A8100782F3D /* Cell */,
 			);
@@ -754,6 +765,7 @@
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
 				39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
+				39488C3920CC0A480069AC8A /* SeeDeleteMessageViewControllerViewModel.swift in Sources */,
 				39D6119720CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift in Sources */,
 				39D6118E20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift in Sources */,
 				39EA127620C9C95200BB6387 /* QCViewModelDelegate.swift in Sources */,
