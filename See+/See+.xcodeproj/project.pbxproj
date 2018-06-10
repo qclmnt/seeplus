@@ -44,6 +44,8 @@
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
 		39668A6220CD6DEC0036351F /* UIButton+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A6120CD6DEC0036351F /* UIButton+See.swift */; };
 		39668A6520CD7F7C0036351F /* SeePopRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A6420CD7F7C0036351F /* SeePopRoutingEntry.swift */; };
+		39668A6920CD842F0036351F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39668A6720CD842E0036351F /* Fabric.framework */; };
+		39668A6A20CD842F0036351F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39668A6820CD842F0036351F /* Crashlytics.framework */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -144,6 +146,8 @@
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		39668A6120CD6DEC0036351F /* UIButton+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+See.swift"; sourceTree = "<group>"; };
 		39668A6420CD7F7C0036351F /* SeePopRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeePopRoutingEntry.swift; sourceTree = "<group>"; };
+		39668A6720CD842E0036351F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		39668A6820CD842F0036351F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39668A6A20CD842F0036351F /* Crashlytics.framework in Frameworks */,
+				39668A6920CD842F0036351F /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +240,8 @@
 		3906285A20C6BA3400187E21 /* See+ */ = {
 			isa = PBXGroup;
 			children = (
+				39668A6820CD842F0036351F /* Crashlytics.framework */,
+				39668A6720CD842E0036351F /* Fabric.framework */,
 				39944DEB20C6D19C00235B48 /* Helper */,
 				39944DE020C6C51400235B48 /* ViewModel */,
 				39944DD520C6C4A500235B48 /* UI */,
@@ -752,6 +760,7 @@
 				3906285420C6BA3400187E21 /* Sources */,
 				3906285520C6BA3400187E21 /* Frameworks */,
 				3906285620C6BA3400187E21 /* Resources */,
+				39668A6620CD83F10036351F /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -823,6 +832,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39668A6620CD83F10036351F /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e999e9ad8166b5ef122859410276edfea2b70a98 16b0c2426b0f505bea444160969ec42bce9d8a474666d981501cbeaefae795dd";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3906285420C6BA3400187E21 /* Sources */ = {
@@ -1042,6 +1068,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69992N4T75;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "See+/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1061,6 +1091,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69992N4T75;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "See+/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
