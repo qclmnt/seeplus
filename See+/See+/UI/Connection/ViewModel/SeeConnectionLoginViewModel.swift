@@ -31,6 +31,6 @@ class SeeConnectionLoginViewModel: SeeConnectionSignUpViewModel {
     }
     
     override func switchConnectionMode() {
-        AppDelegate.shared()?.window??.rootViewController = UINavigationController(rootViewController: SeeSignupRoutinEntry().viewController ?? UIViewController())
+        AppDelegate.shared()?.window??.rootViewController = SeeNavigationController(rootViewController: SeeSignupRoutinEntry().viewController ?? UIViewController())
     }
 }

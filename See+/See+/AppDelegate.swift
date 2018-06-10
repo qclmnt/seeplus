@@ -25,11 +25,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.frame = UIScreen.main.bounds
         
         let signupRoutingEntry = SeeSignupRoutinEntry()
-        let navigationController = UINavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController())
+        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController())
         self.window?.rootViewController = navigationController
         
         // Configure App Environment
         QCAppEnvironment.shared().configureAppEnvironment()
+        
+        // Configure global layout
+        UINavigationBar.appearance().isTranslucent = false
         
         return true
     }

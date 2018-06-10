@@ -55,6 +55,28 @@ class SeeConnectionViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         self.gradientLayer?.frame = self.view.bounds
+        
+        for textField in [self.usernameTextField,
+                          self.emailTextField,
+                          self.passwordTextField,
+                          self.confirmPasswordTextField] {
+                            
+                            guard let field = textField,
+                                let sublayers = textField?.layer.sublayers else {
+                                continue
+                            }
+                            
+                            for layer in sublayers {
+                                layer.frame = CGRect(x: layer.frame.origin.x,
+                                                     y: layer.frame.origin.y,
+                                                     width: field.frame.width,
+                                                     height: layer.frame.size.height)
+                            }
+            
+        }
+        
+        self.switchButton.layer.cornerRadius = self.switchButton.frame.size.height/2
+        self.enterButton.layer.cornerRadius = self.enterButton.frame.size.height/2
     }
     
     // MARK: - Configure
@@ -79,7 +101,17 @@ class SeeConnectionViewController: UIViewController {
         
         // Buttons
         self.enterButton.setTitle("Enter", for: .normal)
+        self.enterButton.layer.masksToBounds = true
         self.switchButton.setTitle(self.viewModel.switchButtonTitle, for: .normal)
+        self.switchButton.layer.borderWidth = 1
+        self.switchButton.layer.borderColor = UIColor.white.cgColor
+        self.switchButton.layer.masksToBounds = true
+        
+        // Line on textfields
+        self.usernameTextField.addBottomBorder(color: .white, borderWidth: 1)
+        self.emailTextField.addBottomBorder(color: .white, borderWidth: 1)
+        self.passwordTextField.addBottomBorder(color: .white, borderWidth: 1)
+        self.confirmPasswordTextField.addBottomBorder(color: .white, borderWidth: 1)
     }
     
     // MARK: Actions

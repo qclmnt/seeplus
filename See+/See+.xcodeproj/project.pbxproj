@@ -39,6 +39,8 @@
 		39488C5020CC2CBC0069AC8A /* SeeExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C4E20CC2CBC0069AC8A /* SeeExperienceViewController.swift */; };
 		39488C5120CC2CBC0069AC8A /* SeeExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C4F20CC2CBC0069AC8A /* SeeExperienceViewController.xib */; };
 		39488C5520CC64040069AC8A /* SeeExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */; };
+		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
+		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -134,6 +136,8 @@
 		39488C4E20CC2CBC0069AC8A /* SeeExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceViewController.swift; sourceTree = "<group>"; };
 		39488C4F20CC2CBC0069AC8A /* SeeExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeExperienceViewController.xib; sourceTree = "<group>"; };
 		39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceRoutingEntry.swift; sourceTree = "<group>"; };
+		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
+		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -353,9 +357,18 @@
 			path = Experience;
 			sourceTree = "<group>";
 		};
+		39668A5820CD5C750036351F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				39668A5920CD5C920036351F /* SeeNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				39668A5820CD5C750036351F /* Navigation */,
 				39D8953320C86E0600782F3D /* Favorites */,
 				39D8952E20C86DDE00782F3D /* Profile */,
 				39D8952920C86DAB00782F3D /* Messaging */,
@@ -454,6 +467,7 @@
 			children = (
 				39944DF420C6D7E700235B48 /* UIView+See.swift */,
 				39D6119120CBCC2E00237DCA /* UIView+Gesture.swift */,
+				39668A5B20CD64280036351F /* UIView+Border.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -837,8 +851,10 @@
 				39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */,
+				39668A5C20CD64280036351F /* UIView+Border.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
 				39EA127D20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift in Sources */,
+				39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */,
 				39488C2520CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.swift in Sources */,
 				39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */,
 				39488C5020CC2CBC0069AC8A /* SeeExperienceViewController.swift in Sources */,

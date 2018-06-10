@@ -22,7 +22,7 @@ class SeeLogOutViewControllerViewModel: SeeDeleteExperienceViewControllerViewMod
     
     override func action() {
         let signupRoutingEntry = SeeSignupRoutinEntry()
-        let navigationController = UINavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController())
+        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController())
         AppDelegate.shared()?.window??.rootViewController = navigationController
     }
 
