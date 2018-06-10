@@ -24,6 +24,10 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     
+        self.layer.borderColor = UIColor.appPurple().cgColor
+        self.layer.borderWidth = 2
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 20
     }
     
     // MARK: - Action

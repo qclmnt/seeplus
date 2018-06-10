@@ -16,10 +16,18 @@ class SeeFavoritesViewControllerViewModel: SeeProfileViewControllerViewModel {
         return "Favorites"
     }
     
+    override var tabbarItemImage: String {
+        return "tabbar-heart"
+    }
+    
     // MARK: - SeeProfileViewControllerViewModel
     
     override var pageTitle: String {
         return "My crushes"
+    }
+    
+    override var image: String {
+        return "crushs"
     }
     
     override var shouldShowLoggedOut: Bool {

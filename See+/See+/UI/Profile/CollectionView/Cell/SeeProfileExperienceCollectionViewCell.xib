@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +34,7 @@
                             <constraint firstAttribute="height" constant="21" id="QeD-f0-AiS"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfL-uZ-Ffh">
@@ -42,16 +43,17 @@
                             <constraint firstAttribute="height" constant="21" id="Rm9-vA-zjX"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lo-Ts-n5u">
-                        <rect key="frame" x="159" y="0.0" width="46" height="30"/>
-                        <color key="backgroundColor" red="0.66666666669999997" green="0.96638764880000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lo-Ts-n5u">
+                        <rect key="frame" x="159" y="0.0" width="46" height="46"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="width" secondItem="2Lo-Ts-n5u" secondAttribute="height" multiplier="1:1" id="2Wk-Up-o8y"/>
                             <constraint firstAttribute="width" constant="46" id="ecn-td-0nZ"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" image="not-button"/>
                         <connections>
                             <action selector="deleteButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GRE-Yg-Tp6"/>
                         </connections>
@@ -81,4 +83,7 @@
             <point key="canvasLocation" x="-123.5" y="-23.5"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="not-button" width="70" height="70"/>
+    </resources>
 </document>

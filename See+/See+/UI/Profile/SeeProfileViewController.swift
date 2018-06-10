@@ -58,6 +58,9 @@ class SeeProfileViewController: SeeTabBarViewController {
         // Username
         self.usernameLabel.text = profileViewModel.pageTitle
         
+        // Image
+        self.profilPicImageView.image = UIImage(named: profileViewModel.image)
+        
         // Logged out
         self.moreButton.isHidden = !profileViewModel.shouldShowLoggedOut
     }

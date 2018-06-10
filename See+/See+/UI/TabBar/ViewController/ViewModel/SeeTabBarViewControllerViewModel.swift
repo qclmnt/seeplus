@@ -13,5 +13,9 @@ class SeeTabBarViewControllerViewModel: QCViewControllerViewModel {
     var title: String {
         return ""
     }
+    
+    var tabbarItemImage: String {
+        return ""
+    }
 
 }

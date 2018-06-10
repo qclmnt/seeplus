@@ -32,7 +32,7 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 220)
+        return CGSize(width: maxSize.width, height: 334)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {

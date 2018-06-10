@@ -14,6 +14,10 @@ class SeeNewExperienceViewControllerViewModel: SeeTabBarViewControllerViewModel 
         return "Experience"
     }
     
+    override var tabbarItemImage: String {
+        return "tabbar-map"
+    }
+    
     // MARK: - Headings
     
     func showHeadings() {

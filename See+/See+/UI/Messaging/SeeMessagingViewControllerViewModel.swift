@@ -13,5 +13,9 @@ class SeeMessagingViewControllerViewModel: SeeTabBarViewControllerViewModel {
     override var title: String {
         return "Messaging"
     }
+    
+    override var tabbarItemImage: String {
+        return "tabbar-messaging"
+    }
 
 }

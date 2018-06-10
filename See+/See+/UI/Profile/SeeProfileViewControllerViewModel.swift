@@ -16,10 +16,18 @@ class SeeProfileViewControllerViewModel: SeeTabBarViewControllerViewModel {
         return "profile"
     }
     
+    override var tabbarItemImage: String {
+        return "tabbar-profile"
+    }
+    
     // MARK: - Layout
     
     var pageTitle: String {
         return "My traveler profile"
+    }
+    
+    var image: String {
+        return "myprofile"
     }
     
     var shouldShowLoggedOut: Bool {
