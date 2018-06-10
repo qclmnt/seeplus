@@ -35,12 +35,40 @@ class SeeDeleteExperienceViewController: UIViewController {
         self.configureLayout()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        self.actionButton.layer.cornerRadius = self.actionButton.frame.height/2
+        self.cancelButton.layer.cornerRadius = self.cancelButton.frame.height/2
+        
+        if let sublayers = self.cancelButton.layer.sublayers {
+            for layer in sublayers {
+                layer.frame = CGRect(x: 0,
+                                     y: 0,
+                                     width: self.cancelButton.frame.width,
+                                     height: self.cancelButton.frame.height)
+            }
+        }
+    }
+    
     // MARK: - Configure
     
     func configureLayout() {
+        
+        self.view.layer.masksToBounds = true
+        self.view.layer.borderWidth = 2
+        self.view.layer.borderColor = UIColor.appPurple().cgColor
+        self.view.layer.cornerRadius = 30
+        
         self.titleLabel.text = self.viewModel.title
+        
         self.actionButton.setTitle(self.viewModel.actionButtonTitle, for: .normal)
+        self.actionButton.layer.masksToBounds = true
+        self.actionButton.layer.borderWidth = 2
+        self.actionButton.layer.borderColor = UIColor.appPurple().cgColor
+        
         self.cancelButton.setTitle(self.viewModel.cancelButtonTitle, for: .normal)
+        self.cancelButton.configureWithStyle1()
     }
     
     // MARK: - Actions

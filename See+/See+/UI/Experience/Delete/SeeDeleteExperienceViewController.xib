@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,29 +25,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzC-kl-hfG">
-                    <rect key="frame" x="30" y="90" width="315" height="30"/>
+                    <rect key="frame" x="47.5" y="106" width="281" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Ul8-am-iRH"/>
+                        <constraint firstAttribute="height" constant="30" id="Ul8-am-iRH">
+                            <variation key="heightClass=regular-widthClass=regular" constant="48"/>
+                        </constraint>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="actionButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="zdL-2L-QYf"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSC-MM-UuI">
-                    <rect key="frame" x="29.5" y="173" width="315" height="30"/>
+                    <rect key="frame" x="47" y="161" width="281" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="cancelButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="nAb-Oc-vnx"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-Pg-MLH">
-                    <rect key="frame" x="20" y="20" width="335" height="21"/>
+                    <rect key="frame" x="20" y="50" width="335" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="IIA-XO-Oxv"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -55,13 +62,15 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uB0-Pg-MLH" secondAttribute="trailing" constant="20" id="8A4-eb-Pkl"/>
                 <constraint firstItem="WSC-MM-UuI" firstAttribute="centerX" secondItem="EzC-kl-hfG" secondAttribute="centerX" id="DHc-xh-GgR"/>
                 <constraint firstItem="uB0-Pg-MLH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Gqn-v0-RJW"/>
-                <constraint firstItem="uB0-Pg-MLH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SZo-aK-HBe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EzC-kl-hfG" secondAttribute="trailing" constant="30" id="TMN-6s-vOz"/>
-                <constraint firstItem="EzC-kl-hfG" firstAttribute="top" secondItem="uB0-Pg-MLH" secondAttribute="bottom" constant="49" id="Vbl-ZC-MWB"/>
-                <constraint firstItem="EzC-kl-hfG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="a0d-aK-xdL"/>
-                <constraint firstItem="WSC-MM-UuI" firstAttribute="top" secondItem="EzC-kl-hfG" secondAttribute="bottom" constant="53" id="ae5-jO-Ez1"/>
+                <constraint firstItem="EzC-kl-hfG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.75" id="SHW-NZ-TaU"/>
+                <constraint firstItem="uB0-Pg-MLH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="SZo-aK-HBe">
+                    <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                </constraint>
+                <constraint firstItem="EzC-kl-hfG" firstAttribute="top" secondItem="uB0-Pg-MLH" secondAttribute="bottom" constant="35" id="Vbl-ZC-MWB"/>
+                <constraint firstItem="WSC-MM-UuI" firstAttribute="top" secondItem="EzC-kl-hfG" secondAttribute="bottom" constant="25" id="ae5-jO-Ez1"/>
                 <constraint firstItem="WSC-MM-UuI" firstAttribute="height" secondItem="EzC-kl-hfG" secondAttribute="height" id="fvJ-1K-cjm"/>
                 <constraint firstItem="WSC-MM-UuI" firstAttribute="width" secondItem="EzC-kl-hfG" secondAttribute="width" id="kHf-BU-1f2"/>
+                <constraint firstItem="EzC-kl-hfG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wvv-8f-jiz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
