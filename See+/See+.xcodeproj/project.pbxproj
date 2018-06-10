@@ -43,6 +43,7 @@
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
 		39668A6220CD6DEC0036351F /* UIButton+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A6120CD6DEC0036351F /* UIButton+See.swift */; };
+		39668A6520CD7F7C0036351F /* SeePopRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A6420CD7F7C0036351F /* SeePopRoutingEntry.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -142,6 +143,7 @@
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
 		39668A6120CD6DEC0036351F /* UIButton+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+See.swift"; sourceTree = "<group>"; };
+		39668A6420CD7F7C0036351F /* SeePopRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeePopRoutingEntry.swift; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -377,6 +379,14 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		39668A6320CD7F680036351F /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				39668A6420CD7F7C0036351F /* SeePopRoutingEntry.swift */,
+			);
+			path = Pop;
+			sourceTree = "<group>";
+		};
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +437,7 @@
 		39944DE520C6CB2400235B48 /* RoutingEntry */ = {
 			isa = PBXGroup;
 			children = (
+				39668A6320CD7F680036351F /* Pop */,
 				39488C4A20CC14DB0069AC8A /* Headings */,
 				39488C1B20CBD9540069AC8A /* Messaging */,
 				39D6119320CBCD1C00237DCA /* Dismiss */,
@@ -843,6 +854,7 @@
 				39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */,
 				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
+				39668A6520CD7F7C0036351F /* SeePopRoutingEntry.swift in Sources */,
 				39D8953620C86E1600782F3D /* SeeFavoritesViewController.swift in Sources */,
 				39D8954F20C87D8500782F3D /* QCCollectionViewModel.swift in Sources */,
 				39EA128220C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift in Sources */,

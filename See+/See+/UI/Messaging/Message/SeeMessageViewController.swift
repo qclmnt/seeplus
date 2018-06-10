@@ -64,7 +64,13 @@ class SeeMessageViewController: UIViewController {
             self.messagingCollectionView.reloadData()
         }
     }
-
+    
+    // MARK: - Actions
+    
+    @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
+        QCAppEnvironment.shared().routing?.route(to: SeePopRoutingEntry())
+    }
+    
 }
 
 extension SeeMessageViewController: QCViewModelDelegate {

@@ -20,12 +20,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="441" height="70"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-LR-2ar">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-LR-2ar">
                         <rect key="frame" x="9" y="8" width="54" height="54"/>
-                        <color key="backgroundColor" red="1" green="0.20784313730000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="UMd-LR-2ar" secondAttribute="height" multiplier="1:1" id="6Xa-2s-ujK"/>
-                            <constraint firstAttribute="width" constant="54" id="OY2-kx-G5l"/>
+                            <constraint firstAttribute="width" constant="54" id="OY2-kx-G5l">
+                                <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                            </constraint>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Uc-fql">
@@ -33,8 +35,8 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="dpQ-Bl-fGp"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-r8-NHw">
@@ -42,17 +44,20 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="OaK-wk-17m"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-67-LeW">
-                        <rect key="frame" x="375" y="20" width="46" height="30"/>
-                        <color key="backgroundColor" red="1" green="0.20784313730000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-67-LeW">
+                        <rect key="frame" x="375" y="12" width="46" height="46"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="46" id="F3f-kD-Qd0"/>
+                            <constraint firstAttribute="width" secondItem="mRl-67-LeW" secondAttribute="height" multiplier="1:1" id="CKv-cL-6lG"/>
+                            <constraint firstAttribute="width" constant="46" id="F3f-kD-Qd0">
+                                <variation key="heightClass=regular-widthClass=regular" constant="49"/>
+                            </constraint>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" image="not-button"/>
                         <connections>
                             <action selector="deleteButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Dpt-sx-w0Y"/>
                         </connections>
@@ -82,4 +87,8 @@
             <point key="canvasLocation" x="87.5" y="64"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="myprofile" width="64" height="64"/>
+        <image name="not-button" width="70" height="70"/>
+    </resources>
 </document>

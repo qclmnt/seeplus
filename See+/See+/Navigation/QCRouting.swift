@@ -69,7 +69,7 @@ class QCRouting: NSObject, QCNavigator {
                 break
                 
             case .pop:
-                fromViewController?.navigationController?.popViewController(animated: animated)
+                fromVC?.navigationController?.popViewController(animated: animated)
                 break
                 
             case .modal:

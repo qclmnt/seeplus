@@ -18,7 +18,6 @@ class SeeMessagingViewController: SeeTabBarViewController {
     
     // MARK: - Views
     
-    @IBOutlet weak var messagingImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messagingCollectionView: UICollectionView!
     

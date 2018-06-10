@@ -33,7 +33,7 @@ class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 80)
+        return CGSize(width: maxSize.width, height: 140)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
