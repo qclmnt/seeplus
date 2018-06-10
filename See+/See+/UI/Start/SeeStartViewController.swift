@@ -24,6 +24,28 @@ class SeeStartViewController: UIViewController {
         self.configureLayout()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        for button in [self.liveButton,
+                          self.proposeButton] {
+                            
+                            guard let button = button,
+                                let sublayers = button.layer.sublayers else {
+                                    continue
+                            }
+                            
+                            button.layer.cornerRadius = button.frame.height/2
+                            
+                            for layer in sublayers {
+                                layer.frame = CGRect(x: 0,
+                                                     y: 0,
+                                                     width: button.frame.width,
+                                                     height: button.frame.height)
+                            }
+        }
+    }
+    
     // MARK: - Configure
     
     func configureLayout() {
@@ -32,8 +54,12 @@ class SeeStartViewController: UIViewController {
         self.infoLabel.text = "Live or propose an experience in a big city !"
         
         // Buttons
-        self.liveButton.setTitle("Live an experience", for: .normal)
-        self.proposeButton.setTitle("Propose an experience", for: .normal)
+        self.liveButton.setTitle("to discover", for: .normal)
+        self.proposeButton.setTitle("to propose", for: .normal)
+        for button in [self.liveButton,
+                       self.proposeButton] {
+                        button?.configureWithStyle1()
+        }
     }
     
     // MARK: - Actions

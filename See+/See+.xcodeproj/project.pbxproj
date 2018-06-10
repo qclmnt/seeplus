@@ -41,6 +41,8 @@
 		39488C5520CC64040069AC8A /* SeeExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */; };
 		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
+		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
+		39668A6220CD6DEC0036351F /* UIButton+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A6120CD6DEC0036351F /* UIButton+See.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -138,6 +140,8 @@
 		39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceRoutingEntry.swift; sourceTree = "<group>"; };
 		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		39668A6120CD6DEC0036351F /* UIButton+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+See.swift"; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -365,6 +369,14 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		39668A6020CD6DDE0036351F /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				39668A6120CD6DEC0036351F /* UIButton+See.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +451,7 @@
 		39944DEB20C6D19C00235B48 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				39668A6020CD6DDE0036351F /* Button */,
 				39944DF620C6D7EE00235B48 /* View */,
 				39944DEE20C6D1B600235B48 /* Color */,
 			);
@@ -468,6 +481,7 @@
 				39944DF420C6D7E700235B48 /* UIView+See.swift */,
 				39D6119120CBCC2E00237DCA /* UIView+Gesture.swift */,
 				39668A5B20CD64280036351F /* UIView+Border.swift */,
+				39668A5E20CD6D890036351F /* UIView+Gradient.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -826,6 +840,7 @@
 				39EA128820C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift in Sources */,
 				39D6119520CBCD3600237DCA /* SeeDismissRoutingEntry.swift in Sources */,
 				39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */,
+				39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */,
 				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
 				39D8953620C86E1600782F3D /* SeeFavoritesViewController.swift in Sources */,
@@ -835,6 +850,7 @@
 				39488C2C20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift in Sources */,
 				39D8953B20C8710900782F3D /* SeeTabBarViewController.swift in Sources */,
 				39EA128A20C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift in Sources */,
+				39668A6220CD6DEC0036351F /* UIButton+See.swift in Sources */,
 				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
 				39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,

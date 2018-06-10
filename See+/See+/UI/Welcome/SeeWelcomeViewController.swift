@@ -24,6 +24,27 @@ class SeeWelcomeViewController: UIViewController {
         self.configureLayout()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        for button in [self.nextButton] {
+                        
+                        guard let button = button,
+                            let sublayers = button.layer.sublayers else {
+                                continue
+                        }
+                        
+                        button.layer.cornerRadius = button.frame.height/2
+                        
+                        for layer in sublayers {
+                            layer.frame = CGRect(x: 0,
+                                                 y: 0,
+                                                 width: button.frame.width,
+                                                 height: button.frame.height)
+                        }
+        }
+    }
+    
     // MARK: - Configure
     
     func configureLayout() {
@@ -36,6 +57,7 @@ class SeeWelcomeViewController: UIViewController {
         
         // Next Button
         self.nextButton.setTitle("let's go !", for: .normal)
+        self.nextButton.configureWithStyle1()
     }
     
     // MARK: - Actions
