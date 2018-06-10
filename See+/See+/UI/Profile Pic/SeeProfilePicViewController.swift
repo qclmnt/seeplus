@@ -32,6 +32,12 @@ class SeeProfilePicViewController: UIViewController {
         
         self.gradientLayer?.frame = self.view.bounds
         self.profilePicImageView.layer.cornerRadius = self.profilePicImageView.frame.width/2
+        
+        for button in [self.uploadPhotoButton,
+                       self.validateButton] {
+                        guard let button = button else {return}
+                        button.layer.cornerRadius = button.layer.frame.size.height/2
+        }
     }
     
     // MARK: - Configure
@@ -50,6 +56,9 @@ class SeeProfilePicViewController: UIViewController {
         // Buttons
         self.uploadPhotoButton.setTitle("Upload a photo", for: .normal)
         self.validateButton.setTitle("enter", for: .normal)
+        self.uploadPhotoButton.layer.borderWidth = 1
+        self.uploadPhotoButton.layer.borderColor = UIColor.white.cgColor
+        self.uploadPhotoButton.layer.masksToBounds = true
     }
     
     // MARK: - Actions

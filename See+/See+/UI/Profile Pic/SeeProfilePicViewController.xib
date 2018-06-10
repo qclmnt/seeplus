@@ -26,54 +26,71 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-K4-PHi">
-                    <rect key="frame" x="30" y="60" width="315" height="40"/>
+                    <rect key="frame" x="30" y="90" width="315" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gnk-TG-Sku"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-2Q-Sbs">
-                    <rect key="frame" x="60" y="384" width="255" height="30"/>
+                    <rect key="frame" x="60" y="393" width="255" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="OE4-tD-8B8">
+                            <variation key="heightClass=regular-widthClass=regular" constant="46"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="255" id="uV0-Ou-alC">
+                            <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                        </constraint>
+                    </constraints>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-I7-VZm">
-                    <rect key="frame" x="60" y="455" width="255" height="30"/>
+                    <rect key="frame" x="60" y="464" width="255" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="validateButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CS1-MX-ufJ"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
-                    <rect key="frame" x="123" y="138" width="128" height="128"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
+                    <rect key="frame" x="123" y="195" width="128" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="xjS-m3-xWB" secondAttribute="height" multiplier="1:1" id="bKm-AK-uQR"/>
-                        <constraint firstAttribute="width" constant="128" id="qGo-EN-MeA"/>
+                        <constraint firstAttribute="width" constant="128" id="qGo-EN-MeA">
+                            <variation key="heightClass=regular-widthClass=compact" constant="128"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                        </constraint>
                     </constraints>
                 </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fcP-2Q-Sbs" secondAttribute="trailing" constant="60" id="Gl4-ii-mVJ"/>
+                <constraint firstItem="ZkG-I7-VZm" firstAttribute="height" secondItem="fcP-2Q-Sbs" secondAttribute="height" id="1RE-uK-8EF"/>
+                <constraint firstItem="fcP-2Q-Sbs" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Lg0-JE-pef"/>
                 <constraint firstItem="WlU-K4-PHi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Ly0-rP-KF0"/>
-                <constraint firstItem="fcP-2Q-Sbs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="Ncd-Go-Ts8"/>
                 <constraint firstItem="xjS-m3-xWB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="U44-HD-gUw"/>
                 <constraint firstItem="ZkG-I7-VZm" firstAttribute="trailing" secondItem="fcP-2Q-Sbs" secondAttribute="trailing" id="fBh-8P-Zao"/>
-                <constraint firstItem="WlU-K4-PHi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="gSH-HU-Vvb"/>
+                <constraint firstItem="WlU-K4-PHi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="gSH-HU-Vvb">
+                    <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                </constraint>
                 <constraint firstItem="ZkG-I7-VZm" firstAttribute="top" secondItem="fcP-2Q-Sbs" secondAttribute="bottom" constant="41" id="il5-V8-TWQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WlU-K4-PHi" secondAttribute="trailing" constant="30" id="j1y-G4-Pzp"/>
                 <constraint firstItem="ZkG-I7-VZm" firstAttribute="leading" secondItem="fcP-2Q-Sbs" secondAttribute="leading" id="s95-Hm-ylf"/>
-                <constraint firstItem="fcP-2Q-Sbs" firstAttribute="top" secondItem="xjS-m3-xWB" secondAttribute="bottom" constant="118" id="sIc-Vw-McA"/>
-                <constraint firstItem="xjS-m3-xWB" firstAttribute="top" secondItem="WlU-K4-PHi" secondAttribute="bottom" constant="38" id="xr3-QU-73k"/>
+                <constraint firstItem="fcP-2Q-Sbs" firstAttribute="top" secondItem="xjS-m3-xWB" secondAttribute="bottom" constant="70" id="sIc-Vw-McA"/>
+                <constraint firstItem="xjS-m3-xWB" firstAttribute="top" secondItem="WlU-K4-PHi" secondAttribute="bottom" constant="65" id="xr3-QU-73k"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-383.5" y="13.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="profilePic-placeholder" width="174" height="175"/>
+    </resources>
 </document>

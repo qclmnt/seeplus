@@ -108,10 +108,19 @@ class SeeConnectionViewController: UIViewController {
         self.switchButton.layer.masksToBounds = true
         
         // Line on textfields
-        self.usernameTextField.addBottomBorder(color: .white, borderWidth: 1)
-        self.emailTextField.addBottomBorder(color: .white, borderWidth: 1)
-        self.passwordTextField.addBottomBorder(color: .white, borderWidth: 1)
-        self.confirmPasswordTextField.addBottomBorder(color: .white, borderWidth: 1)
+        for textField in [self.usernameTextField,
+                          self.emailTextField,
+                          self.passwordTextField,
+                          self.confirmPasswordTextField] {
+                            
+                            guard let field = textField else {
+                                    continue
+                            }
+                            
+                            field.addBottomBorder(color: .white, borderWidth: 1)
+                            field.tintColor = .white
+                            
+        }
     }
     
     // MARK: Actions
