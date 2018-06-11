@@ -19,7 +19,7 @@ class SeeConnectionLoginViewModel: SeeConnectionSignUpViewModel {
     }
     
     override var switchButtonTitle: String {
-        return "Sign up"
+        return "sign up"
     }
     
     override var topBackgroundColor: UIColor {

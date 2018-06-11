@@ -50,13 +50,13 @@ class SeeWelcomeViewController: UIViewController {
     func configureLayout() {
         
         // Title
-        self.titleLabel.text = "Welcome Bob99"
+        self.titleLabel.text = "Welcome Edgarlee!"
         
         // Info
-        self.infoLabel.text = "You're part of SEE+ community ! Enjoy !"
+        self.infoLabel.text = "You’re part\nof SEE+ community!"
         
         // Next Button
-        self.nextButton.setTitle("let's go !", for: .normal)
+        self.nextButton.setTitle("let's go!", for: .normal)
         self.nextButton.configureWithStyle1()
     }
     

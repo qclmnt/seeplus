@@ -51,7 +51,7 @@ class SeeStartViewController: UIViewController {
     func configureLayout() {
 
         // Info
-        self.infoLabel.text = "Live or propose an experience in a big city !"
+        self.infoLabel.text = "Discover or propose an experience in a big city!"
         
         // Buttons
         self.liveButton.setTitle("to discover", for: .normal)

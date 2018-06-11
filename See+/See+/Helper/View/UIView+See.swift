@@ -8,4 +8,10 @@
 
 import UIKit
 
-
+extension UIView {
+    
+    func configureWithStyle1(color: UIColor) {
+        self.layer.borderColor = color.cgColor
+        self.layer.borderWidth = 1
+    }
+}

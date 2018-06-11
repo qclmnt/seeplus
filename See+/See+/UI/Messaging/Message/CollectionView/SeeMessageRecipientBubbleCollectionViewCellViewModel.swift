@@ -16,6 +16,10 @@ class SeeMessageRecipientBubbleCollectionViewCellViewModel: SeeMessageWriterBubb
         return UIColor.appSalmonBackground()
     }
     
+    override var bubbleImageName: String {
+        return "chat_bubble_received"
+    }
+    
     // MARK: - QCCollectionCellViewModel
     
     override var reuseIdentifier: String {

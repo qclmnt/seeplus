@@ -100,7 +100,7 @@ class SeeConnectionViewController: UIViewController {
         self.confirmPasswordTextField.isHidden = !self.viewModel.shouldShowConfirmPassword
         
         // Buttons
-        self.enterButton.setTitle("Enter", for: .normal)
+        self.enterButton.setTitle("enter", for: .normal)
         self.enterButton.layer.masksToBounds = true
         self.switchButton.setTitle(self.viewModel.switchButtonTitle, for: .normal)
         self.switchButton.layer.borderWidth = 1

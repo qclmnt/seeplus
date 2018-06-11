@@ -49,12 +49,12 @@ class SeeProfilePicViewController: UIViewController {
                                                         topColor: UIColor.appRed())
         
         // Title
-        self.titleLabel.text = "Add a profile picture !"
+        self.titleLabel.text = "Add a profile picture!"
         
         // Profile pic
         
         // Buttons
-        self.uploadPhotoButton.setTitle("Upload a photo", for: .normal)
+        self.uploadPhotoButton.setTitle("upload a photo", for: .normal)
         self.validateButton.setTitle("enter", for: .normal)
         self.uploadPhotoButton.layer.borderWidth = 1
         self.uploadPhotoButton.layer.borderColor = UIColor.white.cgColor

@@ -13,6 +13,7 @@ class SeeMessageWriterBubbleCollectionViewCell: UICollectionViewCell {
     // MARK: - View
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var bubbleImageView: UIImageView!
     
     // MARK: - View life cycle
 
@@ -24,9 +25,18 @@ class SeeMessageWriterBubbleCollectionViewCell: UICollectionViewCell {
     // MARK: - Configure
     
     func configureLayout() {
-        self.messageLabel.layer.borderColor = UIColor.appPurple().cgColor
-        self.messageLabel.layer.cornerRadius = self.messageLabel.frame.size.height / 2
-        self.messageLabel.layer.masksToBounds = true
+
+    }
+    
+    // MARK: - Bubble
+    
+    func changeImage(_ name: String) {
+        guard let image = UIImage(named: name) else { return }
+        self.bubbleImageView.image = image
+            .resizableImage(withCapInsets:
+                UIEdgeInsetsMake(17, 21, 17, 21),
+                            resizingMode: .stretch)
+            .withRenderingMode(.alwaysTemplate)
     }
 
 }

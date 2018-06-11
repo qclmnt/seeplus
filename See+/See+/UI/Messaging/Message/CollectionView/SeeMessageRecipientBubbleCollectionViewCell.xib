@@ -12,15 +12,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zkq-ck-24K" customClass="SeeMessageRecipientBubbleCollectionViewCell" customModule="See_" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zkq-ck-24K" customClass="SeeMessageRecipientBubbleCollectionViewCell" customModule="See_plus" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="396" height="61"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="396" height="61"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T5f-C9-JRj">
+                        <rect key="frame" x="20" y="5" width="253" height="51"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsm-ic-dZL">
-                        <rect key="frame" x="20" y="5" width="233" height="51"/>
+                        <rect key="frame" x="40" y="5" width="233" height="51"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="233" id="d3E-NB-KPS"/>
                         </constraints>
@@ -31,13 +34,18 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Wsm-ic-dZL" firstAttribute="leading" secondItem="sHK-M4-Q7y" secondAttribute="leading" constant="20" id="0dj-Q5-4e9"/>
+                <constraint firstItem="Wsm-ic-dZL" firstAttribute="leading" secondItem="sHK-M4-Q7y" secondAttribute="leading" constant="40" id="0dj-Q5-4e9"/>
+                <constraint firstItem="T5f-C9-JRj" firstAttribute="trailing" secondItem="Wsm-ic-dZL" secondAttribute="trailing" id="Nr6-ag-Jed"/>
+                <constraint firstItem="T5f-C9-JRj" firstAttribute="top" secondItem="Wsm-ic-dZL" secondAttribute="top" id="POB-Ik-8Vp"/>
                 <constraint firstItem="Wsm-ic-dZL" firstAttribute="top" secondItem="sHK-M4-Q7y" secondAttribute="top" constant="5" id="SmW-Fj-7y6"/>
+                <constraint firstItem="T5f-C9-JRj" firstAttribute="bottom" secondItem="Wsm-ic-dZL" secondAttribute="bottom" id="XZF-an-BBi"/>
                 <constraint firstItem="sHK-M4-Q7y" firstAttribute="bottom" secondItem="Wsm-ic-dZL" secondAttribute="bottom" constant="5" id="ZIT-MU-age"/>
+                <constraint firstItem="T5f-C9-JRj" firstAttribute="leading" secondItem="Wsm-ic-dZL" secondAttribute="leading" constant="-20" id="tqX-J1-Thq"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="sHK-M4-Q7y"/>
             <size key="customSize" width="396" height="61"/>
             <connections>
+                <outlet property="bubbleImageView" destination="T5f-C9-JRj" id="rux-ER-Uax"/>
                 <outlet property="messageLabel" destination="Wsm-ic-dZL" id="JAJ-rB-GGa"/>
             </connections>
             <point key="canvasLocation" x="-73" y="-102.5"/>

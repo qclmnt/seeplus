@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB7B2D161F2CFAE710B1FE9 /* Pods_See_plus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC096C984AD4A1CD2932957 /* Pods_See_plus.framework */; };
 		3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906285B20C6BA3400187E21 /* AppDelegate.swift */; };
 		3906285E20C6BA3400187E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906285D20C6BA3400187E21 /* ViewController.swift */; };
 		3906286320C6BA3600187E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3906286220C6BA3600187E21 /* Assets.xcassets */; };
@@ -108,6 +109,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F62DEFCBA98ACB5D4EC1CDD /* Pods-See plus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-See plus.release.xcconfig"; path = "Pods/Target Support Files/Pods-See plus/Pods-See plus.release.xcconfig"; sourceTree = "<group>"; };
+		361919B79D13677008D0844E /* Pods-See plus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-See plus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-See plus/Pods-See plus.debug.xcconfig"; sourceTree = "<group>"; };
 		3906285820C6BA3400187E21 /* See plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "See plus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3906285B20C6BA3400187E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3906285D20C6BA3400187E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 		3906287320C6BCED00187E21 /* QCRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCRouting.swift; sourceTree = "<group>"; };
 		3906287520C6BD2500187E21 /* QCRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCRoutingEntry.swift; sourceTree = "<group>"; };
 		3906287720C6BF1900187E21 /* QCNavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCNavigationStyle.swift; sourceTree = "<group>"; };
+		391CAA0920CF1CCB0013AE1B /* See plus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "See plus-Bridging-Header.h"; sourceTree = "<group>"; };
 		39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageViewController.swift; sourceTree = "<group>"; };
 		39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageViewController.xib; sourceTree = "<group>"; };
 		39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRoutingEntry.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		39EA128420C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperienceCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		39EA128720C9D2FB00BB6387 /* SeeProfileExperiencesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperiencesSection.swift; sourceTree = "<group>"; };
 		39EA128920C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileExperiencesCollectionViewModel.swift; sourceTree = "<group>"; };
+		BCC096C984AD4A1CD2932957 /* Pods_See_plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_See_plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB7B2D161F2CFAE710B1FE9 /* Pods_See_plus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +232,8 @@
 			children = (
 				3906285A20C6BA3400187E21 /* See+ */,
 				3906285920C6BA3400187E21 /* Products */,
+				78278087D60B98CCD1FED04D /* Pods */,
+				B435CA1195C67E71CD6B73F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +258,7 @@
 				3906286220C6BA3600187E21 /* Assets.xcassets */,
 				3906286420C6BA3600187E21 /* LaunchScreen.storyboard */,
 				3906286720C6BA3600187E21 /* Info.plist */,
+				391CAA0920CF1CCB0013AE1B /* See plus-Bridging-Header.h */,
 			);
 			path = "See+";
 			sourceTree = "<group>";
@@ -767,6 +776,23 @@
 			path = Section;
 			sourceTree = "<group>";
 		};
+		78278087D60B98CCD1FED04D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				361919B79D13677008D0844E /* Pods-See plus.debug.xcconfig */,
+				1F62DEFCBA98ACB5D4EC1CDD /* Pods-See plus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B435CA1195C67E71CD6B73F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC096C984AD4A1CD2932957 /* Pods_See_plus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -774,6 +800,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3906286A20C6BA3600187E21 /* Build configuration list for PBXNativeTarget "See plus" */;
 			buildPhases = (
+				AFB4EDFEF376B2BD685FE186 /* [CP] Check Pods Manifest.lock */,
 				3906285420C6BA3400187E21 /* Sources */,
 				3906285520C6BA3400187E21 /* Frameworks */,
 				3906285620C6BA3400187E21 /* Resources */,
@@ -799,6 +826,7 @@
 				TargetAttributes = {
 					3906285720C6BA3400187E21 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -849,6 +877,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFB4EDFEF376B2BD685FE186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-See plus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3906285420C6BA3400187E21 /* Sources */ = {
@@ -1066,8 +1115,10 @@
 		};
 		3906286B20C6BA3600187E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 361919B79D13677008D0844E /* Pods-See plus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69992N4T75;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1082,6 +1133,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentin.seeplus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "See+/See plus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1089,8 +1142,10 @@
 		};
 		3906286C20C6BA3600187E21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F62DEFCBA98ACB5D4EC1CDD /* Pods-See plus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69992N4T75;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1105,6 +1160,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentin.seeplus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "See+/See plus-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

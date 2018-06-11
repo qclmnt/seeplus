@@ -12,6 +12,7 @@ class SeeMessageViewController: UIViewController {
     
     // MARK: - Views
     
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var profilePicImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
@@ -31,6 +32,11 @@ class SeeMessageViewController: UIViewController {
         
         self.messagesCollectionViewModel.delegate = self
         self.messagesCollectionViewModel.load()
+        
+        self.topView.configureWithStyle1(color: .appPurple())
+        self.messageToolBar.configureWithStyle1(color: .appPurple())
+        self.messageTextField.configureWithStyle1(color: .appPurple())
+        self.messageTextField.layer.masksToBounds = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,6 +50,12 @@ class SeeMessageViewController: UIViewController {
         super.viewWillDisappear(animated)
         
 //        NotificationCenter.removeObserver(self)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        self.messageTextField.layer.cornerRadius = self.messageTextField.bounds.size.height/2
     }
     
     // MARK: - Keyboard notifications

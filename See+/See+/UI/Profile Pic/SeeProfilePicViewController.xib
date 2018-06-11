@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeProfilePicViewController" customModule="See_" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeProfilePicViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="profilePicImageView" destination="xjS-m3-xWB" id="Xhw-s9-fTh"/>
                 <outlet property="titleLabel" destination="WlU-K4-PHi" id="1kd-yq-zFY"/>
@@ -44,6 +44,7 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                         </constraint>
                     </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -51,6 +52,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-I7-VZm">
                     <rect key="frame" x="60" y="464" width="255" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -58,14 +60,14 @@
                         <action selector="validateButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CS1-MX-ufJ"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
                     <rect key="frame" x="123" y="195" width="128" height="128"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="xjS-m3-xWB" secondAttribute="height" multiplier="1:1" id="bKm-AK-uQR"/>
                         <constraint firstAttribute="width" constant="128" id="qGo-EN-MeA">
                             <variation key="heightClass=regular-widthClass=compact" constant="128"/>
-                            <variation key="heightClass=regular-widthClass=regular" constant="175"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="173"/>
                         </constraint>
                     </constraints>
                 </imageView>
@@ -91,6 +93,6 @@
         </view>
     </objects>
     <resources>
-        <image name="profilePic-placeholder" width="174" height="175"/>
+        <image name="profilePic-placeholder" width="175" height="175"/>
     </resources>
 </document>

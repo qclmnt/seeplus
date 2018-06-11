@@ -14,6 +14,10 @@ class SeeMessageWriterBubbleCollectionViewCellViewModel: QCCollectionCellViewMod
         return UIColor.appPinkBackground()
     }
     
+    var bubbleImageName: String {
+        return "chat_bubble_sent"
+    }
+    
     // MARK: - QCCollectionCellViewModel
     
     override var reuseIdentifier: String {
@@ -27,7 +31,14 @@ class SeeMessageWriterBubbleCollectionViewCellViewModel: QCCollectionCellViewMod
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let messageCell = cell as? SeeMessageWriterBubbleCollectionViewCell else {return}
         
-        messageCell.messageLabel.backgroundColor = self.messageBackgroungColor
+//        messageCell.messageLabel.backgroundColor = self.messageBackgroungColor
         messageCell.messageLabel.text = "Hello guys"
+        
+        messageCell.changeImage(self.bubbleImageName)
+        if #available(iOS 11.0, *) {
+            messageCell.bubbleImageView.tintColor = self.messageBackgroungColor
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }

@@ -19,7 +19,7 @@ class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
     }
     
     var switchButtonTitle: String {
-        return "Login"
+        return "login"
     }
     
     var topBackgroundColor: UIColor {

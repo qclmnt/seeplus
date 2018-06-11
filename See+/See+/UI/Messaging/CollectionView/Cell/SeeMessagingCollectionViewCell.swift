@@ -26,6 +26,8 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
 
         self.usernameLabel.text = "Emmanuel Macron"
         self.messageLabel.text = "Paris c'est la plus belle ville du monde !"
+        
+        self.configureWithStyle1(color: .appPurple())
     }
     
     // MARK: - Action

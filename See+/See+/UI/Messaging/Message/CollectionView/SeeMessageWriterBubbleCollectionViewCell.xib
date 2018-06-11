@@ -12,15 +12,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SeeMessageWriterBubbleCollectionViewCell" customModule="See_" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SeeMessageWriterBubbleCollectionViewCell" customModule="See_plus" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="396" height="61"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="396" height="61"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPM-KZ-wgv">
+                        <rect key="frame" x="123" y="5" width="253" height="51"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUn-Sl-JXS">
                         <rect key="frame" x="143" y="5" width="233" height="51"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="233" id="1ZB-42-chV"/>
                         </constraints>
@@ -31,13 +35,18 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="iPM-KZ-wgv" firstAttribute="top" secondItem="HUn-Sl-JXS" secondAttribute="top" id="HTQ-kd-VhT"/>
                 <constraint firstItem="HUn-Sl-JXS" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="5" id="JPa-UE-uuP"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="HUn-Sl-JXS" secondAttribute="bottom" constant="5" id="cT6-tC-Zlf"/>
+                <constraint firstItem="iPM-KZ-wgv" firstAttribute="leading" secondItem="HUn-Sl-JXS" secondAttribute="leading" constant="-20" id="gRz-hL-vPp"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="HUn-Sl-JXS" secondAttribute="trailing" constant="20" id="trB-uY-K3l"/>
+                <constraint firstItem="iPM-KZ-wgv" firstAttribute="bottom" secondItem="HUn-Sl-JXS" secondAttribute="bottom" id="uHR-Wz-Vv7"/>
+                <constraint firstItem="iPM-KZ-wgv" firstAttribute="trailing" secondItem="HUn-Sl-JXS" secondAttribute="trailing" id="yaK-8e-2Ce"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="396" height="61"/>
             <connections>
+                <outlet property="bubbleImageView" destination="iPM-KZ-wgv" id="g0U-W3-Oe8"/>
                 <outlet property="messageLabel" destination="HUn-Sl-JXS" id="S4h-t4-RxD"/>
             </connections>
             <point key="canvasLocation" x="-73" y="-102.5"/>

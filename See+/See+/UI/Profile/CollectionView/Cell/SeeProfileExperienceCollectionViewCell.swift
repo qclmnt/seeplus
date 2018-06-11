@@ -18,16 +18,18 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var experienceNameLabel: UILabel!
     @IBOutlet weak var experienceLocationLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet weak var borderView: UIView!
+    
     
     // MARK: - View life cycle
 
     override func awakeFromNib() {
         super.awakeFromNib()
     
-        self.layer.borderColor = UIColor.appPurple().cgColor
-        self.layer.borderWidth = 2
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 20
+        self.borderView.layer.borderColor = UIColor.appPurple().cgColor
+        self.borderView.layer.borderWidth = 2
+        self.borderView.layer.masksToBounds = true
+        self.borderView.layer.cornerRadius = 40
     }
     
     // MARK: - Action
