@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import Fabric
-import Crashlytics
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,7 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.frame = UIScreen.main.bounds
         
         let signupRoutingEntry = SeeSignupRoutinEntry()
-        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController())
+        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
+                                                           showToolbar: true)
+        
         self.window?.rootViewController = navigationController
         
         // Configure App Environment
@@ -36,9 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Configure global layout
         UINavigationBar.appearance().isTranslucent = false
-        
-        // Fabric
-        Fabric.with([Crashlytics.self])
         
         return true
     }

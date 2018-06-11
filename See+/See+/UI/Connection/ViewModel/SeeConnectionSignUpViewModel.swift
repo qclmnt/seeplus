@@ -45,7 +45,7 @@ class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
     }
     
     func switchConnectionMode() {
-        AppDelegate.shared()?.window??.rootViewController = SeeNavigationController(rootViewController: SeeLoginRoutinEntry().viewController ?? UIViewController())
+        AppDelegate.shared()?.window??.rootViewController = SeeNavigationController(rootViewController: SeeLoginRoutinEntry().viewController ?? UIViewController(), showToolbar: true)
     }
 
 }

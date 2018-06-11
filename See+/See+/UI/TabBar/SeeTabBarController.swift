@@ -30,7 +30,7 @@ class SeeTabBarController: UITabBarController {
         super.viewDidLoad()
 
         let navigationViewControllers = self.viewModel.viewControllers.map { (viewController) -> UINavigationController in
-            return SeeNavigationController(rootViewController: viewController)
+            return SeeNavigationController(rootViewController: viewController, showToolbar: false)
         }
         self.setViewControllers(navigationViewControllers, animated: true)
         

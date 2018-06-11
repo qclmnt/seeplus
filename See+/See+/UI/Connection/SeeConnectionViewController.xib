@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeConnectionViewController" customModule="See_" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeConnectionViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="confirmPasswordLabel" destination="yW2-4E-6gc" id="dzN-05-5Sw"/>
                 <outlet property="confirmPasswordTextField" destination="SSR-9M-nis" id="AHm-MW-maf"/>
@@ -74,7 +74,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Onx-N4-xiL"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -93,7 +93,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="3Hj-wJ-zb0"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -112,7 +112,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="ONM-78-6AQ"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -131,7 +131,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="vxJ-U3-9fh"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
