@@ -10,10 +10,18 @@ import UIKit
 
 class SeeMessageBubblesCollectionViewModel: QCCollectionViewModel {
     
+    lazy var messageSection = SeeMessageBubblesCollectionViewSection()
+    
     // MARK: - QCCollectionViewModel
     
     override func loadSections() {
-        self.sections = [SeeMessageBubblesCollectionViewSection()]
+        self.sections = [self.messageSection]
+    }
+    
+    // MARK: - New message
+    
+    func addMessage(message: String) {
+        self.messageSection.items.append(SeeMessageWriterBubbleCollectionViewCellViewModel(message: message))
     }
 
 }

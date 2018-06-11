@@ -30,6 +30,8 @@ class SeeMessageWriterBubbleCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Bubble
     
+    // Bubble design from: https://github.com/robkerr/TutorialChatBubble
+    
     func changeImage(_ name: String) {
         guard let image = UIImage(named: name) else { return }
         self.bubbleImageView.image = image

@@ -37,6 +37,13 @@ class SeeMessageViewController: UIViewController {
         self.messageToolBar.configureWithStyle1(color: .appPurple())
         self.messageTextField.configureWithStyle1(color: .appPurple())
         self.messageTextField.layer.masksToBounds = true
+        self.messageTextField.rightViewMode = .always
+        let translateButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        translateButton.setImage(UIImage(named: "translate-button"), for: .normal)
+        translateButton.addTarget(self, action: #selector(self.translateButtonTouchUpInside), for: .touchUpInside)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
+        view.addSubview(translateButton)
+        self.messageTextField.rightView = view
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,6 +88,11 @@ class SeeMessageViewController: UIViewController {
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
         QCAppEnvironment.shared().routing?.route(to: SeePopRoutingEntry())
+    }
+    
+    @objc func translateButtonTouchUpInside() {
+        self.messagesCollectionViewModel.addMessage(message: self.messageTextField.text ?? "Error")
+        self.reloadDataView()
     }
     
 }

@@ -18,6 +18,15 @@ class SeeMessageWriterBubbleCollectionViewCellViewModel: QCCollectionCellViewMod
         return "chat_bubble_sent"
     }
     
+    let message: String
+    
+    // MARK: - Initialization
+    
+    init(message: String = "Hello guys") {
+        self.message = message
+        super.init()
+    }
+    
     // MARK: - QCCollectionCellViewModel
     
     override var reuseIdentifier: String {
