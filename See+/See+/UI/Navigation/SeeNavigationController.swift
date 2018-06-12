@@ -38,7 +38,7 @@ class SeeNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.configureWithStyle1(color: .appRed())
+        
     }
     
     // MARK: - Actions

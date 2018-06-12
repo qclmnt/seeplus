@@ -19,19 +19,39 @@ class SeeExperienceViewController: UIViewController {
     @IBOutlet weak var experienceLocationLabel: UILabel!
     @IBOutlet weak var markDotImageView: UIImageView!
     @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var experienceImageView: UIImageView!
+    
+    let viewModel: SeeExperienceViewControllerViewModel
+    
+    // MARK: - Initialization
+    
+    init(viewModel: SeeExperienceViewControllerViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: SeeExperienceViewController.self), bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - View life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.usernameLabel.text = self.viewModel.experience.author
+        self.experienceNameLabel.text = self.viewModel.experience.name
+        self.experienceImageView.image = self.viewModel.experience.image
+        self.experienceLocationLabel.text = self.viewModel.experience.location
+        
+        self.experienceView.layer.masksToBounds = true
+        self.experienceView.layer.cornerRadius = 40
     }
     
     // MARK: - Action
     
     @IBAction func moreButtonTouchUpInside(_ sender: UIButton) {
-        
+        QCAppEnvironment.shared().routing?.route(to: SeeExperienceDetailRoutingEntry(experience: self.viewModel.experience))
     }
     
 

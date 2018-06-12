@@ -40,6 +40,25 @@
 		39488C5020CC2CBC0069AC8A /* SeeExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C4E20CC2CBC0069AC8A /* SeeExperienceViewController.swift */; };
 		39488C5120CC2CBC0069AC8A /* SeeExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C4F20CC2CBC0069AC8A /* SeeExperienceViewController.xib */; };
 		39488C5520CC64040069AC8A /* SeeExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */; };
+		395C302820D06486003A9133 /* SeeExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C302720D06486003A9133 /* SeeExperience.swift */; };
+		395C302A20D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C302920D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift */; };
+		395C302E20D06E35003A9133 /* SeeExperienceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C302C20D06E35003A9133 /* SeeExperienceDetailViewController.swift */; };
+		395C302F20D06E35003A9133 /* SeeExperienceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C302D20D06E35003A9133 /* SeeExperienceDetailViewController.xib */; };
+		395C303120D06ED8003A9133 /* SeeExperienceDetailViewControllerCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C303020D06ED8003A9133 /* SeeExperienceDetailViewControllerCollectionViewModel.swift */; };
+		395C303520D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C303320D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.swift */; };
+		395C303620D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C303420D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.xib */; };
+		395C303820D071BF003A9133 /* SeeExperienceDetailCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C303720D071BF003A9133 /* SeeExperienceDetailCollectionViewCellModel.swift */; };
+		395C303B20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C303A20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift */; };
+		395C303D20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C303C20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift */; };
+		395C304120D07551003A9133 /* SeeTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C303F20D07551003A9133 /* SeeTextCollectionViewCell.swift */; };
+		395C304220D07551003A9133 /* SeeTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C304020D07551003A9133 /* SeeTextCollectionViewCell.xib */; };
+		395C304420D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304320D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift */; };
+		395C304720D07769003A9133 /* SeeExperienceImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304520D07769003A9133 /* SeeExperienceImageCollectionViewCell.swift */; };
+		395C304820D07769003A9133 /* SeeExperienceImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C304620D07769003A9133 /* SeeExperienceImageCollectionViewCell.xib */; };
+		395C304A20D07819003A9133 /* SeeExperienceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304920D07819003A9133 /* SeeExperienceImage.swift */; };
+		395C304D20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304B20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift */; };
+		395C304E20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */; };
+		395C305020D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */; };
 		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
@@ -146,6 +165,25 @@
 		39488C4E20CC2CBC0069AC8A /* SeeExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceViewController.swift; sourceTree = "<group>"; };
 		39488C4F20CC2CBC0069AC8A /* SeeExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeExperienceViewController.xib; sourceTree = "<group>"; };
 		39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceRoutingEntry.swift; sourceTree = "<group>"; };
+		395C302720D06486003A9133 /* SeeExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperience.swift; sourceTree = "<group>"; };
+		395C302920D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceViewControllerViewModel.swift; sourceTree = "<group>"; };
+		395C302C20D06E35003A9133 /* SeeExperienceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceDetailViewController.swift; sourceTree = "<group>"; };
+		395C302D20D06E35003A9133 /* SeeExperienceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeExperienceDetailViewController.xib; sourceTree = "<group>"; };
+		395C303020D06ED8003A9133 /* SeeExperienceDetailViewControllerCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceDetailViewControllerCollectionViewModel.swift; sourceTree = "<group>"; };
+		395C303320D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		395C303420D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeExperienceDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		395C303720D071BF003A9133 /* SeeExperienceDetailCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceDetailCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		395C303A20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceDetailCollectionViewSection.swift; sourceTree = "<group>"; };
+		395C303C20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceDetailRoutingEntry.swift; sourceTree = "<group>"; };
+		395C303F20D07551003A9133 /* SeeTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTextCollectionViewCell.swift; sourceTree = "<group>"; };
+		395C304020D07551003A9133 /* SeeTextCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeTextCollectionViewCell.xib; sourceTree = "<group>"; };
+		395C304320D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTextCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		395C304520D07769003A9133 /* SeeExperienceImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		395C304620D07769003A9133 /* SeeExperienceImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeExperienceImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		395C304920D07819003A9133 /* SeeExperienceImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceImage.swift; sourceTree = "<group>"; };
+		395C304B20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeContactExperienceAuthorCollectionViewCell.swift; sourceTree = "<group>"; };
+		395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeContactExperienceAuthorCollectionViewCell.xib; sourceTree = "<group>"; };
+		395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeContactExperienceAuthorCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
@@ -248,6 +286,7 @@
 		3906285A20C6BA3400187E21 /* See+ */ = {
 			isa = PBXGroup;
 			children = (
+				395C302620D0644C003A9133 /* Model */,
 				39944DEB20C6D19C00235B48 /* Helper */,
 				39944DE020C6C51400235B48 /* ViewModel */,
 				39944DD520C6C4A500235B48 /* UI */,
@@ -358,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				39488C4E20CC2CBC0069AC8A /* SeeExperienceViewController.swift */,
+				395C302920D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift */,
 				39488C4F20CC2CBC0069AC8A /* SeeExperienceViewController.xib */,
 			);
 			path = Experience;
@@ -366,6 +406,7 @@
 		39488C5220CC62A40069AC8A /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				395C303C20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -376,6 +417,61 @@
 				39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */,
 			);
 			path = Experience;
+			sourceTree = "<group>";
+		};
+		395C302620D0644C003A9133 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				395C302720D06486003A9133 /* SeeExperience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395C302B20D06E19003A9133 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				395C303220D07062003A9133 /* CollectionView */,
+				395C302C20D06E35003A9133 /* SeeExperienceDetailViewController.swift */,
+				395C302D20D06E35003A9133 /* SeeExperienceDetailViewController.xib */,
+				395C303020D06ED8003A9133 /* SeeExperienceDetailViewControllerCollectionViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		395C303220D07062003A9133 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				395C303E20D0752B003A9133 /* Cells */,
+				395C303920D07207003A9133 /* Section */,
+				395C303320D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.swift */,
+				395C303420D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.xib */,
+				395C303720D071BF003A9133 /* SeeExperienceDetailCollectionViewCellModel.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		395C303920D07207003A9133 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				395C303A20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		395C303E20D0752B003A9133 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				395C303F20D07551003A9133 /* SeeTextCollectionViewCell.swift */,
+				395C304020D07551003A9133 /* SeeTextCollectionViewCell.xib */,
+				395C304320D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift */,
+				395C304520D07769003A9133 /* SeeExperienceImageCollectionViewCell.swift */,
+				395C304920D07819003A9133 /* SeeExperienceImage.swift */,
+				395C304620D07769003A9133 /* SeeExperienceImageCollectionViewCell.xib */,
+				395C304B20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift */,
+				395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */,
+				395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		39668A5820CD5C750036351F /* Navigation */ = {
@@ -640,6 +736,7 @@
 		39D8952320C86D4A00782F3D /* Experience */ = {
 			isa = PBXGroup;
 			children = (
+				395C302B20D06E19003A9133 /* Detail */,
 				39488C4D20CC2C8A0069AC8A /* Experience */,
 				39488C3A20CC0E860069AC8A /* Headings */,
 				39D6118620CBC7BF00237DCA /* Delete */,
@@ -853,6 +950,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395C304820D07769003A9133 /* SeeExperienceImageCollectionViewCell.xib in Resources */,
 				39EA128320C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib in Resources */,
 				39D8953720C86E1600782F3D /* SeeFavoritesViewController.xib in Resources */,
 				3974DA5E20CF08F50098BB9E /* SeeAboutViewController.xib in Resources */,
@@ -864,6 +962,7 @@
 				39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */,
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
 				39488C3220CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib in Resources */,
+				395C304E20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib in Resources */,
 				39488C3E20CC0EA00069AC8A /* SeeHeadingsViewController.xib in Resources */,
 				39D8952820C86D6C00782F3D /* SeeNewExperienceViewController.xib in Resources */,
 				39488C4720CC12700069AC8A /* SeeRubricCollectionViewCell.xib in Resources */,
@@ -873,6 +972,9 @@
 				39D8954C20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
 				39944DFF20C6DA9100235B48 /* SeeWelcomeViewController.xib in Resources */,
+				395C302F20D06E35003A9133 /* SeeExperienceDetailViewController.xib in Resources */,
+				395C303620D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.xib in Resources */,
+				395C304220D07551003A9133 /* SeeTextCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,8 +1014,11 @@
 				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */,
+				395C304D20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift in Sources */,
 				39D6119A20CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
+				395C303B20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift in Sources */,
+				395C303520D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.swift in Sources */,
 				39488C3620CC06840069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.swift in Sources */,
 				39488C2820CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift in Sources */,
 				39D6119020CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift in Sources */,
@@ -931,6 +1036,7 @@
 				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39D8951D20C86A1C00782F3D /* SeeTabBarController.swift in Sources */,
 				39668A6520CD7F7C0036351F /* SeePopRoutingEntry.swift in Sources */,
+				395C304120D07551003A9133 /* SeeTextCollectionViewCell.swift in Sources */,
 				39D8953620C86E1600782F3D /* SeeFavoritesViewController.swift in Sources */,
 				39D8954F20C87D8500782F3D /* QCCollectionViewModel.swift in Sources */,
 				39EA128220C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.swift in Sources */,
@@ -949,6 +1055,7 @@
 				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
 				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
+				395C305020D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift in Sources */,
 				39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */,
 				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
@@ -965,21 +1072,30 @@
 				39488C4020CC112A0069AC8A /* SeeHeadingsCollectionViewModel.swift in Sources */,
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
 				39488C4C20CC14EE0069AC8A /* SeeHeadingsRoutingEntry.swift in Sources */,
+				395C304420D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift in Sources */,
 				39488C2A20CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift in Sources */,
 				39488C4220CC123B0069AC8A /* SeeHeadingsCollectionViewSection.swift in Sources */,
 				39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */,
+				395C304720D07769003A9133 /* SeeExperienceImageCollectionViewCell.swift in Sources */,
+				395C303120D06ED8003A9133 /* SeeExperienceDetailViewControllerCollectionViewModel.swift in Sources */,
 				3906287420C6BCED00187E21 /* QCRouting.swift in Sources */,
+				395C303820D071BF003A9133 /* SeeExperienceDetailCollectionViewCellModel.swift in Sources */,
 				39D8953E20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift in Sources */,
 				39D6119220CBCC2E00237DCA /* UIView+Gesture.swift in Sources */,
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
+				395C304A20D07819003A9133 /* SeeExperienceImage.swift in Sources */,
 				39488C3D20CC0EA00069AC8A /* SeeHeadingsViewController.swift in Sources */,
+				395C302A20D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift in Sources */,
 				39488C4920CC13A00069AC8A /* SeeRubricCollectionViewCellViewModel.swift in Sources */,
 				39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,
 				39488C3920CC0A480069AC8A /* SeeDeleteMessageViewControllerViewModel.swift in Sources */,
 				39D6119720CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift in Sources */,
+				395C302820D06486003A9133 /* SeeExperience.swift in Sources */,
 				3974DA5D20CF08F50098BB9E /* SeeAboutViewController.swift in Sources */,
 				39488C4620CC12700069AC8A /* SeeRubricCollectionViewCell.swift in Sources */,
+				395C303D20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift in Sources */,
+				395C302E20D06E35003A9133 /* SeeExperienceDetailViewController.swift in Sources */,
 				39D6118E20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift in Sources */,
 				39EA127620C9C95200BB6387 /* QCViewModelDelegate.swift in Sources */,
 			);

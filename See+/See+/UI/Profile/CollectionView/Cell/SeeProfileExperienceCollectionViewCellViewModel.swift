@@ -10,18 +10,15 @@ import UIKit
 
 class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel {
     
-    let experienceName: String
-    let experienceLocation: String
+    let experience: SeeExperience
     let shouldShowDeleteButton: Bool
     
     // MARK: - Initialization
     
-    init(experienceName: String,
-         experienceLocation: String,
+    init(experience: SeeExperience,
          shouldShowDeleteButton: Bool) {
         self.shouldShowDeleteButton = shouldShowDeleteButton
-        self.experienceName = experienceName
-        self.experienceLocation = experienceLocation
+        self.experience = experience
         super.init()
     }
     
@@ -38,10 +35,15 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let experienceCell = cell as? SeeProfileExperienceCollectionViewCell else {return}
         
-        experienceCell.experienceNameLabel.text = self.experienceName
-        experienceCell.experienceLocationLabel.text = self.experienceLocation
+        experienceCell.experienceNameLabel.text = self.experience.name
+        experienceCell.experienceLocationLabel.text = self.experience.location
         experienceCell.deleteButton.isHidden = !self.shouldShowDeleteButton
+        experienceCell.experienceImageView.image = self.experience.image
         experienceCell.viewModel = self
+    }
+    
+    override var routingEntry: QCRoutingEntry {
+        return SeeExperienceRoutingEntry(experience: self.experience)
     }
     
     // MARK: Delete action
