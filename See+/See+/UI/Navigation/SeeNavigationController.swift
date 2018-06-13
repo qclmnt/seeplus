@@ -17,9 +17,21 @@ class SeeNavigationController: UINavigationController {
                                                  action: nil)
     
     
-    lazy var proposeBarButtonItem = UIBarButtonItem(title: "PROPOSE", style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
-    lazy var discoverBarButtonItem = UIBarButtonItem(title: "DISCOVER", style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
-    lazy var languageBarButtonItem = UIBarButtonItem(title: "FR/EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
+    lazy var proposeBarButtonItem: UIBarButtonItem = {
+        let barButton = UIBarButtonItem(title: "PROPOSE", style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
+        barButton.tintColor = .appRed()
+        return barButton
+    }()
+    lazy var discoverBarButtonItem: UIBarButtonItem = {
+        let barButton = UIBarButtonItem(title: "DISCOVER", style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
+        barButton.tintColor = .appRed()
+        return barButton
+    }()
+    lazy var languageBarButtonItem: UIBarButtonItem = {
+        let barButton = UIBarButtonItem(title: "FR/EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
+        barButton.tintColor = .appRed()
+        return barButton
+    }()
     
     var showToolbar = false
     
