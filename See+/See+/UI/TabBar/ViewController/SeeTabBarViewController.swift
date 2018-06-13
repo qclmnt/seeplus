@@ -33,7 +33,6 @@ class SeeTabBarViewController: UIViewController {
     }
     
     func initInfos() {
-        self.title = self.viewModel.title
         self.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: self.viewModel.tabbarItemImage), tag: 0)
     }
     

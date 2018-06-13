@@ -82,7 +82,5 @@ extension SeeMessagingViewController: QCViewModelDelegate {
             self.reloadDataView()
         }) { (finished) in
         }
-        
-        self.navigationItem.title = self.viewModel.title
     }
 }

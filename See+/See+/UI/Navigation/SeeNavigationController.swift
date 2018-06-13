@@ -15,6 +15,10 @@ class SeeNavigationController: UINavigationController {
                                                  target: nil,
                                                  action: nil)
     
+    lazy var proposeBarButtonItem = UIBarButtonItem(title: "PROPOSE", style: .plain, target: nil, action: nil)
+    lazy var discoverBarButtonItem = UIBarButtonItem(title: "DISCOVER", style: .plain, target: nil, action: nil)
+    lazy var languageBarButtonItem = UIBarButtonItem(title: "FR/EN", style: .plain, target: nil, action: nil)
+    
     var showToolbar = false
     
     // MARK: - Initialization
@@ -52,8 +56,23 @@ class SeeNavigationController: UINavigationController {
 extension SeeNavigationController : UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        
+        // Nav bar
+        
+        // Left
         viewController.navigationItem.leftBarButtonItem = self.leftBarButtonItem
         
+        
+        // Right
+        var rightBarButtonItems = [UIBarButtonItem]()
+        rightBarButtonItems.append(self.languageBarButtonItem)
+        if (navigationController.tabBarController != nil) {
+            rightBarButtonItems.append(contentsOf: [self.discoverBarButtonItem,
+                                                    self.proposeBarButtonItem])
+        }
+        viewController.navigationItem.rightBarButtonItems = rightBarButtonItems
+        
+        // Tool bar
         if (self.showToolbar == true) {
             navigationController.setToolbarHidden(false, animated: false)
             navigationController.toolbar.isTranslucent = false
