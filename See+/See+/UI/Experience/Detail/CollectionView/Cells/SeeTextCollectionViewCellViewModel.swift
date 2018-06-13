@@ -11,11 +11,13 @@ import UIKit
 class SeeTextCollectionViewCellViewModel: QCCollectionCellViewModel {
     
     let text: String
+    let textAlignement: NSTextAlignment
     
     // MARK: - Initialization
     
-    init(text: String) {
+    init(text: String, textAlignement: NSTextAlignment = .center) {
         self.text = text
+        self.textAlignement = textAlignement
         super.init()
     }
     
@@ -26,13 +28,14 @@ class SeeTextCollectionViewCellViewModel: QCCollectionCellViewModel {
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 400)
+        return CGSize(width: maxSize.width, height: 200)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let textCell = cell as? SeeTextCollectionViewCell else {return}
         
         textCell.textLabel.text = self.text
+        textCell.textLabel.textAlignment = self.textAlignement
     }
 
 }

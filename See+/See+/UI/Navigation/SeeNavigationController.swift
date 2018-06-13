@@ -67,4 +67,21 @@ extension SeeNavigationController : UINavigationControllerDelegate {
         }
     }
     
+    // Not clean: to do other way
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        if (fromVC is SeeExperienceViewController && toVC is SeeExperienceDetailViewController) ||
+            (toVC is SeeExperienceViewController && fromVC is SeeExperienceDetailViewController) {
+            if operation == .push {
+                return FadeAnimationController(presenting: true)
+            } else {
+                return FadeAnimationController(presenting: false)
+            }
+        }
+        
+        return nil
+        
+        
+    }
+    
 }

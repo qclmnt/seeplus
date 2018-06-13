@@ -59,6 +59,7 @@
 		395C304D20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304B20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift */; };
 		395C304E20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */; };
 		395C305020D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */; };
+		395C305220D1B204003A9133 /* FadeAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305120D1B204003A9133 /* FadeAnimationController.swift */; };
 		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
@@ -184,6 +185,7 @@
 		395C304B20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeContactExperienceAuthorCollectionViewCell.swift; sourceTree = "<group>"; };
 		395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeContactExperienceAuthorCollectionViewCell.xib; sourceTree = "<group>"; };
 		395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeContactExperienceAuthorCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		395C305120D1B204003A9133 /* FadeAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeAnimationController.swift; sourceTree = "<group>"; };
 		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 		3906287020C6BC9200187E21 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				395C305120D1B204003A9133 /* FadeAnimationController.swift */,
 				39944DE520C6CB2400235B48 /* RoutingEntry */,
 				3906287120C6BCB400187E21 /* QCNavigator.swift */,
 				3906287320C6BCED00187E21 /* QCRouting.swift */,
@@ -1072,6 +1075,7 @@
 				39488C4020CC112A0069AC8A /* SeeHeadingsCollectionViewModel.swift in Sources */,
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
 				39488C4C20CC14EE0069AC8A /* SeeHeadingsRoutingEntry.swift in Sources */,
+				395C305220D1B204003A9133 /* FadeAnimationController.swift in Sources */,
 				395C304420D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift in Sources */,
 				39488C2A20CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift in Sources */,
 				39488C4220CC123B0069AC8A /* SeeHeadingsCollectionViewSection.swift in Sources */,

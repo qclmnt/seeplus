@@ -16,6 +16,8 @@ class SeeExperienceDetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var experienceNameLabel: UILabel!
     @IBOutlet weak var experienceLocationLabel: UILabel!
     @IBOutlet weak var experienceImageView: UIImageView!
+    @IBOutlet weak var moreButton: UIButton!
+    @IBOutlet weak var closeButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +26,7 @@ class SeeExperienceDetailCollectionViewCell: UICollectionViewCell {
         self.experienceView.layer.cornerRadius = 80
     }
 
+    @IBAction func closeButtonTouchUpInside(_ sender: UIButton) {
+        QCAppEnvironment.shared().routing?.route(to: SeePopRoutingEntry())
+    }
 }

@@ -21,13 +21,21 @@ class SeeExperienceDetailCollectionViewSection: QCCollectionViewSection {
     
     // MARK: - QCCollectionViewSection
     
+    override var edgeInsets: UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 30, right: 0)
+    }
+    
+    override var minimumLineSpacing: CGFloat {
+        return 30
+    }
+    
     override func setup() {
         self.items = [SeeExperienceDetailCollectionViewCellModel(experience: self.experience),
         SeeTextCollectionViewCellViewModel(text: self.experience.desc),
         SeeExperienceImage(image: self.experience.image),
         SeeExperienceImage(image: self.experience.image),
         SeeContactExperienceAuthorCollectionViewCellViewModel(experience: self.experience),
-        SeeTextCollectionViewCellViewModel(text: self.experience.desc)]
+        SeeTextCollectionViewCellViewModel(text: self.experience.desc, textAlignement: .left)]
     }
 
 }

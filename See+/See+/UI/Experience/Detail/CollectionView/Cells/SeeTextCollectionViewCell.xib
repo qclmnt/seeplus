@@ -20,7 +20,12 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNC-oF-xBO">
-                        <rect key="frame" x="47" y="0.0" width="285" height="212"/>
+                        <rect key="frame" x="39.5" y="0.0" width="300" height="212"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="391" id="GoO-5L-j1r">
+                                <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                            </constraint>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -28,9 +33,8 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="KNC-oF-xBO" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="47" id="2QB-3I-OUt"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="KNC-oF-xBO" secondAttribute="bottom" id="4BU-4p-J6L"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="KNC-oF-xBO" secondAttribute="trailing" constant="47" id="7jb-tR-Pzo"/>
+                <constraint firstItem="KNC-oF-xBO" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="5VE-Wm-KMj"/>
                 <constraint firstItem="KNC-oF-xBO" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="W37-Nf-ooS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -38,7 +42,7 @@
             <connections>
                 <outlet property="textLabel" destination="KNC-oF-xBO" id="aOG-z2-oGd"/>
             </connections>
-            <point key="canvasLocation" x="-16.5" y="-85"/>
+            <point key="canvasLocation" x="-266" y="11"/>
         </collectionViewCell>
     </objects>
 </document>

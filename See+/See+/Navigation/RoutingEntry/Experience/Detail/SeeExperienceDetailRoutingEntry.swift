@@ -21,13 +21,9 @@ class SeeExperienceDetailRoutingEntry: QCRoutingEntry {
     
     // MARK: - QCRoutingEntry
     
-    override var navigationStyle: QCNavigationStyle {
-        return .modal
-    }
-    
     override var viewController: UIViewController? {
-        return SeeNavigationController(rootViewController: SeeExperienceDetailViewController(experience: self.experience), showToolbar: false)
-//        return SeeExperienceDetailViewController(experience: self.experience)
+        let viewController = SeeExperienceDetailViewController(experience: self.experience)
+        return viewController
     }
     
 
