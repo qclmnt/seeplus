@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
     
@@ -41,7 +42,15 @@ class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
         
         print("Username \(username)")
         completion(true)
+        
+        // Navigate
         QCAppEnvironment.shared().routing?.route(to: SeeProfilePicRoutingEntry())
+        
+        // Save user to base
+        Defaults[.usersBase]?.append(username)
+        
+        // Keep connected user
+        Defaults[.connectedUser] = username
     }
     
     func switchConnectionMode() {

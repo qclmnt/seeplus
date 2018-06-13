@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,11 +25,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         self.window?.frame = UIScreen.main.bounds
         
-        let signupRoutingEntry = SeeSignupRoutinEntry()
-        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
-                                                           showToolbar: true)
-        
-        self.window?.rootViewController = navigationController
+        if let username = Defaults[.connectedUser],
+            username.count > 0 {
+            
+            if Defaults[.connectedUserMode] == 0 {
+                self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
+            } else {
+                self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
+            }
+            
+        } else {
+            let signupRoutingEntry = SeeSignupRoutinEntry()
+            let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
+                                                               showToolbar: true)
+            
+            self.window?.rootViewController = navigationController
+        }
         
         // Configure App Environment
         QCAppEnvironment.shared().configureAppEnvironment()

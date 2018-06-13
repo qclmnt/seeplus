@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeConnectionLoginViewModel: SeeConnectionSignUpViewModel {
 
@@ -32,5 +33,29 @@ class SeeConnectionLoginViewModel: SeeConnectionSignUpViewModel {
     
     override func switchConnectionMode() {
         AppDelegate.shared()?.window??.rootViewController = SeeNavigationController(rootViewController: SeeSignupRoutinEntry().viewController ?? UIViewController(), showToolbar: true)
+    }
+    
+    override func validateConnection(usernameText: String?, completion: (Bool) -> ()) {
+        
+        guard let username = usernameText,
+            username.count > 0 else {
+                completion(false)
+                return
+        }
+        
+        // Verify user existance
+        guard let users = Defaults[.usersBase],
+            users.contains(username) else {
+                completion(false)
+                return
+        }
+        
+        completion(true)
+        
+        // Keep connected user
+        Defaults[.connectedUser] = username
+        
+        // Navigate
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
     }
 }

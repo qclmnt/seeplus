@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeProfileViewControllerViewModel: SeeTabBarViewControllerViewModel {
     
@@ -42,6 +43,9 @@ class SeeProfileViewControllerViewModel: SeeTabBarViewControllerViewModel {
     
     func logOut() {
         QCAppEnvironment.shared().routing?.route(to: SeeDeleteExperienceRoutingEntry(viewModel: SeeLogOutViewControllerViewModel()))
+        
+        // Remove connected user
+        Defaults[.connectedUser] = nil
     }
 
 }

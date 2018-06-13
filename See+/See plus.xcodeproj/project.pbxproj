@@ -60,6 +60,8 @@
 		395C304E20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */; };
 		395C305020D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */; };
 		395C305220D1B204003A9133 /* FadeAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305120D1B204003A9133 /* FadeAnimationController.swift */; };
+		395C305520D1B943003A9133 /* DefaultsKeys+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305420D1B943003A9133 /* DefaultsKeys+See.swift */; };
+		395C305720D1B997003A9133 /* SeeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305620D1B997003A9133 /* SeeUser.swift */; };
 		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
@@ -186,6 +188,8 @@
 		395C304C20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeContactExperienceAuthorCollectionViewCell.xib; sourceTree = "<group>"; };
 		395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeContactExperienceAuthorCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		395C305120D1B204003A9133 /* FadeAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeAnimationController.swift; sourceTree = "<group>"; };
+		395C305420D1B943003A9133 /* DefaultsKeys+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultsKeys+See.swift"; sourceTree = "<group>"; };
+		395C305620D1B997003A9133 /* SeeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeUser.swift; sourceTree = "<group>"; };
 		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
@@ -426,6 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				395C302720D06486003A9133 /* SeeExperience.swift */,
+				395C305620D1B997003A9133 /* SeeUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -475,6 +480,14 @@
 				395C304F20D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		395C305320D1B92F003A9133 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				395C305420D1B943003A9133 /* DefaultsKeys+See.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		39668A5820CD5C750036351F /* Navigation */ = {
@@ -595,6 +608,7 @@
 		39944DEB20C6D19C00235B48 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				395C305320D1B92F003A9133 /* UserDefaults */,
 				39668A6020CD6DDE0036351F /* Button */,
 				39944DF620C6D7EE00235B48 /* View */,
 				39944DEE20C6D1B600235B48 /* Color */,
@@ -904,6 +918,7 @@
 				3906285420C6BA3400187E21 /* Sources */,
 				3906285520C6BA3400187E21 /* Frameworks */,
 				3906285620C6BA3400187E21 /* Resources */,
+				89B5D81AF98706BE047C550B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -984,6 +999,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		89B5D81AF98706BE047C550B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-See plus/Pods-See plus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-See plus/Pods-See plus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFB4EDFEF376B2BD685FE186 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1018,6 +1051,7 @@
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */,
 				395C304D20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift in Sources */,
+				395C305720D1B997003A9133 /* SeeUser.swift in Sources */,
 				39D6119A20CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
 				395C303B20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift in Sources */,
@@ -1068,6 +1102,7 @@
 				39668A5C20CD64280036351F /* UIView+Border.swift in Sources */,
 				39944DDF20C6C50000235B48 /* SeeConnectionLoginViewModel.swift in Sources */,
 				39EA127D20C9CBC500BB6387 /* SeeMessagingCollectionViewCellViewModel.swift in Sources */,
+				395C305520D1B943003A9133 /* DefaultsKeys+See.swift in Sources */,
 				39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */,
 				39488C2520CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.swift in Sources */,
 				39944DF520C6D7E700235B48 /* UIView+See.swift in Sources */,
