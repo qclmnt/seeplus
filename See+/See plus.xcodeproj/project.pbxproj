@@ -62,6 +62,7 @@
 		395C305220D1B204003A9133 /* FadeAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305120D1B204003A9133 /* FadeAnimationController.swift */; };
 		395C305520D1B943003A9133 /* DefaultsKeys+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305420D1B943003A9133 /* DefaultsKeys+See.swift */; };
 		395C305720D1B997003A9133 /* SeeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305620D1B997003A9133 /* SeeUser.swift */; };
+		395C305B20D1C676003A9133 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395C305D20D1C676003A9133 /* Localizable.strings */; };
 		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
@@ -190,6 +191,8 @@
 		395C305120D1B204003A9133 /* FadeAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeAnimationController.swift; sourceTree = "<group>"; };
 		395C305420D1B943003A9133 /* DefaultsKeys+See.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultsKeys+See.swift"; sourceTree = "<group>"; };
 		395C305620D1B997003A9133 /* SeeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeUser.swift; sourceTree = "<group>"; };
+		395C305C20D1C676003A9133 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		395C305E20D1C67C003A9133 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
@@ -304,6 +307,7 @@
 				3906286420C6BA3600187E21 /* LaunchScreen.storyboard */,
 				3906286720C6BA3600187E21 /* Info.plist */,
 				391CAA0920CF1CCB0013AE1B /* See plus-Bridging-Header.h */,
+				395C305D20D1C676003A9133 /* Localizable.strings */,
 			);
 			path = "See+";
 			sourceTree = "<group>";
@@ -952,6 +956,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 3906284F20C6BA3400187E21;
 			productRefGroup = 3906285920C6BA3400187E21 /* Products */;
@@ -977,6 +982,7 @@
 				39488C1A20CBD6D40069AC8A /* SeeMessageViewController.xib in Resources */,
 				39D8953220C86DEC00782F3D /* SeeProfileViewController.xib in Resources */,
 				39488C5120CC2CBC0069AC8A /* SeeExperienceViewController.xib in Resources */,
+				395C305B20D1C676003A9133 /* Localizable.strings in Resources */,
 				39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */,
 				39944DF320C6D53600235B48 /* SeeProfilePicViewController.xib in Resources */,
 				39488C3220CC05D00069AC8A /* SeeMessageRecipientBubbleCollectionViewCell.xib in Resources */,
@@ -1151,6 +1157,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		395C305D20D1C676003A9133 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395C305C20D1C676003A9133 /* en */,
+				395C305E20D1C67C003A9133 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1158,6 +1173,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1218,6 +1234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

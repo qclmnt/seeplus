@@ -16,11 +16,11 @@ class SeeConnectionLoginViewModel: SeeConnectionSignUpViewModel {
     }
     
     override var title: String {
-        return "Login"
+        return NSLocalizedString("log.in.title", comment: "")
     }
     
     override var switchButtonTitle: String {
-        return "sign up"
+        return NSLocalizedString("sign.up", comment: "")
     }
     
     override var topBackgroundColor: UIColor {

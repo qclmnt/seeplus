@@ -15,14 +15,7 @@ class SeeAboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.textLabel.text = """
-        Connect to a resident or a traveler from
-        a big city and discover and share life in
-        the metropolis.
-        
-        Propose or live a unique experience
-        that suits you best.
-        """
+        self.textLabel.text = NSLocalizedString("about", comment: "")
         
         self.navigationController?.setToolbarHidden(false, animated: false)
         self.navigationController?.toolbar.isTranslucent = false

@@ -53,10 +53,10 @@ class SeeWelcomeViewController: UIViewController {
         self.titleLabel.text = "Welcome Edgarlee!"
         
         // Info
-        self.infoLabel.text = "You’re part\nof SEE+ community!"
+        self.infoLabel.text = NSLocalizedString("part.of", comment: "")
         
         // Next Button
-        self.nextButton.setTitle("let's go!", for: .normal)
+        self.nextButton.setTitle("let.go", for: .normal)
         self.nextButton.configureWithStyle1()
     }
     

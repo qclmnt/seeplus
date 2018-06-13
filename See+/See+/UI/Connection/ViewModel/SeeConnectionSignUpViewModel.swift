@@ -16,11 +16,11 @@ class SeeConnectionSignUpViewModel: QCViewControllerViewModel {
     }
     
     var title: String {
-        return "Sign up"
+        return NSLocalizedString("sign.up.title", comment: "")
     }
     
     var switchButtonTitle: String {
-        return "login"
+        return NSLocalizedString("log.in", comment: "")
     }
     
     var topBackgroundColor: UIColor {

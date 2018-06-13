@@ -91,16 +91,16 @@ class SeeConnectionViewController: UIViewController {
         self.titleLabel.text = self.viewModel.title
         
         // Connection form
-        self.usernameLabel.text = "Username"
-        self.emailLabel.text = "Email"
-        self.passwordLabel.text = "Password"
-        self.confirmPasswordLabel.text = "Confirm password"
+        self.usernameLabel.text = NSLocalizedString("username", comment: "")
+        self.emailLabel.text = NSLocalizedString("email", comment: "")
+        self.passwordLabel.text = NSLocalizedString("password", comment: "")
+        self.confirmPasswordLabel.text = NSLocalizedString("confirm.password", comment: "")
         
         self.confirmPasswordLabel.isHidden = !self.viewModel.shouldShowConfirmPassword
         self.confirmPasswordTextField.isHidden = !self.viewModel.shouldShowConfirmPassword
         
         // Buttons
-        self.enterButton.setTitle("enter", for: .normal)
+        self.enterButton.setTitle(NSLocalizedString("enter", comment: ""), for: .normal)
         self.enterButton.layer.masksToBounds = true
         self.switchButton.setTitle(self.viewModel.switchButtonTitle, for: .normal)
         self.switchButton.layer.borderWidth = 1

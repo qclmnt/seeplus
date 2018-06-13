@@ -51,11 +51,11 @@ class SeeStartViewController: UIViewController {
     func configureLayout() {
 
         // Info
-        self.infoLabel.text = "Discover or propose an experience in a big city!"
+        self.infoLabel.text = NSLocalizedString("start.title", comment: "")
         
         // Buttons
-        self.liveButton.setTitle("to discover", for: .normal)
-        self.proposeButton.setTitle("to propose", for: .normal)
+        self.liveButton.setTitle(NSLocalizedString("to.discover", comment: ""), for: .normal)
+        self.proposeButton.setTitle(NSLocalizedString("to.propose", comment: ""), for: .normal)
         for button in [self.liveButton,
                        self.proposeButton] {
                         button?.configureWithStyle1()
