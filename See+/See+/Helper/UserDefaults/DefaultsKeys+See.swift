@@ -13,7 +13,7 @@ extension DefaultsKeys {
     
     static let usersBase = DefaultsKey<[String]?>("usersBase") // String of usernames
     static let connectedUser = DefaultsKey<String?>("connectedUser") // Only username
-    static let connectedUserMode = DefaultsKey<Int>("connectedUserMode") // 0 discover 1 live
+    static let connectedUserMode = DefaultsKey<Int>("connectedUserMode") // 0 discover 1 propose
     static let languageSelected = DefaultsKey<String?>("languageSelected") // fr or en
 
 }

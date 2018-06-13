@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeNavigationController: UINavigationController {
     
@@ -15,9 +16,10 @@ class SeeNavigationController: UINavigationController {
                                                  target: nil,
                                                  action: nil)
     
-    lazy var proposeBarButtonItem = UIBarButtonItem(title: "PROPOSE", style: .plain, target: nil, action: nil)
-    lazy var discoverBarButtonItem = UIBarButtonItem(title: "DISCOVER", style: .plain, target: nil, action: nil)
-    lazy var languageBarButtonItem = UIBarButtonItem(title: "FR/EN", style: .plain, target: nil, action: nil)
+    
+    lazy var proposeBarButtonItem = UIBarButtonItem(title: "PROPOSE", style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
+    lazy var discoverBarButtonItem = UIBarButtonItem(title: "DISCOVER", style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
+    lazy var languageBarButtonItem = UIBarButtonItem(title: "FR/EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
     
     var showToolbar = false
     
@@ -49,6 +51,20 @@ class SeeNavigationController: UINavigationController {
     
     @objc func aboutButtonTouchUpInside() {
         QCAppEnvironment.shared().routing?.route(to: SeeAboutRoutingEntry())
+    }
+    
+    @objc func proposeButtonTouchUpInside() {
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
+        Defaults[.connectedUserMode] = 1
+    }
+    
+    @objc func discoverButtonTouchUpInside() {
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
+        Defaults[.connectedUserMode] = 0
+    }
+    
+    @objc func languageButtonTouchUpInside() {
+        
     }
 
 }
