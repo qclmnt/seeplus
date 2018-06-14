@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let username = Defaults[.connectedUser],
             username.count > 0 {
             
-            if Defaults[.connectedUserMode] == 0 {
+            if SeeMode.activatedMode() == .discover {
                 self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
             } else {
                 self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())

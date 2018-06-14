@@ -17,6 +17,7 @@ class SeeHeadingsViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     
     var headingsCollectionViewModel = SeeHeadingsCollectionViewModel()
+    var buttonGradient: CAGradientLayer?
     
     // MARK: - View life cycle
 
@@ -36,6 +37,17 @@ class SeeHeadingsViewController: UIViewController {
         
         // Next button
         self.nextButton.setTitle("next", for: .normal)
+        self.nextButton.layer.masksToBounds = true
+        self.buttonGradient = self.nextButton.addHorizontalGradientLayer(leftColor: .appRed(), rightColor: .appPurple())
+        
+        self.headingsCollectionView.allowsMultipleSelection = true
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        self.buttonGradient?.frame = self.nextButton.bounds
+        self.nextButton.layer.cornerRadius = self.nextButton.frame.height/2
     }
 
     func reloadDataView() {

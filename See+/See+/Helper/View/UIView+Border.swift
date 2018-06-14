@@ -11,11 +11,12 @@ import UIKit
 
 extension UIView {
     
-    func addBottomBorder(color: UIColor, borderWidth: CGFloat) {
+    func addBottomBorder(color: UIColor, borderWidth: CGFloat) -> CALayer {
         let border = CALayer()
         border.backgroundColor = color.cgColor
         border.frame = CGRect(x: 0, y: self.frame.size.height - borderWidth, width: self.frame.size.width, height: borderWidth)
         self.layer.addSublayer(border)
+        return border
     }
 
 }

@@ -39,7 +39,19 @@ class SeeRubricCollectionViewCellViewModel: QCCollectionCellViewModel {
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let rubricCell = cell as? SeeRubricCollectionViewCell else {return}
         
+        rubricCell.viewModel = self
         rubricCell.rubricLabel.text = self.name
+        rubricCell.rubricImageView.image = self.image(selected: rubricCell.isSelected)
+    }
+    
+    // MARK: - Image for selected mode
+    
+    func image(selected: Bool) -> UIImage? {
+        if selected {
+            return UIImage(named: self.selectedImageName)
+        } else {
+            return UIImage(named: self.unselectedImageName)
+        }
     }
 
 }

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeHeadingsViewController" customModule="See_" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeHeadingsViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="headingsCollectionView" destination="Lt8-xR-gDZ" id="Pgy-zv-Nad"/>
                 <outlet property="nextButton" destination="L7R-da-AGZ" id="tbY-7M-Rig"/>
@@ -23,13 +23,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emF-5A-b4a">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emF-5A-b4a">
                     <rect key="frame" x="61" y="36" width="253" height="81"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="81" id="7aB-d7-bdE"/>
+                        <constraint firstAttribute="height" constant="130" id="7aB-d7-bdE">
+                            <variation key="heightClass=regular-widthClass=compact" constant="81"/>
+                        </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lt8-xR-gDZ">
@@ -43,12 +45,19 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7R-da-AGZ">
-                    <rect key="frame" x="164" y="601" width="46" height="30"/>
+                    <rect key="frame" x="112" y="601" width="150" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="5DQ-HZ-wpX"/>
-                        <constraint firstAttribute="width" constant="46" id="bVl-i1-YyR"/>
+                        <constraint firstAttribute="height" constant="48" id="5DQ-HZ-wpX">
+                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="412" id="bVl-i1-YyR">
+                            <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                        </constraint>
                     </constraints>
-                    <state key="normal" title="Button"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="nextButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="XGB-ps-9tL"/>
                     </connections>
@@ -61,7 +70,9 @@
                 <constraint firstItem="L7R-da-AGZ" firstAttribute="top" secondItem="Lt8-xR-gDZ" secondAttribute="bottom" constant="29" id="A4x-8a-KCC"/>
                 <constraint firstItem="Lt8-xR-gDZ" firstAttribute="top" secondItem="emF-5A-b4a" secondAttribute="bottom" constant="8" id="Chf-gR-Zb1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lt8-xR-gDZ" secondAttribute="trailing" id="JrW-kq-jaw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="L7R-da-AGZ" secondAttribute="bottom" constant="36" id="LmO-kY-2Q1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="L7R-da-AGZ" secondAttribute="bottom" constant="55" id="LmO-kY-2Q1">
+                    <variation key="heightClass=regular-widthClass=compact" constant="36"/>
+                </constraint>
                 <constraint firstItem="emF-5A-b4a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="61" id="WUV-SH-jMU"/>
                 <constraint firstItem="Lt8-xR-gDZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ad9-Y3-jw6"/>
                 <constraint firstItem="L7R-da-AGZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oqL-Ke-11r"/>

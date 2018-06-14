@@ -14,23 +14,23 @@ class SeeHeadingsCollectionViewSection: QCCollectionViewSection {
     
     override func setup() {
         self.items = [SeeRubricCollectionViewCellViewModel(name: "Art and Architecture",
-                                                           unselectedImageName: "",
-                                                           selectedImageName: ""),
+                                                           unselectedImageName: "rubric-art",
+                                                           selectedImageName: "rubric-art-selected"),
                       SeeRubricCollectionViewCellViewModel(name: "Monuments and Castles",
-                                                           unselectedImageName: "",
-                                                           selectedImageName: ""),
+                                                           unselectedImageName: "rubric-monument",
+                                                           selectedImageName: "rubric-monument-selected"),
                       SeeRubricCollectionViewCellViewModel(name: "Green Area",
-                                                           unselectedImageName: "",
-                                                           selectedImageName: ""),
+                                                           unselectedImageName: "rubric-area",
+                                                           selectedImageName: "rubric-area-selected"),
                       SeeRubricCollectionViewCellViewModel(name: "Museums and Artiste's house",
-                                                           unselectedImageName: "",
-                                                           selectedImageName: ""),
+                                                           unselectedImageName: "rubric-museum",
+                                                           selectedImageName: "rubric-museum-selected"),
                       SeeRubricCollectionViewCellViewModel(name: "Night Life",
-                                                           unselectedImageName: "",
-                                                           selectedImageName: ""),
+                                                           unselectedImageName: "rubric-nightlife",
+                                                           selectedImageName: "rubric-nightlife-selected"),
                       SeeRubricCollectionViewCellViewModel(name: "Cinema and Theater",
-                                                           unselectedImageName: "",
-                                                           selectedImageName: ""),]
+                                                           unselectedImageName: "rubric-cinema",
+                                                           selectedImageName: "rubric-cinema-selected"),]
     }
 
 }

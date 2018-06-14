@@ -91,6 +91,7 @@
 		39944E0620C6DC1500235B48 /* SeeStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944E0420C6DC1500235B48 /* SeeStartViewController.xib */; };
 		39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */; };
 		39A5579820D2BF87009B8FB0 /* SeeLanguageBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A5579720D2BF87009B8FB0 /* SeeLanguageBundle.m */; };
+		39A5579B20D2C3A9009B8FB0 /* SeeMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A5579A20D2C3A9009B8FB0 /* SeeMode.swift */; };
 		39D6118920CBC7F300237DCA /* SeeDeleteExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */; };
 		39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */; };
 		39D6118E20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */; };
@@ -223,6 +224,7 @@
 		39944E0820C6DDA900235B48 /* SeeStartRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeStartRoutingEntry.swift; sourceTree = "<group>"; };
 		39A5579620D2BF87009B8FB0 /* SeeLanguageBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeLanguageBundle.h; sourceTree = "<group>"; };
 		39A5579720D2BF87009B8FB0 /* SeeLanguageBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeLanguageBundle.m; sourceTree = "<group>"; };
+		39A5579A20D2C3A9009B8FB0 /* SeeMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMode.swift; sourceTree = "<group>"; };
 		39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceViewController.swift; sourceTree = "<group>"; };
 		39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeDeleteExperienceViewController.xib; sourceTree = "<group>"; };
 		39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceRoutingEntry.swift; sourceTree = "<group>"; };
@@ -615,6 +617,7 @@
 		39944DEB20C6D19C00235B48 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				39A5579920D2C38E009B8FB0 /* Mode */,
 				39A5579220D2BF0B009B8FB0 /* Language */,
 				395C305320D1B92F003A9133 /* UserDefaults */,
 				39668A6020CD6DDE0036351F /* Button */,
@@ -701,6 +704,14 @@
 				39A5579720D2BF87009B8FB0 /* SeeLanguageBundle.m */,
 			);
 			path = Language;
+			sourceTree = "<group>";
+		};
+		39A5579920D2C38E009B8FB0 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				39A5579A20D2C3A9009B8FB0 /* SeeMode.swift */,
+			);
+			path = Mode;
 			sourceTree = "<group>";
 		};
 		39D6118620CBC7BF00237DCA /* Delete */ = {
@@ -1145,6 +1156,7 @@
 				395C304A20D07819003A9133 /* SeeExperienceImage.swift in Sources */,
 				39488C3D20CC0EA00069AC8A /* SeeHeadingsViewController.swift in Sources */,
 				395C302A20D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift in Sources */,
+				39A5579B20D2C3A9009B8FB0 /* SeeMode.swift in Sources */,
 				39488C4920CC13A00069AC8A /* SeeRubricCollectionViewCellViewModel.swift in Sources */,
 				39D8955120C87E7100782F3D /* QCCollectionViewSection.swift in Sources */,
 				39944DF220C6D53600235B48 /* SeeProfilePicViewController.swift in Sources */,

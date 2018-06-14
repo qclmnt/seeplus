@@ -10,7 +10,7 @@ import UIKit
 
 enum UserMode {
     case discover
-    case live
+    case propose
 }
 
 class SeeUser: NSObject {
