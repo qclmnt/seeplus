@@ -18,7 +18,8 @@ class SeeHeadingsRoutingEntry: QCRoutingEntry {
     }
     
     override var viewController: UIViewController? {
-        return SeeHeadingsViewController()
+        let viewModel = SeeMode.activatedMode() == .propose ? SeeHeadingsResidentCollectionViewModel() : SeeHeadingsTravellerCollectionViewModel()
+        return SeeNavigationController(rootViewController: SeeHeadingsViewController(viewModel: viewModel), showToolbar: false) 
     }
 
 }

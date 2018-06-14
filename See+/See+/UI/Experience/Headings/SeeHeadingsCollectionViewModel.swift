@@ -15,5 +15,11 @@ class SeeHeadingsCollectionViewModel: QCCollectionViewModel {
     override func loadSections() {
         self.sections = [SeeHeadingsCollectionViewSection()]
     }
+    
+    // MARK: - Next
+    
+    func next() {
+        // Override in subclasse
+    }
 
 }

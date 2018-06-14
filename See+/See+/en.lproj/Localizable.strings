@@ -15,3 +15,15 @@
 "start.title" = "Discover or propose\nan experience in a city!";
 "to.discover" = "to discover";
 "to.propose" = "to propose";
+"what.experience" = "What is your experience?";
+"name.experience" = "Name of the experience";
+"desc.experience" = "Describe the experience";
+"next" = "next";
+"back" = "back";
+"postal" = "Postal code";
+"metrop" = "Metropolis";
+"apt" = "Apartment / Building (optional)";
+"street" = "Number and name of the street";
+"country" = "Country / Region";
+"where" = "Where is your experience? ";
+

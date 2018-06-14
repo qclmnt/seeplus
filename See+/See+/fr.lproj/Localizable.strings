@@ -15,3 +15,14 @@
 "start.title" = "Découvrir ou proposer\nune expérience dans\nune métropole!";
 "to.discover" = "découvrir une expérience";
 "to.propose" = "proposer une expérience";
+"what.experience" = "Quelle est votre expérience?";
+"name.experience" = "Nom de l’expérience";
+"desc.experience" = "Décrivez l’expérience";
+"next" = "suivant";
+"back" = "précédent";
+"postal" = "Code postal";
+"metrop" = "Métropole";
+"apt" = "Appartement / Bâtiment (facultatif)";
+"street" = "Numéro et nom de la rue";
+"country" = "Pays / Région";
+"where" = "Où se trouve\nvotre expérience?";

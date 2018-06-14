@@ -16,8 +16,19 @@ class SeeHeadingsViewController: UIViewController {
     @IBOutlet weak var headingsCollectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     
-    var headingsCollectionViewModel = SeeHeadingsCollectionViewModel()
+    let headingsCollectionViewModel: SeeHeadingsCollectionViewModel
     var buttonGradient: CAGradientLayer?
+    
+    // MARK: - Initialization
+    
+    init(viewModel: SeeHeadingsCollectionViewModel) {
+        self.headingsCollectionViewModel = viewModel
+        super.init(nibName: String(describing: SeeHeadingsViewController.self), bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // MARK: - View life cycle
 
@@ -59,7 +70,7 @@ class SeeHeadingsViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func nextButtonTouchUpInside(_ sender: UIButton) {
-        QCAppEnvironment.shared().routing?.route(to: SeeDismissRoutingEntry())
+        self.headingsCollectionViewModel.next()
     }
     
 }
