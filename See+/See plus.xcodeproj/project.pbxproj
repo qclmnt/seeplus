@@ -114,6 +114,9 @@
 		39A557C620D30711009B8FB0 /* SeeExperienceCreateTitleCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A557C520D30711009B8FB0 /* SeeExperienceCreateTitleCollectionViewCellModel.swift */; };
 		39A557C820D3071D009B8FB0 /* SeeExperienceCreateInfoCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A557C720D3071D009B8FB0 /* SeeExperienceCreateInfoCollectionViewCellModel.swift */; };
 		39A557CA20D30A6C009B8FB0 /* SeeWhereExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A557C920D30A6C009B8FB0 /* SeeWhereExperienceRoutingEntry.swift */; };
+		39A557CE20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A557CC20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.swift */; };
+		39A557CF20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A557CD20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.xib */; };
+		39A557D120D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A557D020D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift */; };
 		39D6118920CBC7F300237DCA /* SeeDeleteExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */; };
 		39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */; };
 		39D6118E20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */; };
@@ -269,6 +272,9 @@
 		39A557C520D30711009B8FB0 /* SeeExperienceCreateTitleCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateTitleCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		39A557C720D3071D009B8FB0 /* SeeExperienceCreateInfoCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateInfoCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		39A557C920D30A6C009B8FB0 /* SeeWhereExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeWhereExperienceRoutingEntry.swift; sourceTree = "<group>"; };
+		39A557CC20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateShowViewController.swift; sourceTree = "<group>"; };
+		39A557CD20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeExperienceCreateShowViewController.xib; sourceTree = "<group>"; };
+		39A557D020D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateShowRoutingEntry.swift; sourceTree = "<group>"; };
 		39D6118720CBC7F300237DCA /* SeeDeleteExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceViewController.swift; sourceTree = "<group>"; };
 		39D6118820CBC7F300237DCA /* SeeDeleteExperienceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeDeleteExperienceViewController.xib; sourceTree = "<group>"; };
 		39D6118D20CBC88600237DCA /* SeeDeleteExperienceRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeDeleteExperienceRoutingEntry.swift; sourceTree = "<group>"; };
@@ -470,6 +476,7 @@
 			children = (
 				395C303C20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift */,
 				39A557C920D30A6C009B8FB0 /* SeeWhereExperienceRoutingEntry.swift */,
+				39A557D020D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -765,6 +772,7 @@
 		39A557A020D2D56F009B8FB0 /* Creation */ = {
 			isa = PBXGroup;
 			children = (
+				39A557CB20D30D0B009B8FB0 /* Show */,
 				39A557B020D3045E009B8FB0 /* What Cells */,
 				39A557A120D2D59B009B8FB0 /* SeeWhatExperienceViewController.swift */,
 				39A557A220D2D59B009B8FB0 /* SeeWhatExperienceViewController.xib */,
@@ -801,6 +809,15 @@
 				39A557C320D30705009B8FB0 /* SeeExperienceCreateDoubleInfoCollectionViewCellModel.swift */,
 			);
 			path = "What Cells";
+			sourceTree = "<group>";
+		};
+		39A557CB20D30D0B009B8FB0 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				39A557CC20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.swift */,
+				39A557CD20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.xib */,
+			);
+			path = Show;
 			sourceTree = "<group>";
 		};
 		39D6118620CBC7BF00237DCA /* Delete */ = {
@@ -1112,6 +1129,7 @@
 				39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */,
 				39488C2620CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
+				39A557CF20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.xib in Resources */,
 				39D8954C20C87A9A00782F3D /* SeeMessagingCollectionViewCell.xib in Resources */,
 				3906286320C6BA3600187E21 /* Assets.xcassets in Resources */,
 				39944DFF20C6DA9100235B48 /* SeeWelcomeViewController.xib in Resources */,
@@ -1234,6 +1252,7 @@
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
+				39A557D120D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift in Sources */,
 				39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */,
 				39A557AA20D2FF2F009B8FB0 /* SeeWhereExperienceViewController.swift in Sources */,
 				39668A5C20CD64280036351F /* UIView+Border.swift in Sources */,
@@ -1253,6 +1272,7 @@
 				39488C2A20CBE18B0069AC8A /* SeeMessageBubblesCollectionViewSection.swift in Sources */,
 				39488C4220CC123B0069AC8A /* SeeHeadingsCollectionViewSection.swift in Sources */,
 				39D8952020C86A6A00782F3D /* SeeTabBarResidentControllerViewModel.swift in Sources */,
+				39A557CE20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.swift in Sources */,
 				39A5579820D2BF87009B8FB0 /* SeeLanguageBundle.m in Sources */,
 				39A557B720D30568009B8FB0 /* SeeExperienceCreateTitleCollectionViewCell.swift in Sources */,
 				395C304720D07769003A9133 /* SeeExperienceImageCollectionViewCell.swift in Sources */,

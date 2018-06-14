@@ -11,15 +11,21 @@ import UIKit
 class SeeExperienceCreateButtonCollectionViewCellModel: QCCollectionCellViewModel {
     
     let title: String
+    let routing: QCRoutingEntry
     
     // MARK: - Initialization
     
-    init(title: String) {
+    init(title: String, routing: QCRoutingEntry) {
         self.title = title
+        self.routing = routing
         super.init()
     }
     
     // MARK: - SeeExperienceCreateInfoCollectionViewCell
+    
+    override var routingEntry: QCRoutingEntry {
+        return self.routing
+    }
     
     override var reuseIdentifier: String {
         return String(describing: SeeExperienceCreateButtonCollectionViewCell.self)

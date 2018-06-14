@@ -22,8 +22,8 @@ class SeeWhereExperienceCollectionSection: QCCollectionViewSection {
         SeeExperienceCreateInfoCollectionViewCellModel(title: NSLocalizedString("street", comment: "")),
         SeeExperienceCreateInfoCollectionViewCellModel(title: NSLocalizedString("apt", comment: "")),
         SeeExperienceCreateDoubleInfoCollectionViewCellModel(),
-        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("next", comment: "")),
-        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("back", comment: ""))]
+        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("next", comment: ""), routing: SeeExperienceCreateShowRoutingEntry()),
+        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("back", comment: ""), routing: SeePopRoutingEntry())]
     }
-
+    
 }

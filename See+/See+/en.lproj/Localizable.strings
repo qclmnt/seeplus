@@ -25,5 +25,7 @@
 "apt" = "Apartment / Building (optional)";
 "street" = "Number and name of the street";
 "country" = "Country / Region";
-"where" = "Where is your experience? ";
+"where" = "Where is your experience?";
+"show" = "Show your experience\nto the travelers!";
+"upload.photos" = "upload photos";
 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeExperienceCreateShowViewController" customModule="See_plus" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="0wp-hI-Z5B" id="O93-Z9-3n5"/>
+                <outlet property="nextButton" destination="Wm7-Nu-dMK" id="BXh-Ff-Z7x"/>
+                <outlet property="titleLabel" destination="UkC-dj-lS8" id="E0a-dy-Lcb"/>
+                <outlet property="uploadButton" destination="kFc-61-PD4" id="hZI-ad-BdL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFc-61-PD4">
+                    <rect key="frame" x="79" y="228" width="217" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm7-Nu-dMK">
+                    <rect key="frame" x="79" y="388" width="217" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="JdO-vZ-xoA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wp-hI-Z5B">
+                    <rect key="frame" x="79" y="475" width="217" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="6wc-PJ-bEd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkC-dj-lS8">
+                    <rect key="frame" x="79" y="85" width="217" height="102"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="412" id="BnU-kA-Hjg">
+                            <variation key="heightClass=regular-widthClass=compact" constant="217"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="102" id="KJu-bB-bE8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kFc-61-PD4" firstAttribute="top" secondItem="UkC-dj-lS8" secondAttribute="bottom" constant="41" id="1lP-Wl-4DS"/>
+                <constraint firstItem="0wp-hI-Z5B" firstAttribute="top" secondItem="Wm7-Nu-dMK" secondAttribute="bottom" constant="51" id="3FK-af-GyR"/>
+                <constraint firstItem="UkC-dj-lS8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="65" id="4fQ-Ww-g1M"/>
+                <constraint firstItem="0wp-hI-Z5B" firstAttribute="width" secondItem="UkC-dj-lS8" secondAttribute="width" id="54K-cb-lic"/>
+                <constraint firstItem="0wp-hI-Z5B" firstAttribute="centerX" secondItem="Wm7-Nu-dMK" secondAttribute="centerX" id="61l-KA-Tk9"/>
+                <constraint firstItem="Wm7-Nu-dMK" firstAttribute="width" secondItem="UkC-dj-lS8" secondAttribute="width" id="CZY-2w-JbC"/>
+                <constraint firstItem="Wm7-Nu-dMK" firstAttribute="centerX" secondItem="kFc-61-PD4" secondAttribute="centerX" id="nie-O4-GA9"/>
+                <constraint firstItem="Wm7-Nu-dMK" firstAttribute="top" secondItem="kFc-61-PD4" secondAttribute="bottom" constant="124" id="pSY-nA-yEl"/>
+                <constraint firstItem="UkC-dj-lS8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tYc-2R-8OQ"/>
+                <constraint firstItem="kFc-61-PD4" firstAttribute="centerX" secondItem="UkC-dj-lS8" secondAttribute="centerX" id="viY-vr-Z8d"/>
+                <constraint firstItem="kFc-61-PD4" firstAttribute="width" secondItem="UkC-dj-lS8" secondAttribute="width" id="wjy-t4-i0M"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
