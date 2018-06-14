@@ -76,7 +76,16 @@ class SeeNavigationController: UINavigationController {
     }
     
     @objc func languageButtonTouchUpInside() {
+        guard let currentLanguage = Defaults[.languageSelected] else {return}
         
+        var newLanguage = "fr"
+        if currentLanguage == "fr" {
+            newLanguage = "en"
+        }
+        
+        Bundle.setLanguage(newLanguage)
+        Defaults[.languageSelected] = newLanguage
+        AppDelegate.seeShared()?.buildRoot()
     }
 
 }

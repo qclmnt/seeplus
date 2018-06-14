@@ -18,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     class func shared() -> UIApplicationDelegate? {
         return instance
     }
+    
+    class func seeShared() -> AppDelegate? {
+        guard let see = instance as? AppDelegate else {return nil}
+        return see
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -25,22 +30,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         self.window?.frame = UIScreen.main.bounds
         
-        if let username = Defaults[.connectedUser],
-            username.count > 0 {
-            
-            if Defaults[.connectedUserMode] == 0 {
-                self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
-            } else {
-                self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
-            }
-            
+        // Configure language
+        if let language = Defaults[.languageSelected] {
+            Bundle.setLanguage(language)
         } else {
-            let signupRoutingEntry = SeeSignupRoutinEntry()
-            let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
-                                                               showToolbar: true)
-            
-            self.window?.rootViewController = navigationController
+            let deviceLanguage = Locale.preferredLanguages[0]
+            Bundle.setLanguage(deviceLanguage)
+            Defaults[.languageSelected] = deviceLanguage
         }
+        
+        // Build Root
+        self.buildRoot()
         
         // Configure App Environment
         QCAppEnvironment.shared().configureAppEnvironment()
@@ -71,6 +71,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    // MARK: - Build root
+    
+    func buildRoot() {
+        if let username = Defaults[.connectedUser],
+            username.count > 0 {
+            
+            if Defaults[.connectedUserMode] == 0 {
+                self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
+            } else {
+                self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
+            }
+            
+        } else {
+            let signupRoutingEntry = SeeSignupRoutinEntry()
+            let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
+                                                               showToolbar: true)
+            
+            self.window?.rootViewController = navigationController
+        }
     }
 
 }
