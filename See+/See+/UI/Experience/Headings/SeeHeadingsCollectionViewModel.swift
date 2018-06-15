@@ -22,4 +22,7 @@ class SeeHeadingsCollectionViewModel: QCCollectionViewModel {
         // Override in subclasse
     }
 
+    var title: String {
+        return ""
+    }
 }

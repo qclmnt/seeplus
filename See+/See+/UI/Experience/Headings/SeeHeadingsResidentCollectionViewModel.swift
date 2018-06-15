@@ -15,5 +15,9 @@ class SeeHeadingsResidentCollectionViewModel: SeeHeadingsCollectionViewModel {
     override func next() {
         QCAppEnvironment.shared().routing?.route(to: SeeWhatExperienceRoutingEntry())
     }
+    
+    override var title: String {
+        return NSLocalizedString("what.to.propose", comment: "")
+    }
 
 }

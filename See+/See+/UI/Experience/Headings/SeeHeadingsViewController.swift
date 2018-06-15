@@ -44,10 +44,10 @@ class SeeHeadingsViewController: UIViewController {
     
     func configureLayout() {
         // Title
-        self.titleLabel.text = "What do you want to explore ?"
+        self.titleLabel.text = self.headingsCollectionViewModel.title
         
         // Next button
-        self.nextButton.setTitle("next", for: .normal)
+        self.nextButton.setTitle(NSLocalizedString("next", comment: ""), for: .normal)
         self.nextButton.layer.masksToBounds = true
         self.buttonGradient = self.nextButton.addHorizontalGradientLayer(leftColor: .appRed(), rightColor: .appPurple())
         

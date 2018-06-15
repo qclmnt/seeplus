@@ -13,22 +13,22 @@ class SeeHeadingsCollectionViewSection: QCCollectionViewSection {
     // MARK: - QCCollectionViewSection
     
     override func setup() {
-        self.items = [SeeRubricCollectionViewCellViewModel(name: "Art and Architecture",
+        self.items = [SeeRubricCollectionViewCellViewModel(name: NSLocalizedString("art", comment: ""),
                                                            unselectedImageName: "rubric-art",
                                                            selectedImageName: "rubric-art-selected"),
-                      SeeRubricCollectionViewCellViewModel(name: "Monuments and Castles",
+                      SeeRubricCollectionViewCellViewModel(name: NSLocalizedString("monuments", comment: ""),
                                                            unselectedImageName: "rubric-monument",
                                                            selectedImageName: "rubric-monument-selected"),
-                      SeeRubricCollectionViewCellViewModel(name: "Green Area",
+                      SeeRubricCollectionViewCellViewModel(name: NSLocalizedString("green", comment: ""),
                                                            unselectedImageName: "rubric-area",
                                                            selectedImageName: "rubric-area-selected"),
-                      SeeRubricCollectionViewCellViewModel(name: "Museums and Artiste's house",
+                      SeeRubricCollectionViewCellViewModel(name: NSLocalizedString("museum", comment: ""),
                                                            unselectedImageName: "rubric-museum",
                                                            selectedImageName: "rubric-museum-selected"),
-                      SeeRubricCollectionViewCellViewModel(name: "Night Life",
+                      SeeRubricCollectionViewCellViewModel(name: NSLocalizedString("nightlife", comment: ""),
                                                            unselectedImageName: "rubric-nightlife",
                                                            selectedImageName: "rubric-nightlife-selected"),
-                      SeeRubricCollectionViewCellViewModel(name: "Cinema and Theater",
+                      SeeRubricCollectionViewCellViewModel(name: NSLocalizedString("cinema", comment: ""),
                                                            unselectedImageName: "rubric-cinema",
                                                            selectedImageName: "rubric-cinema-selected"),]
     }
