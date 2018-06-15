@@ -13,7 +13,7 @@ class SeeWelcomeRoutingEntry: QCRoutingEntry {
     // MARK: - QCRoutingEntry
     
     override var viewController: UIViewController? {
-        return SeeWelcomeViewController()
+        return SeeWelcomeViewController(viewModel: SeeWelcomeViewControllerViewModel())
     }
 
 }

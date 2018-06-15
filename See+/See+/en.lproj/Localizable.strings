@@ -37,4 +37,10 @@
 "museum" = "Museums and Artist’s houses";
 "nightlife" = "Nightlife";
 "cinema" = "Cinema and Theater";
-
+"quickview" = "Overview of your experience";
+"publish" = "publish";
+"modify" = "modify";
+"welcome" = "Welcome %@!";
+"congrat" = "Congrats %@!";
+"available" = "Your experience is now\navailable on SEE+!";
+"see" = "see my experience";

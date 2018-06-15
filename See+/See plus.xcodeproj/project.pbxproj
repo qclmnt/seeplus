@@ -73,6 +73,11 @@
 		3974DA6120CF09CF0098BB9E /* SeeAboutRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974DA6020CF09CF0098BB9E /* SeeAboutRoutingEntry.swift */; };
 		397BAD0820D3869A00B49967 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 397BAD0720D3868300B49967 /* Gotham-Book.otf */; };
 		397BAD0920D3869D00B49967 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 397BAD0620D3868300B49967 /* Gotham-Medium.otf */; };
+		397BAD0B20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD0A20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift */; };
+		397BAD0D20D45E6300B49967 /* SeeExperienceCreateDetailCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD0C20D45E6300B49967 /* SeeExperienceCreateDetailCollectionViewSection.swift */; };
+		397BAD1420D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1320D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift */; };
+		397BAD1620D4627500B49967 /* SeeCongratsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1520D4627500B49967 /* SeeCongratsViewControllerViewModel.swift */; };
+		397BAD1820D463DA00B49967 /* SeeCongratsRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -232,6 +237,11 @@
 		3974DA6020CF09CF0098BB9E /* SeeAboutRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAboutRoutingEntry.swift; sourceTree = "<group>"; };
 		397BAD0620D3868300B49967 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
 		397BAD0720D3868300B49967 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		397BAD0A20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateDetailCollectionViewModel.swift; sourceTree = "<group>"; };
+		397BAD0C20D45E6300B49967 /* SeeExperienceCreateDetailCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateDetailCollectionViewSection.swift; sourceTree = "<group>"; };
+		397BAD1320D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeWelcomeViewControllerViewModel.swift; sourceTree = "<group>"; };
+		397BAD1520D4627500B49967 /* SeeCongratsViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCongratsViewControllerViewModel.swift; sourceTree = "<group>"; };
+		397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCongratsRoutingEntry.swift; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -489,6 +499,7 @@
 		39488C5320CC62C60069AC8A /* Experience */ = {
 			isa = PBXGroup;
 			children = (
+				397BAD1920D463E400B49967 /* Congrats */,
 				39A557A520D2FE33009B8FB0 /* Creation */,
 				39488C5420CC64040069AC8A /* SeeExperienceRoutingEntry.swift */,
 			);
@@ -511,6 +522,7 @@
 				395C302C20D06E35003A9133 /* SeeExperienceDetailViewController.swift */,
 				395C302D20D06E35003A9133 /* SeeExperienceDetailViewController.xib */,
 				395C303020D06ED8003A9133 /* SeeExperienceDetailViewControllerCollectionViewModel.swift */,
+				397BAD0A20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -531,6 +543,7 @@
 			isa = PBXGroup;
 			children = (
 				395C303A20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift */,
+				397BAD0C20D45E6300B49967 /* SeeExperienceCreateDetailCollectionViewSection.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -607,6 +620,22 @@
 				397BAD0620D3868300B49967 /* Gotham-Medium.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		397BAD0E20D4603E00B49967 /* Congrats */ = {
+			isa = PBXGroup;
+			children = (
+				397BAD1520D4627500B49967 /* SeeCongratsViewControllerViewModel.swift */,
+			);
+			path = Congrats;
+			sourceTree = "<group>";
+		};
+		397BAD1920D463E400B49967 /* Congrats */ = {
+			isa = PBXGroup;
+			children = (
+				397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */,
+			);
+			path = Congrats;
 			sourceTree = "<group>";
 		};
 		39944DD520C6C4A500235B48 /* UI */ = {
@@ -737,6 +766,7 @@
 			children = (
 				39944DFC20C6DA9100235B48 /* SeeWelcomeViewController.swift */,
 				39944DFD20C6DA9100235B48 /* SeeWelcomeViewController.xib */,
+				397BAD1320D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -786,6 +816,7 @@
 		39A557A020D2D56F009B8FB0 /* Creation */ = {
 			isa = PBXGroup;
 			children = (
+				397BAD0E20D4603E00B49967 /* Congrats */,
 				39A557CB20D30D0B009B8FB0 /* Show */,
 				39A557B020D3045E009B8FB0 /* What Cells */,
 				39A557A120D2D59B009B8FB0 /* SeeWhatExperienceViewController.swift */,
@@ -1215,6 +1246,7 @@
 				395C305720D1B997003A9133 /* SeeUser.swift in Sources */,
 				39D6119A20CBD31F00237DCA /* SeeLogOutViewControllerViewModel.swift in Sources */,
 				3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */,
+				397BAD0D20D45E6300B49967 /* SeeExperienceCreateDetailCollectionViewSection.swift in Sources */,
 				395C303B20D07220003A9133 /* SeeExperienceDetailCollectionViewSection.swift in Sources */,
 				39A557BB20D305BF009B8FB0 /* SeeExperienceCreateDoubleInfoCollectionViewCell.swift in Sources */,
 				395C303520D0709F003A9133 /* SeeExperienceDetailCollectionViewCell.swift in Sources */,
@@ -1247,6 +1279,7 @@
 				39488C2C20CBE1C50069AC8A /* SeeMessageBubblesCollectionViewModel.swift in Sources */,
 				39D8953B20C8710900782F3D /* SeeTabBarViewController.swift in Sources */,
 				39EA128A20C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift in Sources */,
+				397BAD1420D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift in Sources */,
 				39668A6220CD6DEC0036351F /* UIButton+See.swift in Sources */,
 				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
 				39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */,
@@ -1258,6 +1291,7 @@
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
 				3906286F20C6BC5600187E21 /* QCAppEnvironment.swift in Sources */,
 				39EA128520C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift in Sources */,
+				397BAD1620D4627500B49967 /* SeeCongratsViewControllerViewModel.swift in Sources */,
 				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
 				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
@@ -1267,6 +1301,7 @@
 				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */,
+				397BAD0B20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39A557D120D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift in Sources */,
 				39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */,
@@ -1310,6 +1345,7 @@
 				39D6119720CBD1CB00237DCA /* SeeDeleteExperienceViewControllerViewModel.swift in Sources */,
 				395C302820D06486003A9133 /* SeeExperience.swift in Sources */,
 				3974DA5D20CF08F50098BB9E /* SeeAboutViewController.swift in Sources */,
+				397BAD1820D463DA00B49967 /* SeeCongratsRoutingEntry.swift in Sources */,
 				39488C4620CC12700069AC8A /* SeeRubricCollectionViewCell.swift in Sources */,
 				39A557B320D3049D009B8FB0 /* SeeExperienceCreateInfoCollectionViewCell.swift in Sources */,
 				395C303D20D07265003A9133 /* SeeExperienceDetailRoutingEntry.swift in Sources */,

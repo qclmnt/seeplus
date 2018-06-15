@@ -11,11 +11,13 @@ import UIKit
 class SeeExperienceDetailCollectionViewCellModel: QCCollectionCellViewModel {
     
     let experience: SeeExperience
+    let showCloseButton: Bool
     
     // MARK: - Initialization
     
-    init(experience: SeeExperience) {
+    init(experience: SeeExperience, showCloseButton: Bool = true) {
         self.experience = experience
+        self.showCloseButton = showCloseButton
         super.init()
     }
     
@@ -32,10 +34,11 @@ class SeeExperienceDetailCollectionViewCellModel: QCCollectionCellViewModel {
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let experienceCell = cell as? SeeExperienceDetailCollectionViewCell else {return}
         
-        experienceCell.usernameLabel.text = self.experience.author
+        experienceCell.usernameLabel.text = self.showCloseButton ? self.experience.author: NSLocalizedString("quickview", comment: "")
         experienceCell.experienceNameLabel.text = self.experience.name
         experienceCell.experienceImageView.image = self.experience.image
         experienceCell.experienceLocationLabel.text = self.experience.location
+        experienceCell.closeButton.isHidden = !self.showCloseButton
     }
 
 }

@@ -10,19 +10,19 @@ import UIKit
 
 class SeeExperienceDetailRoutingEntry: QCRoutingEntry {
     
-    let experience: SeeExperience
+    let viewModel: SeeExperienceDetailViewControllerCollectionViewModel
     
     // MARK: - Initialization
     
-    init(experience: SeeExperience) {
-        self.experience = experience
+    init(viewModel: SeeExperienceDetailViewControllerCollectionViewModel) {
+        self.viewModel = viewModel
         super.init()
     }
     
     // MARK: - QCRoutingEntry
     
     override var viewController: UIViewController? {
-        let viewController = SeeExperienceDetailViewController(experience: self.experience)
+        let viewController = SeeExperienceDetailViewController(viewModel: self.viewModel)
         return viewController
     }
     

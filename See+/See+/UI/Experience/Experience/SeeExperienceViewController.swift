@@ -51,7 +51,7 @@ class SeeExperienceViewController: UIViewController {
     // MARK: - Action
     
     @IBAction func moreButtonTouchUpInside(_ sender: UIButton) {
-        QCAppEnvironment.shared().routing?.route(to: SeeExperienceDetailRoutingEntry(experience: self.viewModel.experience))
+        QCAppEnvironment.shared().routing?.route(to: SeeExperienceDetailRoutingEntry(viewModel: SeeExperienceDetailViewControllerCollectionViewModel(experience: self.viewModel.experience)))
     }
     
 

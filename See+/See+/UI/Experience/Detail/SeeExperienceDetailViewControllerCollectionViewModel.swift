@@ -10,6 +10,10 @@ import UIKit
 
 class SeeExperienceDetailViewControllerCollectionViewModel: QCCollectionViewModel {
     
+    var detailSection: SeeExperienceDetailCollectionViewSection {
+        return SeeExperienceDetailCollectionViewSection(experience: self.experience)
+    }
+    
     let experience: SeeExperience
     
     init(experience: SeeExperience) {
@@ -18,7 +22,7 @@ class SeeExperienceDetailViewControllerCollectionViewModel: QCCollectionViewMode
     }
     
     override func loadSections() {
-        self.sections = [SeeExperienceDetailCollectionViewSection(experience: self.experience)]
+        self.sections = [self.detailSection]
     }
 
 }

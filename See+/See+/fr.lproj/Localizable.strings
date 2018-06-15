@@ -37,3 +37,10 @@
 "museum" = "Musées et Maisons d’artistes";
 "nightlife" = "Vie nocturne";
 "cinema" = "Cinéma et Théâtre";
+"quickview" = "Aperçu de mon expérience";
+"publish" = "publier";
+"modify" = "modifier";
+"welcome" = "Bienvenue %@!";
+"congrat" = "Félicitations %@!";
+"available" = "Votre expérience est\nmaintenant disponible\nsur SEE+!";
+"see" = "voir mon expérience";

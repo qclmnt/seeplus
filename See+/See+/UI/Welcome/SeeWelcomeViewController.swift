@@ -16,6 +16,19 @@ class SeeWelcomeViewController: UIViewController {
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
+    let viewModel: SeeWelcomeViewControllerViewModel
+    
+    // MARK: - Initialization
+    
+    init(viewModel: SeeWelcomeViewControllerViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: SeeWelcomeViewController.self), bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - View life cycle
 
     override func viewDidLoad() {
@@ -50,20 +63,20 @@ class SeeWelcomeViewController: UIViewController {
     func configureLayout() {
         
         // Title
-        self.titleLabel.text = "Welcome Edgarlee!"
+        self.titleLabel.text = self.viewModel.title
         
         // Info
-        self.infoLabel.text = NSLocalizedString("part.of", comment: "")
+        self.infoLabel.text = self.viewModel.info
         
         // Next Button
-        self.nextButton.setTitle("let.go", for: .normal)
+        self.nextButton.setTitle(self.viewModel.buttonTitle, for: .normal)
         self.nextButton.configureWithStyle1()
     }
     
     // MARK: - Actions
     
     @IBAction func nextButtonTouchUpInside(_ sender: UIButton) {
-        QCAppEnvironment.shared().routing?.route(to: SeeStartRoutingEntry())
+        self.viewModel.buttonAction()
     }
     
 

@@ -12,13 +12,13 @@ class SeeExperienceDetailViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let experience: SeeExperience
-    lazy var collectionViewModel = SeeExperienceDetailViewControllerCollectionViewModel(experience: self.experience)
+//    lazy var collectionViewModel = SeeExperienceDetailViewControllerCollectionViewModel(experience: self.experience)
+    let collectionViewModel: SeeExperienceDetailViewControllerCollectionViewModel
     
     // MARK: - Initialization
     
-    init(experience: SeeExperience) {
-        self.experience = experience
+    init(viewModel: SeeExperienceDetailViewControllerCollectionViewModel) {
+        self.collectionViewModel = viewModel
         super.init(nibName: String(describing: SeeExperienceDetailViewController.self), bundle: nil)
     }
     
