@@ -78,6 +78,8 @@
 		397BAD1420D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1320D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift */; };
 		397BAD1620D4627500B49967 /* SeeCongratsViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1520D4627500B49967 /* SeeCongratsViewControllerViewModel.swift */; };
 		397BAD1820D463DA00B49967 /* SeeCongratsRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */; };
+		397BAD1B20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1A20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift */; };
+		397BAD1D20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1C20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -242,6 +244,8 @@
 		397BAD1320D4609F00B49967 /* SeeWelcomeViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeWelcomeViewControllerViewModel.swift; sourceTree = "<group>"; };
 		397BAD1520D4627500B49967 /* SeeCongratsViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCongratsViewControllerViewModel.swift; sourceTree = "<group>"; };
 		397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCongratsRoutingEntry.swift; sourceTree = "<group>"; };
+		397BAD1A20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileResidentViewControllerViewModel.swift; sourceTree = "<group>"; };
+		397BAD1C20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileTravellerViewControllerViewModel.swift; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -974,6 +978,8 @@
 				39EA128920C9D3CE00BB6387 /* SeeProfileExperiencesCollectionViewModel.swift */,
 				39D8953020C86DEC00782F3D /* SeeProfileViewController.xib */,
 				39D8954320C8723100782F3D /* SeeProfileViewControllerViewModel.swift */,
+				397BAD1A20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift */,
+				397BAD1C20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1254,6 +1260,7 @@
 				39488C2820CBE1180069AC8A /* SeeMessageWriterBubbleCollectionViewCellViewModel.swift in Sources */,
 				39A557CA20D30A6C009B8FB0 /* SeeWhereExperienceRoutingEntry.swift in Sources */,
 				39D6119020CBCA8A00237DCA /* SeeDeleteExperiencePresentationController.swift in Sources */,
+				397BAD1D20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift in Sources */,
 				39488C1D20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift in Sources */,
 				39D8952720C86D6C00782F3D /* SeeNewExperienceViewController.swift in Sources */,
 				39A557C420D30705009B8FB0 /* SeeExperienceCreateDoubleInfoCollectionViewCellModel.swift in Sources */,
@@ -1301,6 +1308,7 @@
 				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,
 				39488C3420CC063C0069AC8A /* SeeMessageRecipientBubbleCollectionViewCellViewModel.swift in Sources */,
+				397BAD1B20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift in Sources */,
 				397BAD0B20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
 				39A557D120D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift in Sources */,

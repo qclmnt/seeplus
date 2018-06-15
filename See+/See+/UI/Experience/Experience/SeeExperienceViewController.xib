@@ -12,6 +12,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeExperienceViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
@@ -46,7 +51,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="xtZ-RY-g2Z"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                             <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -58,8 +63,8 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keV-Oc-eeZ">
-                            <rect key="frame" x="45.5" y="304" width="210" height="24"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <rect key="frame" x="45.5" y="308" width="210" height="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                             <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -110,7 +115,7 @@
                         <constraint firstAttribute="height" constant="21" id="5JO-na-smR"/>
                         <constraint firstAttribute="width" constant="205" id="FXx-xy-27S"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
                     <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

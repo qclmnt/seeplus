@@ -11,7 +11,7 @@ import UIKit
 class SeeProfileViewController: SeeTabBarViewController {
 
     override var viewModel: SeeTabBarViewControllerViewModel {
-        return SeeProfileViewControllerViewModel()
+        return SeeMode.activatedMode() == .propose ? SeeProfileResidentViewControllerViewModel() : SeeProfileTravellerViewControllerViewModel()
     }
     
     var profileViewModel: SeeProfileViewControllerViewModel? {

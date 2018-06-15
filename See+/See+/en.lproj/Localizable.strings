@@ -44,3 +44,6 @@
 "congrat" = "Congrats %@!";
 "available" = "Your experience is now\navailable on SEE+!";
 "see" = "see my experience";
+"profile.resident" = "My resident profile";
+"profile.traveler" = "My traveler profile";
+
