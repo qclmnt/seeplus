@@ -11,6 +11,10 @@ import UIKit
 class SeeHeadingsTravellerCollectionViewModel: SeeHeadingsCollectionViewModel {
     
     // MARK: - SeeHeadingsCollectionViewModel
+    
+    override var title: String {
+        return NSLocalizedString("what.explore", comment: "")
+    }
 
     override func next() {
         QCAppEnvironment.shared().routing?.route(to: SeeDismissRoutingEntry())
