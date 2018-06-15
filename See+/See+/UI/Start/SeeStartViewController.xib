@@ -9,8 +9,13 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeStartViewController" customModule="See_" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeStartViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="infoLabel" destination="f5S-pn-tcJ" id="xoU-4H-x4Q"/>
                 <outlet property="liveButton" destination="3s2-g0-4Eo" id="Hjy-2S-1ZB"/>
@@ -31,7 +36,7 @@
                         </constraint>
                         <constraint firstAttribute="height" constant="110" id="joR-HO-iZp"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -45,7 +50,7 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="48"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="liveButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="ZqL-ik-OJU"/>
@@ -53,7 +58,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cu-Kg-BPi">
                     <rect key="frame" x="62" y="371" width="250" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="proposeButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="due-qV-gFK"/>

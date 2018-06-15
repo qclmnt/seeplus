@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeHeadingsViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
@@ -30,7 +35,7 @@
                             <variation key="heightClass=regular-widthClass=compact" constant="81"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -54,7 +59,7 @@
                             <variation key="heightClass=regular-widthClass=compact" constant="150"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>

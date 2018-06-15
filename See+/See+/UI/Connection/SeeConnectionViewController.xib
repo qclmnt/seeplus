@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeConnectionViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
@@ -39,13 +47,13 @@
                             <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="43"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-jp-uUS">
                     <rect key="frame" x="37.5" y="525" width="300" height="35"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Login">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -62,7 +70,7 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="43"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Enter">
                         <color key="titleColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -78,7 +86,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Onx-N4-xiL"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -97,7 +105,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="3Hj-wJ-zb0"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -116,7 +124,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="ONM-78-6AQ"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -135,7 +143,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="vxJ-U3-9fh"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>

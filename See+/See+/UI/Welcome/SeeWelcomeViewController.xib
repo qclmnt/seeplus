@@ -9,8 +9,13 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeWelcomeViewController" customModule="See_" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeWelcomeViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="infoLabel" destination="F6g-Yf-3tc" id="256-fc-hEz"/>
                 <outlet property="nextButton" destination="2lg-Rb-YzN" id="Tsa-1b-px0"/>
@@ -28,7 +33,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="M4S-Cy-jF5"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.95686274509803915" green="0.17254901960784313" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -40,7 +45,7 @@
                         </constraint>
                         <constraint firstAttribute="height" constant="119" id="odv-Xk-gan"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -54,7 +59,7 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="412"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="nextButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="lu6-Be-mXl"/>

@@ -71,6 +71,8 @@
 		3974DA5D20CF08F50098BB9E /* SeeAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974DA5B20CF08F50098BB9E /* SeeAboutViewController.swift */; };
 		3974DA5E20CF08F50098BB9E /* SeeAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3974DA5C20CF08F50098BB9E /* SeeAboutViewController.xib */; };
 		3974DA6120CF09CF0098BB9E /* SeeAboutRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974DA6020CF09CF0098BB9E /* SeeAboutRoutingEntry.swift */; };
+		397BAD0820D3869A00B49967 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 397BAD0720D3868300B49967 /* Gotham-Book.otf */; };
+		397BAD0920D3869D00B49967 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 397BAD0620D3868300B49967 /* Gotham-Medium.otf */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -228,6 +230,8 @@
 		3974DA5B20CF08F50098BB9E /* SeeAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAboutViewController.swift; sourceTree = "<group>"; };
 		3974DA5C20CF08F50098BB9E /* SeeAboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeAboutViewController.xib; sourceTree = "<group>"; };
 		3974DA6020CF09CF0098BB9E /* SeeAboutRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAboutRoutingEntry.swift; sourceTree = "<group>"; };
+		397BAD0620D3868300B49967 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		397BAD0720D3868300B49967 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -350,6 +354,7 @@
 		3906285A20C6BA3400187E21 /* See+ */ = {
 			isa = PBXGroup;
 			children = (
+				397BAD0520D3867300B49967 /* Font */,
 				395C302620D0644C003A9133 /* Model */,
 				39944DEB20C6D19C00235B48 /* Helper */,
 				39944DE020C6C51400235B48 /* ViewModel */,
@@ -593,6 +598,15 @@
 				3974DA6020CF09CF0098BB9E /* SeeAboutRoutingEntry.swift */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		397BAD0520D3867300B49967 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				397BAD0720D3868300B49967 /* Gotham-Book.otf */,
+				397BAD0620D3868300B49967 /* Gotham-Medium.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		39944DD520C6C4A500235B48 /* UI */ = {
@@ -1108,6 +1122,7 @@
 				39EA128320C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib in Resources */,
 				39A557A420D2D59B009B8FB0 /* SeeWhatExperienceViewController.xib in Resources */,
 				39D8953720C86E1600782F3D /* SeeFavoritesViewController.xib in Resources */,
+				397BAD0820D3869A00B49967 /* Gotham-Book.otf in Resources */,
 				39A557AB20D2FF2F009B8FB0 /* SeeWhereExperienceViewController.xib in Resources */,
 				3974DA5E20CF08F50098BB9E /* SeeAboutViewController.xib in Resources */,
 				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
@@ -1127,6 +1142,7 @@
 				39A557B820D30568009B8FB0 /* SeeExperienceCreateTitleCollectionViewCell.xib in Resources */,
 				39488C4720CC12700069AC8A /* SeeRubricCollectionViewCell.xib in Resources */,
 				39D6118A20CBC7F300237DCA /* SeeDeleteExperienceViewController.xib in Resources */,
+				397BAD0920D3869D00B49967 /* Gotham-Medium.otf in Resources */,
 				39488C2620CBDFA20069AC8A /* SeeMessageWriterBubbleCollectionViewCell.xib in Resources */,
 				3906286620C6BA3600187E21 /* LaunchScreen.storyboard in Resources */,
 				39A557CF20D30D2F009B8FB0 /* SeeExperienceCreateShowViewController.xib in Resources */,

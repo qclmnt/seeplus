@@ -10,6 +10,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeProfilePicViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
@@ -30,7 +38,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gnk-TG-Sku"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -44,7 +52,7 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -52,7 +60,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-I7-VZm">
                     <rect key="frame" x="60" y="464" width="255" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
