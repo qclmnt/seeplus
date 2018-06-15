@@ -18,18 +18,33 @@ class SeeNavigationController: UINavigationController {
     
     
     lazy var proposeBarButtonItem: UIBarButtonItem = {
-        let barButton = UIBarButtonItem(title: "PROPOSE", style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
+        let title = NSLocalizedString("propose", comment: "").uppercased()
+        let barButton = UIBarButtonItem(title: "\(title)\t", style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
         barButton.tintColor = .appRed()
+        let fontName = SeeMode.activatedMode() == .propose ? "Gotham-Medium" : "Gotham-Book"
+//        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -60, vertical: 0), for: .default)
+        if let font = UIFont(name: fontName, size: 13) {
+            barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
+        }
         return barButton
     }()
     lazy var discoverBarButtonItem: UIBarButtonItem = {
-        let barButton = UIBarButtonItem(title: "DISCOVER", style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
+        let title = NSLocalizedString("discover", comment: "").uppercased()
+        let barButton = UIBarButtonItem(title: "\t\(title)\t\t", style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
         barButton.tintColor = .appRed()
+//        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -30, vertical: 0), for: .default)
+        let fontName = SeeMode.activatedMode() == .discover ? "Gotham-Medium" : "Gotham-Book"
+        if let font = UIFont(name: fontName, size: 13) {
+            barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
+        }
         return barButton
     }()
     lazy var languageBarButtonItem: UIBarButtonItem = {
-        let barButton = UIBarButtonItem(title: "FR/EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
+        let barButton = UIBarButtonItem(title: "FR / EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
         barButton.tintColor = .appRed()
+        if let font = UIFont(name: "Gotham-Book", size: 13) {
+            barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
+        }
         return barButton
     }()
     
