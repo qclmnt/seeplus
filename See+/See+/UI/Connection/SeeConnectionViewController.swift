@@ -103,7 +103,7 @@ class SeeConnectionViewController: UIViewController {
         self.enterButton.setTitle(NSLocalizedString("enter", comment: ""), for: .normal)
         self.enterButton.layer.masksToBounds = true
         self.switchButton.setTitle(self.viewModel.switchButtonTitle, for: .normal)
-        self.switchButton.layer.borderWidth = 1
+        self.switchButton.layer.borderWidth = 2
         self.switchButton.layer.borderColor = UIColor.white.cgColor
         self.switchButton.layer.masksToBounds = true
         

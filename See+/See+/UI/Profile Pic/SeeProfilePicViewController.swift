@@ -45,8 +45,8 @@ class SeeProfilePicViewController: UIViewController {
     func configureLayout() {
         
         // Background
-        self.gradientLayer = self.view.addGradientLayer(bottomColor: UIColor.appPurple(),
-                                                        topColor: UIColor.appRed())
+        self.gradientLayer = self.view.addGradientLayer(bottomColor: UIColor.appRed(),
+                                                        topColor: UIColor.appPurple())
         
         // Title
         self.titleLabel.text = NSLocalizedString("add.profile.pic", comment: "")
@@ -56,7 +56,7 @@ class SeeProfilePicViewController: UIViewController {
         // Buttons
         self.uploadPhotoButton.setTitle(NSLocalizedString("upload.photo", comment: ""), for: .normal)
         self.validateButton.setTitle(NSLocalizedString("enter", comment: ""), for: .normal)
-        self.uploadPhotoButton.layer.borderWidth = 1
+        self.uploadPhotoButton.layer.borderWidth = 2
         self.uploadPhotoButton.layer.borderColor = UIColor.white.cgColor
         self.uploadPhotoButton.layer.masksToBounds = true
     }

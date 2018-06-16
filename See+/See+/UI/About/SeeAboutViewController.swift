@@ -26,7 +26,7 @@ class SeeAboutViewController: UIViewController {
                                               target: self,
                                               action: #selector(self.aboutButtonTouchUpInside))
         self.toolbarItems = [flexItem, aboutButtonItem]
-        let _ = self.navigationController?.toolbar.addHorizontalGradientLayer(leftColor: .appRed(), rightColor: .purple)
+        let _ = self.navigationController?.toolbar.addHorizontalGradientLayer(leftColor: .appRed(), rightColor: .appPurple())
     }
     
     // MARK: - Actions

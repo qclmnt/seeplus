@@ -59,12 +59,12 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-jp-uUS">
                     <rect key="frame" x="62.5" y="485" width="250" height="35"/>
-                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Login">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                     </variation>
                     <connections>
                         <action selector="switchButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="HXu-Lh-9b3"/>

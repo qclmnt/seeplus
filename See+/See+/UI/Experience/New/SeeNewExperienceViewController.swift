@@ -20,7 +20,10 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     @IBOutlet weak var newExperienceButton: UIButton!
     var gradientLayer: CAGradientLayer?
     
+    @IBOutlet weak var mapImageView: UIImageView!
     @IBOutlet weak var mapScrollView: UIScrollView!
+    
+    var grayView: UIView?
     
     // MARK: - Initialization
     
@@ -57,20 +60,25 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         
         // Map scroll view
         let deviceSize = UIScreen.main.bounds.size
-        let mapContentSize = CGSize(width: deviceSize.width*1.5, height: deviceSize.height*1.1)
+        let mapContentSize = CGSize(width: deviceSize.width, height: deviceSize.height)
         self.mapScrollView.contentSize = mapContentSize
-        let image = UIImage(named: "map")
-        let imageView = UIImageView(image: image)
-        imageView.contentMode = .scaleAspectFit
-        imageView.frame = CGRect(x: 0, y: 0, width: mapContentSize.width, height: mapContentSize.height)
-        self.mapScrollView.addSubview(imageView)
+        self.mapImageView.image = UIImage(named: "map")
+        self.mapScrollView.maximumZoomScale = CGFloat(3.0)
+        self.mapScrollView.delegate = self
         
         // Add Experience
-        let view = UIView(frame: CGRect(x: mapContentSize.width-300, y: 200, width: 100, height: 100))
-        view.backgroundColor = .gray
-        self.mapScrollView.addSubview(view)
-        view.createTapGesture(target: self, selector: #selector(self.experienceViewTapped))
+        self.grayView = UIView(frame: CGRect(x: 300, y: 200, width: 20, height: 20))
+        self.grayView?.backgroundColor = .gray
+        self.mapScrollView.addSubview(self.grayView!)
+        self.grayView?.createTapGesture(target: self, selector: #selector(self.experienceViewTapped))
         
+    }
+    
+    // MARK: - Update position
+    
+    func updatePositionView() {
+        let zoom = self.mapScrollView.zoomScale
+        self.grayView?.frame = CGRect(x: 300*zoom, y: 200*zoom, width: 20*zoom, height: 20*zoom)
     }
     
     // MARK: - Actions
@@ -85,4 +93,16 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
 //        QCAppEnvironment.shared().routing?.route(to: SeeExperienceRoutingEntry(experience: SeeExperience(name: "test", location: "test", imageName: "", author: "test")))
     }
 
+}
+
+extension SeeNewExperienceViewController: UIScrollViewDelegate {
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.mapImageView
+    }
+    
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        self.updatePositionView()
+    }
+    
 }

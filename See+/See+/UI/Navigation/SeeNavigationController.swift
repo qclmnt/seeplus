@@ -13,8 +13,8 @@ class SeeNavigationController: UINavigationController {
     
     lazy var leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logo-navbar"),
                                                  style: .plain,
-                                                 target: nil,
-                                                 action: nil)
+                                                 target: self,
+                                                 action: #selector(self.logoButtonTouchUpInside))
     
     
     lazy var proposeBarButtonItem: UIBarButtonItem = {
@@ -77,6 +77,14 @@ class SeeNavigationController: UINavigationController {
     }
     
     // MARK: - Actions
+    
+    @objc func logoButtonTouchUpInside() {
+        let signupRoutingEntry = SeeSignupRoutinEntry()
+        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
+                                                           showToolbar: true)
+        
+        AppDelegate.shared()?.window??.rootViewController = navigationController
+    }
     
     @objc func aboutButtonTouchUpInside() {
         QCAppEnvironment.shared().routing?.route(to: SeeAboutRoutingEntry())
