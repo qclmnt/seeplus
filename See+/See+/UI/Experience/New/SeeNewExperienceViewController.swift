@@ -81,7 +81,8 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     }
     
     @objc func experienceViewTapped() {
-        QCAppEnvironment.shared().routing?.route(to: SeeExperienceRoutingEntry(experience: SeeExperience(name: "test", location: "test", imageName: "", author: "test")))
+        QCAppEnvironment.shared().routing?.route(to: SeeExperiencePreviewRoutingEntry())
+//        QCAppEnvironment.shared().routing?.route(to: SeeExperienceRoutingEntry(experience: SeeExperience(name: "test", location: "test", imageName: "", author: "test")))
     }
 
 }

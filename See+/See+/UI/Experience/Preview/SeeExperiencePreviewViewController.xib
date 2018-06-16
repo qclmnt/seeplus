@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeExperiencePreviewViewController" customModule="See_plus" customModuleProvider="target">
+            <connections>
+                <outlet property="experienceImageView" destination="eOF-cc-eUR" id="aX9-pj-1KX"/>
+                <outlet property="experienceLabel" destination="fIR-yC-gD5" id="jAa-qs-rWg"/>
+                <outlet property="experienceLocationLabel" destination="jnT-SV-xDf" id="Nff-PT-Mnv"/>
+                <outlet property="infoView" destination="jfF-1T-Y1n" id="uNy-Ld-4We"/>
+                <outlet property="noteImageView" destination="GAg-Ma-UH5" id="blW-6r-8XR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-cc-eUR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfF-1T-Y1n">
+                    <rect key="frame" x="0.0" y="492" width="375" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIR-yC-gD5">
+                            <rect key="frame" x="39" y="8" width="298" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="XC9-Z5-PmP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                            <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="GAg-Ma-UH5">
+                            <rect key="frame" x="72.5" y="76" width="230" height="15"/>
+                            <color key="tintColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="1Dx-FR-R2v"/>
+                                <constraint firstAttribute="height" constant="15" id="lDN-uP-nzR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnT-SV-xDf">
+                            <rect key="frame" x="38.5" y="110" width="298" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="map-aL-E2n"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                            <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fIR-yC-gD5" firstAttribute="leading" secondItem="jfF-1T-Y1n" secondAttribute="leading" constant="39" id="1AF-Xf-SaH"/>
+                        <constraint firstAttribute="trailing" secondItem="fIR-yC-gD5" secondAttribute="trailing" constant="38" id="205-gC-qwr"/>
+                        <constraint firstItem="jnT-SV-xDf" firstAttribute="width" secondItem="fIR-yC-gD5" secondAttribute="width" id="2JN-7p-Zs4"/>
+                        <constraint firstAttribute="height" constant="140" id="J2I-LW-C8F"/>
+                        <constraint firstItem="GAg-Ma-UH5" firstAttribute="centerX" secondItem="jfF-1T-Y1n" secondAttribute="centerX" id="QCk-Ud-2Tm"/>
+                        <constraint firstItem="jnT-SV-xDf" firstAttribute="top" secondItem="GAg-Ma-UH5" secondAttribute="bottom" constant="19" id="Qu4-bJ-Nxj"/>
+                        <constraint firstItem="GAg-Ma-UH5" firstAttribute="top" secondItem="fIR-yC-gD5" secondAttribute="bottom" constant="8" id="Xy4-dU-hdL"/>
+                        <constraint firstItem="fIR-yC-gD5" firstAttribute="top" secondItem="jfF-1T-Y1n" secondAttribute="top" constant="8" id="buj-HB-Ayw"/>
+                        <constraint firstItem="jnT-SV-xDf" firstAttribute="centerX" secondItem="jfF-1T-Y1n" secondAttribute="centerX" id="kZf-y3-p11"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eOF-cc-eUR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1tV-aq-4Fe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eOF-cc-eUR" secondAttribute="bottom" id="5l9-hT-OZl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="eOF-cc-eUR" secondAttribute="top" constant="20" id="7dh-c7-KV8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jfF-1T-Y1n" secondAttribute="trailing" id="XZa-pf-xeg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jfF-1T-Y1n" secondAttribute="bottom" constant="35" id="a4m-3X-3bO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eOF-cc-eUR" secondAttribute="trailing" id="jvd-bK-OeI"/>
+                <constraint firstItem="jfF-1T-Y1n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rdy-UX-ccu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="38.5" y="3.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="note" width="73" height="10"/>
+    </resources>
+</document>
