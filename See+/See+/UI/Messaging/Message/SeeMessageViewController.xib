@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeMessageViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
@@ -32,10 +37,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRI-Yq-CRy">
-                    <rect key="frame" x="0.0" y="20" width="375" height="90"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="91"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7P-wP-gYN">
-                            <rect key="frame" x="20" y="20.5" width="50" height="50"/>
+                            <rect key="frame" x="20" y="21" width="50" height="50"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="XbJ-IZ-oO6"/>
@@ -47,7 +52,7 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="eUx-IQ-iog">
-                            <rect key="frame" x="116" y="25.5" width="39" height="39"/>
+                            <rect key="frame" x="121" y="26" width="39" height="39"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="39" id="7qj-9Y-Hqu">
@@ -57,12 +62,12 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-fx-dCp">
-                            <rect key="frame" x="175" y="20.5" width="85" height="50"/>
+                            <rect key="frame" x="175" y="21" width="85" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="85" id="hAx-Q3-rrT"/>
                                 <constraint firstAttribute="height" constant="50" id="xoj-e0-3E5"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
                             <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -74,15 +79,15 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="40"/>
                         </constraint>
                         <constraint firstItem="Q7P-wP-gYN" firstAttribute="centerY" secondItem="fRI-Yq-CRy" secondAttribute="centerY" id="4bV-82-FEw"/>
-                        <constraint firstItem="sUf-fx-dCp" firstAttribute="leading" secondItem="eUx-IQ-iog" secondAttribute="trailing" constant="20" id="HUu-8R-zPm"/>
-                        <constraint firstAttribute="height" constant="90" id="Lnd-0J-v8B"/>
+                        <constraint firstItem="sUf-fx-dCp" firstAttribute="leading" secondItem="eUx-IQ-iog" secondAttribute="trailing" constant="15" id="HUu-8R-zPm"/>
+                        <constraint firstAttribute="height" constant="91" id="Lnd-0J-v8B"/>
                         <constraint firstItem="eUx-IQ-iog" firstAttribute="centerY" secondItem="Q7P-wP-gYN" secondAttribute="centerY" id="l4z-hO-5GU"/>
                         <constraint firstItem="sUf-fx-dCp" firstAttribute="centerX" secondItem="fRI-Yq-CRy" secondAttribute="centerX" constant="30" id="l5K-vv-Cso"/>
                         <constraint firstItem="sUf-fx-dCp" firstAttribute="centerY" secondItem="eUx-IQ-iog" secondAttribute="centerY" id="wrI-qh-Hcj"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-N9-1Sj">
-                    <rect key="frame" x="0.0" y="118" width="375" height="456"/>
+                    <rect key="frame" x="0.0" y="119" width="375" height="455"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aub-2C-D9Y">
                         <size key="itemSize" width="50" height="50"/>
@@ -95,15 +100,15 @@
                     <rect key="frame" x="0.0" y="582" width="375" height="85"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjh-y4-5Io">
-                            <rect key="frame" x="86" y="18" width="46" height="49"/>
+                            <rect key="frame" x="89.5" y="18.5" width="49.5" height="49"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="46" id="PfJ-0R-PK5"/>
-                                <constraint firstAttribute="height" constant="49" id="PtX-HA-Fgl"/>
+                                <constraint firstAttribute="width" constant="49" id="PfJ-0R-PK5"/>
+                                <constraint firstAttribute="width" secondItem="Rjh-y4-5Io" secondAttribute="height" multiplier="1:1" id="izr-lU-bgb"/>
                             </constraints>
                             <state key="normal" image="validate-message"/>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Fl-IL-yZ4" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                            <rect key="frame" x="152" y="27.5" width="203" height="30"/>
+                            <rect key="frame" x="159" y="27.5" width="196" height="30"/>
                             <color key="tintColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="Vms-pq-Hch">
@@ -115,10 +120,10 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dP8-rv-bLt">
-                            <rect key="frame" x="20" y="17" width="46" height="50"/>
+                            <rect key="frame" x="20" y="18" width="49.5" height="49"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="46" id="4uZ-f4-7qg"/>
-                                <constraint firstAttribute="height" constant="50" id="UtN-4B-ESM"/>
+                                <constraint firstAttribute="width" constant="49" id="4uZ-f4-7qg"/>
+                                <constraint firstAttribute="width" secondItem="dP8-rv-bLt" secondAttribute="height" multiplier="1:1" id="7un-sD-eQY"/>
                             </constraints>
                             <state key="normal" image="not-button"/>
                         </button>
@@ -126,19 +131,21 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Rjh-y4-5Io" firstAttribute="centerY" secondItem="dP8-rv-bLt" secondAttribute="centerY" id="2No-xK-q9b"/>
-                        <constraint firstItem="Rjh-y4-5Io" firstAttribute="leading" secondItem="dP8-rv-bLt" secondAttribute="trailing" constant="20" id="4pB-7i-gfG"/>
+                        <constraint firstItem="Rjh-y4-5Io" firstAttribute="leading" secondItem="dP8-rv-bLt" secondAttribute="trailing" constant="44" id="4pB-7i-gfG">
+                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                        </constraint>
                         <constraint firstAttribute="trailing" secondItem="7Fl-IL-yZ4" secondAttribute="trailing" constant="20" id="FjA-ef-FWp">
                             <variation key="heightClass=regular-widthClass=regular" constant="40"/>
                         </constraint>
                         <constraint firstItem="dP8-rv-bLt" firstAttribute="centerY" secondItem="vLX-Z2-yp5" secondAttribute="centerY" id="JUI-Re-EKU"/>
                         <constraint firstAttribute="height" constant="85" id="PmW-XE-JQ1">
-                            <variation key="heightClass=regular-widthClass=regular" constant="121"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="91"/>
                         </constraint>
                         <constraint firstItem="7Fl-IL-yZ4" firstAttribute="leading" secondItem="Rjh-y4-5Io" secondAttribute="trailing" constant="20" id="ReD-ns-bek">
-                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="44"/>
                         </constraint>
                         <constraint firstItem="dP8-rv-bLt" firstAttribute="leading" secondItem="vLX-Z2-yp5" secondAttribute="leading" constant="20" id="ntz-n3-gLf">
-                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="44"/>
                         </constraint>
                         <constraint firstItem="7Fl-IL-yZ4" firstAttribute="centerY" secondItem="Rjh-y4-5Io" secondAttribute="centerY" id="scd-aZ-Erm"/>
                     </constraints>
@@ -164,7 +171,7 @@
     <resources>
         <image name="back-button" width="49" height="49"/>
         <image name="myprofile" width="64" height="64"/>
-        <image name="not-button" width="70" height="70"/>
+        <image name="not-button" width="49" height="49"/>
         <image name="validate-message" width="49" height="49"/>
     </resources>
 </document>

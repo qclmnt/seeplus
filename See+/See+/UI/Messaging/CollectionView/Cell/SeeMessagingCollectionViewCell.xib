@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
         <array key="Gotham-Medium.otf">
             <string>Gotham-Medium</string>
         </array>
@@ -32,12 +35,12 @@
                         <constraints>
                             <constraint firstAttribute="width" secondItem="UMd-LR-2ar" secondAttribute="height" multiplier="1:1" id="6Xa-2s-ujK"/>
                             <constraint firstAttribute="width" constant="54" id="OY2-kx-G5l">
-                                <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Uc-fql">
-                        <rect key="frame" x="86" y="8" width="279" height="30"/>
+                        <rect key="frame" x="93" y="8" width="272" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="dpQ-Bl-fGp"/>
                         </constraints>
@@ -49,15 +52,15 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-r8-NHw">
-                        <rect key="frame" x="86" y="35" width="279" height="30"/>
+                        <rect key="frame" x="93" y="35" width="272" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="OaK-wk-17m"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="26"/>
                         <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                         </variation>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-67-LeW">
@@ -86,7 +89,7 @@
                 <constraint firstItem="UMd-LR-2ar" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="nUL-Vl-SFH"/>
                 <constraint firstItem="rNg-Uc-fql" firstAttribute="top" secondItem="UMd-LR-2ar" secondAttribute="top" id="wGv-Ai-tMF"/>
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="top" secondItem="UMd-LR-2ar" secondAttribute="centerY" id="x9d-yi-KUL"/>
-                <constraint firstItem="rNg-Uc-fql" firstAttribute="leading" secondItem="UMd-LR-2ar" secondAttribute="trailing" constant="12" id="yxP-9l-KWW"/>
+                <constraint firstItem="rNg-Uc-fql" firstAttribute="leading" secondItem="UMd-LR-2ar" secondAttribute="trailing" constant="19" id="yxP-9l-KWW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="441" height="70"/>
@@ -101,6 +104,6 @@
     </objects>
     <resources>
         <image name="myprofile" width="64" height="64"/>
-        <image name="not-button" width="70" height="70"/>
+        <image name="not-button" width="49" height="49"/>
     </resources>
 </document>

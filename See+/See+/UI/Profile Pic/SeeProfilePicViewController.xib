@@ -114,6 +114,6 @@
         </view>
     </objects>
     <resources>
-        <image name="profilePic-placeholder" width="768" height="768"/>
+        <image name="profilePic-placeholder" width="175" height="175"/>
     </resources>
 </document>

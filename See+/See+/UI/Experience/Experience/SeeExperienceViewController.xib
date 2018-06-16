@@ -39,7 +39,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="rUo-eo-Bai">
                     <rect key="frame" x="37.5" y="35" width="50" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="50" id="IqP-bc-LL5"/>
+                        <constraint firstAttribute="width" constant="63" id="IqP-bc-LL5">
+                            <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                        </constraint>
                         <constraint firstAttribute="width" secondItem="rUo-eo-Bai" secondAttribute="height" multiplier="1:1" id="VR8-IK-nuH"/>
                     </constraints>
                 </imageView>
@@ -116,7 +118,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NP-1W-cyO">
-                    <rect key="frame" x="122" y="50" width="205" height="21"/>
+                    <rect key="frame" x="106.5" y="50" width="205" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="5JO-na-smR"/>
                         <constraint firstAttribute="width" constant="205" id="FXx-xy-27S"/>
@@ -131,16 +133,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="V3B-Ga-i9e" firstAttribute="top" secondItem="rUo-eo-Bai" secondAttribute="bottom" constant="33" id="2Vv-XW-TOx">
+                <constraint firstItem="V3B-Ga-i9e" firstAttribute="top" secondItem="rUo-eo-Bai" secondAttribute="bottom" constant="26" id="2Vv-XW-TOx">
                     <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                 </constraint>
                 <constraint firstItem="QVv-uL-Sdl" firstAttribute="centerY" secondItem="V3B-Ga-i9e" secondAttribute="bottom" id="CKf-kF-Gur"/>
                 <constraint firstItem="rUo-eo-Bai" firstAttribute="leading" secondItem="V3B-Ga-i9e" secondAttribute="leading" id="Nxc-bp-OgE"/>
                 <constraint firstItem="V3B-Ga-i9e" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SMu-St-YGO"/>
-                <constraint firstItem="rUo-eo-Bai" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="85" id="fkP-CA-t5s">
+                <constraint firstItem="rUo-eo-Bai" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="61" id="fkP-CA-t5s">
                     <variation key="heightClass=regular-widthClass=compact" constant="15"/>
                 </constraint>
-                <constraint firstItem="2NP-1W-cyO" firstAttribute="leading" secondItem="rUo-eo-Bai" secondAttribute="trailing" constant="34" id="l0C-Te-8J1"/>
+                <constraint firstItem="2NP-1W-cyO" firstAttribute="leading" secondItem="rUo-eo-Bai" secondAttribute="trailing" constant="19" id="l0C-Te-8J1"/>
                 <constraint firstItem="2NP-1W-cyO" firstAttribute="centerY" secondItem="rUo-eo-Bai" secondAttribute="centerY" id="qs4-of-hmV"/>
                 <constraint firstItem="QVv-uL-Sdl" firstAttribute="centerX" secondItem="V3B-Ga-i9e" secondAttribute="centerX" id="tDz-x7-OdH"/>
             </constraints>
