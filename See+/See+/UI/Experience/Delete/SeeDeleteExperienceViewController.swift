@@ -58,7 +58,7 @@ class SeeDeleteExperienceViewController: UIViewController {
         self.view.layer.masksToBounds = true
         self.view.layer.borderWidth = 2
         self.view.layer.borderColor = UIColor.appPurple().cgColor
-        self.view.layer.cornerRadius = 30
+        self.view.layer.cornerRadius = 72
         
         self.titleLabel.text = self.viewModel.title
         

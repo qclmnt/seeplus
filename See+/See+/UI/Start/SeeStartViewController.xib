@@ -76,7 +76,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="3Cu-Kg-BPi" firstAttribute="top" secondItem="3s2-g0-4Eo" secondAttribute="bottom" constant="62" id="2Mv-Vh-gAC">
+                <constraint firstItem="3Cu-Kg-BPi" firstAttribute="top" secondItem="3s2-g0-4Eo" secondAttribute="bottom" constant="43" id="2Mv-Vh-gAC">
                     <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                 </constraint>
                 <constraint firstItem="3s2-g0-4Eo" firstAttribute="top" secondItem="f5S-pn-tcJ" secondAttribute="bottom" constant="57" id="Bka-mh-Z2I">

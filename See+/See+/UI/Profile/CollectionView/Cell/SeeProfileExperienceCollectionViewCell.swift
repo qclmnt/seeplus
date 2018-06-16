@@ -29,7 +29,12 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
         self.borderView.layer.borderColor = UIColor.appPurple().cgColor
         self.borderView.layer.borderWidth = 2
         self.borderView.layer.masksToBounds = true
-        self.borderView.layer.cornerRadius = 40
+        self.borderView.layer.cornerRadius = 72
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.deleteButton.layer.cornerRadius = self.deleteButton.bounds.height/2
     }
     
     // MARK: - Action

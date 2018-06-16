@@ -29,9 +29,9 @@ class SeeDeleteExperiencePresentationController: UIPresentationController {
     override var frameOfPresentedViewInContainerView: CGRect {
         let sideWitdh = CGFloat(DeviceHelper.isIpad() ? 100 : 30)
         let height = CGFloat(DeviceHelper.isIpad() ? 260 : 190)
-        return CGRect(x: sideWitdh,
+        return CGRect(x: (UIScreen.main.bounds.width - 598)/2,
                       y: UIScreen.main.bounds.height - sideWitdh - height,
-                      width: UIScreen.main.bounds.width - (sideWitdh*2),
+                      width: 598,
                       height: height)
     }
     

@@ -19,6 +19,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeProfileViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="experiencesCollectionView" destination="isi-py-ttC" id="eSc-IO-Eb7"/>
+                <outlet property="headerView" destination="zzT-S0-VLB" id="O4E-7j-4XD"/>
                 <outlet property="moreButton" destination="Tjl-yQ-mAU" id="0ek-cm-QaT"/>
                 <outlet property="profilPicImageView" destination="s39-Gg-wlF" id="H7A-it-she"/>
                 <outlet property="usernameLabel" destination="oNo-uE-Pk5" id="8Ot-dq-bDb"/>

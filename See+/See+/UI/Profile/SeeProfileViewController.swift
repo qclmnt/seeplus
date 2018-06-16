@@ -26,6 +26,9 @@ class SeeProfileViewController: SeeTabBarViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var experiencesCollectionView: UICollectionView!
+    @IBOutlet weak var headerView: UIView!
+    
+    var borderLayer: CALayer?
     
     // MARK: - Initialization
     
@@ -49,9 +52,18 @@ class SeeProfileViewController: SeeTabBarViewController {
         self.experiencesViewModel.load()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        guard let layer = self.borderLayer else {return}
+        layer.frame = CGRect(x: layer.frame.origin.x, y: layer.frame.origin.y, width: self.headerView.frame.size.width, height: layer.bounds.height)
+    }
+    
     // MARK: - Configure
     
     func configureLayout() {
+        
+        self.borderLayer = self.headerView.addBottomBorder(color: .appPurple(), borderWidth: 1)
         
         guard let profileViewModel = self.profileViewModel else { return }
         

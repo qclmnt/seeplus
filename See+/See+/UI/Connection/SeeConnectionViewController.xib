@@ -274,7 +274,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GEn-75-dsX" secondAttribute="trailing" constant="30" id="uhS-SJ-WFV">
                     <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                 </constraint>
-                <constraint firstItem="Rsd-jp-uUS" firstAttribute="top" secondItem="dpA-Au-ZH7" secondAttribute="bottom" constant="35" id="ylK-uP-9LJ">
+                <constraint firstItem="Rsd-jp-uUS" firstAttribute="top" secondItem="dpA-Au-ZH7" secondAttribute="bottom" constant="43" id="ylK-uP-9LJ">
                     <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                 </constraint>
             </constraints>
