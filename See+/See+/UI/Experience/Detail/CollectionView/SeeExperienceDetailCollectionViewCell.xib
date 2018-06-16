@@ -28,29 +28,35 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMu-qV-CG6">
-                        <rect key="frame" x="37" y="118.5" width="300" height="450"/>
+                        <rect key="frame" x="37" y="118.5" width="300" height="400"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmD-8B-0Ty">
-                                <rect key="frame" x="0.5" y="350" width="300" height="21"/>
+                                <rect key="frame" x="0.5" y="300" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="lb9-N2-s1W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                                 <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bignote" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-0A-EbR">
-                                <rect key="frame" x="70" y="385" width="161" height="35"/>
+                                <rect key="frame" x="70" y="335" width="161" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="B4S-fh-hP3"/>
                                     <constraint firstAttribute="height" constant="35" id="E2o-BF-RqA"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWO-9V-6Ym">
-                                <rect key="frame" x="45.5" y="308" width="210" height="20"/>
+                                <rect key="frame" x="45.5" y="261" width="210" height="17"/>
                                 <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                                </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNZ-LH-XCz">
                                 <rect key="frame" x="0.5" y="0.0" width="300.5" height="233"/>
@@ -61,7 +67,7 @@
                                 </constraints>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5x-G9-hAe">
-                                <rect key="frame" x="126" y="428" width="49" height="49"/>
+                                <rect key="frame" x="126" y="378" width="49" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w5x-G9-hAe" secondAttribute="height" multiplier="1:1" id="98a-iv-vkU"/>
                                     <constraint firstAttribute="width" constant="49" id="BPv-iu-waE"/>
@@ -84,7 +90,7 @@
                             <constraint firstItem="lWO-9V-6Ym" firstAttribute="width" secondItem="eMu-qV-CG6" secondAttribute="width" multiplier="0.7" id="QHz-ay-1B0"/>
                             <constraint firstItem="w5x-G9-hAe" firstAttribute="width" secondItem="w5x-G9-hAe" secondAttribute="height" multiplier="1:1" id="YVt-Mu-ahr"/>
                             <constraint firstItem="lWO-9V-6Ym" firstAttribute="centerX" secondItem="eMu-qV-CG6" secondAttribute="centerX" id="ab1-wB-rP3"/>
-                            <constraint firstAttribute="height" constant="450" id="t3A-AR-2Oo">
+                            <constraint firstAttribute="height" constant="400" id="t3A-AR-2Oo">
                                 <variation key="heightClass=regular-widthClass=regular" constant="598"/>
                             </constraint>
                             <constraint firstItem="w5x-G9-hAe" firstAttribute="centerY" secondItem="eMu-qV-CG6" secondAttribute="bottom" constant="2.5" id="tnN-iY-Q6n"/>
@@ -108,6 +114,9 @@
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                        </variation>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91q-nd-ZGc">
                         <rect key="frame" x="289" y="36" width="49" height="49"/>

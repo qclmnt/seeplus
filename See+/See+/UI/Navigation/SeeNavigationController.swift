@@ -19,7 +19,8 @@ class SeeNavigationController: UINavigationController {
     
     lazy var proposeBarButtonItem: UIBarButtonItem = {
         let title = NSLocalizedString("propose", comment: "").uppercased()
-        let barButton = UIBarButtonItem(title: "\(title)\t", style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
+        let titleFormatString = DeviceHelper.isIpad() ? "%@\t" : "%@"
+        let barButton = UIBarButtonItem(title: String(format: titleFormatString, title), style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
         barButton.tintColor = .appRed()
         let fontName = SeeMode.activatedMode() == .propose ? "Gotham-Medium" : "Gotham-Book"
 //        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -60, vertical: 0), for: .default)
@@ -30,7 +31,8 @@ class SeeNavigationController: UINavigationController {
     }()
     lazy var discoverBarButtonItem: UIBarButtonItem = {
         let title = NSLocalizedString("discover", comment: "").uppercased()
-        let barButton = UIBarButtonItem(title: "\t\(title)\t\t", style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
+        let titleFormatString = DeviceHelper.isIpad() ? "\t%@\t\t" : "%@"
+        let barButton = UIBarButtonItem(title: String(format: titleFormatString, title), style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
         barButton.tintColor = .appRed()
 //        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -30, vertical: 0), for: .default)
         let fontName = SeeMode.activatedMode() == .discover ? "Gotham-Medium" : "Gotham-Book"

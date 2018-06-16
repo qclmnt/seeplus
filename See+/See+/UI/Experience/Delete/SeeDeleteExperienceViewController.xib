@@ -40,6 +40,9 @@
                     <state key="normal" title="Button">
                         <color key="titleColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    </variation>
                     <connections>
                         <action selector="actionButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="zdL-2L-QYf"/>
                     </connections>
@@ -48,6 +51,9 @@
                     <rect key="frame" x="47" y="161" width="281" height="30"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    </variation>
                     <connections>
                         <action selector="cancelButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="nAb-Oc-vnx"/>
                     </connections>
@@ -60,6 +66,9 @@
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                    </variation>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

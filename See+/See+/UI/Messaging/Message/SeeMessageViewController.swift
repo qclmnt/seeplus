@@ -20,7 +20,7 @@ class SeeMessageViewController: UIViewController {
     @IBOutlet weak var messageToolBar: UIView!
     @IBOutlet weak var noButton: UIButton!
     @IBOutlet weak var yesButton: UIButton!
-    @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var messageTextField: SeeTextField!
     @IBOutlet weak var messageToolBarBottomConstraint: NSLayoutConstraint!
     
     lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
@@ -93,8 +93,14 @@ class SeeMessageViewController: UIViewController {
     @objc func translateButtonTouchUpInside() {
         self.messagesCollectionViewModel.addMessage(message: self.messageTextField.text ?? "Error")
         self.reloadDataView()
+        self.scrollToBottom()
     }
     
+    func scrollToBottom() {
+        let item = self.messagingCollectionView.numberOfItems(inSection: 0)-1
+        let lastItemIndex = IndexPath(item: item, section: 0)
+        self.messagingCollectionView.scrollToItem(at: lastItemIndex, at: .bottom, animated: true)
+    }
 }
 
 extension SeeMessageViewController: QCViewModelDelegate {

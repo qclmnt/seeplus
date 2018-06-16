@@ -22,7 +22,7 @@ class SeeProfileExperiencesSection: QCCollectionViewSection {
     // MARK: - QCCollectionViewSection
     
     override var edgeInsets: UIEdgeInsets {
-        return UIEdgeInsetsMake(0, 60, 0, 60)
+        return UIEdgeInsetsMake(0, DeviceHelper.isIpad() ? 60 : 10, 0, DeviceHelper.isIpad() ? 60 : 10)
     }
     
     override var numberOfColumns: Int {
@@ -30,11 +30,11 @@ class SeeProfileExperiencesSection: QCCollectionViewSection {
     }
     
     override var minimumLineSpacing: CGFloat {
-        return 20
+        return DeviceHelper.isIpad() ? 20 : 5
     }
     
     override var minimumInteritemSpacing: CGFloat {
-        return 60
+        return DeviceHelper.isIpad() ? 60 : 0
     }
     
     override func setup() {

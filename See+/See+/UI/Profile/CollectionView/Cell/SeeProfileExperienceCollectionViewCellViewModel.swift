@@ -29,7 +29,7 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 334)
+        return CGSize(width: maxSize.width, height: DeviceHelper.isIpad() ? 334 : 280)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {

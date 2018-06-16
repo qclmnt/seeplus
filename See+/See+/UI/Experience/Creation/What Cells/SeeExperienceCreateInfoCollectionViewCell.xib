@@ -24,7 +24,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="403" height="77"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-c4-Hpv">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-c4-Hpv" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="37" width="403" height="30"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>

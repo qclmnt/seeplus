@@ -13,7 +13,7 @@ class SeeExperienceCreateInfoCollectionViewCell: UICollectionViewCell {
     // MARK: - Views
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: SeeTextField!
     
     // MARK: - View life cycle
 

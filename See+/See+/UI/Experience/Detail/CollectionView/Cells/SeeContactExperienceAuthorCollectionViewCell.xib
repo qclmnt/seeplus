@@ -32,6 +32,9 @@
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                         <state key="normal" title="Button"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        </variation>
                         <connections>
                             <action selector="buttonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="nhV-eF-uRS"/>
                         </connections>
