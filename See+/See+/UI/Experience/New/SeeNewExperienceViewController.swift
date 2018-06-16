@@ -65,6 +65,8 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         self.mapImageView.image = UIImage(named: "map")
         self.mapScrollView.maximumZoomScale = CGFloat(3.0)
         self.mapScrollView.delegate = self
+        self.mapScrollView.zoomScale = 1.5
+        //TODO CENTER
         
         // Add Experience
         self.grayView = UIView(frame: CGRect(x: 300, y: 200, width: 20, height: 20))

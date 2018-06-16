@@ -35,7 +35,9 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQq-pG-HSx">
                     <rect key="frame" x="16" y="80" width="343" height="36"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="343" id="Q0v-q4-pxR"/>
+                        <constraint firstAttribute="width" constant="600" id="Q0v-q4-pxR">
+                            <variation key="heightClass=regular-widthClass=compact" constant="343"/>
+                        </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,7 +83,7 @@
                         <constraint firstAttribute="height" constant="48" id="XXf-4A-krP">
                             <variation key="heightClass=regular-widthClass=compact" constant="35"/>
                         </constraint>
-                        <constraint firstAttribute="width" constant="271" id="oRY-7z-W1C">
+                        <constraint firstAttribute="width" constant="412" id="oRY-7z-W1C">
                             <variation key="heightClass=regular-widthClass=compact" constant="200"/>
                         </constraint>
                     </constraints>

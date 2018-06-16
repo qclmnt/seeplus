@@ -32,6 +32,9 @@ class SeeWhatExperienceViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
+        self.nextButton.layer.cornerRadius = self.nextButton.frame.height/2
+        self.backButton.layer.cornerRadius = self.backButton.frame.height/2
+        
         if let sublayers = self.nextButton.layer.sublayers {
             for layer in sublayers {
                 layer.frame = self.nextButton.bounds
