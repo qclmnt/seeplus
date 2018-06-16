@@ -19,13 +19,13 @@ class SeeConnectionViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var connectionFormView: UIView!
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var usernameTextField: SeeTextField!
     @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailTextField: SeeTextField!
     @IBOutlet weak var passwordLabel: UILabel!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordTextField: SeeTextField!
     @IBOutlet weak var confirmPasswordLabel: UILabel!
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: SeeTextField!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var switchButton: UIButton!
     

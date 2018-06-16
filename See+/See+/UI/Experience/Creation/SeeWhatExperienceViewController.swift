@@ -15,8 +15,8 @@ class SeeWhatExperienceViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
-    @IBOutlet weak var nameTextFlield: UITextField!
-    @IBOutlet weak var descTextField: UITextField!
+    @IBOutlet weak var nameTextFlield: SeeTextField!
+    @IBOutlet weak var descTextField: SeeTextField!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     

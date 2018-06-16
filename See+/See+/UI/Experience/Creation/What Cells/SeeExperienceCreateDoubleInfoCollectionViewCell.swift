@@ -12,8 +12,8 @@ class SeeExperienceCreateDoubleInfoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var infoLabel1: UILabel!
     @IBOutlet weak var infoLabel2: UILabel!
-    @IBOutlet weak var infoTextflied1: UITextField!
-    @IBOutlet weak var infoTextField2: UITextField!
+    @IBOutlet weak var infoTextflied1: SeeTextField!
+    @IBOutlet weak var infoTextField2: SeeTextField!
     
 
     override func awakeFromNib() {

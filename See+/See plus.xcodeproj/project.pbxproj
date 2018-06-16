@@ -80,6 +80,7 @@
 		397BAD1820D463DA00B49967 /* SeeCongratsRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */; };
 		397BAD1B20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1A20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift */; };
 		397BAD1D20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1C20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift */; };
+		397BAD2020D4F7D700B49967 /* SeeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397BAD1F20D4F7D700B49967 /* SeeTextField.swift */; };
 		39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */; };
 		39944DDA20C6C4A500235B48 /* SeeConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */; };
 		39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */; };
@@ -246,6 +247,7 @@
 		397BAD1720D463DA00B49967 /* SeeCongratsRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCongratsRoutingEntry.swift; sourceTree = "<group>"; };
 		397BAD1A20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileResidentViewControllerViewModel.swift; sourceTree = "<group>"; };
 		397BAD1C20D4665900B49967 /* SeeProfileTravellerViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileTravellerViewControllerViewModel.swift; sourceTree = "<group>"; };
+		397BAD1F20D4F7D700B49967 /* SeeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeTextField.swift; sourceTree = "<group>"; };
 		39944DD720C6C4A500235B48 /* SeeConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeeConnectionViewController.xib; sourceTree = "<group>"; };
 		39944DD820C6C4A500235B48 /* SeeConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeConnectionViewController.swift; sourceTree = "<group>"; };
 		39944DDC20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeConnectionSignUpViewModel.swift; sourceTree = "<group>"; };
@@ -642,6 +644,14 @@
 			path = Congrats;
 			sourceTree = "<group>";
 		};
+		397BAD1E20D4F7B300B49967 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				397BAD1F20D4F7D700B49967 /* SeeTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -719,6 +729,7 @@
 		39944DEB20C6D19C00235B48 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				397BAD1E20D4F7B300B49967 /* TextField */,
 				39A5579920D2C38E009B8FB0 /* Mode */,
 				39A5579220D2BF0B009B8FB0 /* Language */,
 				395C305320D1B92F003A9133 /* UserDefaults */,
@@ -1325,6 +1336,7 @@
 				39488C5020CC2CBC0069AC8A /* SeeExperienceViewController.swift in Sources */,
 				39488C4020CC112A0069AC8A /* SeeHeadingsCollectionViewModel.swift in Sources */,
 				39944DEA20C6CB6B00235B48 /* SeeLoginRoutinEntry.swift in Sources */,
+				397BAD2020D4F7D700B49967 /* SeeTextField.swift in Sources */,
 				39488C4C20CC14EE0069AC8A /* SeeHeadingsRoutingEntry.swift in Sources */,
 				395C305220D1B204003A9133 /* FadeAnimationController.swift in Sources */,
 				395C304420D07578003A9133 /* SeeTextCollectionViewCellViewModel.swift in Sources */,
