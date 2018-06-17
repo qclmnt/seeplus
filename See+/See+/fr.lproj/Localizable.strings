@@ -47,3 +47,5 @@
 "profile.resident" = "Mon profil résident";
 "profile.traveler" = "Mon profil voyageur";
 "what.explore" = "Que voulez-vous\nexplorer?";
+"start" = "commencer";
+"start.message" = "Commencez à explorer\nles métropoles du monde\nentier avec la communauté\nSEE+!";

@@ -63,6 +63,8 @@
 		395C305520D1B943003A9133 /* DefaultsKeys+See.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305420D1B943003A9133 /* DefaultsKeys+See.swift */; };
 		395C305720D1B997003A9133 /* SeeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C305620D1B997003A9133 /* SeeUser.swift */; };
 		395C305B20D1C676003A9133 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 395C305D20D1C676003A9133 /* Localizable.strings */; };
+		3964A3AD20D6361200730144 /* SeeSignUpTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964A3AB20D6361200730144 /* SeeSignUpTourViewController.swift */; };
+		3964A3AE20D6361200730144 /* SeeSignUpTourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3964A3AC20D6361200730144 /* SeeSignUpTourViewController.xib */; };
 		39668A5A20CD5C920036351F /* SeeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5920CD5C920036351F /* SeeNavigationController.swift */; };
 		39668A5C20CD64280036351F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5B20CD64280036351F /* UIView+Border.swift */; };
 		39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39668A5E20CD6D890036351F /* UIView+Gradient.swift */; };
@@ -235,6 +237,8 @@
 		395C305620D1B997003A9133 /* SeeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeUser.swift; sourceTree = "<group>"; };
 		395C305C20D1C676003A9133 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		395C305E20D1C67C003A9133 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3964A3AB20D6361200730144 /* SeeSignUpTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeSignUpTourViewController.swift; sourceTree = "<group>"; };
+		3964A3AC20D6361200730144 /* SeeSignUpTourViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeSignUpTourViewController.xib; sourceTree = "<group>"; };
 		39668A5920CD5C920036351F /* SeeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeNavigationController.swift; sourceTree = "<group>"; };
 		39668A5B20CD64280036351F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		39668A5E20CD6D890036351F /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
@@ -588,6 +592,15 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		3964A3AA20D635ED00730144 /* Sign up Tour */ = {
+			isa = PBXGroup;
+			children = (
+				3964A3AB20D6361200730144 /* SeeSignUpTourViewController.swift */,
+				3964A3AC20D6361200730144 /* SeeSignUpTourViewController.xib */,
+			);
+			path = "Sign up Tour";
+			sourceTree = "<group>";
+		};
 		39668A5820CD5C750036351F /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +686,7 @@
 		39944DD520C6C4A500235B48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3964A3AA20D635ED00730144 /* Sign up Tour */,
 				3974DA5A20CF08B70098BB9E /* About */,
 				39668A5820CD5C750036351F /* Navigation */,
 				39D8953320C86E0600782F3D /* Favorites */,
@@ -1205,6 +1219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3964A3AE20D6361200730144 /* SeeSignUpTourViewController.xib in Resources */,
 				395C304820D07769003A9133 /* SeeExperienceImageCollectionViewCell.xib in Resources */,
 				39EA128320C9D11800BB6387 /* SeeProfileExperienceCollectionViewCell.xib in Resources */,
 				39A557A420D2D59B009B8FB0 /* SeeWhatExperienceViewController.xib in Resources */,
@@ -1298,6 +1313,7 @@
 				39944E0920C6DDA900235B48 /* SeeStartRoutingEntry.swift in Sources */,
 				39944DF920C6D89100235B48 /* SeeProfilePicRoutingEntry.swift in Sources */,
 				39A557AD20D2FFAB009B8FB0 /* SeeWhereExperienceViewControllerViewModel.swift in Sources */,
+				3964A3AD20D6361200730144 /* SeeSignUpTourViewController.swift in Sources */,
 				39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */,
 				397BAD2320D4FAA600B49967 /* DeviceHelper.swift in Sources */,
 				395C304D20D078F1003A9133 /* SeeContactExperienceAuthorCollectionViewCell.swift in Sources */,

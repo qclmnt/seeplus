@@ -76,6 +76,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Build root
     
     func buildRoot() {
+        
+        let hasSeenSignUpTour = Defaults[.hasSeenSignUpTour]
+        
         if let username = Defaults[.connectedUser],
             username.count > 0 {
             
@@ -84,6 +87,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } else {
                 self.window?.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
             }
+            
+        } else if hasSeenSignUpTour != true {
+            
+            let viewController = SeeSignUpTourViewController()
+            self.window?.rootViewController = SeeNavigationController(rootViewController: viewController, showToolbar: true)
             
         } else {
             let signupRoutingEntry = SeeSignupRoutinEntry()
