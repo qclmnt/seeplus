@@ -17,5 +17,5 @@ class SeeTabBarTravellerControllerViewModel: SeeTabBarResidentControllerViewMode
                 self.profileViewController]
     }
     
-    lazy var favoritesViewController = SeeFavoritesViewController()
+    lazy var favoritesViewController = SeeFavoritesViewController(username: nil)
 }

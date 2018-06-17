@@ -29,10 +29,12 @@ class SeeProfileViewController: SeeTabBarViewController {
     @IBOutlet weak var headerView: UIView!
     
     var borderLayer: CALayer?
+    let username: String?
     
     // MARK: - Initialization
     
-    override init() {
+    init(username: String?) {
+        self.username = username
         super.init(nibName: String(describing: SeeProfileViewController.self),
                    bundle: nil)
     }
@@ -68,7 +70,7 @@ class SeeProfileViewController: SeeTabBarViewController {
         guard let profileViewModel = self.profileViewModel else { return }
         
         // Username
-        self.usernameLabel.text = profileViewModel.pageTitle
+        self.usernameLabel.text = self.username != nil ? self.username : profileViewModel.pageTitle
         
         // Image
         self.profilPicImageView.image = UIImage(named: profileViewModel.image)

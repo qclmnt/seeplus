@@ -67,6 +67,9 @@ class SeeMessageViewController: UIViewController {
         view.addSubview(sendButton)
         view.addSubview(translateButton)
         self.messageTextField.rightView = view
+        
+        self.profilePicImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goProfil)))
+        self.usernameLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.goProfil)))
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -135,6 +138,9 @@ class SeeMessageViewController: UIViewController {
         }
     }
     
+    @objc func goProfil() {
+        QCAppEnvironment.shared().routing?.route(to: SeeProfileRoutingEntry(user: self.user))
+    }
     
     @objc func sendButtonTouchUpInside() {
         self.messagesCollectionViewModel.addMessage(message: self.messageTextField.text ?? "Error")

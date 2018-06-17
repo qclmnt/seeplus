@@ -17,6 +17,7 @@
 		3906287420C6BCED00187E21 /* QCRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287320C6BCED00187E21 /* QCRouting.swift */; };
 		3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287520C6BD2500187E21 /* QCRoutingEntry.swift */; };
 		3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287720C6BF1900187E21 /* QCNavigationStyle.swift */; };
+		39270E3C20D691EB0027DC37 /* SeeProfileRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */; };
 		39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */; };
 		39488C1A20CBD6D40069AC8A /* SeeMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */; };
 		39488C1D20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */; };
@@ -190,6 +191,7 @@
 		3906287520C6BD2500187E21 /* QCRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCRoutingEntry.swift; sourceTree = "<group>"; };
 		3906287720C6BF1900187E21 /* QCNavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCNavigationStyle.swift; sourceTree = "<group>"; };
 		391CAA0920CF1CCB0013AE1B /* See plus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "See plus-Bridging-Header.h"; sourceTree = "<group>"; };
+		39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileRoutingEntry.swift; sourceTree = "<group>"; };
 		39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageViewController.swift; sourceTree = "<group>"; };
 		39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageViewController.xib; sourceTree = "<group>"; };
 		39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRoutingEntry.swift; sourceTree = "<group>"; };
@@ -421,6 +423,14 @@
 				3906287720C6BF1900187E21 /* QCNavigationStyle.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		39270E3A20D691D60027DC37 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		39488C1620CBD6B60069AC8A /* Message */ = {
@@ -735,6 +745,7 @@
 		39944DE520C6CB2400235B48 /* RoutingEntry */ = {
 			isa = PBXGroup;
 			children = (
+				39270E3A20D691D60027DC37 /* Profile */,
 				3974DA5F20CF09BC0098BB9E /* About */,
 				39668A6320CD7F680036351F /* Pop */,
 				39488C4A20CC14DB0069AC8A /* Headings */,
@@ -1379,6 +1390,7 @@
 				397BAD1B20D4664C00B49967 /* SeeProfileResidentViewControllerViewModel.swift in Sources */,
 				397BAD0B20D45E3F00B49967 /* SeeExperienceCreateDetailCollectionViewModel.swift in Sources */,
 				3906287220C6BCB400187E21 /* QCNavigator.swift in Sources */,
+				39270E3C20D691EB0027DC37 /* SeeProfileRoutingEntry.swift in Sources */,
 				39A557D120D30EDF009B8FB0 /* SeeExperienceCreateShowRoutingEntry.swift in Sources */,
 				39EA127B20C9CB9400BB6387 /* SeeMessagingCollectionViewSection.swift in Sources */,
 				39A557AA20D2FF2F009B8FB0 /* SeeWhereExperienceViewController.swift in Sources */,

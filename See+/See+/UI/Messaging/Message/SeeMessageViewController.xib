@@ -56,7 +56,7 @@
                                 <action selector="backButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="9jh-ek-ABt"/>
                             </connections>
                         </button>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="eUx-IQ-iog">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="eUx-IQ-iog">
                             <rect key="frame" x="113.5" y="26" width="39" height="39"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -66,7 +66,7 @@
                                 <constraint firstAttribute="width" secondItem="eUx-IQ-iog" secondAttribute="height" multiplier="1:1" id="KFL-Gu-pNa"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-fx-dCp">
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-fx-dCp">
                             <rect key="frame" x="167.5" y="21" width="150" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="hAx-Q3-rrT"/>

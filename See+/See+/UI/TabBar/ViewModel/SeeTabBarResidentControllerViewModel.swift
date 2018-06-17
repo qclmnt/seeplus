@@ -18,6 +18,6 @@ class SeeTabBarResidentControllerViewModel: QCViewControllerViewModel {
     
     lazy var newExperienceViewController = SeeNewExperienceViewController()
     lazy var messagingViewController = SeeMessagingViewController()
-    lazy var profileViewController = SeeProfileViewController()
+    lazy var profileViewController = SeeProfileViewController(username: nil)
 
 }
