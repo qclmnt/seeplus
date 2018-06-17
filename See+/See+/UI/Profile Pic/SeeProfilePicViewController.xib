@@ -11,9 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Gotham-Book.otf">
-            <string>Gotham-Book</string>
-        </array>
         <array key="Gotham-Medium.otf">
             <string>Gotham-Medium</string>
         </array>
@@ -55,12 +52,12 @@
                             <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                         </constraint>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
+                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
                     </variation>
                     <connections>
                         <action selector="uploadPhotoTouchUpInside:" destination="-1" eventType="touchUpInside" id="x5y-PO-gHJ"/>
