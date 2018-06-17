@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeCongratsViewControllerViewModel: SeeWelcomeViewControllerViewModel {
     
     override var title: String {
-        return NSLocalizedString("congrat", comment: "")
+        return String(format:NSLocalizedString("congrat", comment: ""), Defaults[.connectedUser] ?? "error")
     }
     
     override var info: String {

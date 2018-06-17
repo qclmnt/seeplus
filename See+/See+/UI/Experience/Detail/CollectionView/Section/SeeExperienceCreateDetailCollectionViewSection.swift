@@ -15,8 +15,8 @@ class SeeExperienceCreateDetailCollectionViewSection: SeeExperienceDetailCollect
                       SeeTextCollectionViewCellViewModel(text: self.experience.desc),
                       SeeExperienceImage(image: self.experience.image),
                       SeeExperienceImage(image: self.experience.image),
-                      SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("publish", comment: ""), routing: SeeCongratsRoutingEntry()),
-        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("modify", comment: ""), routing: QCRoutingEntry())]
+                      SeeExperienceCreateButtonApercuCollectionViewCellModel(title: NSLocalizedString("publish", comment: ""), routing: SeeCongratsRoutingEntry(), shouldShowLayer: true),
+                      SeeExperienceCreateButtonApercuCollectionViewCellModel(title: NSLocalizedString("modify", comment: ""), routing: QCRoutingEntry())]
     }
 
 }

@@ -19,6 +19,7 @@
 		3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287720C6BF1900187E21 /* QCNavigationStyle.swift */; };
 		39270E3C20D691EB0027DC37 /* SeeProfileRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */; };
 		39270E3E20D6C99A0027DC37 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */; };
+		39270E4020D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3F20D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift */; };
 		39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */; };
 		39488C1A20CBD6D40069AC8A /* SeeMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */; };
 		39488C1D20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */; };
@@ -194,6 +195,7 @@
 		391CAA0920CF1CCB0013AE1B /* See plus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "See plus-Bridging-Header.h"; sourceTree = "<group>"; };
 		39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileRoutingEntry.swift; sourceTree = "<group>"; };
 		39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		39270E3F20D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateButtonApercuCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageViewController.swift; sourceTree = "<group>"; };
 		39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageViewController.xib; sourceTree = "<group>"; };
 		39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRoutingEntry.swift; sourceTree = "<group>"; };
@@ -913,6 +915,7 @@
 				39A557BD20D30696009B8FB0 /* SeeExperienceCreateButtonCollectionViewCell.swift */,
 				39A557BE20D30696009B8FB0 /* SeeExperienceCreateButtonCollectionViewCell.xib */,
 				39A557C120D306E0009B8FB0 /* SeeExperienceCreateButtonCollectionViewCellModel.swift */,
+				39270E3F20D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift */,
 				39A557C320D30705009B8FB0 /* SeeExperienceCreateDoubleInfoCollectionViewCellModel.swift */,
 			);
 			path = "What Cells";
@@ -1375,6 +1378,7 @@
 				39944E0520C6DC1500235B48 /* SeeStartViewController.swift in Sources */,
 				39D8954620C8724E00782F3D /* SeeFavoritesViewControllerViewModel.swift in Sources */,
 				39A557A720D2FE4E009B8FB0 /* SeeWhatExperienceRoutingEntry.swift in Sources */,
+				39270E4020D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
 				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,
 				39A5579F20D2D458009B8FB0 /* SeeHeadingsResidentCollectionViewModel.swift in Sources */,

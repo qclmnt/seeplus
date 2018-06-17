@@ -53,7 +53,7 @@ class SeeExperienceCreateShowViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func nextButtonTouchUpInside(_ sender: UIButton) {
-        QCAppEnvironment.shared().routing?.route(to: SeeExperienceDetailRoutingEntry(viewModel: SeeExperienceCreateDetailCollectionViewModel(experience: SeeExperience(name: "test", location: "test", imageName: "", author: "test"))))
+        QCAppEnvironment.shared().routing?.route(to: SeeExperienceDetailRoutingEntry(viewModel: SeeExperienceCreateDetailCollectionViewModel(experience: SeeExperience(name: "test", location: "test", imageName: "cineFR", author: "test"))))
     }
     
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {

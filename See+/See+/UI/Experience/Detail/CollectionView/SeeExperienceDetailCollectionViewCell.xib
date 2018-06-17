@@ -109,7 +109,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDW-w3-7c6">
-                        <rect key="frame" x="106" y="49" width="157" height="21"/>
+                        <rect key="frame" x="106" y="49" width="231" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="3Ya-Qb-pWp"/>
                         </constraints>
@@ -139,7 +139,6 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="15"/>
                 </constraint>
                 <constraint firstItem="sDW-w3-7c6" firstAttribute="leading" secondItem="Lgz-xP-8do" secondAttribute="trailing" constant="19" id="OFg-gq-Waa"/>
-                <constraint firstItem="91q-nd-ZGc" firstAttribute="leading" secondItem="sDW-w3-7c6" secondAttribute="trailing" constant="26" id="QKf-BV-JuF"/>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="centerY" secondItem="Lgz-xP-8do" secondAttribute="centerY" id="Quk-OU-qd9"/>
                 <constraint firstItem="eMu-qV-CG6" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="WZk-nN-bbP"/>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="trailing" secondItem="YNZ-LH-XCz" secondAttribute="trailing" id="aAB-xg-F60"/>
@@ -147,6 +146,7 @@
                 <constraint firstItem="eMu-qV-CG6" firstAttribute="top" secondItem="Lgz-xP-8do" secondAttribute="bottom" constant="26" id="c8o-yX-n7B">
                     <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                 </constraint>
+                <constraint firstItem="sDW-w3-7c6" firstAttribute="trailing" secondItem="eMu-qV-CG6" secondAttribute="trailing" id="cjD-yz-ESS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
