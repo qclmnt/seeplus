@@ -17,6 +17,8 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     
+    var bottomLine: CALayer?
+    
     var viewModel: SeeMessagingCollectionViewCellViewModel?
     
     // MARK: - View life cycle
@@ -27,7 +29,14 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
         self.usernameLabel.text = "Emmanuel Macron"
         self.messageLabel.text = "Paris c'est la plus belle ville du monde !"
         
-        self.configureWithStyle1(color: .appPurple())
+        self.bottomLine = self.addBottomBorder(color: .appPurple(), borderWidth: 1)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        guard let bottomLine = self.bottomLine else {return}
+        bottomLine.frame = CGRect(x: bottomLine.frame.origin.x, y: self.frame.height - bottomLine.frame.height, width: self.frame.width, height: bottomLine.frame.height)
     }
     
     // MARK: - Action

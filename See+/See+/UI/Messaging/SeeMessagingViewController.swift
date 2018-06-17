@@ -20,6 +20,9 @@ class SeeMessagingViewController: SeeTabBarViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messagingCollectionView: UICollectionView!
+    @IBOutlet weak var headerView: UIView!
+    
+    var bottomLine: CALayer?
     
     // MARK: - Initialization
     
@@ -43,12 +46,22 @@ class SeeMessagingViewController: SeeTabBarViewController {
         self.messagingViewModel.load()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        guard let bottomLine = self.bottomLine else {return}
+        bottomLine.frame = CGRect(x: bottomLine.frame.origin.x, y: bottomLine.frame.origin.y, width: self.headerView.frame.width, height: bottomLine.frame.height)
+    }
+    
     // MARK: - Configure
     
     func configureLayout() {
         
         // Title View
         self.titleLabel.text = "My messages"
+        
+        // Header view
+        self.bottomLine = self.headerView.addBottomBorder(color: .appPurple(), borderWidth: 1)
     }
     
     func reloadDataView() {

@@ -41,7 +41,7 @@ class SeeMessageWriterBubbleCollectionViewCellViewModel: QCCollectionCellViewMod
         guard let messageCell = cell as? SeeMessageWriterBubbleCollectionViewCell else {return}
         
 //        messageCell.messageLabel.backgroundColor = self.messageBackgroungColor
-        messageCell.messageLabel.text = "Hello guys"
+        messageCell.messageLabel.text = self.message
         
         messageCell.changeImage(self.bubbleImageName)
         if #available(iOS 11.0, *) {

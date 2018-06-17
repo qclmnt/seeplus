@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeMessagingViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="FRi-ZU-ED5" id="GFS-jl-cfW"/>
                 <outlet property="messagingCollectionView" destination="bVz-eA-6TV" id="dfb-k2-IGG"/>
                 <outlet property="titleLabel" destination="npm-eo-0rH" id="VPf-pa-VTt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

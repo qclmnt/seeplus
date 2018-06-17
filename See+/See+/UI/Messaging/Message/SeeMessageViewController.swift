@@ -24,6 +24,7 @@ class SeeMessageViewController: UIViewController {
     @IBOutlet weak var messageToolBarBottomConstraint: NSLayoutConstraint!
     
     lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
+    var bottomLine: CALayer?
     
     // MARK: - View life cycle
 
@@ -33,15 +34,20 @@ class SeeMessageViewController: UIViewController {
         self.messagesCollectionViewModel.delegate = self
         self.messagesCollectionViewModel.load()
         
-        self.topView.configureWithStyle1(color: .appPurple())
+        self.bottomLine = self.topView.addBottomBorder(color: .appPurple(), borderWidth: 1)
         self.messageToolBar.configureWithStyle1(color: .appPurple())
-        self.messageTextField.configureWithStyle1(color: .appPurple())
+        self.messageTextField.layer.borderColor = UIColor.appPurple().cgColor
+        self.messageTextField.layer.borderWidth = 2
         self.messageTextField.layer.masksToBounds = true
         self.messageTextField.rightViewMode = .always
-        let translateButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let translateButton = UIButton(frame: CGRect(x: 40, y: 0, width: 30, height: 30))
         translateButton.setImage(UIImage(named: "translate-button"), for: .normal)
         translateButton.addTarget(self, action: #selector(self.translateButtonTouchUpInside), for: .touchUpInside)
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 30))
+        let sendButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        sendButton.setImage(UIImage(named: "send"), for: .normal)
+        sendButton.addTarget(self, action: #selector(self.sendButtonTouchUpInside), for: .touchUpInside)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 30))
+        view.addSubview(sendButton)
         view.addSubview(translateButton)
         self.messageTextField.rightView = view
     }
@@ -63,6 +69,9 @@ class SeeMessageViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         self.messageTextField.layer.cornerRadius = self.messageTextField.bounds.size.height/2
+        
+        guard let bottomLine = self.bottomLine else {return}
+        bottomLine.frame = CGRect(x: bottomLine.frame.origin.x, y: self.topView.frame.height - bottomLine.frame.height, width: self.topView.frame.width, height: bottomLine.frame.height)
     }
     
     // MARK: - Keyboard notifications
@@ -90,10 +99,15 @@ class SeeMessageViewController: UIViewController {
         QCAppEnvironment.shared().routing?.route(to: SeePopRoutingEntry())
     }
     
-    @objc func translateButtonTouchUpInside() {
+    @objc func sendButtonTouchUpInside() {
         self.messagesCollectionViewModel.addMessage(message: self.messageTextField.text ?? "Error")
+        self.messageTextField.text = nil
         self.reloadDataView()
         self.scrollToBottom()
+    }
+    
+    @objc func translateButtonTouchUpInside() {
+        
     }
     
     func scrollToBottom() {
