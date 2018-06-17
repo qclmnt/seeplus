@@ -12,12 +12,14 @@ class SeeTextCollectionViewCellViewModel: QCCollectionCellViewModel {
     
     let text: String
     let textAlignement: NSTextAlignment
+    let attributedString: NSAttributedString?
     
     // MARK: - Initialization
     
-    init(text: String, textAlignement: NSTextAlignment = .center) {
+    init(text: String, textAlignement: NSTextAlignment = .center, attributedString: NSAttributedString? = nil) {
         self.text = text
         self.textAlignement = textAlignement
+        self.attributedString = attributedString
         super.init()
     }
     
@@ -34,8 +36,12 @@ class SeeTextCollectionViewCellViewModel: QCCollectionCellViewModel {
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let textCell = cell as? SeeTextCollectionViewCell else {return}
         
-        textCell.textLabel.text = self.text
         textCell.textLabel.textAlignment = self.textAlignement
+        if let attributedText = self.attributedString {
+            textCell.textLabel.attributedText = attributedText
+        } else {
+            textCell.textLabel.attributedText = NSAttributedString(string: self.text, attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 20)!]) 
+        }
     }
 
 }

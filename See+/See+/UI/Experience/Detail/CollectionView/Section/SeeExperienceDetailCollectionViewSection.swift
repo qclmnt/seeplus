@@ -35,7 +35,21 @@ class SeeExperienceDetailCollectionViewSection: QCCollectionViewSection {
         SeeExperienceImage(image: self.experience.image),
         SeeExperienceImage(image: self.experience.image),
         SeeContactExperienceAuthorCollectionViewCellViewModel(experience: self.experience),
-        SeeTextCollectionViewCellViewModel(text: self.experience.desc, textAlignement: .left)]
+        SeeTextCollectionViewCellViewModel(text: self.experience.desc, textAlignement: .left, attributedString: self.experienceReview())]
+    }
+    
+    // MARK: - Helper
+    
+    func experienceReview() -> NSAttributedString {
+        let mutableAttributedString = NSMutableAttributedString(string: "Avis des utilisateurs\n\nJamilabb : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: 20)!])
+        
+        mutableAttributedString.append(NSAttributedString(string: "Jean-Michel was friendly,\nthe experience has been interesting!\n\n", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 20)!]))
+        
+        mutableAttributedString.append(NSAttributedString(string: "aporobert : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: 20)!]))
+        
+        mutableAttributedString.append(NSAttributedString(string: "J’ai adoré ce moment avec JeanMi! Je recommande!", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 20)!]))
+        
+        return mutableAttributedString
     }
 
 }
