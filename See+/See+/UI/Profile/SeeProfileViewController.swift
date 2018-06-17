@@ -54,6 +54,12 @@ class SeeProfileViewController: SeeTabBarViewController {
         self.experiencesViewModel.load()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadDataView), name: Notification.Name("reloadDataView"), object: nil)
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
@@ -79,7 +85,7 @@ class SeeProfileViewController: SeeTabBarViewController {
         self.moreButton.isHidden = !profileViewModel.shouldShowLoggedOut
     }
     
-    func reloadDataView() {
+    @objc func reloadDataView() {
         UIView.performWithoutAnimation {
             self.experiencesCollectionView.reloadData()
         }

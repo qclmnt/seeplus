@@ -40,6 +40,7 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     // MARK: - Action
 
     @IBAction func deleteButtonTouchUpInside(_ sender: UIButton) {
+        self.deleteButton.setImage(UIImage(named: "deleteSelected"), for: .normal)
         self.viewModel?.deleteExperience()
     }
 }

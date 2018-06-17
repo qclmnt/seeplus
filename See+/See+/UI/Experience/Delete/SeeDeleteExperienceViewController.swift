@@ -78,6 +78,7 @@ class SeeDeleteExperienceViewController: UIViewController {
     }
     
     @IBAction func cancelButtonTouchUpInside(_ sender: UIButton) {
+        NotificationCenter.default.post(name: Notification.Name("reloadDataView"), object: nil)
         QCAppEnvironment.shared().routing?.route(to: SeeDismissRoutingEntry())
     }
     
