@@ -22,7 +22,7 @@ class SeeWhereExperienceCollectionSection: QCCollectionViewSection {
         SeeExperienceCreateInfoCollectionViewCellModel(title: NSLocalizedString("street", comment: "")),
         SeeExperienceCreateInfoCollectionViewCellModel(title: NSLocalizedString("apt", comment: "")),
         SeeExperienceCreateDoubleInfoCollectionViewCellModel(),
-        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("next", comment: ""), routing: SeeExperienceCreateShowRoutingEntry()),
+        SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("next", comment: ""), routing: SeeExperienceCreateShowRoutingEntry(), shouldShowLayer: true),
         SeeExperienceCreateButtonCollectionViewCellModel(title: NSLocalizedString("back", comment: ""), routing: SeePopRoutingEntry())]
     }
     

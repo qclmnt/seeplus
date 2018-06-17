@@ -26,25 +26,30 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Kc-n5-qBd">
-                        <rect key="frame" x="0.0" y="0.0" width="171" height="20"/>
+                        <rect key="frame" x="12" y="0.0" width="171" height="20"/>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkD-sD-49X">
-                        <rect key="frame" x="201" y="0.0" width="171" height="20"/>
+                        <rect key="frame" x="213" y="0.0" width="171" height="20"/>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJY-s1-nC7" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="28" width="171" height="30"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJY-s1-nC7" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="32" width="171" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="rSC-kN-b2k">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                        </constraints>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBI-Fi-Bbc" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                        <rect key="frame" x="201" y="28" width="171" height="30"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBI-Fi-Bbc" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
+                        <rect key="frame" x="201" y="32" width="171" height="30"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="18"/>
                         <textInputTraits key="textInputTraits"/>
@@ -53,17 +58,22 @@
             </view>
             <constraints>
                 <constraint firstItem="vBI-Fi-Bbc" firstAttribute="width" secondItem="OJY-s1-nC7" secondAttribute="width" id="5nN-UJ-PaF"/>
-                <constraint firstItem="kkD-sD-49X" firstAttribute="leading" secondItem="vBI-Fi-Bbc" secondAttribute="leading" id="8Ck-gg-7hS"/>
-                <constraint firstItem="vBI-Fi-Bbc" firstAttribute="top" secondItem="kkD-sD-49X" secondAttribute="bottom" constant="8" id="8dg-Z4-DhA"/>
-                <constraint firstItem="OJY-s1-nC7" firstAttribute="top" secondItem="0Kc-n5-qBd" secondAttribute="bottom" constant="8" id="BDo-jS-av3"/>
+                <constraint firstItem="kkD-sD-49X" firstAttribute="leading" secondItem="vBI-Fi-Bbc" secondAttribute="leading" constant="16" id="8Ck-gg-7hS">
+                    <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                </constraint>
+                <constraint firstItem="vBI-Fi-Bbc" firstAttribute="top" secondItem="kkD-sD-49X" secondAttribute="bottom" constant="12" id="8dg-Z4-DhA"/>
+                <constraint firstItem="OJY-s1-nC7" firstAttribute="top" secondItem="0Kc-n5-qBd" secondAttribute="bottom" constant="12" id="BDo-jS-av3"/>
                 <constraint firstItem="OJY-s1-nC7" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.45" id="QoQ-lP-kds"/>
-                <constraint firstItem="0Kc-n5-qBd" firstAttribute="leading" secondItem="OJY-s1-nC7" secondAttribute="leading" id="bTF-bD-n7m"/>
+                <constraint firstItem="0Kc-n5-qBd" firstAttribute="leading" secondItem="OJY-s1-nC7" secondAttribute="leading" constant="16" id="bTF-bD-n7m">
+                    <variation key="heightClass=regular-widthClass=compact" constant="12"/>
+                </constraint>
                 <constraint firstItem="vBI-Fi-Bbc" firstAttribute="leading" secondItem="OJY-s1-nC7" secondAttribute="trailing" constant="30" id="bud-FH-HZV"/>
                 <constraint firstItem="kkD-sD-49X" firstAttribute="top" secondItem="0Kc-n5-qBd" secondAttribute="top" id="bxl-Qt-REn"/>
                 <constraint firstItem="0Kc-n5-qBd" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="fUA-Zw-HE6"/>
                 <constraint firstItem="0Kc-n5-qBd" firstAttribute="width" secondItem="OJY-s1-nC7" secondAttribute="width" id="jfA-by-h1c"/>
                 <constraint firstItem="OJY-s1-nC7" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="kxb-HJ-xlK"/>
                 <constraint firstItem="kkD-sD-49X" firstAttribute="width" secondItem="vBI-Fi-Bbc" secondAttribute="width" id="nrJ-95-3A2"/>
+                <constraint firstItem="vBI-Fi-Bbc" firstAttribute="height" secondItem="OJY-s1-nC7" secondAttribute="height" id="uzf-pp-c9i"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="380" height="67"/>

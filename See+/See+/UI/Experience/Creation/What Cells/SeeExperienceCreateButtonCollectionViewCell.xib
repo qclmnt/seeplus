@@ -24,17 +24,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="363" height="65"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20A-bj-aa8">
-                        <rect key="frame" x="0.0" y="0.0" width="363" height="65"/>
+                    <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20A-bj-aa8">
+                        <rect key="frame" x="0.0" y="17.5" width="363" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="VWZ-ua-8Hz">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
                     </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="20A-bj-aa8" secondAttribute="bottom" id="4GQ-dm-D46"/>
-                <constraint firstItem="20A-bj-aa8" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="6MW-bY-Sch"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="20A-bj-aa8" secondAttribute="trailing" id="GLz-LA-OTW"/>
+                <constraint firstItem="20A-bj-aa8" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="LVF-pN-K9o"/>
                 <constraint firstItem="20A-bj-aa8" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="Sf3-ui-YWX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

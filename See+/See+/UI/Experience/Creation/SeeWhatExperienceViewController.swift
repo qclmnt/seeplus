@@ -34,6 +34,8 @@ class SeeWhatExperienceViewController: UIViewController {
         
         self.nextButton.layer.cornerRadius = self.nextButton.frame.height/2
         self.backButton.layer.cornerRadius = self.backButton.frame.height/2
+        self.descTextField.layer.cornerRadius = self.descTextField.frame.height/2
+        self.nameTextFlield.layer.cornerRadius = self.nameTextFlield.frame.height/2
         
         if let sublayers = self.nextButton.layer.sublayers {
             for layer in sublayers {
@@ -50,11 +52,13 @@ class SeeWhatExperienceViewController: UIViewController {
         self.nameLabel.text = NSLocalizedString("name.experience", comment: "")
         self.descLabel.text = NSLocalizedString("desc.experience", comment: "")
         
+        self.descTextField.configureWithStyle1(color: .appRed(), border: 2)
+        self.nameTextFlield.configureWithStyle1(color: .appRed(), border: 2)
         
         self.nextButton.setTitle(NSLocalizedString("next", comment: ""), for: .normal)
         self.nextButton.configureWithStyle1()
         self.backButton.setTitle(NSLocalizedString("back", comment: ""), for: .normal)
-        self.backButton.configureWithStyle1(color: .appRed())
+        self.backButton.configureWithStyle1(color: .appRed(), border: 2)
     }
     
     // MARK: - Actions

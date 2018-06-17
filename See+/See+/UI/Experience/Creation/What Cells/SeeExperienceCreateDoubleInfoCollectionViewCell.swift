@@ -19,6 +19,15 @@ class SeeExperienceCreateDoubleInfoCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.infoTextflied1.configureWithStyle1(color: .appRed(), border: 2)
+        self.infoTextField2.configureWithStyle1(color: .appRed(), border: 2)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.infoTextflied1.layer.cornerRadius = (DeviceHelper.isIpad() ? 48 : 30 )/2
+        self.infoTextField2.layer.cornerRadius = (DeviceHelper.isIpad() ? 48 : 30 )/2
     }
 
 }

@@ -19,7 +19,13 @@ class SeeExperienceCreateInfoCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.textField.configureWithStyle1(color: .appRed(), border: 2)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
+        self.textField.layer.cornerRadius = (DeviceHelper.isIpad() ? 48 : 30)/2
     }
 
 }
