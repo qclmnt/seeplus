@@ -52,3 +52,12 @@
 "accepted.exp" = "Vous avez accepté l’expérience!";
 "decline.exp" = "Vous avez décliné l’expérience!";
 "other.accepted.exp" = "Eliott92 a accepté l’expérience!";
+"french" = "Français";
+"chinois" = "Chinois";
+"dutch" = "Allemand";
+"english" = "Anglais";
+"spanish" = "Espagnol";
+"russia" = "Russe";
+"port" = "Portugais";
+"jap" = "Japonais";
+"arabic" = "Arabe";

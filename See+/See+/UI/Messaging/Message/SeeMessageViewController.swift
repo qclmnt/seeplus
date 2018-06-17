@@ -28,6 +28,19 @@ class SeeMessageViewController: UIViewController {
     lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
     var bottomLine: CALayer?
     
+    
+    var translateActivated: Bool = false
+    lazy var languagePicker: UIPickerView = UIPickerView()
+    let languages: [String] = [NSLocalizedString("french", comment: ""),
+                               NSLocalizedString("chinois", comment: ""),
+                               NSLocalizedString("dutch", comment: ""),
+                               NSLocalizedString("english", comment: ""),
+                               NSLocalizedString("spanish", comment: ""),
+                               NSLocalizedString("russia", comment: ""),
+                               NSLocalizedString("port", comment: ""),
+                               NSLocalizedString("jap", comment: ""),
+                               NSLocalizedString("arabic", comment: "")]
+    
     let user: SeeUser
     
     // MARK: - Initialization
@@ -150,13 +163,38 @@ class SeeMessageViewController: UIViewController {
     }
     
     @objc func translateButtonTouchUpInside() {
+        if self.translateActivated {
+            self.messageTextField.inputView = nil
+            self.messageTextField.becomeFirstResponder()
+        } else {
+            self.languagePicker.delegate = self
+            self.languagePicker.dataSource = self
+            self.messageTextField.inputView = self.languagePicker
+            self.messageTextField.becomeFirstResponder()
+        }
         
+        self.translateActivated = !self.translateActivated
     }
     
     func scrollToBottom() {
         let item = self.messagingCollectionView.numberOfItems(inSection: 0)-1
         let lastItemIndex = IndexPath(item: item, section: 0)
         self.messagingCollectionView.scrollToItem(at: lastItemIndex, at: .bottom, animated: true)
+    }
+}
+
+extension SeeMessageViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.languages.count
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.languages[row]
     }
 }
 

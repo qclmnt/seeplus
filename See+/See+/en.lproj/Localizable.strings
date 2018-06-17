@@ -52,3 +52,12 @@
 "accepted.exp" = "You have accepted the experience!";
 "decline.exp" = "You have declined the experience!";
 "other.accepted.exp" = "Eliott92 has accepted the experience!";
+"french" = "French";
+"chinois" = "Chinese";
+"dutch" = "Dutch";
+"english" = "English";
+"spanish" = "Spanish";
+"russia" = "Russian";
+"port" = "Portuguese";
+"jap" = "Japanese";
+"arabic" = "Arabic";
