@@ -63,6 +63,12 @@ class SeeProfilePicViewController: UIViewController {
     
     // MARK: - Actions
 
+    @IBAction func uploadPhotoTouchUpInside(_ sender: UIButton) {
+        self.profilePicImageView.image = UIImage(named: "george")
+        self.validateButton.setImage(UIImage(named: "validate"), for: .normal)
+        self.validateButton.setTitle("", for: .normal)
+    }
+    
     @IBAction func validateButtonTouchUpInside(_ sender: UIButton) {
         QCAppEnvironment.shared().routing?.route(to: SeeWelcomeRoutingEntry())
     }

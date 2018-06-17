@@ -62,6 +62,9 @@
                     <variation key="heightClass=regular-widthClass=compact">
                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
                     </variation>
+                    <connections>
+                        <action selector="uploadPhotoTouchUpInside:" destination="-1" eventType="touchUpInside" id="x5y-PO-gHJ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-I7-VZm">
                     <rect key="frame" x="87.5" y="356" width="200" height="30"/>
