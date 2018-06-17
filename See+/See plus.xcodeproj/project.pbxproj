@@ -20,6 +20,11 @@
 		39270E3C20D691EB0027DC37 /* SeeProfileRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */; };
 		39270E3E20D6C99A0027DC37 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */; };
 		39270E4020D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3F20D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift */; };
+		39270E4420D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E4220D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.swift */; };
+		39270E4520D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39270E4320D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.xib */; };
+		39270E4720D6FD6A0027DC37 /* SeeExperiencesManagePhotoCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E4620D6FD6A0027DC37 /* SeeExperiencesManagePhotoCollectionViewModel.swift */; };
+		39270E4A20D6FFC20027DC37 /* SeeManageRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E4920D6FFC20027DC37 /* SeeManageRoutingEntry.swift */; };
+		39270E4C20D700C00027DC37 /* SeeManageBottomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E4B20D700C00027DC37 /* SeeManageBottomSection.swift */; };
 		39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */; };
 		39488C1A20CBD6D40069AC8A /* SeeMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */; };
 		39488C1D20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */; };
@@ -196,6 +201,11 @@
 		39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileRoutingEntry.swift; sourceTree = "<group>"; };
 		39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 		39270E3F20D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperienceCreateButtonApercuCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		39270E4220D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeCreateExperienceManagePhotoViewController.swift; sourceTree = "<group>"; };
+		39270E4320D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeCreateExperienceManagePhotoViewController.xib; sourceTree = "<group>"; };
+		39270E4620D6FD6A0027DC37 /* SeeExperiencesManagePhotoCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeExperiencesManagePhotoCollectionViewModel.swift; sourceTree = "<group>"; };
+		39270E4920D6FFC20027DC37 /* SeeManageRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeManageRoutingEntry.swift; sourceTree = "<group>"; };
+		39270E4B20D700C00027DC37 /* SeeManageBottomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeManageBottomSection.swift; sourceTree = "<group>"; };
 		39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageViewController.swift; sourceTree = "<group>"; };
 		39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageViewController.xib; sourceTree = "<group>"; };
 		39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRoutingEntry.swift; sourceTree = "<group>"; };
@@ -435,6 +445,25 @@
 				39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		39270E4120D6FB980027DC37 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				39270E4220D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.swift */,
+				39270E4620D6FD6A0027DC37 /* SeeExperiencesManagePhotoCollectionViewModel.swift */,
+				39270E4320D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.xib */,
+				39270E4B20D700C00027DC37 /* SeeManageBottomSection.swift */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		39270E4820D6FFA90027DC37 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				39270E4920D6FFC20027DC37 /* SeeManageRoutingEntry.swift */,
+			);
+			path = Manage;
 			sourceTree = "<group>";
 		};
 		39488C1620CBD6B60069AC8A /* Message */ = {
@@ -880,6 +909,7 @@
 		39A557A020D2D56F009B8FB0 /* Creation */ = {
 			isa = PBXGroup;
 			children = (
+				39270E4120D6FB980027DC37 /* Manage */,
 				397BAD0E20D4603E00B49967 /* Congrats */,
 				39A557CB20D30D0B009B8FB0 /* Show */,
 				39A557B020D3045E009B8FB0 /* What Cells */,
@@ -962,6 +992,7 @@
 		39D6118B20CBC86100237DCA /* Experience */ = {
 			isa = PBXGroup;
 			children = (
+				39270E4820D6FFA90027DC37 /* Manage */,
 				39C38EFA20D508F1006D32BA /* Preview */,
 				39488C5320CC62C60069AC8A /* Experience */,
 				39488C5220CC62A40069AC8A /* Detail */,
@@ -1246,6 +1277,7 @@
 				3974DA5E20CF08F50098BB9E /* SeeAboutViewController.xib in Resources */,
 				39944DD920C6C4A500235B48 /* SeeConnectionViewController.xib in Resources */,
 				39D8952D20C86DC500782F3D /* SeeMessagingViewController.xib in Resources */,
+				39270E4520D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.xib in Resources */,
 				39488C1A20CBD6D40069AC8A /* SeeMessageViewController.xib in Resources */,
 				39D8953220C86DEC00782F3D /* SeeProfileViewController.xib in Resources */,
 				39488C5120CC2CBC0069AC8A /* SeeExperienceViewController.xib in Resources */,
@@ -1360,6 +1392,7 @@
 				39D8954220C8721400782F3D /* SeeMessagingViewControllerViewModel.swift in Sources */,
 				39668A5F20CD6D890036351F /* UIView+Gradient.swift in Sources */,
 				3974DA6120CF09CF0098BB9E /* SeeAboutRoutingEntry.swift in Sources */,
+				39270E4420D6FBDA0027DC37 /* SeeCreateExperienceManagePhotoViewController.swift in Sources */,
 				39A557AF20D3004C009B8FB0 /* SeeWhereExperienceCollectionSection.swift in Sources */,
 				39D8952C20C86DC500782F3D /* SeeMessagingViewController.swift in Sources */,
 				39A557BF20D30696009B8FB0 /* SeeExperienceCreateButtonCollectionViewCell.swift in Sources */,
@@ -1381,6 +1414,7 @@
 				39270E4020D6F7D00027DC37 /* SeeExperienceCreateButtonApercuCollectionViewCellModel.swift in Sources */,
 				39944DE320C6C51400235B48 /* QCViewModel.swift in Sources */,
 				39944DDD20C6C4DE00235B48 /* SeeConnectionSignUpViewModel.swift in Sources */,
+				39270E4A20D6FFC20027DC37 /* SeeManageRoutingEntry.swift in Sources */,
 				39A5579F20D2D458009B8FB0 /* SeeHeadingsResidentCollectionViewModel.swift in Sources */,
 				39A557C620D30711009B8FB0 /* SeeExperienceCreateTitleCollectionViewCellModel.swift in Sources */,
 				3906285C20C6BA3400187E21 /* AppDelegate.swift in Sources */,
@@ -1388,10 +1422,12 @@
 				39EA128520C9D22A00BB6387 /* SeeProfileExperienceCollectionViewCellViewModel.swift in Sources */,
 				397BAD1620D4627500B49967 /* SeeCongratsViewControllerViewModel.swift in Sources */,
 				39944E0220C6DBEB00235B48 /* SeeWelcomeRoutingEntry.swift in Sources */,
+				39270E4C20D700C00027DC37 /* SeeManageBottomSection.swift in Sources */,
 				39D8952220C86A8300782F3D /* SeeTabBarTravellerControllerViewModel.swift in Sources */,
 				39944DFE20C6DA9100235B48 /* SeeWelcomeViewController.swift in Sources */,
 				395C305020D0796F003A9133 /* SeeContactExperienceAuthorCollectionViewCellViewModel.swift in Sources */,
 				39A557A320D2D59B009B8FB0 /* SeeWhatExperienceViewController.swift in Sources */,
+				39270E4720D6FD6A0027DC37 /* SeeExperiencesManagePhotoCollectionViewModel.swift in Sources */,
 				39D8954420C8723100782F3D /* SeeProfileViewControllerViewModel.swift in Sources */,
 				39D8954B20C87A9A00782F3D /* SeeMessagingCollectionViewCell.swift in Sources */,
 				3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */,

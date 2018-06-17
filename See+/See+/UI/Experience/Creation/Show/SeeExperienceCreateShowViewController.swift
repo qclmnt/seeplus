@@ -52,6 +52,10 @@ class SeeExperienceCreateShowViewController: UIViewController {
     
     // MARK: - Actions
     
+    @IBAction func uploadPhotoTouchUpInside(_ sender: UIButton) {
+        QCAppEnvironment.shared().routing?.route(to: SeeManageRoutingEntry())
+    }
+    
     @IBAction func nextButtonTouchUpInside(_ sender: UIButton) {
         QCAppEnvironment.shared().routing?.route(to: SeeExperienceDetailRoutingEntry(viewModel: SeeExperienceCreateDetailCollectionViewModel(experience: SeeExperience(name: "test", location: "test", imageName: "cineFR", author: "test"))))
     }

@@ -43,6 +43,9 @@
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="uploadPhotoTouchUpInside:" destination="-1" eventType="touchUpInside" id="WeL-xc-EsE"/>
+                    </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm7-Nu-dMK">
                     <rect key="frame" x="87.5" y="380" width="200" height="30"/>
