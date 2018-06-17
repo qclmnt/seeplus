@@ -22,6 +22,8 @@ class SeeMessageViewController: UIViewController {
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var messageTextField: SeeTextField!
     @IBOutlet weak var messageToolBarBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var infoLabel: UILabel!
+    
     
     lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
     var bottomLine: CALayer?
@@ -113,6 +115,26 @@ class SeeMessageViewController: UIViewController {
     @IBAction func backButtonTouchUpInside(_ sender: UIButton) {
         QCAppEnvironment.shared().routing?.route(to: SeePopRoutingEntry())
     }
+    
+    @IBAction func notButtonTouchUpInside(_ sender: UIButton) {
+        self.infoLabel.text = NSLocalizedString("decline.exp", comment: "")
+    }
+    
+    @IBAction func validateButtonTouchUpInside(_ sender: UIButton) {
+        self.infoLabel.text = NSLocalizedString("accepted.exp", comment: "")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.infoLabel.text = nil
+            guard let image = UIImage(named: "load") else {return}
+            let imageView = UIImageView(frame: CGRect(x: 10, y: self.infoLabel.frame.width-40, width: 50, height: 20))
+            imageView.image = image
+            print("load")
+            self.infoLabel.addSubview(imageView)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.infoLabel.text = NSLocalizedString("other.accepted.exp", comment: "")
+        }
+    }
+    
     
     @objc func sendButtonTouchUpInside() {
         self.messagesCollectionViewModel.addMessage(message: self.messageTextField.text ?? "Error")

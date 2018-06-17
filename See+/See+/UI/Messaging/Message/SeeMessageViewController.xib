@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
         <array key="Gotham-Medium.otf">
             <string>Gotham-Medium</string>
         </array>
@@ -20,6 +23,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeeMessageViewController" customModule="See_plus" customModuleProvider="target">
             <connections>
                 <outlet property="backButton" destination="Q7P-wP-gYN" id="u3S-da-xdc"/>
+                <outlet property="infoLabel" destination="bI2-O5-u2J" id="EkZ-9V-6Dc"/>
                 <outlet property="messageTextField" destination="7Fl-IL-yZ4" id="SG2-LK-psn"/>
                 <outlet property="messageToolBar" destination="vLX-Z2-yp5" id="PoM-6p-iKv"/>
                 <outlet property="messageToolBarBottomConstraint" destination="5mB-TH-DHy" id="ZIU-r0-UgO"/>
@@ -90,7 +94,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-N9-1Sj">
-                    <rect key="frame" x="0.0" y="119" width="375" height="455"/>
+                    <rect key="frame" x="0.0" y="119" width="375" height="433"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aub-2C-D9Y">
                         <size key="itemSize" width="50" height="50"/>
@@ -109,6 +113,9 @@
                                 <constraint firstAttribute="width" secondItem="Rjh-y4-5Io" secondAttribute="height" multiplier="1:1" id="izr-lU-bgb"/>
                             </constraints>
                             <state key="normal" image="validate-message"/>
+                            <connections>
+                                <action selector="validateButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="Rb8-Sc-tHf"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Fl-IL-yZ4" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
                             <rect key="frame" x="159" y="27.5" width="196" height="30"/>
@@ -129,6 +136,9 @@
                                 <constraint firstAttribute="width" secondItem="dP8-rv-bLt" secondAttribute="height" multiplier="1:1" id="7un-sD-eQY"/>
                             </constraints>
                             <state key="normal" image="not-button"/>
+                            <connections>
+                                <action selector="notButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="rtj-vk-mal"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,18 +163,30 @@
                         <constraint firstItem="7Fl-IL-yZ4" firstAttribute="centerY" secondItem="Rjh-y4-5Io" secondAttribute="centerY" id="scd-aZ-Erm"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI2-O5-u2J">
+                    <rect key="frame" x="16" y="560" width="314" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="hG7-Ki-kb7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="10"/>
+                    <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="bI2-O5-u2J" firstAttribute="top" secondItem="DaT-N9-1Sj" secondAttribute="bottom" constant="8" id="1aA-Fb-kAg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vLX-Z2-yp5" secondAttribute="bottom" id="5mB-TH-DHy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vLX-Z2-yp5" secondAttribute="trailing" id="DMY-GZ-NS7"/>
                 <constraint firstItem="fRI-Yq-CRy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="H6O-fO-Ggk"/>
                 <constraint firstItem="DaT-N9-1Sj" firstAttribute="top" secondItem="fRI-Yq-CRy" secondAttribute="bottom" constant="8" id="QRz-ZQ-yLa"/>
-                <constraint firstItem="vLX-Z2-yp5" firstAttribute="top" secondItem="DaT-N9-1Sj" secondAttribute="bottom" constant="8" id="T0A-HL-g1d"/>
+                <constraint firstItem="vLX-Z2-yp5" firstAttribute="top" secondItem="bI2-O5-u2J" secondAttribute="bottom" constant="12" id="SAo-eP-YZk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fRI-Yq-CRy" secondAttribute="trailing" id="U7Y-5y-rrw"/>
                 <constraint firstItem="DaT-N9-1Sj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aZg-mW-UXj"/>
                 <constraint firstItem="fRI-Yq-CRy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dnC-dh-Khn"/>
                 <constraint firstItem="vLX-Z2-yp5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lOb-ea-t5j"/>
+                <constraint firstItem="bI2-O5-u2J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nYj-Tk-Rj1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bI2-O5-u2J" secondAttribute="trailing" constant="45" id="njv-9l-k7W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DaT-N9-1Sj" secondAttribute="trailing" id="sfp-w9-nMS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -49,3 +49,6 @@
 "what.explore" = "Que voulez-vous\nexplorer?";
 "start" = "commencer";
 "start.message" = "Commencez à explorer\nles métropoles du monde\nentier avec la communauté\nSEE+!";
+"accepted.exp" = "Vous avez accepté l’expérience!";
+"decline.exp" = "Vous avez décliné l’expérience!";
+"other.accepted.exp" = "Eliott92 a accepté l’expérience!";

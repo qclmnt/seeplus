@@ -49,3 +49,6 @@
 "what.explore" = "What do you want\nto explore?";
 "start" = "start";
 "start.message" = "Let’s start exploring\nthe big cities all\naround the world\nwith SEE+ community!";
+"accepted.exp" = "You have accepted the experience!";
+"decline.exp" = "You have declined the experience!";
+"other.accepted.exp" = "Eliott92 has accepted the experience!";
