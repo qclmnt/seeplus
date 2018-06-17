@@ -10,13 +10,13 @@ import UIKit
 
 class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
     
-    let username: String
     let message: String
+    let user: SeeUser
     
     // MARK: - Initialization
     
-    init(username: String, message: String) {
-        self.username = username
+    init(user: SeeUser, message: String) {
+        self.user = user
         self.message = message
         
         super.init()
@@ -29,7 +29,7 @@ class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
     }
     
     override var routingEntry: QCRoutingEntry {
-        return SeeMessageRoutingEntry()
+        return SeeMessageRoutingEntry(user: self.user)
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
@@ -39,7 +39,7 @@ class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
         guard let messagingCell = cell as? SeeMessagingCollectionViewCell else {return}
         
-        messagingCell.usernameLabel.text = self.username
+        messagingCell.usernameLabel.text = self.user.username
         messagingCell.messageLabel.text = self.message
         messagingCell.viewModel = self
     }

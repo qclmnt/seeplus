@@ -21,7 +21,7 @@ class SeeUser: NSObject {
     // MARK: - Initialization
     
     init(username: String,
-         userMode: UserMode) {
+         userMode: UserMode = .discover) {
         self.username = username
         self.userMode = userMode
         super.init()

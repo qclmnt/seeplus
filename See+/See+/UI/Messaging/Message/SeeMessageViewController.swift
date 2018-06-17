@@ -26,6 +26,19 @@ class SeeMessageViewController: UIViewController {
     lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
     var bottomLine: CALayer?
     
+    let user: SeeUser
+    
+    // MARK: - Initialization
+    
+    init(user: SeeUser) {
+        self.user = user
+        super.init(nibName: String(describing: SeeMessageViewController.self), bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - View life cycle
 
     override func viewDidLoad() {
@@ -33,6 +46,8 @@ class SeeMessageViewController: UIViewController {
         
         self.messagesCollectionViewModel.delegate = self
         self.messagesCollectionViewModel.load()
+        
+        self.usernameLabel.text = self.user.username
         
         self.bottomLine = self.topView.addBottomBorder(color: .appPurple(), borderWidth: 1)
         self.messageToolBar.configureWithStyle1(color: .appPurple())

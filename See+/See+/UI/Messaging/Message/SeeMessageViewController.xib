@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,7 +53,7 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="eUx-IQ-iog">
-                            <rect key="frame" x="121" y="26" width="39" height="39"/>
+                            <rect key="frame" x="113.5" y="26" width="39" height="39"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="39" id="7qj-9Y-Hqu">
@@ -62,9 +63,9 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUf-fx-dCp">
-                            <rect key="frame" x="175" y="21" width="85" height="50"/>
+                            <rect key="frame" x="167.5" y="21" width="150" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="85" id="hAx-Q3-rrT"/>
+                                <constraint firstAttribute="width" constant="150" id="hAx-Q3-rrT"/>
                                 <constraint firstAttribute="height" constant="50" id="xoj-e0-3E5"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
@@ -82,7 +83,9 @@
                         <constraint firstItem="sUf-fx-dCp" firstAttribute="leading" secondItem="eUx-IQ-iog" secondAttribute="trailing" constant="15" id="HUu-8R-zPm"/>
                         <constraint firstAttribute="height" constant="91" id="Lnd-0J-v8B"/>
                         <constraint firstItem="eUx-IQ-iog" firstAttribute="centerY" secondItem="Q7P-wP-gYN" secondAttribute="centerY" id="l4z-hO-5GU"/>
-                        <constraint firstItem="sUf-fx-dCp" firstAttribute="centerX" secondItem="fRI-Yq-CRy" secondAttribute="centerX" constant="30" id="l5K-vv-Cso"/>
+                        <constraint firstItem="sUf-fx-dCp" firstAttribute="leading" secondItem="fRI-Yq-CRy" secondAttribute="centerX" constant="-30" id="l5K-vv-Cso">
+                            <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                        </constraint>
                         <constraint firstItem="sUf-fx-dCp" firstAttribute="centerY" secondItem="eUx-IQ-iog" secondAttribute="centerY" id="wrI-qh-Hcj"/>
                     </constraints>
                 </view>

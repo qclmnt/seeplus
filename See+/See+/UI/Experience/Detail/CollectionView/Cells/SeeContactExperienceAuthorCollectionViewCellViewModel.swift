@@ -40,7 +40,7 @@ class SeeContactExperienceAuthorCollectionViewCellViewModel: QCCollectionCellVie
     // MARK: - Action
     
     func routeToMessage() {
-        QCAppEnvironment.shared().routing?.route(to: SeeMessageRoutingEntry())
+        QCAppEnvironment.shared().routing?.route(to: SeeMessageRoutingEntry(user: self.experience.user))
     }
     
 }

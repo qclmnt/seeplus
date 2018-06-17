@@ -25,6 +25,8 @@ class SeeExperience: NSObject {
         return UIImage(named: self.imageName)
     }
     
+    lazy var user: SeeUser = SeeUser(username: "Benoit")
+    
     // MARK: - Initialization
     
     init(name: String,

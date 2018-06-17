@@ -10,10 +10,19 @@ import UIKit
 
 class SeeMessageRoutingEntry: QCRoutingEntry {
     
+    let user: SeeUser
+    
+    // MARK: - Initialization
+    
+    init(user: SeeUser) {
+        self.user = user
+        super.init()
+    }
+    
     // MARK: - QCRoutingEntry
     
     override var viewController: UIViewController? {
-        return SeeMessageViewController()
+        return SeeMessageViewController(user: self.user)
     }
 
 }
