@@ -112,7 +112,7 @@
                         <constraint firstAttribute="width" constant="49" id="Pp9-jx-nWj"/>
                         <constraint firstAttribute="width" secondItem="QVv-uL-Sdl" secondAttribute="height" multiplier="1:1" id="kSS-gt-dbZ"/>
                     </constraints>
-                    <state key="normal" image="more-button"/>
+                    <state key="normal" image="moreBig"/>
                     <connections>
                         <action selector="moreButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="EMx-cy-wX4"/>
                     </connections>
@@ -152,7 +152,7 @@
     </objects>
     <resources>
         <image name="bignote" width="111" height="14"/>
-        <image name="more-button" width="29" height="29"/>
+        <image name="moreBig" width="49" height="49"/>
         <image name="myprofile" width="64" height="64"/>
     </resources>
 </document>
