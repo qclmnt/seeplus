@@ -73,7 +73,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0d-l8-7wY">
-                    <rect key="frame" x="87" y="440" width="200" height="35"/>
+                    <rect key="frame" x="87" y="440" width="200" height="30"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,10 +83,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUn-C0-7Wz">
-                    <rect key="frame" x="87" y="512" width="200" height="35"/>
+                    <rect key="frame" x="87" y="490" width="200" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="XXf-4A-krP">
-                            <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                         </constraint>
                         <constraint firstAttribute="width" constant="412" id="oRY-7z-W1C">
                             <variation key="heightClass=regular-widthClass=compact" constant="200"/>
@@ -128,7 +128,9 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                 </constraint>
                 <constraint firstItem="yPU-MJ-Yat" firstAttribute="width" secondItem="1wH-I4-nS6" secondAttribute="width" id="CKA-93-4vn"/>
-                <constraint firstItem="iUn-C0-7Wz" firstAttribute="top" secondItem="W0d-l8-7wY" secondAttribute="bottom" constant="37" id="CNc-Df-InS"/>
+                <constraint firstItem="iUn-C0-7Wz" firstAttribute="top" secondItem="W0d-l8-7wY" secondAttribute="bottom" constant="43" id="CNc-Df-InS">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
                 <constraint firstItem="HBq-GF-djD" firstAttribute="leading" secondItem="yPU-MJ-Yat" secondAttribute="leading" constant="16" id="LH7-OK-uko">
                     <variation key="heightClass=regular-widthClass=compact" constant="12"/>
                 </constraint>
