@@ -28,7 +28,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMu-qV-CG6">
-                        <rect key="frame" x="37" y="118.5" width="300" height="400"/>
+                        <rect key="frame" x="37" y="105" width="300" height="400"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmD-8B-0Ty">
                                 <rect key="frame" x="0.5" y="300" width="300" height="21"/>
@@ -102,12 +102,14 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="Lgz-xP-8do">
                         <rect key="frame" x="37" y="35" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="jHc-Dp-0uT"/>
+                            <constraint firstAttribute="width" constant="63" id="jHc-Dp-0uT">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstAttribute="width" secondItem="Lgz-xP-8do" secondAttribute="height" multiplier="1:1" id="oRz-rO-T8L"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDW-w3-7c6">
-                        <rect key="frame" x="122" y="49" width="141" height="21"/>
+                        <rect key="frame" x="106" y="49" width="157" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="3Ya-Qb-pWp"/>
                         </constraints>
@@ -133,16 +135,18 @@
             </view>
             <constraints>
                 <constraint firstItem="sDW-w3-7c6" firstAttribute="centerY" secondItem="Lgz-xP-8do" secondAttribute="centerY" id="0Dn-dc-T4e"/>
-                <constraint firstItem="Lgz-xP-8do" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="85" id="AlY-Nl-iAw">
+                <constraint firstItem="Lgz-xP-8do" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="61" id="AlY-Nl-iAw">
                     <variation key="heightClass=regular-widthClass=compact" constant="15"/>
                 </constraint>
-                <constraint firstItem="sDW-w3-7c6" firstAttribute="leading" secondItem="Lgz-xP-8do" secondAttribute="trailing" constant="34.5" id="OFg-gq-Waa"/>
+                <constraint firstItem="sDW-w3-7c6" firstAttribute="leading" secondItem="Lgz-xP-8do" secondAttribute="trailing" constant="19" id="OFg-gq-Waa"/>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="leading" secondItem="sDW-w3-7c6" secondAttribute="trailing" constant="26" id="QKf-BV-JuF"/>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="centerY" secondItem="Lgz-xP-8do" secondAttribute="centerY" id="Quk-OU-qd9"/>
                 <constraint firstItem="eMu-qV-CG6" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="WZk-nN-bbP"/>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="trailing" secondItem="YNZ-LH-XCz" secondAttribute="trailing" id="aAB-xg-F60"/>
                 <constraint firstItem="Lgz-xP-8do" firstAttribute="leading" secondItem="eMu-qV-CG6" secondAttribute="leading" id="bDH-dt-67G"/>
-                <constraint firstItem="eMu-qV-CG6" firstAttribute="top" secondItem="Lgz-xP-8do" secondAttribute="bottom" constant="33.5" id="c8o-yX-n7B"/>
+                <constraint firstItem="eMu-qV-CG6" firstAttribute="top" secondItem="Lgz-xP-8do" secondAttribute="bottom" constant="26" id="c8o-yX-n7B">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
@@ -162,6 +166,6 @@
         <image name="bignote" width="111" height="14"/>
         <image name="more-button" width="29" height="29"/>
         <image name="myprofile" width="64" height="64"/>
-        <image name="not-button" width="70" height="70"/>
+        <image name="not-button" width="49" height="49"/>
     </resources>
 </document>
