@@ -15,6 +15,7 @@ class SeeExperiencePreviewViewController: UIViewController {
     @IBOutlet weak var noteImageView: UIImageView!
     @IBOutlet weak var experienceLocationLabel: UILabel!
     @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var likeImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,10 @@ class SeeExperiencePreviewViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         self.view.layer.cornerRadius = self.view.frame.height/2
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        doubleTap.numberOfTapsRequired = 2
+        self.view.addGestureRecognizer(doubleTap)
     }
     
     func configureLayout() {
@@ -39,6 +44,11 @@ class SeeExperiencePreviewViewController: UIViewController {
         self.experienceImageView.image = UIImage(named: "cineFR")
         self.experienceLabel.text = "Apartment and Workshop\nof Le Corbusier"
         self.experienceLocationLabel.text = "75016 Paris"
+    }
+    
+    @objc func doubleTapped() {
+        self.likeImageView.image = UIImage(named: "likeSelected")
+        self.likeImageView.squeezeAndBounce()
     }
 
 }

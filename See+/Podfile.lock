@@ -1,16 +1,20 @@
 PODS:
+  - Canvas (0.1.2)
   - SwiftyUserDefaults (4.0.0-alpha.1)
 
 DEPENDENCIES:
+  - Canvas (~> 0.1.2)
   - SwiftyUserDefaults (= 4.0.0-alpha.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Canvas
     - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
   SwiftyUserDefaults: cebe0ff9472f52699772a514b6f7155861d8069b
 
-PODFILE CHECKSUM: 763fdd372f402dc5f7fcefa328362c7ed48d0397
+PODFILE CHECKSUM: 077babbfe852eb45a5142e89f9d65b5f4238822d
 
 COCOAPODS: 1.5.0

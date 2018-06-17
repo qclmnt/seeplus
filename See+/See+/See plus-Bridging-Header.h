@@ -3,3 +3,4 @@
 //
 
 #import "SeeLanguageBundle.h"
+#import <Canvas/CSAnimation.h>

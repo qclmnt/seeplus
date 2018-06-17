@@ -22,6 +22,7 @@
                 <outlet property="experienceLabel" destination="fIR-yC-gD5" id="jAa-qs-rWg"/>
                 <outlet property="experienceLocationLabel" destination="jnT-SV-xDf" id="Nff-PT-Mnv"/>
                 <outlet property="infoView" destination="jfF-1T-Y1n" id="uNy-Ld-4We"/>
+                <outlet property="likeImageView" destination="XLJ-em-flJ" id="OPI-Vw-39q"/>
                 <outlet property="noteImageView" destination="GAg-Ma-UH5" id="blW-6r-8XR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -77,25 +78,22 @@
                         <constraint firstItem="jnT-SV-xDf" firstAttribute="centerX" secondItem="jfF-1T-Y1n" secondAttribute="centerX" id="kZf-y3-p11"/>
                     </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Csq-gz-Nhe">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="Csq-gz-Nhe">
                     <rect key="frame" x="94" y="50" width="22.5" height="22.5"/>
-                    <color key="backgroundColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="22" id="DFq-GF-jbs"/>
                         <constraint firstAttribute="width" secondItem="Csq-gz-Nhe" secondAttribute="height" multiplier="1:1" id="VYS-ud-pVz"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XLJ-em-flJ">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="XLJ-em-flJ">
                     <rect key="frame" x="125.5" y="50" width="22.5" height="22.5"/>
-                    <color key="backgroundColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="XLJ-em-flJ" secondAttribute="height" multiplier="1:1" id="44r-rH-yFS"/>
                         <constraint firstAttribute="width" constant="22" id="6fn-sr-aXT"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nHm-am-wfK">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rubric-monument" translatesAutoresizingMaskIntoConstraints="NO" id="nHm-am-wfK">
                     <rect key="frame" x="258.5" y="50" width="22.5" height="22.5"/>
-                    <color key="backgroundColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="nHm-am-wfK" secondAttribute="height" multiplier="1:1" id="3Ar-xB-YoS"/>
                         <constraint firstAttribute="width" constant="22" id="fF8-Jv-N1J"/>
@@ -125,6 +123,9 @@
         </view>
     </objects>
     <resources>
+        <image name="like" width="22" height="22"/>
+        <image name="myprofile" width="64" height="64"/>
         <image name="note" width="73" height="10"/>
+        <image name="rubric-monument" width="65" height="65"/>
     </resources>
 </document>

@@ -18,6 +18,7 @@
 		3906287620C6BD2500187E21 /* QCRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287520C6BD2500187E21 /* QCRoutingEntry.swift */; };
 		3906287820C6BF1900187E21 /* QCNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3906287720C6BF1900187E21 /* QCNavigationStyle.swift */; };
 		39270E3C20D691EB0027DC37 /* SeeProfileRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */; };
+		39270E3E20D6C99A0027DC37 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */; };
 		39488C1920CBD6D40069AC8A /* SeeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */; };
 		39488C1A20CBD6D40069AC8A /* SeeMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */; };
 		39488C1D20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */; };
@@ -192,6 +193,7 @@
 		3906287720C6BF1900187E21 /* QCNavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCNavigationStyle.swift; sourceTree = "<group>"; };
 		391CAA0920CF1CCB0013AE1B /* See plus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "See plus-Bridging-Header.h"; sourceTree = "<group>"; };
 		39270E3B20D691EB0027DC37 /* SeeProfileRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProfileRoutingEntry.swift; sourceTree = "<group>"; };
+		39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 		39488C1720CBD6D40069AC8A /* SeeMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageViewController.swift; sourceTree = "<group>"; };
 		39488C1820CBD6D40069AC8A /* SeeMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeeMessageViewController.xib; sourceTree = "<group>"; };
 		39488C1C20CBD96A0069AC8A /* SeeMessageRoutingEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeMessageRoutingEntry.swift; sourceTree = "<group>"; };
@@ -808,6 +810,7 @@
 				39D6119120CBCC2E00237DCA /* UIView+Gesture.swift */,
 				39668A5B20CD64280036351F /* UIView+Border.swift */,
 				39668A5E20CD6D890036351F /* UIView+Gradient.swift */,
+				39270E3D20D6C99A0027DC37 /* UIView+Animation.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1280,10 +1283,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-See plus/Pods-See plus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Canvas/Canvas.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Canvas.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1423,6 +1428,7 @@
 				39D8953E20C8719200782F3D /* SeeTabBarViewControllerViewModel.swift in Sources */,
 				39D6119220CBCC2E00237DCA /* UIView+Gesture.swift in Sources */,
 				39944DE820C6CB5B00235B48 /* SeeSignupRoutinEntry.swift in Sources */,
+				39270E3E20D6C99A0027DC37 /* UIView+Animation.swift in Sources */,
 				395C304A20D07819003A9133 /* SeeExperienceImage.swift in Sources */,
 				39488C3D20CC0EA00069AC8A /* SeeHeadingsViewController.swift in Sources */,
 				395C302A20D06A5B003A9133 /* SeeExperienceViewControllerViewModel.swift in Sources */,
