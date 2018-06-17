@@ -61,7 +61,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNZ-LH-XCz">
                                 <rect key="frame" x="0.5" y="0.0" width="300.5" height="233"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="Mhr-3N-aeM">
+                                    <constraint firstAttribute="height" constant="417" id="Mhr-3N-aeM">
                                         <variation key="heightClass=regular-widthClass=compact" constant="233"/>
                                     </constraint>
                                 </constraints>
