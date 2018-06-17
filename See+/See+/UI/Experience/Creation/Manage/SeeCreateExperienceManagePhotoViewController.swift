@@ -21,11 +21,13 @@ class SeeCreateExperienceManagePhotoViewController: UIViewController {
         
         self.viewModel.delegate = self
         self.viewModel.load()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadDataView), name: Notification.Name("reloadDataView"), object: nil)
     }
     
     // MARK: - Helper
     
-    func reloadDataView() {
+    @objc func reloadDataView() {
         UIView.performWithoutAnimation {
             self.collectionView.reloadData()
         }
