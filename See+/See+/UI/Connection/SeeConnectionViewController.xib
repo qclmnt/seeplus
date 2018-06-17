@@ -26,6 +26,7 @@
                 <outlet property="emailLabel" destination="1w6-rb-F3M" id="Ijw-Rh-32B"/>
                 <outlet property="emailTextField" destination="l4r-sC-BTc" id="RFb-fg-0cE"/>
                 <outlet property="enterButton" destination="dpA-Au-ZH7" id="n1L-xO-dwz"/>
+                <outlet property="enterButtonConstraint" destination="JzK-NX-oOf" id="Yha-hZ-Eoq"/>
                 <outlet property="passwordLabel" destination="vcQ-9E-z97" id="ozZ-ez-X25"/>
                 <outlet property="passwordTextField" destination="7DT-B9-ZcE" id="LRd-dF-8kp"/>
                 <outlet property="switchButton" destination="Rsd-jp-uUS" id="U6J-fP-jmG"/>
@@ -80,7 +81,7 @@
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
-                    <state key="normal" title="Enter">
+                    <state key="normal">
                         <color key="titleColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">

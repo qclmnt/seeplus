@@ -11,10 +11,14 @@ import SwiftyUserDefaults
 
 class SeeNavigationController: UINavigationController {
     
-    lazy var leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logo-navbar"),
-                                                 style: .plain,
-                                                 target: self,
-                                                 action: #selector(self.logoButtonTouchUpInside))
+    lazy var leftBarButtonItem: UIBarButtonItem = {
+        let button = UIBarButtonItem(image: UIImage(named: "logo-navbar"),
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(self.logoButtonTouchUpInside))
+        return button
+    }()
+    
     
     
     lazy var proposeBarButtonItem: UIBarButtonItem = {

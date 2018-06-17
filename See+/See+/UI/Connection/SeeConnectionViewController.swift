@@ -28,6 +28,7 @@ class SeeConnectionViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: SeeTextField!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var switchButton: UIButton!
+    @IBOutlet weak var enterButtonConstraint: NSLayoutConstraint!
     
     var gradientLayer: CAGradientLayer?
     
@@ -77,6 +78,7 @@ class SeeConnectionViewController: UIViewController {
         
         self.switchButton.layer.cornerRadius = self.switchButton.frame.size.height/2
         self.enterButton.layer.cornerRadius = self.enterButton.frame.size.height/2
+        self.enterButtonConstraint.constant = self.viewModel.shouldShowConfirmPassword ? 80 : -28
     }
     
     // MARK: - Configure
