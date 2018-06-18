@@ -28,10 +28,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMu-qV-CG6">
-                        <rect key="frame" x="37" y="105" width="300" height="400"/>
+                        <rect key="frame" x="57" y="117" width="260" height="331"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmD-8B-0Ty">
-                                <rect key="frame" x="0.5" y="300" width="300" height="21"/>
+                                <rect key="frame" x="0.5" y="256" width="260" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="lb9-N2-s1W"/>
                                 </constraints>
@@ -39,35 +39,37 @@
                                 <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bignote" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-0A-EbR">
-                                <rect key="frame" x="70" y="335" width="161" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bignote" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-0A-EbR">
+                                <rect key="frame" x="50" y="291" width="161" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="161" id="B4S-fh-hP3"/>
-                                    <constraint firstAttribute="height" constant="35" id="E2o-BF-RqA"/>
+                                    <constraint firstAttribute="height" constant="35" id="E2o-BF-RqA">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWO-9V-6Ym">
-                                <rect key="frame" x="45.5" y="261" width="210" height="17"/>
+                                <rect key="frame" x="39.5" y="227.5" width="182" height="14.5"/>
                                 <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YNZ-LH-XCz">
-                                <rect key="frame" x="0.5" y="0.0" width="300.5" height="233"/>
+                                <rect key="frame" x="0.5" y="0.0" width="260.5" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="417" id="Mhr-3N-aeM">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="233"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5x-G9-hAe">
-                                <rect key="frame" x="126" y="378" width="49" height="49"/>
+                                <rect key="frame" x="106" y="309" width="49" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="w5x-G9-hAe" secondAttribute="height" multiplier="1:1" id="98a-iv-vkU"/>
                                     <constraint firstAttribute="width" constant="49" id="BPv-iu-waE"/>
@@ -77,7 +79,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="300" id="43F-ak-Qio">
+                            <constraint firstAttribute="width" constant="260" id="43F-ak-Qio">
                                 <variation key="heightClass=regular-widthClass=regular" constant="469"/>
                             </constraint>
                             <constraint firstItem="YNZ-LH-XCz" firstAttribute="leading" secondItem="eMu-qV-CG6" secondAttribute="leading" id="5z9-I2-snF"/>
@@ -86,11 +88,13 @@
                             <constraint firstItem="rmD-8B-0Ty" firstAttribute="centerX" secondItem="eMu-qV-CG6" secondAttribute="centerX" id="FjY-vx-mGu"/>
                             <constraint firstAttribute="bottom" secondItem="ZYE-0A-EbR" secondAttribute="bottom" constant="30" id="GgJ-Hb-pEt"/>
                             <constraint firstItem="w5x-G9-hAe" firstAttribute="centerX" secondItem="eMu-qV-CG6" secondAttribute="centerX" id="Oo5-Uo-kae"/>
-                            <constraint firstItem="rmD-8B-0Ty" firstAttribute="top" secondItem="lWO-9V-6Ym" secondAttribute="bottom" constant="22" id="PCs-t3-ehE"/>
+                            <constraint firstItem="rmD-8B-0Ty" firstAttribute="top" secondItem="lWO-9V-6Ym" secondAttribute="bottom" constant="22" id="PCs-t3-ehE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="14"/>
+                            </constraint>
                             <constraint firstItem="lWO-9V-6Ym" firstAttribute="width" secondItem="eMu-qV-CG6" secondAttribute="width" multiplier="0.7" id="QHz-ay-1B0"/>
                             <constraint firstItem="w5x-G9-hAe" firstAttribute="width" secondItem="w5x-G9-hAe" secondAttribute="height" multiplier="1:1" id="YVt-Mu-ahr"/>
                             <constraint firstItem="lWO-9V-6Ym" firstAttribute="centerX" secondItem="eMu-qV-CG6" secondAttribute="centerX" id="ab1-wB-rP3"/>
-                            <constraint firstAttribute="height" constant="400" id="t3A-AR-2Oo">
+                            <constraint firstAttribute="height" constant="331" id="t3A-AR-2Oo">
                                 <variation key="heightClass=regular-widthClass=regular" constant="598"/>
                             </constraint>
                             <constraint firstItem="w5x-G9-hAe" firstAttribute="centerY" secondItem="eMu-qV-CG6" secondAttribute="bottom" constant="2.5" id="tnN-iY-Q6n"/>
@@ -100,16 +104,16 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="Lgz-xP-8do">
-                        <rect key="frame" x="37" y="35" width="50" height="50"/>
+                        <rect key="frame" x="57" y="58" width="39" height="39"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="63" id="jHc-Dp-0uT">
-                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="39"/>
                             </constraint>
                             <constraint firstAttribute="width" secondItem="Lgz-xP-8do" secondAttribute="height" multiplier="1:1" id="oRz-rO-T8L"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDW-w3-7c6">
-                        <rect key="frame" x="106" y="49" width="231" height="21"/>
+                        <rect key="frame" x="106" y="66.5" width="211" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="3Ya-Qb-pWp"/>
                         </constraints>
@@ -117,13 +121,15 @@
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
                         </variation>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91q-nd-ZGc">
-                        <rect key="frame" x="289" y="36" width="49" height="49"/>
+                        <rect key="frame" x="280" y="59" width="38" height="38"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="49" id="Wkf-xe-VZE"/>
+                            <constraint firstAttribute="width" constant="49" id="Wkf-xe-VZE">
+                                <variation key="heightClass=regular-widthClass=compact" constant="38"/>
+                            </constraint>
                             <constraint firstAttribute="width" secondItem="91q-nd-ZGc" secondAttribute="height" multiplier="1:1" id="cNt-ns-wQo"/>
                         </constraints>
                         <state key="normal" image="not-button"/>
@@ -136,9 +142,11 @@
             <constraints>
                 <constraint firstItem="sDW-w3-7c6" firstAttribute="centerY" secondItem="Lgz-xP-8do" secondAttribute="centerY" id="0Dn-dc-T4e"/>
                 <constraint firstItem="Lgz-xP-8do" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="61" id="AlY-Nl-iAw">
-                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="38"/>
                 </constraint>
-                <constraint firstItem="sDW-w3-7c6" firstAttribute="leading" secondItem="Lgz-xP-8do" secondAttribute="trailing" constant="19" id="OFg-gq-Waa"/>
+                <constraint firstItem="sDW-w3-7c6" firstAttribute="leading" secondItem="Lgz-xP-8do" secondAttribute="trailing" constant="19" id="OFg-gq-Waa">
+                    <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                </constraint>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="centerY" secondItem="Lgz-xP-8do" secondAttribute="centerY" id="Quk-OU-qd9"/>
                 <constraint firstItem="eMu-qV-CG6" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="WZk-nN-bbP"/>
                 <constraint firstItem="91q-nd-ZGc" firstAttribute="trailing" secondItem="YNZ-LH-XCz" secondAttribute="trailing" id="aAB-xg-F60"/>

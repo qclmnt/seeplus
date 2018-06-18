@@ -30,17 +30,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofile" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-LR-2ar">
-                        <rect key="frame" x="20" y="8" width="54" height="54"/>
+                        <rect key="frame" x="17" y="15" width="40" height="40"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="UMd-LR-2ar" secondAttribute="height" multiplier="1:1" id="6Xa-2s-ujK"/>
-                            <constraint firstAttribute="width" constant="54" id="OY2-kx-G5l">
+                            <constraint firstAttribute="width" constant="40" id="OY2-kx-G5l">
                                 <variation key="heightClass=regular-widthClass=regular" constant="70"/>
                             </constraint>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Uc-fql">
-                        <rect key="frame" x="93" y="8" width="272" height="30"/>
+                        <rect key="frame" x="74" y="15" width="309" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="dpQ-Bl-fGp"/>
                         </constraints>
@@ -48,11 +48,11 @@
                         <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-r8-NHw">
-                        <rect key="frame" x="93" y="35" width="272" height="30"/>
+                        <rect key="frame" x="74" y="35" width="309" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="OaK-wk-17m"/>
                         </constraints>
@@ -60,15 +60,15 @@
                         <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                         </variation>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-67-LeW">
-                        <rect key="frame" x="375" y="12" width="46" height="46"/>
+                        <rect key="frame" x="393" y="21" width="28" height="28"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="mRl-67-LeW" secondAttribute="height" multiplier="1:1" id="CKv-cL-6lG"/>
-                            <constraint firstAttribute="width" constant="46" id="F3f-kD-Qd0">
+                            <constraint firstAttribute="width" constant="28" id="F3f-kD-Qd0">
                                 <variation key="heightClass=regular-widthClass=regular" constant="49"/>
                             </constraint>
                         </constraints>
@@ -85,11 +85,15 @@
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="width" secondItem="rNg-Uc-fql" secondAttribute="width" id="En6-PJ-TwD"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="mRl-67-LeW" secondAttribute="trailing" constant="20" id="Gbg-wr-SwM"/>
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="leading" secondItem="rNg-Uc-fql" secondAttribute="leading" id="Wod-wb-Tiy"/>
-                <constraint firstItem="UMd-LR-2ar" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="iA2-ej-gtE"/>
+                <constraint firstItem="UMd-LR-2ar" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="iA2-ej-gtE">
+                    <variation key="heightClass=regular-widthClass=compact" constant="17"/>
+                </constraint>
                 <constraint firstItem="UMd-LR-2ar" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="nUL-Vl-SFH"/>
                 <constraint firstItem="rNg-Uc-fql" firstAttribute="top" secondItem="UMd-LR-2ar" secondAttribute="top" id="wGv-Ai-tMF"/>
                 <constraint firstItem="aaR-r8-NHw" firstAttribute="top" secondItem="UMd-LR-2ar" secondAttribute="centerY" id="x9d-yi-KUL"/>
-                <constraint firstItem="rNg-Uc-fql" firstAttribute="leading" secondItem="UMd-LR-2ar" secondAttribute="trailing" constant="19" id="yxP-9l-KWW"/>
+                <constraint firstItem="rNg-Uc-fql" firstAttribute="leading" secondItem="UMd-LR-2ar" secondAttribute="trailing" constant="19" id="yxP-9l-KWW">
+                    <variation key="heightClass=regular-widthClass=compact" constant="17"/>
+                </constraint>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="441" height="70"/>

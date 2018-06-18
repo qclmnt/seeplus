@@ -89,9 +89,9 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         let mapContentSize = CGSize(width: deviceSize.width, height: deviceSize.height)
         self.mapScrollView.contentSize = mapContentSize
         self.mapImageView.image = UIImage(named: "map")
-        self.mapScrollView.maximumZoomScale = CGFloat(3.0)
+        self.mapScrollView.maximumZoomScale = CGFloat(DeviceHelper.isIpad() ? 3.0 : 6.0)
         self.mapScrollView.delegate = self
-        self.mapScrollView.zoomScale = 1.5
+        self.mapScrollView.zoomScale = DeviceHelper.isIpad() ? 1.5 : 3.0
         let centerX = (self.mapScrollView.contentSize.width/2) - (self.mapScrollView.bounds.size.width/2)
         let centerY = (self.mapScrollView.contentSize.height/2) - (self.mapScrollView.bounds.size.height/2)
         self.mapScrollView.contentOffset = CGPoint(x: centerX, y: centerY)

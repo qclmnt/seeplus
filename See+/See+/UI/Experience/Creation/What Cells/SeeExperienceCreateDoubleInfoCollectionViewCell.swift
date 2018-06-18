@@ -19,8 +19,8 @@ class SeeExperienceCreateDoubleInfoCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.infoTextflied1.configureWithStyle1(color: .appRed(), border: 2)
-        self.infoTextField2.configureWithStyle1(color: .appRed(), border: 2)
+        self.infoTextflied1.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
+        self.infoTextField2.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
     }
     
     override func layoutSubviews() {

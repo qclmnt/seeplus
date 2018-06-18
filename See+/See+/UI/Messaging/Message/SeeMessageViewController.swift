@@ -70,13 +70,14 @@ class SeeMessageViewController: UIViewController {
         self.messageTextField.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.messageTextField.layer.masksToBounds = true
         self.messageTextField.rightViewMode = .always
-        let translateButton = UIButton(frame: CGRect(x: 40, y: 0, width: 30, height: 30))
+        let widthButton = DeviceHelper.isIpad() ? 30 : 25
+        let translateButton = UIButton(frame: CGRect(x: widthButton + 5, y: 0, width: widthButton, height: widthButton))
         translateButton.setImage(UIImage(named: "translate-button"), for: .normal)
         translateButton.addTarget(self, action: #selector(self.translateButtonTouchUpInside), for: .touchUpInside)
-        let sendButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let sendButton = UIButton(frame: CGRect(x: 0, y: 0, width: widthButton, height: widthButton))
         sendButton.setImage(UIImage(named: "send"), for: .normal)
         sendButton.addTarget(self, action: #selector(self.sendButtonTouchUpInside), for: .touchUpInside)
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 30))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: widthButton*2+10, height: widthButton))
         view.addSubview(sendButton)
         view.addSubview(translateButton)
         self.messageTextField.rightView = view

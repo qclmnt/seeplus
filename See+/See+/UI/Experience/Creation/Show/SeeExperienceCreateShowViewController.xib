@@ -30,72 +30,88 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFc-61-PD4">
-                    <rect key="frame" x="87.5" y="242" width="200" height="30"/>
+                    <rect key="frame" x="66" y="171" width="243" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="aYa-Ax-QDP">
-                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="32"/>
                         </constraint>
                         <constraint firstAttribute="width" constant="412" id="tvJ-8v-MKx">
-                            <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="243"/>
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
+                    </variation>
                     <connections>
                         <action selector="uploadPhotoTouchUpInside:" destination="-1" eventType="touchUpInside" id="WeL-xc-EsE"/>
                     </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wm7-Nu-dMK">
-                    <rect key="frame" x="87.5" y="380" width="200" height="30"/>
+                    <rect key="frame" x="66" y="249" width="243" height="32"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
+                    </variation>
                     <connections>
                         <action selector="nextButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="JdO-vZ-xoA"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wp-hI-Z5B">
-                    <rect key="frame" x="87.5" y="430" width="200" height="30"/>
+                    <rect key="frame" x="66" y="298" width="243" height="32"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
+                    </variation>
                     <connections>
                         <action selector="backButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="6wc-PJ-bEd"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkC-dj-lS8">
-                    <rect key="frame" x="62.5" y="80" width="250" height="102"/>
+                    <rect key="frame" x="62.5" y="68" width="250" height="55"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="600" id="BnU-kA-Hjg">
                             <variation key="heightClass=regular-widthClass=compact" constant="250"/>
                         </constraint>
-                        <constraint firstAttribute="height" constant="102" id="KJu-bB-bE8"/>
+                        <constraint firstAttribute="height" constant="102" id="KJu-bB-bE8">
+                            <variation key="heightClass=regular-widthClass=compact" constant="55"/>
+                        </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
+                    </variation>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="kFc-61-PD4" firstAttribute="top" secondItem="UkC-dj-lS8" secondAttribute="bottom" constant="112" id="1lP-Wl-4DS">
-                    <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="48"/>
                 </constraint>
                 <constraint firstItem="0wp-hI-Z5B" firstAttribute="top" secondItem="Wm7-Nu-dMK" secondAttribute="bottom" constant="43" id="3FK-af-GyR">
-                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="17"/>
                 </constraint>
                 <constraint firstItem="UkC-dj-lS8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="4fQ-Ww-g1M">
-                    <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="48"/>
                 </constraint>
                 <constraint firstItem="0wp-hI-Z5B" firstAttribute="centerX" secondItem="Wm7-Nu-dMK" secondAttribute="centerX" id="61l-KA-Tk9"/>
                 <constraint firstItem="0wp-hI-Z5B" firstAttribute="width" secondItem="kFc-61-PD4" secondAttribute="width" id="7Zs-4N-5Mq"/>
                 <constraint firstItem="0wp-hI-Z5B" firstAttribute="height" secondItem="kFc-61-PD4" secondAttribute="height" id="lQa-gh-wxM"/>
                 <constraint firstItem="Wm7-Nu-dMK" firstAttribute="centerX" secondItem="kFc-61-PD4" secondAttribute="centerX" id="nie-O4-GA9"/>
-                <constraint firstItem="Wm7-Nu-dMK" firstAttribute="top" secondItem="kFc-61-PD4" secondAttribute="bottom" constant="108" id="pSY-nA-yEl"/>
+                <constraint firstItem="Wm7-Nu-dMK" firstAttribute="top" secondItem="kFc-61-PD4" secondAttribute="bottom" constant="108" id="pSY-nA-yEl">
+                    <variation key="heightClass=regular-widthClass=compact" constant="46"/>
+                </constraint>
                 <constraint firstItem="Wm7-Nu-dMK" firstAttribute="height" secondItem="kFc-61-PD4" secondAttribute="height" id="sKL-Va-BnJ"/>
                 <constraint firstItem="UkC-dj-lS8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tYc-2R-8OQ"/>
                 <constraint firstItem="kFc-61-PD4" firstAttribute="centerX" secondItem="UkC-dj-lS8" secondAttribute="centerX" id="viY-vr-Z8d"/>

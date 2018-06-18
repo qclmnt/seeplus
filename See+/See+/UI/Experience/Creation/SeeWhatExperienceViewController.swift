@@ -52,13 +52,13 @@ class SeeWhatExperienceViewController: UIViewController {
         self.nameLabel.text = NSLocalizedString("name.experience", comment: "")
         self.descLabel.text = NSLocalizedString("desc.experience", comment: "")
         
-        self.descTextField.configureWithStyle1(color: .appRed(), border: 2)
-        self.nameTextFlield.configureWithStyle1(color: .appRed(), border: 2)
+        self.descTextField.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
+        self.nameTextFlield.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
         
         self.nextButton.setTitle(NSLocalizedString("next", comment: ""), for: .normal)
         self.nextButton.configureWithStyle1()
         self.backButton.setTitle(NSLocalizedString("back", comment: ""), for: .normal)
-        self.backButton.configureWithStyle1(color: .appRed(), border: 2)
+        self.backButton.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
     }
     
     // MARK: - Actions

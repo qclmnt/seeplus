@@ -23,7 +23,7 @@ class SeeExperienceDetailCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     
         self.experienceView.layer.masksToBounds = true
-        self.experienceView.layer.cornerRadius = 80
+        self.experienceView.layer.cornerRadius = DeviceHelper.isIpad() ? 80 : 47
     }
 
     @IBAction func closeButtonTouchUpInside(_ sender: UIButton) {

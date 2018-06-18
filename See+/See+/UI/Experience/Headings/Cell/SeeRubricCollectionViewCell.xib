@@ -26,36 +26,40 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="73x-0v-0dR">
-                        <rect key="frame" x="7" y="7" width="61" height="61"/>
+                        <rect key="frame" x="17" y="18.5" width="39" height="39"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="61" id="wQl-Zg-Zgb"/>
+                            <constraint firstAttribute="width" constant="61" id="wQl-Zg-Zgb">
+                                <variation key="heightClass=regular-widthClass=compact" constant="39"/>
+                            </constraint>
                             <constraint firstAttribute="width" secondItem="73x-0v-0dR" secondAttribute="height" multiplier="1:1" id="xdO-qu-piz"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUu-s3-ZYq">
-                        <rect key="frame" x="80" y="18" width="308" height="40"/>
+                        <rect key="frame" x="68" y="18.5" width="320" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="yte-hV-b1b"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
+                        </variation>
                     </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="73x-0v-0dR" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="0VQ-hW-8M4"/>
                 <constraint firstItem="RUu-s3-ZYq" firstAttribute="centerY" secondItem="73x-0v-0dR" secondAttribute="centerY" id="ByR-qO-JIM"/>
+                <constraint firstItem="73x-0v-0dR" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="NOi-8l-ZiM"/>
                 <constraint firstItem="73x-0v-0dR" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="35" id="SIf-dB-Tpz">
-                    <variation key="heightClass=regular-widthClass=compact" constant="7"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="17"/>
                 </constraint>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="73x-0v-0dR" secondAttribute="bottom" constant="8" id="TRF-Ry-TBN"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="RUu-s3-ZYq" secondAttribute="trailing" constant="20" id="TZu-F0-UhW"/>
                 <constraint firstItem="RUu-s3-ZYq" firstAttribute="leading" secondItem="73x-0v-0dR" secondAttribute="trailing" constant="30" id="nKH-TW-B1y">
                     <variation key="heightClass=regular-widthClass=compact" constant="12"/>
                 </constraint>
-                <constraint firstItem="73x-0v-0dR" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="7" id="sbC-Wq-uhK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="408" height="76"/>

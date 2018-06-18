@@ -29,28 +29,33 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-ZU-ED5">
-                    <rect key="frame" x="0.0" y="20" width="375" height="91"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="64"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npm-eo-0rH">
-                            <rect key="frame" x="0.0" y="20.5" width="375" height="50"/>
+                            <rect key="frame" x="0.0" y="7" width="375" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="eEy-zU-xVy"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
                             <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
+                            </variation>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="npm-eo-0rH" firstAttribute="width" secondItem="FRi-ZU-ED5" secondAttribute="width" id="54M-KE-oo5"/>
                         <constraint firstItem="npm-eo-0rH" firstAttribute="centerY" secondItem="FRi-ZU-ED5" secondAttribute="centerY" id="9Mq-5x-vDB"/>
-                        <constraint firstAttribute="height" constant="91" id="CEk-LS-x6L"/>
+                        <constraint firstAttribute="height" constant="91" id="CEk-LS-x6L">
+                            <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                        </constraint>
                         <constraint firstItem="npm-eo-0rH" firstAttribute="centerX" secondItem="FRi-ZU-ED5" secondAttribute="centerX" id="rWe-Ib-BYI"/>
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-eA-6TV">
-                    <rect key="frame" x="0.0" y="119" width="375" height="548"/>
+                    <rect key="frame" x="0.0" y="92" width="375" height="575"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MUQ-0x-NeF">
                         <size key="itemSize" width="50" height="50"/>

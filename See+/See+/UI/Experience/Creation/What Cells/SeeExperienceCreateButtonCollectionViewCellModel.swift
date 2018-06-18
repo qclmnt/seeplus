@@ -46,7 +46,7 @@ class SeeExperienceCreateButtonCollectionViewCellModel: QCCollectionCellViewMode
         
         
         if self.shouldShowLayer == false {
-            createInfoCell.button.configureWithStyle1(color: .appRed(), border: 2)
+            createInfoCell.button.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
             createInfoCell.button.setTitleColor(.appRed(), for: .normal)
         }
     }

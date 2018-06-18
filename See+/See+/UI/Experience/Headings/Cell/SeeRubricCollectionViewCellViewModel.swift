@@ -33,7 +33,7 @@ class SeeRubricCollectionViewCellViewModel: QCCollectionCellViewModel {
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 100)
+        return CGSize(width: maxSize.width, height: 54)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {

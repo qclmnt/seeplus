@@ -29,7 +29,7 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
         self.borderView.layer.borderColor = UIColor.appPurple().cgColor
         self.borderView.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.borderView.layer.masksToBounds = true
-        self.borderView.layer.cornerRadius = 72
+        self.borderView.layer.cornerRadius = DeviceHelper.isIpad() ? 72 : 46
     }
     
     override func layoutSubviews() {

@@ -19,7 +19,7 @@ class SeeExperienceCreateInfoCollectionViewCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.textField.configureWithStyle1(color: .appRed(), border: 2)
+        self.textField.configureWithStyle1(color: .appRed(), border: DeviceHelper.isIpad() ? 2 : 1)
     }
     
     override func layoutSubviews() {

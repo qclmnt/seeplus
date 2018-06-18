@@ -53,7 +53,9 @@ class SeeExperience: NSObject {
     }
     
     func setImageViewFrame(width: CGFloat, height: CGFloat, zoom: CGFloat) {
-        self.imageView.frame = CGRect(x: (width * self.mapPositionRatio.x)-19*zoom, y: (height * self.mapPositionRatio.y)-26*zoom, width: 19*zoom, height: 26*zoom)
+        let heightMarker = CGFloat(DeviceHelper.isIpad() ? 26.0 : 13.0)
+        let widthMarker = CGFloat(DeviceHelper.isIpad() ? 19.0 : 9.0)
+        self.imageView.frame = CGRect(x: (width * self.mapPositionRatio.x)-(widthMarker*zoom), y: (height * self.mapPositionRatio.y)-(heightMarker*zoom), width: (widthMarker*zoom), height: (heightMarker*zoom))
     }
     
     @objc func experienceViewTapped() {

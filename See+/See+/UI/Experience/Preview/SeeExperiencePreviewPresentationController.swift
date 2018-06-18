@@ -27,10 +27,10 @@ class SeeExperiencePreviewPresentationController: UIPresentationController {
     // MARK: - UIPresentationController
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        let witdh = CGFloat(DeviceHelper.isIpad() ? 289.87 : 300)
-        let height = CGFloat(DeviceHelper.isIpad() ? 289.87 : 300)
-        return CGRect(x: 409,
-                      y: 271,
+        let witdh = CGFloat(DeviceHelper.isIpad() ? 289.87 : 166)
+        let height = CGFloat(DeviceHelper.isIpad() ? 289.87 : 166)
+        return CGRect(x: DeviceHelper.isIpad() ? 409 : 36,
+            y: DeviceHelper.isIpad() ? 271 : 92,
                       width: witdh,
                       height: height)
     }

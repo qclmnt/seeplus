@@ -58,7 +58,7 @@ class SeeDeleteExperienceViewController: UIViewController {
         self.view.layer.masksToBounds = true
         self.view.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.view.layer.borderColor = UIColor.appPurple().cgColor
-        self.view.layer.cornerRadius = 72
+        self.view.layer.cornerRadius = CGFloat(DeviceHelper.isIpad() ? 72 : 42)
         
         self.titleLabel.text = self.viewModel.title
         

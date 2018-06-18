@@ -45,7 +45,7 @@ class SeeExperienceViewController: UIViewController {
         self.experienceLocationLabel.text = self.viewModel.experience.location
         
         self.experienceView.layer.masksToBounds = true
-        self.experienceView.layer.cornerRadius = 80
+        self.experienceView.layer.cornerRadius = DeviceHelper.isIpad() ? 80 : 47
     }
     
     // MARK: - Action
