@@ -44,6 +44,14 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         self.configureLayout()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let centerX = (self.mapScrollView.contentSize.width/2) - (self.mapScrollView.bounds.size.width/2)
+        let centerY = (self.mapScrollView.contentSize.height/2) - (self.mapScrollView.bounds.size.height/2)
+        self.mapScrollView.contentOffset = CGPoint(x: centerX, y: centerY)
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
@@ -66,7 +74,9 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         self.mapScrollView.maximumZoomScale = CGFloat(3.0)
         self.mapScrollView.delegate = self
         self.mapScrollView.zoomScale = 1.5
-        //TODO CENTER
+        let centerX = (self.mapScrollView.contentSize.width/2) - (self.mapScrollView.bounds.size.width/2)
+        let centerY = (self.mapScrollView.contentSize.height/2) - (self.mapScrollView.bounds.size.height/2)
+        self.mapScrollView.contentOffset = CGPoint(x: centerX, y: centerY)
         
         // Add Experience
         self.grayView = UIView(frame: CGRect(x: 300, y: 200, width: 20, height: 20))
