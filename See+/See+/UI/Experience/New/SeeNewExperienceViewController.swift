@@ -25,6 +25,18 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     
     var grayView: UIView?
     
+    lazy var experiences = [SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.618, 0.424)), // Gare de l’est
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.348, 0.585)), // Michel Ange
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.535, 0.575)), // Denfer Rochereau
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.668, 0.617)), // Biblio Francois Mit
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.644, 0.371)), // Riquet
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.713, 0.369)), // Porte de Pantin
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.714, 0.692)), // Vitry centre
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.246, 0.617)), // Saint clou
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.331, 0.676))] // Pont de sèvre
+    
+    var experiencesVisible = false
+    
     // MARK: - Initialization
     
     override init() {
@@ -50,6 +62,12 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         let centerX = (self.mapScrollView.contentSize.width/2) - (self.mapScrollView.bounds.size.width/2)
         let centerY = (self.mapScrollView.contentSize.height/2) - (self.mapScrollView.bounds.size.height/2)
         self.mapScrollView.contentOffset = CGPoint(x: centerX, y: centerY)
+        
+        // Add Experience
+        if self.experiencesVisible == false {
+            self.addExperiences()
+            self.updatePositionView()
+        }
     }
     
     override func viewWillLayoutSubviews() {
@@ -78,19 +96,26 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         let centerY = (self.mapScrollView.contentSize.height/2) - (self.mapScrollView.bounds.size.height/2)
         self.mapScrollView.contentOffset = CGPoint(x: centerX, y: centerY)
         
-        // Add Experience
-        self.grayView = UIView(frame: CGRect(x: 300, y: 200, width: 20, height: 20))
-        self.grayView?.backgroundColor = .gray
-        self.mapScrollView.addSubview(self.grayView!)
-        self.grayView?.createTapGesture(target: self, selector: #selector(self.experienceViewTapped))
-        
+    }
+    
+    // MARK: - Experiences
+    
+    func addExperiences() {
+        for (idx,exp) in self.experiences.enumerated() {
+            let dispatchTime = (1 + 0.3*Double(idx))
+            DispatchQueue.main.asyncAfter(deadline: .now() + dispatchTime) {
+                self.mapScrollView.addSubview(exp.imageView)
+                exp.imageView.squeezeAndBounce()
+            }
+        }
     }
     
     // MARK: - Update position
     
     func updatePositionView() {
-        let zoom = self.mapScrollView.zoomScale
-        self.grayView?.frame = CGRect(x: 300*zoom, y: 200*zoom, width: 20*zoom, height: 20*zoom)
+        for exp in self.experiences {
+            exp.setImageViewFrame(width: self.mapScrollView.contentSize.width, height: self.mapScrollView.contentSize.height, zoom: self.mapScrollView.zoomScale)
+        }
     }
     
     // MARK: - Actions
@@ -100,10 +125,7 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         newExperienceViewModel.showHeadings()
     }
     
-    @objc func experienceViewTapped() {
-        QCAppEnvironment.shared().routing?.route(to: SeeExperiencePreviewRoutingEntry())
-//        QCAppEnvironment.shared().routing?.route(to: SeeExperienceRoutingEntry(experience: SeeExperience(name: "test", location: "test", imageName: "", author: "test")))
-    }
+
 
 }
 

@@ -20,10 +20,18 @@ class SeeExperience: NSObject {
         his cousin the king of France.
         """
     }
+    let mapPositionRatio: (x: CGFloat, y: CGFloat)
     
     var image: UIImage? {
         return UIImage(named: self.imageName)
     }
+    
+    lazy var imageView: UIImageView = {
+        let markerImage = UIImage(named: "tabbar-map")
+        let imageView = UIImageView(image: markerImage)
+        imageView.createTapGesture(target: self, selector: #selector(self.experienceViewTapped))
+        return imageView
+    }()
     
     lazy var user: SeeUser = SeeUser(username: "Benoit")
     
@@ -32,13 +40,23 @@ class SeeExperience: NSObject {
     init(name: String,
          location: String,
          imageName: String,
-         author: String) {
+         author: String,
+         mapPositionRatio: (x: CGFloat, y: CGFloat) = (0,0)) {
         self.name = name
         self.location = location
         self.imageName = imageName
         self.author = author
+        self.mapPositionRatio = mapPositionRatio
         
         super.init()
+    }
+    
+    func setImageViewFrame(width: CGFloat, height: CGFloat, zoom: CGFloat) {
+        self.imageView.frame = CGRect(x: (width * self.mapPositionRatio.x)-19*zoom, y: (height * self.mapPositionRatio.y)-26*zoom, width: 19*zoom, height: 26*zoom)
+    }
+    
+    @objc func experienceViewTapped() {
+        QCAppEnvironment.shared().routing?.route(to: SeeExperiencePreviewRoutingEntry())
     }
 
 }
