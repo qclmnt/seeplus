@@ -27,8 +27,9 @@ class SeeExperience: NSObject {
     }
     
     lazy var imageView: UIImageView = {
-        let markerImage = UIImage(named: "tabbar-map")
+        let markerImage = UIImage(named: "mapPoint")
         let imageView = UIImageView(image: markerImage)
+        imageView.contentMode = .scaleAspectFit
         imageView.createTapGesture(target: self, selector: #selector(self.experienceViewTapped))
         return imageView
     }()
