@@ -25,15 +25,15 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     
     var grayView: UIView?
     
-    lazy var experiences = [SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.618, 0.424)), // Gare de l’est
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.348, 0.585)), // Michel Ange
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.535, 0.575)), // Denfer Rochereau
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.668, 0.617)), // Biblio Francois Mit
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.644, 0.371)), // Riquet
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.713, 0.369)), // Porte de Pantin
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.714, 0.692)), // Vitry centre
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.246, 0.617)), // Saint clou
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.331, 0.676))] // Pont de sèvre
+    lazy var experiences = [SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.596, 0.465)), // Gare de l’est √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.393, 0.583)), // Michel Ange √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.535, 0.575)), // Denfer Rochereau √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.627, 0.608)), // Biblio Francois Mit √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.617, 0.42)), // Riquet √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.662, 0.42)), // Porte de Pantin √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.66, 0.66)), // Vitry centre √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.32, 0.617)), // Saint clou √
+                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.375, 0.66))] // Pont de sèvre √
     
     var experiencesVisible = false
     
