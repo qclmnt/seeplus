@@ -27,7 +27,7 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     
         self.borderView.layer.borderColor = UIColor.appPurple().cgColor
-        self.borderView.layer.borderWidth = 2
+        self.borderView.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.borderView.layer.masksToBounds = true
         self.borderView.layer.cornerRadius = 72
     }

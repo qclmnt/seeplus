@@ -27,24 +27,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIx-ys-qYn">
-                    <rect key="frame" x="28" y="88" width="319" height="277"/>
+                    <rect key="frame" x="52.5" y="135" width="270" height="140"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="319" id="NTV-Yf-ePA">
+                        <constraint firstAttribute="width" constant="270" id="NTV-Yf-ePA">
                             <variation key="heightClass=regular-widthClass=regular" constant="524"/>
                         </constraint>
-                        <constraint firstAttribute="height" constant="277" id="ZSZ-Nt-omU"/>
+                        <constraint firstAttribute="height" constant="277" id="ZSZ-Nt-omU">
+                            <variation key="heightClass=regular-widthClass=compact" constant="140"/>
+                        </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                     </variation>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="XIx-ys-qYn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="68" id="gGG-hR-6wt">
+                <constraint firstItem="XIx-ys-qYn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="115" id="gGG-hR-6wt">
                     <variation key="heightClass=regular-widthClass=regular" constant="180"/>
                 </constraint>
                 <constraint firstItem="XIx-ys-qYn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xhD-di-dzO"/>

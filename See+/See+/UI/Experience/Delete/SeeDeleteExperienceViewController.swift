@@ -56,7 +56,7 @@ class SeeDeleteExperienceViewController: UIViewController {
     func configureLayout() {
         
         self.view.layer.masksToBounds = true
-        self.view.layer.borderWidth = 2
+        self.view.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.view.layer.borderColor = UIColor.appPurple().cgColor
         self.view.layer.cornerRadius = 72
         
@@ -64,7 +64,7 @@ class SeeDeleteExperienceViewController: UIViewController {
         
         self.actionButton.setTitle(self.viewModel.actionButtonTitle, for: .normal)
         self.actionButton.layer.masksToBounds = true
-        self.actionButton.layer.borderWidth = 2
+        self.actionButton.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.actionButton.layer.borderColor = UIColor.appPurple().cgColor
         
         self.cancelButton.setTitle(self.viewModel.cancelButtonTitle, for: .normal)

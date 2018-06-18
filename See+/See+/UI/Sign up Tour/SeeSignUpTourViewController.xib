@@ -28,28 +28,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHO-c3-hkG">
-                    <rect key="frame" x="37" y="142" width="300" height="150"/>
+                    <rect key="frame" x="37" y="134" width="300" height="110"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="524" id="EA1-bH-cFj">
                             <variation key="heightClass=regular-widthClass=compact" constant="300"/>
                         </constraint>
                         <constraint firstAttribute="height" constant="200" id="oLy-j3-HsA">
-                            <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="110"/>
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
+                    </variation>
                 </label>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6K-mQ-usf">
-                    <rect key="frame" x="87" y="406" width="200" height="30"/>
+                    <rect key="frame" x="65.5" y="328" width="243" height="32"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="Ab4-Ge-Jmu">
-                            <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="32"/>
                         </constraint>
                         <constraint firstAttribute="width" constant="412" id="W0w-eC-lwe">
-                            <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="243"/>
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
@@ -57,7 +60,7 @@
                         <color key="titleColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                     </variation>
                     <connections>
                         <action selector="startButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="k0d-Pt-5Rt"/>
@@ -66,8 +69,12 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="f6K-mQ-usf" firstAttribute="top" secondItem="OHO-c3-hkG" secondAttribute="bottom" constant="114" id="BJR-wB-Ug5"/>
-                <constraint firstItem="OHO-c3-hkG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="K7Y-ye-TdA"/>
+                <constraint firstItem="f6K-mQ-usf" firstAttribute="top" secondItem="OHO-c3-hkG" secondAttribute="bottom" constant="114" id="BJR-wB-Ug5">
+                    <variation key="heightClass=regular-widthClass=compact" constant="84"/>
+                </constraint>
+                <constraint firstItem="OHO-c3-hkG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="K7Y-ye-TdA">
+                    <variation key="heightClass=regular-widthClass=compact" constant="114"/>
+                </constraint>
                 <constraint firstItem="f6K-mQ-usf" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RnQ-gw-jL9"/>
                 <constraint firstItem="OHO-c3-hkG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="oEr-hg-bHm"/>
             </constraints>

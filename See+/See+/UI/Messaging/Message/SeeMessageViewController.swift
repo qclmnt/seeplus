@@ -67,7 +67,7 @@ class SeeMessageViewController: UIViewController {
         self.bottomLine = self.topView.addBottomBorder(color: .appPurple(), borderWidth: 1)
         self.messageToolBar.configureWithStyle1(color: .appPurple())
         self.messageTextField.layer.borderColor = UIColor.appPurple().cgColor
-        self.messageTextField.layer.borderWidth = 2
+        self.messageTextField.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.messageTextField.layer.masksToBounds = true
         self.messageTextField.rightViewMode = .always
         let translateButton = UIButton(frame: CGRect(x: 40, y: 0, width: 30, height: 30))

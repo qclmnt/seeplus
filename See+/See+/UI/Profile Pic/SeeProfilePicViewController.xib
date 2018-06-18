@@ -31,7 +31,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-K4-PHi">
-                    <rect key="frame" x="30" y="50" width="315" height="36"/>
+                    <rect key="frame" x="30" y="68" width="315" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="gnk-TG-Sku"/>
                     </constraints>
@@ -43,12 +43,12 @@
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-2Q-Sbs">
-                    <rect key="frame" x="87.5" y="301" width="200" height="30"/>
+                    <rect key="frame" x="66" y="248.5" width="243" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="OE4-tD-8B8">
+                        <constraint firstAttribute="height" constant="32" id="OE4-tD-8B8">
                             <variation key="heightClass=regular-widthClass=regular" constant="46"/>
                         </constraint>
-                        <constraint firstAttribute="width" constant="200" id="uV0-Ou-alC">
+                        <constraint firstAttribute="width" constant="243" id="uV0-Ou-alC">
                             <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                         </constraint>
                     </constraints>
@@ -57,33 +57,33 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                     </variation>
                     <connections>
                         <action selector="uploadPhotoTouchUpInside:" destination="-1" eventType="touchUpInside" id="x5y-PO-gHJ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-I7-VZm">
-                    <rect key="frame" x="87.5" y="356" width="200" height="30"/>
+                    <rect key="frame" x="66" y="305.5" width="243" height="32"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
                         <color key="titleColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                     </variation>
                     <connections>
                         <action selector="validateButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="CS1-MX-ufJ"/>
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
-                    <rect key="frame" x="123" y="116" width="128" height="128"/>
+                    <rect key="frame" x="145.5" y="131" width="83" height="83"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="xjS-m3-xWB" secondAttribute="height" multiplier="1:1" id="bKm-AK-uQR"/>
                         <constraint firstAttribute="width" constant="128" id="qGo-EN-MeA">
-                            <variation key="heightClass=regular-widthClass=compact" constant="128"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="83"/>
                             <variation key="heightClass=regular-widthClass=regular" constant="173"/>
                         </constraint>
                     </constraints>
@@ -96,7 +96,7 @@
                 <constraint firstItem="WlU-K4-PHi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Ly0-rP-KF0"/>
                 <constraint firstItem="xjS-m3-xWB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="U44-HD-gUw"/>
                 <constraint firstItem="ZkG-I7-VZm" firstAttribute="trailing" secondItem="fcP-2Q-Sbs" secondAttribute="trailing" id="fBh-8P-Zao"/>
-                <constraint firstItem="WlU-K4-PHi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="gSH-HU-Vvb">
+                <constraint firstItem="WlU-K4-PHi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="48" id="gSH-HU-Vvb">
                     <variation key="heightClass=regular-widthClass=regular" constant="90"/>
                 </constraint>
                 <constraint firstItem="ZkG-I7-VZm" firstAttribute="top" secondItem="fcP-2Q-Sbs" secondAttribute="bottom" constant="42" id="il5-V8-TWQ">
@@ -104,9 +104,11 @@
                 </constraint>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WlU-K4-PHi" secondAttribute="trailing" constant="30" id="j1y-G4-Pzp"/>
                 <constraint firstItem="ZkG-I7-VZm" firstAttribute="leading" secondItem="fcP-2Q-Sbs" secondAttribute="leading" id="s95-Hm-ylf"/>
-                <constraint firstItem="fcP-2Q-Sbs" firstAttribute="top" secondItem="xjS-m3-xWB" secondAttribute="bottom" constant="57" id="sIc-Vw-McA"/>
+                <constraint firstItem="fcP-2Q-Sbs" firstAttribute="top" secondItem="xjS-m3-xWB" secondAttribute="bottom" constant="57" id="sIc-Vw-McA">
+                    <variation key="heightClass=regular-widthClass=compact" constant="34"/>
+                </constraint>
                 <constraint firstItem="xjS-m3-xWB" firstAttribute="top" secondItem="WlU-K4-PHi" secondAttribute="bottom" constant="57" id="xr3-QU-73k">
-                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                 </constraint>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -29,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUY-69-i2Y">
-                    <rect key="frame" x="30" y="100" width="315" height="40"/>
+                    <rect key="frame" x="30" y="130" width="315" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="M4S-Cy-jF5"/>
                     </constraints>
@@ -37,38 +37,40 @@
                     <color key="textColor" red="0.95686274509803915" green="0.17254901960784313" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
                     </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6g-Yf-3tc">
-                    <rect key="frame" x="62" y="200" width="250" height="119"/>
+                    <rect key="frame" x="62" y="200" width="250" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="0eG-ks-f9j">
                             <variation key="heightClass=regular-widthClass=regular" constant="500"/>
                         </constraint>
-                        <constraint firstAttribute="height" constant="119" id="odv-Xk-gan"/>
+                        <constraint firstAttribute="height" constant="119" id="odv-Xk-gan">
+                            <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                        </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" red="0.96862745098039216" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lg-Rb-YzN">
-                    <rect key="frame" x="62" y="431" width="250" height="30"/>
+                    <rect key="frame" x="65.5" y="358" width="243" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="MdS-fW-eSU">
+                        <constraint firstAttribute="height" constant="32" id="MdS-fW-eSU">
                             <variation key="heightClass=regular-widthClass=regular" constant="48"/>
                         </constraint>
-                        <constraint firstAttribute="width" constant="250" id="dBG-gV-zOH">
+                        <constraint firstAttribute="width" constant="243" id="dBG-gV-zOH">
                             <variation key="heightClass=regular-widthClass=regular" constant="412"/>
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
                     </variation>
                     <connections>
                         <action selector="nextButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="lu6-Be-mXl"/>
@@ -79,12 +81,16 @@
             <constraints>
                 <constraint firstItem="F6g-Yf-3tc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3iB-AP-ypA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hUY-69-i2Y" secondAttribute="trailing" constant="30" id="6fd-vr-khG"/>
-                <constraint firstItem="hUY-69-i2Y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="7Iy-tO-BJ1">
+                <constraint firstItem="hUY-69-i2Y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="110" id="7Iy-tO-BJ1">
                     <variation key="heightClass=regular-widthClass=regular" constant="165"/>
                 </constraint>
-                <constraint firstItem="F6g-Yf-3tc" firstAttribute="top" secondItem="hUY-69-i2Y" secondAttribute="bottom" constant="60" id="IYI-d7-cDh"/>
+                <constraint firstItem="F6g-Yf-3tc" firstAttribute="top" secondItem="hUY-69-i2Y" secondAttribute="bottom" constant="60" id="IYI-d7-cDh">
+                    <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                </constraint>
                 <constraint firstItem="hUY-69-i2Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="J11-Rg-zzt"/>
-                <constraint firstItem="2lg-Rb-YzN" firstAttribute="top" secondItem="F6g-Yf-3tc" secondAttribute="bottom" constant="112" id="iYm-vy-7dR"/>
+                <constraint firstItem="2lg-Rb-YzN" firstAttribute="top" secondItem="F6g-Yf-3tc" secondAttribute="bottom" constant="112" id="iYm-vy-7dR">
+                    <variation key="heightClass=regular-widthClass=compact" constant="78"/>
+                </constraint>
                 <constraint firstItem="2lg-Rb-YzN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="u36-lg-zcn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -42,24 +42,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-75-dsX">
-                    <rect key="frame" x="50" y="40" width="275" height="50"/>
+                    <rect key="frame" x="50" y="68" width="275" height="23"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="O4W-1Q-hBu">
-                            <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="23"/>
                         </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="43"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="34"/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
                     </variation>
                     <variation key="heightClass=regular-widthClass=regular">
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="43"/>
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsd-jp-uUS">
-                    <rect key="frame" x="62.5" y="485" width="250" height="35"/>
+                    <rect key="frame" x="70.5" y="488" width="234" height="35"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Login">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,7 +72,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-Au-ZH7">
-                    <rect key="frame" x="62.5" y="430" width="250" height="35"/>
+                    <rect key="frame" x="70.5" y="436" width="234" height="35"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="Maa-GW-YVY">
@@ -92,22 +92,24 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMv-cB-sgK">
-                    <rect key="frame" x="62.5" y="110" width="250" height="300"/>
+                    <rect key="frame" x="70.5" y="127" width="234" height="268"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj2-fu-eW0">
-                            <rect key="frame" x="0.0" y="0.0" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="0.0" width="234" height="15"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="21" id="Onx-N4-xiL"/>
+                                <constraint firstAttribute="height" constant="21" id="Onx-N4-xiL">
+                                    <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                                </constraint>
                             </constraints>
                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                             </variation>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MTS-jE-PAl" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="33" width="250" height="25"/>
+                            <rect key="frame" x="0.0" y="15" width="234" height="25"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="MOQ-Pq-mub">
@@ -118,23 +120,23 @@
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             </variation>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1w6-rb-F3M">
-                            <rect key="frame" x="0.0" y="78" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="76.5" width="234" height="15"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="21" id="3Hj-wJ-zb0"/>
+                                <constraint firstAttribute="height" constant="15" id="3Hj-wJ-zb0"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                             </variation>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l4r-sC-BTc" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="111" width="250" height="25"/>
+                            <rect key="frame" x="0.0" y="91.5" width="234" height="25"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="iLK-Wv-Gpr">
@@ -145,23 +147,23 @@
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             </variation>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcQ-9E-z97">
-                            <rect key="frame" x="0.0" y="156" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="153" width="234" height="15"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="21" id="ONM-78-6AQ"/>
+                                <constraint firstAttribute="height" constant="15" id="ONM-78-6AQ"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                             </variation>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7DT-B9-ZcE" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="189" width="250" height="25"/>
+                            <rect key="frame" x="0.0" y="168" width="234" height="25"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="V9B-pH-jqB">
@@ -172,23 +174,23 @@
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             </variation>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-4E-6gc">
-                            <rect key="frame" x="0.0" y="234" width="250" height="21"/>
+                            <rect key="frame" x="0.0" y="229.5" width="234" height="15"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="21" id="vxJ-U3-9fh"/>
+                                <constraint firstAttribute="height" constant="15" id="vxJ-U3-9fh"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
                             </variation>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSR-9M-nis" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="267" width="250" height="25"/>
+                            <rect key="frame" x="0.0" y="244.5" width="234" height="25"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="dVS-Ga-pph">
@@ -199,7 +201,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             <variation key="heightClass=regular-widthClass=compact">
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             </variation>
                         </textField>
                     </subviews>
@@ -208,20 +210,22 @@
                         <constraint firstItem="1w6-rb-F3M" firstAttribute="leading" secondItem="MTS-jE-PAl" secondAttribute="leading" id="3Xj-lV-jHv"/>
                         <constraint firstItem="7DT-B9-ZcE" firstAttribute="leading" secondItem="vcQ-9E-z97" secondAttribute="leading" id="6Uj-hE-9pd"/>
                         <constraint firstItem="1w6-rb-F3M" firstAttribute="top" secondItem="MTS-jE-PAl" secondAttribute="bottom" constant="20" id="8cY-rk-Zou">
-                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="36"/>
                             <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                         </constraint>
                         <constraint firstItem="1w6-rb-F3M" firstAttribute="trailing" secondItem="MTS-jE-PAl" secondAttribute="trailing" id="9rr-f2-sjz"/>
-                        <constraint firstItem="l4r-sC-BTc" firstAttribute="top" secondItem="1w6-rb-F3M" secondAttribute="bottom" constant="12" id="AjW-0p-CTW"/>
+                        <constraint firstItem="l4r-sC-BTc" firstAttribute="top" secondItem="1w6-rb-F3M" secondAttribute="bottom" constant="12" id="AjW-0p-CTW">
+                            <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                        </constraint>
                         <constraint firstAttribute="width" constant="300" id="Ary-ML-8IY">
-                            <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="234"/>
                             <variation key="heightClass=regular-widthClass=regular" constant="411"/>
                         </constraint>
                         <constraint firstItem="aj2-fu-eW0" firstAttribute="leading" secondItem="xMv-cB-sgK" secondAttribute="leading" id="H7H-oz-5pH"/>
                         <constraint firstItem="aj2-fu-eW0" firstAttribute="top" secondItem="xMv-cB-sgK" secondAttribute="top" id="IB2-fR-V66"/>
                         <constraint firstItem="l4r-sC-BTc" firstAttribute="leading" secondItem="1w6-rb-F3M" secondAttribute="leading" id="MSu-U1-UaT"/>
                         <constraint firstItem="vcQ-9E-z97" firstAttribute="top" secondItem="l4r-sC-BTc" secondAttribute="bottom" constant="20" id="Nqn-t7-kP1">
-                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="36"/>
                             <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                         </constraint>
                         <constraint firstItem="yW2-4E-6gc" firstAttribute="leading" secondItem="7DT-B9-ZcE" secondAttribute="leading" id="QUL-mS-NOG"/>
@@ -232,16 +236,22 @@
                         <constraint firstItem="vcQ-9E-z97" firstAttribute="leading" secondItem="l4r-sC-BTc" secondAttribute="leading" id="Si4-od-SjC"/>
                         <constraint firstItem="7DT-B9-ZcE" firstAttribute="trailing" secondItem="vcQ-9E-z97" secondAttribute="trailing" id="Te1-cB-taR"/>
                         <constraint firstItem="l4r-sC-BTc" firstAttribute="trailing" secondItem="1w6-rb-F3M" secondAttribute="trailing" id="UrB-Jx-XW5"/>
-                        <constraint firstItem="SSR-9M-nis" firstAttribute="top" secondItem="yW2-4E-6gc" secondAttribute="bottom" constant="12" id="VrS-mB-03M"/>
+                        <constraint firstItem="SSR-9M-nis" firstAttribute="top" secondItem="yW2-4E-6gc" secondAttribute="bottom" constant="12" id="VrS-mB-03M">
+                            <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                        </constraint>
                         <constraint firstAttribute="height" constant="300" id="Ygt-pb-JFA">
-                            <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="268"/>
                             <variation key="heightClass=regular-widthClass=regular" constant="400"/>
                         </constraint>
-                        <constraint firstItem="MTS-jE-PAl" firstAttribute="top" secondItem="aj2-fu-eW0" secondAttribute="bottom" constant="12" id="Zd9-Lg-NIe"/>
+                        <constraint firstItem="MTS-jE-PAl" firstAttribute="top" secondItem="aj2-fu-eW0" secondAttribute="bottom" constant="12" id="Zd9-Lg-NIe">
+                            <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                        </constraint>
                         <constraint firstItem="vcQ-9E-z97" firstAttribute="trailing" secondItem="l4r-sC-BTc" secondAttribute="trailing" id="fpR-oF-14N"/>
-                        <constraint firstItem="7DT-B9-ZcE" firstAttribute="top" secondItem="vcQ-9E-z97" secondAttribute="bottom" constant="12" id="ksk-Qb-HPi"/>
+                        <constraint firstItem="7DT-B9-ZcE" firstAttribute="top" secondItem="vcQ-9E-z97" secondAttribute="bottom" constant="12" id="ksk-Qb-HPi">
+                            <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                        </constraint>
                         <constraint firstItem="yW2-4E-6gc" firstAttribute="top" secondItem="7DT-B9-ZcE" secondAttribute="bottom" constant="20" id="pY7-3u-fdK">
-                            <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="36"/>
                             <variation key="heightClass=regular-widthClass=regular" constant="50"/>
                         </constraint>
                         <constraint firstItem="SSR-9M-nis" firstAttribute="trailing" secondItem="yW2-4E-6gc" secondAttribute="trailing" id="qJo-zN-AEw"/>
@@ -253,7 +263,7 @@
             <constraints>
                 <constraint firstItem="Rsd-jp-uUS" firstAttribute="leading" secondItem="dpA-Au-ZH7" secondAttribute="leading" id="If2-VU-wiJ"/>
                 <constraint firstItem="dpA-Au-ZH7" firstAttribute="top" secondItem="xMv-cB-sgK" secondAttribute="bottom" constant="23" id="JzK-NX-oOf">
-                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="41"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                 </constraint>
                 <constraint firstItem="Rsd-jp-uUS" firstAttribute="trailing" secondItem="dpA-Au-ZH7" secondAttribute="trailing" id="UEx-of-dCB"/>
@@ -263,11 +273,11 @@
                 </constraint>
                 <constraint firstItem="Rsd-jp-uUS" firstAttribute="height" secondItem="dpA-Au-ZH7" secondAttribute="height" id="gwB-lc-teZ"/>
                 <constraint firstItem="GEn-75-dsX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="mvP-X2-6KB">
-                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="48"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="90"/>
                 </constraint>
                 <constraint firstItem="xMv-cB-sgK" firstAttribute="top" secondItem="GEn-75-dsX" secondAttribute="bottom" constant="50" id="qO4-J3-Ezn">
-                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="36"/>
                     <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                 </constraint>
                 <constraint firstItem="dpA-Au-ZH7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="qz6-IX-CL2"/>
@@ -276,7 +286,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                 </constraint>
                 <constraint firstItem="Rsd-jp-uUS" firstAttribute="top" secondItem="dpA-Au-ZH7" secondAttribute="bottom" constant="43" id="ylK-uP-9LJ">
-                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                    <variation key="heightClass=regular-widthClass=compact" constant="17"/>
                 </constraint>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

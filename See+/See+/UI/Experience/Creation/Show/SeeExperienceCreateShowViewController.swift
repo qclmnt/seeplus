@@ -31,7 +31,7 @@ class SeeExperienceCreateShowViewController: UIViewController {
         
         self.backButton.setTitle(NSLocalizedString("back", comment: ""), for: .normal)
         self.backButton.layer.borderColor = UIColor.appRed().cgColor
-        self.backButton.layer.borderWidth = 2
+        self.backButton.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
     }
     
     override func viewWillLayoutSubviews() {

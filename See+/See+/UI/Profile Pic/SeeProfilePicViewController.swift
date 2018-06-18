@@ -56,7 +56,7 @@ class SeeProfilePicViewController: UIViewController {
         // Buttons
         self.uploadPhotoButton.setTitle(NSLocalizedString("upload.photo", comment: ""), for: .normal)
         self.validateButton.setTitle(NSLocalizedString("enter", comment: ""), for: .normal)
-        self.uploadPhotoButton.layer.borderWidth = 2
+        self.uploadPhotoButton.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.uploadPhotoButton.layer.borderColor = UIColor.white.cgColor
         self.uploadPhotoButton.layer.masksToBounds = true
     }
