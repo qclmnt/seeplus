@@ -30,7 +30,8 @@ class SeeTextCollectionViewCellViewModel: QCCollectionCellViewModel {
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 200)
+        let height = CGFloat(DeviceHelper.isIpad() ? 200 : 100)
+        return CGSize(width: maxSize.width, height: height)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {
@@ -40,7 +41,8 @@ class SeeTextCollectionViewCellViewModel: QCCollectionCellViewModel {
         if let attributedText = self.attributedString {
             textCell.textLabel.attributedText = attributedText
         } else {
-            textCell.textLabel.attributedText = NSAttributedString(string: self.text, attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 20)!]) 
+            let fontSize = CGFloat(DeviceHelper.isIpad() ? 20 : 14)
+            textCell.textLabel.attributedText = NSAttributedString(string: self.text, attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]) 
         }
     }
 

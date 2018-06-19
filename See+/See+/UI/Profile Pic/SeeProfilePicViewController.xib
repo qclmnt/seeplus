@@ -30,10 +30,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-K4-PHi">
-                    <rect key="frame" x="30" y="68" width="315" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlU-K4-PHi">
+                    <rect key="frame" x="30" y="68" width="315" height="55"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="36" id="gnk-TG-Sku"/>
+                        <constraint firstAttribute="height" constant="36" id="gnk-TG-Sku">
+                            <variation key="heightClass=regular-widthClass=compact" constant="55"/>
+                        </constraint>
                     </constraints>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +45,7 @@
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-2Q-Sbs">
-                    <rect key="frame" x="66" y="248.5" width="243" height="32"/>
+                    <rect key="frame" x="66" y="267.5" width="243" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="OE4-tD-8B8">
                             <variation key="heightClass=regular-widthClass=regular" constant="46"/>
@@ -64,7 +66,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-I7-VZm">
-                    <rect key="frame" x="66" y="305.5" width="243" height="32"/>
+                    <rect key="frame" x="66" y="324.5" width="243" height="32"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button">
@@ -78,7 +80,7 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="xjS-m3-xWB">
-                    <rect key="frame" x="145.5" y="131" width="83" height="83"/>
+                    <rect key="frame" x="145.5" y="150" width="83" height="83"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="xjS-m3-xWB" secondAttribute="height" multiplier="1:1" id="bKm-AK-uQR"/>
