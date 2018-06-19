@@ -95,13 +95,13 @@ class SeeNavigationController: UINavigationController {
     }
     
     @objc func proposeButtonTouchUpInside() {
-        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
         Defaults[.connectedUserMode] = 1
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
     }
     
     @objc func discoverButtonTouchUpInside() {
-        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
         Defaults[.connectedUserMode] = 0
+        AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
     }
     
     @objc func languageButtonTouchUpInside() {
