@@ -11,11 +11,14 @@ import UIKit
 class SeeProfileExperiencesSection: QCCollectionViewSection {
     
     let shouldShowDeleteButton: Bool
+    let borderColor: UIColor
     
     // MARK: - Initialization
     
-    init(shouldShowDeleteButton: Bool) {
+    init(shouldShowDeleteButton: Bool,
+         borderColor: UIColor) {
         self.shouldShowDeleteButton = shouldShowDeleteButton
+        self.borderColor = borderColor
         super.init()
     }
     
@@ -42,22 +45,22 @@ class SeeProfileExperiencesSection: QCCollectionViewSection {
                                                                                                 location: "75012 Paris",
                                                                                                 imageName: "cineFR",
                                                                                                 author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor),
                       SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
                                                                                                 location: "75012 Paris",
                                                                                                 imageName: "cineFR",
                                                                                                 author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor),
                       SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
                                                                                                 location: "75012 Paris",
                                                                                                 imageName: "cineFR",
                                                                                                 author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton),
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor),
                       SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
                                                                                                 location: "75012 Paris",
                                                                                                 imageName: "cineFR",
                                                                                                 author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton)]
+                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor)]
     }
 
 }

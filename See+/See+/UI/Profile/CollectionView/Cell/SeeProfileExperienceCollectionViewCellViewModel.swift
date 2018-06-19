@@ -12,13 +12,16 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
     
     let experience: SeeExperience
     let shouldShowDeleteButton: Bool
+    let borderColor: UIColor
     
     // MARK: - Initialization
     
     init(experience: SeeExperience,
-         shouldShowDeleteButton: Bool) {
+         shouldShowDeleteButton: Bool,
+         borderColor: UIColor) {
         self.shouldShowDeleteButton = shouldShowDeleteButton
         self.experience = experience
+        self.borderColor = borderColor
         super.init()
     }
     
@@ -40,7 +43,11 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
         experienceCell.deleteButton.isHidden = !self.shouldShowDeleteButton
         experienceCell.experienceImageView.image = self.experience.image
         experienceCell.viewModel = self
-        experienceCell.deleteButton.setImage(UIImage(named: "not-button"), for: .normal)
+        experienceCell.deleteButton.setImage(UIImage(named: "deletePink"), for: .normal)
+        experienceCell.borderView.layer.borderColor = self.borderColor.cgColor
+        experienceCell.experienceNameLabel.textColor = self.borderColor
+        experienceCell.experienceLocationLabel.textColor = self.borderColor
+        experienceCell.noteImageView.tintColor = self.borderColor
     }
     
     override var routingEntry: QCRoutingEntry {

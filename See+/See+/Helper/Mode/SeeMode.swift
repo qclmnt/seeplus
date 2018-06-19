@@ -18,5 +18,13 @@ class SeeMode: NSObject {
             return .propose
         }
     }
+    
+    class func colorForActivatedMode(mode: UserMode = UserMode(rawValue: Defaults[.connectedUserMode])!) -> UIColor {
+        if mode == .discover {
+            return .appPurple() // discover
+        } else {
+            return .appRed() // propose
+        }
+    }
 
 }

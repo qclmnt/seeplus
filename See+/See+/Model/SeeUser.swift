@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum UserMode {
+enum UserMode: Int {
     case discover
     case propose
 }

@@ -19,6 +19,7 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var experienceLocationLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var borderView: UIView!
+    @IBOutlet weak var noteImageView: UIImageView!
     
     
     // MARK: - View life cycle
@@ -26,7 +27,6 @@ class SeeProfileExperienceCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     
-        self.borderView.layer.borderColor = UIColor.appPurple().cgColor
         self.borderView.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.borderView.layer.masksToBounds = true
         self.borderView.layer.cornerRadius = DeviceHelper.isIpad() ? 72 : 46

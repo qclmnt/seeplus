@@ -83,7 +83,7 @@
                             <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="8"/>
                         </variation>
                     </label>
-                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lo-Ts-n5u">
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lo-Ts-n5u">
                         <rect key="frame" x="177.5" y="0.0" width="27.5" height="27.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -92,7 +92,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                             </constraint>
                         </constraints>
-                        <state key="normal" image="not-button"/>
+                        <state key="normal" image="deletePink"/>
                         <connections>
                             <action selector="deleteButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GRE-Yg-Tp6"/>
                         </connections>
@@ -128,12 +128,13 @@
                 <outlet property="experienceImageView" destination="Jit-cj-Eaf" id="BYf-Bg-EJT"/>
                 <outlet property="experienceLocationLabel" destination="dfL-uZ-Ffh" id="28o-lF-jZg"/>
                 <outlet property="experienceNameLabel" destination="7p9-nz-MWs" id="yLw-h3-FRC"/>
+                <outlet property="noteImageView" destination="gAq-CV-eZo" id="Y6d-Px-Yr4"/>
             </connections>
             <point key="canvasLocation" x="-123.5" y="1.5"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="not-button" width="49" height="49"/>
+        <image name="deletePink" width="70" height="70"/>
         <image name="note" width="73" height="10"/>
     </resources>
 </document>

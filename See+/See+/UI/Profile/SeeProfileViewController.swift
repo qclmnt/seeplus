@@ -18,7 +18,12 @@ class SeeProfileViewController: SeeTabBarViewController {
         return self.viewModel as? SeeProfileViewControllerViewModel
     }
     
-    lazy var experiencesViewModel = SeeProfileExperiencesCollectionViewModel(shouldShowDeleteButton: self.profileViewModel?.shouldShowDeleteButtonOnExperience ?? false)
+    lazy var experiencesViewModel = SeeProfileExperiencesCollectionViewModel(shouldShowDeleteButton: self.profileViewModel?.shouldShowDeleteButtonOnExperience ?? false, borderColor: self.color)
+    
+    lazy var color: UIColor = {
+        let mode = self.username != nil ? UserMode.discover : SeeMode.activatedMode()
+        return SeeMode.colorForActivatedMode(mode: mode)
+    }()
     
     // MARK: - Views
     
@@ -71,12 +76,13 @@ class SeeProfileViewController: SeeTabBarViewController {
     
     func configureLayout() {
         
-        self.borderLayer = self.headerView.addBottomBorder(color: .appPurple(), borderWidth: 1)
+        self.borderLayer = self.headerView.addBottomBorder(color: self.color, borderWidth: 1)
         
         guard let profileViewModel = self.profileViewModel else { return }
         
         // Username
         self.usernameLabel.text = self.username != nil ? self.username : profileViewModel.pageTitle
+        self.usernameLabel.textColor = self.color
         
         // Image
         self.profilPicImageView.image = UIImage(named: profileViewModel.image)

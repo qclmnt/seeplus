@@ -13,7 +13,7 @@ class SeeExperiencesManagePhotoCollectionViewModel: SeeProfileExperiencesCollect
     // MARK: - Initialization
     
     init() {
-        super.init(shouldShowDeleteButton: true)
+        super.init(shouldShowDeleteButton: true, borderColor: .appRed())
     }
     
     // MARK: - QCCollectionViewModel
@@ -22,7 +22,7 @@ class SeeExperiencesManagePhotoCollectionViewModel: SeeProfileExperiencesCollect
         let section1 = QCCollectionViewSection()
         section1.items = [SeeExperienceCreateTitleCollectionViewCellModel(title: NSLocalizedString("manage.photo", comment: ""))]
         
-        let section2 = SeeProfileExperiencesSection(shouldShowDeleteButton: self.shouldShowDeleteButton)
+        let section2 = SeeProfileExperiencesSection(shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: .appRed())
         
         let section3 = SeeManageBottomSection()
         

@@ -151,7 +151,7 @@
                                 </constraint>
                                 <constraint firstAttribute="width" secondItem="dP8-rv-bLt" secondAttribute="height" multiplier="1:1" id="7un-sD-eQY"/>
                             </constraints>
-                            <state key="normal" image="not-button"/>
+                            <state key="normal" image="deletePink"/>
                             <connections>
                                 <action selector="notButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="rtj-vk-mal"/>
                             </connections>
@@ -216,8 +216,8 @@
     </objects>
     <resources>
         <image name="back-button" width="49" height="49"/>
+        <image name="deletePink" width="49" height="49"/>
         <image name="myprofile" width="64" height="64"/>
-        <image name="not-button" width="49" height="49"/>
         <image name="validate-message" width="49" height="49"/>
     </resources>
 </document>
