@@ -26,7 +26,8 @@ class SeeExperienceCreateTitleCollectionViewCellModel: QCCollectionCellViewModel
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 263)
+        let height = CGFloat(DeviceHelper.isIpad() ? 263 : 117)
+        return CGSize(width: maxSize.width, height: height)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {

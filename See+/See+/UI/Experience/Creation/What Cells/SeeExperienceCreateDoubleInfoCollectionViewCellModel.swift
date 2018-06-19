@@ -17,7 +17,8 @@ class SeeExperienceCreateDoubleInfoCollectionViewCellModel: QCCollectionCellView
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 145)
+        let height = CGFloat(DeviceHelper.isIpad() ? 145 : 100)
+        return CGSize(width: maxSize.width, height: height)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {

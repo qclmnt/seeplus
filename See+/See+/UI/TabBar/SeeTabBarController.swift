@@ -34,6 +34,10 @@ class SeeTabBarController: UITabBarController {
         }
         self.setViewControllers(navigationViewControllers, animated: true)
         
+        if (SeeMode.activatedMode() == .discover) {
+            self.selectedIndex = 1
+        }
+        
 //        if let viewControllers = self.viewControllers {
 //            for viewController in viewControllers {
 //                if let tabBarViewController = viewController as? SeeTabBarViewController {

@@ -25,10 +25,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-c4-Hpv" customClass="SeeTextField" customModule="See_plus" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="44" width="403" height="30"/>
+                        <rect key="frame" x="0.0" y="32" width="403" height="32"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="48" id="oYA-lz-V65">
-                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="32"/>
                             </constraint>
                         </constraints>
                         <nil key="textColor"/>
@@ -36,18 +36,25 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-3T-UiU">
-                        <rect key="frame" x="12" y="11" width="391" height="21"/>
+                        <rect key="frame" x="12" y="11" width="391" height="15"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="ern-zt-17r"/>
+                            <constraint firstAttribute="height" constant="21" id="ern-zt-17r">
+                                <variation key="heightClass=regular-widthClass=compact" constant="15"/>
+                            </constraint>
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="14"/>
+                        </variation>
                     </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="R1u-c4-Hpv" firstAttribute="top" secondItem="lPz-3T-UiU" secondAttribute="bottom" constant="12" id="Inq-Sf-2AQ"/>
+                <constraint firstItem="R1u-c4-Hpv" firstAttribute="top" secondItem="lPz-3T-UiU" secondAttribute="bottom" constant="12" id="Inq-Sf-2AQ">
+                    <variation key="heightClass=regular-widthClass=compact" constant="6"/>
+                </constraint>
                 <constraint firstItem="lPz-3T-UiU" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="16" id="RZJ-Su-0qu">
                     <variation key="heightClass=regular-widthClass=compact" constant="12"/>
                 </constraint>

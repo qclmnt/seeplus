@@ -13,7 +13,7 @@ class SeeDeleteMessageViewControllerViewModel: SeeDeleteExperienceViewController
     // MARK: - SeeDeleteExperienceViewControllerViewModel
     
     override var title: String {
-        return "Do you want to delete this contact ?"
+        return "Do you want to delete this contact?"
     }
 
 }

@@ -50,7 +50,7 @@ class SeeMessagingViewController: SeeTabBarViewController {
         super.viewWillLayoutSubviews()
         
         guard let bottomLine = self.bottomLine else {return}
-        bottomLine.frame = CGRect(x: bottomLine.frame.origin.x, y: bottomLine.frame.origin.y, width: self.headerView.frame.width, height: bottomLine.frame.height)
+        bottomLine.frame = CGRect(x: bottomLine.frame.origin.x, y: self.headerView.frame.height - bottomLine.frame.height, width: self.headerView.frame.width, height: bottomLine.frame.height)
     }
     
     // MARK: - Configure

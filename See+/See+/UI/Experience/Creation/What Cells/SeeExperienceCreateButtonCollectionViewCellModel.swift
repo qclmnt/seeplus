@@ -35,7 +35,8 @@ class SeeExperienceCreateButtonCollectionViewCellModel: QCCollectionCellViewMode
     }
     
     override func cellSize(maxSize: CGSize) -> CGSize {
-        return CGSize(width: maxSize.width, height: 100)
+        let height = CGFloat(DeviceHelper.isIpad() ? 100 : 42)
+        return CGSize(width: maxSize.width, height: height)
     }
     
     override func configureCell(_ cell: UICollectionViewCell, collectionView: UICollectionView?) {

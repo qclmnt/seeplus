@@ -103,7 +103,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-N9-1Sj">
-                    <rect key="frame" x="0.0" y="92" width="375" height="460"/>
+                    <rect key="frame" x="0.0" y="92" width="375" height="458"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Aub-2C-D9Y">
                         <size key="itemSize" width="50" height="50"/>
@@ -180,15 +180,15 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI2-O5-u2J">
-                    <rect key="frame" x="16" y="560" width="317" height="10"/>
+                    <rect key="frame" x="16" y="558" width="317" height="12"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="10" id="hG7-Ki-kb7"/>
+                        <constraint firstAttribute="height" constant="12" id="hG7-Ki-kb7"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="10"/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
                     <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="heightClass=regular-widthClass=compact">
-                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="8"/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="9"/>
                     </variation>
                 </label>
             </subviews>

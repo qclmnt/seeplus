@@ -22,7 +22,7 @@
 "back" = "précédent";
 "postal" = "Code postal";
 "metrop" = "Métropole";
-"apt" = "Appartement / Bâtiment (facultatif)";
+"apt" = "Appartement / Bâtiment";
 "street" = "Numéro et nom de la rue";
 "country" = "Pays / Région";
 "where" = "Où se trouve votre expérience?";

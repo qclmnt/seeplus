@@ -11,7 +11,7 @@ import UIKit
 class SeeDeleteExperienceViewControllerViewModel: QCViewControllerViewModel {
     
     var title: String {
-        return "Do you want to delete this experience ?"
+        return "Do you want to delete this experience?"
     }
     
     var actionButtonTitle: String {

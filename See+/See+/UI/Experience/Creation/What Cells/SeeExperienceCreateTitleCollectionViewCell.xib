@@ -29,6 +29,9 @@
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="36"/>
                         <color key="textColor" red="0.96862745100000003" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
+                        </variation>
                     </label>
                 </subviews>
             </view>

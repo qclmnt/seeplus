@@ -38,8 +38,8 @@ class SeeExperiencePreviewViewController: UIViewController {
         self.view.layer.borderColor = UIColor.appRed().cgColor
         self.view.layer.borderWidth = 1
         
-        self.infoView.layer.borderColor = UIColor.appRed().cgColor
-        self.infoView.layer.borderWidth = 1
+//        self.infoView.layer.borderColor = UIColor.appRed().cgColor
+//        self.infoView.layer.borderWidth = 1
         
         self.experienceImageView.image = UIImage(named: "cineFR")
         self.experienceLabel.text = "Apartment and Workshop\nof Le Corbusier"

@@ -13,7 +13,8 @@ class SeeWhereExperienceCollectionSection: QCCollectionViewSection {
     // MARK: - QCCollectionViewSection
     
     override var edgeInsets: UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 150, bottom: 0, right: 150)
+        let side = CGFloat(DeviceHelper.isIpad() ? 150 : 66)
+        return UIEdgeInsets(top: 0, left: side, bottom: 0, right: side)
     }
     
     override func setup() {
