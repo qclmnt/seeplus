@@ -38,6 +38,9 @@ class SeeExperiencePreviewViewController: UIViewController {
         self.view.layer.borderColor = UIColor.appRed().cgColor
         self.view.layer.borderWidth = 1
         
+        self.noteImageView.image = self.noteImageView.image!.withRenderingMode(.alwaysTemplate)
+        self.noteImageView.tintColor = UIColor.appRed()
+        
         self.experienceImageView.image = UIImage(named: "cineFR")
         self.experienceLabel.text = "Apartment and Workshop\nof Le Corbusier"
         self.experienceLocationLabel.text = "75016 Paris"
