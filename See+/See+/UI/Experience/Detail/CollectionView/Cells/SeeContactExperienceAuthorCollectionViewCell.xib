@@ -25,10 +25,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESH-tt-QiO">
-                        <rect key="frame" x="7" y="27" width="412" height="48"/>
+                        <rect key="frame" x="91.5" y="35" width="243" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="48" id="OXQ-bp-CT4"/>
-                            <constraint firstAttribute="width" constant="412" id="X7N-kp-dXZ"/>
+                            <constraint firstAttribute="height" constant="48" id="OXQ-bp-CT4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="412" id="X7N-kp-dXZ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="243"/>
+                            </constraint>
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                         <state key="normal" title="Button"/>

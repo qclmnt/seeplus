@@ -30,9 +30,19 @@ class SeeTabBarController: UITabBarController {
         super.viewDidLoad()
 
         let navigationViewControllers = self.viewModel.viewControllers.map { (viewController) -> UINavigationController in
-            return SeeNavigationController(rootViewController: viewController, showToolbar: false)
+            let viewController = SeeNavigationController(rootViewController: viewController, showToolbar: false)
+            return viewController
         }
         self.setViewControllers(navigationViewControllers, animated: true)
+        
+        if let controllers = self.viewControllers {
+            for viewController in controllers {
+                viewController.tabBarItem.imageInsets = UIEdgeInsetsMake(DeviceHelper.isIpad() ? 0 : 5, // Top
+                                                                         DeviceHelper.isIpad() ? -15 : 0, // Left
+                                                                         DeviceHelper.isIpad() ? 0 : -5,
+                                                                         DeviceHelper.isIpad() ? 15 : 0)
+            }
+        }
         
         if (SeeMode.activatedMode() == .discover) {
             self.selectedIndex = 1

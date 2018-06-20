@@ -25,10 +25,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNC-oF-xBO">
-                        <rect key="frame" x="39.5" y="0.0" width="300" height="212"/>
+                        <rect key="frame" x="65" y="0.0" width="250" height="212"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="391" id="GoO-5L-j1r">
-                                <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                            <constraint firstAttribute="width" constant="300" id="q4O-ey-V04">
+                                <variation key="heightClass=regular-widthClass=compact" constant="250"/>
                             </constraint>
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="20"/>
