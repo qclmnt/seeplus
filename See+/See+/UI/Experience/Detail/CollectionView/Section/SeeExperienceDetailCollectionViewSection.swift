@@ -32,8 +32,8 @@ class SeeExperienceDetailCollectionViewSection: QCCollectionViewSection {
     override func setup() {
         self.items = [SeeExperienceDetailCollectionViewCellModel(experience: self.experience),
         SeeTextCollectionViewCellViewModel(text: self.experience.desc),
-        SeeExperienceImage(image: self.experience.image),
-        SeeExperienceImage(image: self.experience.image),
+        SeeExperienceImage(image: self.experience.image2),
+        SeeExperienceImage(image: self.experience.image3),
         SeeContactExperienceAuthorCollectionViewCellViewModel(experience: self.experience),
         SeeTextCollectionViewCellViewModel(text: self.experience.desc, textAlignement: .left, attributedString: self.experienceReview())]
     }

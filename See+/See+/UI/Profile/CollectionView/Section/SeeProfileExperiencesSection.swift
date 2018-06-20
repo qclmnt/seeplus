@@ -41,26 +41,16 @@ class SeeProfileExperiencesSection: QCCollectionViewSection {
     }
     
     override func setup() {
-        self.items = [SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
-                                                                                                location: "75012 Paris",
-                                                                                                imageName: "cineFR",
-                                                                                                author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor),
-                      SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
-                                                                                                location: "75012 Paris",
-                                                                                                imageName: "cineFR",
-                                                                                                author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor),
-                      SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
-                                                                                                location: "75012 Paris",
-                                                                                                imageName: "cineFR",
-                                                                                                author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor),
-                      SeeProfileExperienceCollectionViewCellViewModel(experience: SeeExperience(name: "the French Cinémathèque",
-                                                                                                location: "75012 Paris",
-                                                                                                imageName: "cineFR",
-                                                                                                author: "Emmacito"),
-                                                                      shouldShowDeleteButton: self.shouldShowDeleteButton, borderColor: self.borderColor)]
+        
+        let experiences = SeeMode.experiences(rubric: .castle)
+        var expCellModels = [SeeProfileExperienceCollectionViewCellViewModel]()
+        for exp in experiences {
+            expCellModels.append(SeeProfileExperienceCollectionViewCellViewModel(experience: exp,
+                                                                                 shouldShowDeleteButton: self.shouldShowDeleteButton,
+                                                                                 borderColor: self.borderColor))
+        }
+        
+        self.items = expCellModels
     }
 
 }

@@ -35,6 +35,16 @@ class SeeExperience: NSObject {
         return imageView
     }()
     
+    var image2: UIImage? {
+        let imageName = "\(self.imageName)2"
+        return UIImage(named: imageName)
+    }
+    
+    var image3: UIImage? {
+        let imageName = "\(self.imageName)3"
+        return UIImage(named: imageName)
+    }
+    
     lazy var user: SeeUser = SeeUser(username: "Benoit")
     
     // MARK: - Initialization
