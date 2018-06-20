@@ -23,7 +23,8 @@ class SeeExperience: NSObject {
     let mapPositionRatio: (x: CGFloat, y: CGFloat)
     
     var image: UIImage? {
-        return UIImage(named: self.imageName)
+        let imageName = "\(self.imageName)1"
+        return UIImage(named: imageName)
     }
     
     lazy var imageView: UIImageView = {

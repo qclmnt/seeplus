@@ -80,9 +80,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="fIR-yC-gD5" firstAttribute="leading" secondItem="jfF-1T-Y1n" secondAttribute="leading" constant="15" id="1AF-Xf-SaH"/>
-                        <constraint firstAttribute="trailing" secondItem="fIR-yC-gD5" secondAttribute="trailing" constant="38" id="205-gC-qwr">
-                            <variation key="heightClass=regular-widthClass=compact" constant="15"/>
-                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="fIR-yC-gD5" secondAttribute="trailing" constant="15" id="205-gC-qwr"/>
                         <constraint firstItem="jnT-SV-xDf" firstAttribute="width" secondItem="fIR-yC-gD5" secondAttribute="width" id="2JN-7p-Zs4"/>
                         <constraint firstAttribute="height" constant="96" id="J2I-LW-C8F">
                             <variation key="heightClass=regular-widthClass=compact" constant="55"/>
