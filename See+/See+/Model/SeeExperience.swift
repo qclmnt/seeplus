@@ -59,7 +59,7 @@ class SeeExperience: NSObject {
     }
     
     @objc func experienceViewTapped() {
-        QCAppEnvironment.shared().routing?.route(to: SeeExperiencePreviewRoutingEntry())
+        QCAppEnvironment.shared().routing?.route(to: SeeExperiencePreviewRoutingEntry(experience: self))
     }
 
 }

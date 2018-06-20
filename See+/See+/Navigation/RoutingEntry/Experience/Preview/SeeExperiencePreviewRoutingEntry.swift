@@ -10,6 +10,13 @@ import UIKit
 
 class SeeExperiencePreviewRoutingEntry: QCRoutingEntry {
     
+    let experience: SeeExperience
+    
+    init(experience: SeeExperience) {
+        self.experience = experience
+        super.init()
+    }
+    
     // MARK: - QCRoutingEntry
     
     override var navigationStyle: QCNavigationStyle {
@@ -18,7 +25,7 @@ class SeeExperiencePreviewRoutingEntry: QCRoutingEntry {
     
     override var viewController: UIViewController? {
         
-        let deleteExperienceViewController = SeeExperiencePreviewViewController()
+        let deleteExperienceViewController = SeeExperiencePreviewViewController(experience: self.experience)
         
         deleteExperienceViewController.modalPresentationStyle = .custom
         deleteExperienceViewController.transitioningDelegate = self

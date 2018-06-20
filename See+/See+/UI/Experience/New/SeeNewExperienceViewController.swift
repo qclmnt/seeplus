@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeNewExperienceViewController: SeeTabBarViewController {
 
@@ -25,15 +26,24 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     
     var grayView: UIView?
     
-    lazy var experiences = [SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.596, 0.465)), // Gare de l’est √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.393, 0.583)), // Michel Ange √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.535, 0.575)), // Denfer Rochereau √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.627, 0.608)), // Biblio Francois Mit √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.617, 0.42)), // Riquet √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.662, 0.42)), // Porte de Pantin √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.66, 0.66)), // Vitry centre √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.32, 0.617)), // Saint clou √
-                            SeeExperience(name: "name", location: "location", imageName: "cineFR", author: "Bob", mapPositionRatio: (0.375, 0.66))] // Pont de sèvre √
+    // Cinema
+    
+    lazy var experiences: [SeeExperience] = [SeeExperience]()
+        
+        
+    @objc func reloadExp() {
+        var experiences = [SeeExperience]()
+        guard let headingsSelected = Defaults[.selectedHeadings] else {return}
+        for rubric in headingsSelected {
+            let exp = SeeMode.experiences(rubric: SeeRubric(rawValue: rubric)!)
+            experiences.append(contentsOf: exp)
+        }
+        self.experiences = experiences
+        
+        self.resetMap()
+        self.addExperiences()
+        self.updatePositionView()
+    }
     
     var experiencesVisible = false
     
@@ -52,8 +62,9 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.configureLayout()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadExp), name: Notification.Name("reloadExp"), object: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,8 +76,9 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         
         // Add Experience
         if self.experiencesVisible == false {
-            self.addExperiences()
-            self.updatePositionView()
+            self.reloadExp()
+            
+//            self.addLines()
         }
     }
     
@@ -84,6 +96,18 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         self.gradientLayer = self.bottomView.addHorizontalGradientLayer(leftColor: UIColor.appRed(),
                                                               rightColor: UIColor.appPurple())
         
+        self.resetMap()
+    }
+    
+    func resetMap() {
+        
+        // Subviews
+        for view in self.mapScrollView.subviews {
+            if (view != self.mapImageView) {
+                view.removeFromSuperview()
+            }
+        }
+        
         // Map scroll view
         let deviceSize = UIScreen.main.bounds.size
         let mapContentSize = CGSize(width: deviceSize.width, height: deviceSize.height)
@@ -95,14 +119,13 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
         let centerX = (self.mapScrollView.contentSize.width/2) - (self.mapScrollView.bounds.size.width/2)
         let centerY = (self.mapScrollView.contentSize.height/2) - (self.mapScrollView.bounds.size.height/2)
         self.mapScrollView.contentOffset = CGPoint(x: centerX, y: centerY)
-        
     }
     
     // MARK: - Experiences
     
     func addExperiences() {
         for (idx,exp) in self.experiences.enumerated() {
-            let dispatchTime = (1 + 0.3*Double(idx))
+            let dispatchTime = (1 + 0.1*Double(idx))
             DispatchQueue.main.asyncAfter(deadline: .now() + dispatchTime) {
                 self.mapScrollView.addSubview(exp.imageView)
                 exp.imageView.squeezeAndBounce()
@@ -126,6 +149,33 @@ class SeeNewExperienceViewController: SeeTabBarViewController {
     }
     
 
+    // MARK: - Helper
+    
+    func addLines() {
+        for i in [0.0, 0.1, 0.20, 0.30, 0.40, 0.50, 0.60, 0.7, 0.8, 0.9, 1.0] {
+            self.view.layer.addSublayer(self.createVerticalLine(xRatio: CGFloat(i), color: .black))
+            self.view.layer.addSublayer(self.createHorizontalLine(yRatio: CGFloat(i), color: .black))
+        }
+        
+        for i in [0.05, 0.15, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 0.5, 0.5] {
+            self.view.layer.addSublayer(self.createVerticalLine(xRatio: CGFloat(i), color: .green))
+            self.view.layer.addSublayer(self.createHorizontalLine(yRatio: CGFloat(i), color: .green))
+        }
+    }
+    
+    func createVerticalLine(xRatio: CGFloat, color: UIColor) -> CALayer {
+        let layer = CALayer()
+        layer.frame = CGRect(x: self.mapScrollView.contentSize.width*xRatio, y: 0, width: 1, height: self.view.frame.height)
+        layer.backgroundColor = color.cgColor
+        return layer
+    }
+    
+    func createHorizontalLine(yRatio: CGFloat, color: UIColor) -> CALayer {
+        let layer = CALayer()
+        layer.frame = CGRect(x: 0, y: self.mapScrollView.contentSize.height*yRatio, width: self.view.frame.width, height: 1)
+        layer.backgroundColor = color.cgColor
+        return layer
+    }
 
 }
 

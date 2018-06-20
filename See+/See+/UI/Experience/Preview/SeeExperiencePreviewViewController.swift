@@ -17,6 +17,17 @@ class SeeExperiencePreviewViewController: UIViewController {
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var likeImageView: UIImageView!
     
+    let experience: SeeExperience
+    
+    init(experience: SeeExperience) {
+        self.experience = experience
+        super.init(nibName: String(describing: SeeExperiencePreviewViewController.self), bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureLayout()
@@ -41,9 +52,9 @@ class SeeExperiencePreviewViewController: UIViewController {
         self.noteImageView.image = self.noteImageView.image!.withRenderingMode(.alwaysTemplate)
         self.noteImageView.tintColor = UIColor.appRed()
         
-        self.experienceImageView.image = UIImage(named: "cineFR")
-        self.experienceLabel.text = "Apartment and Workshop\nof Le Corbusier"
-        self.experienceLocationLabel.text = "75016 Paris"
+        self.experienceImageView.image = self.experience.image
+        self.experienceLabel.text = self.experience.name
+        self.experienceLocationLabel.text = self.experience.location
     }
     
     @objc func doubleTapped() {

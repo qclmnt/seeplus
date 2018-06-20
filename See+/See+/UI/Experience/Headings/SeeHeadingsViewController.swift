@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeHeadingsViewController: UIViewController {
     
@@ -70,6 +71,16 @@ class SeeHeadingsViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func nextButtonTouchUpInside(_ sender: UIButton) {
+        
+        var headings = [Int]()
+        if let indexPaths = self.headingsCollectionView.indexPathsForSelectedItems {
+            for indexPath in indexPaths {
+                headings.append(indexPath.row)
+            }
+        }
+        Defaults[.selectedHeadings] = SeeMode.activatedMode() == .discover ? headings : [0,1,2,3,4,5]
+        NotificationCenter.default.post(name: Notification.Name("reloadExp"), object: nil)
+
         self.headingsCollectionViewModel.next()
     }
     
