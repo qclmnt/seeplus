@@ -16,8 +16,6 @@ class SeeContactExperienceAuthorCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        self.button.configureWithStyle1()
     }
     
     override func layoutSubviews() {
@@ -25,6 +23,13 @@ class SeeContactExperienceAuthorCollectionViewCell: UICollectionViewCell {
         
         self.button.layer.masksToBounds = true
         self.button.layer.cornerRadius = self.button.frame.size.height/2
+        
+        guard let sublayers = self.button.layer.sublayers else {
+            return
+        }
+        for layer in sublayers {
+            layer.frame = DeviceHelper.isIpad() ? CGRect(x: 0, y: 0, width: 412, height: 48) : self.button.frame
+        }
     }
     
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {

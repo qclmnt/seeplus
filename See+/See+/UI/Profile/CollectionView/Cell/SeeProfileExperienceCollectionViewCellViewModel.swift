@@ -43,7 +43,8 @@ class SeeProfileExperienceCollectionViewCellViewModel: QCCollectionCellViewModel
         experienceCell.deleteButton.isHidden = !self.shouldShowDeleteButton
         experienceCell.experienceImageView.image = self.experience.image
         experienceCell.viewModel = self
-        experienceCell.deleteButton.setImage(UIImage(named: "deletePink"), for: .normal)
+        let imageName = self.borderColor == .appPurple() ? "deletePink" : "not-button"
+        experienceCell.deleteButton.setImage(UIImage(named: imageName), for: .normal)
         experienceCell.borderView.layer.borderColor = self.borderColor.cgColor
         experienceCell.experienceNameLabel.textColor = self.borderColor
         experienceCell.experienceLocationLabel.textColor = self.borderColor

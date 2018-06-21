@@ -41,13 +41,14 @@ class SeeExperienceDetailCollectionViewSection: QCCollectionViewSection {
     // MARK: - Helper
     
     func experienceReview() -> NSAttributedString {
-        let mutableAttributedString = NSMutableAttributedString(string: "Avis des utilisateurs\n\nJamilabb : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: 20)!])
+        let fontSize = CGFloat(DeviceHelper.isIpad() ? 20 : 14)
+        let mutableAttributedString = NSMutableAttributedString(string: "Avis des utilisateurs\n\nJamilabb : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: fontSize)!])
         
-        mutableAttributedString.append(NSAttributedString(string: "Jean-Michel was friendly,\nthe experience has been interesting!\n\n", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 20)!]))
+        mutableAttributedString.append(NSAttributedString(string: "Jean-Michel was friendly,\nthe experience has been interesting!\n\n", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]))
         
-        mutableAttributedString.append(NSAttributedString(string: "aporobert : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: 20)!]))
+        mutableAttributedString.append(NSAttributedString(string: "aporobert : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: fontSize)!]))
         
-        mutableAttributedString.append(NSAttributedString(string: "J’ai adoré ce moment avec JeanMi! Je recommande!", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: 20)!]))
+        mutableAttributedString.append(NSAttributedString(string: "J’ai adoré ce moment avec JeanMi! Je recommande!", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]))
         
         return mutableAttributedString
     }

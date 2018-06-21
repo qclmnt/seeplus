@@ -37,6 +37,8 @@ class SeeContactExperienceAuthorCollectionViewCellViewModel: QCCollectionCellVie
         contactCell.viewModel = self
         contactCell.button.setTitleColor(.white, for: .normal)
         contactCell.button.setTitle("contact me", for: .normal)
+        
+        contactCell.button.configureWithStyle1()
     }
     
     // MARK: - Action
