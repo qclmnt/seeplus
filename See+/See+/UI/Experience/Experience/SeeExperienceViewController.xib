@@ -63,7 +63,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bignote" translatesAutoresizingMaskIntoConstraints="NO" id="Gt3-si-kvc">
                             <rect key="frame" x="50" y="291" width="161" height="10"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="35" id="4oS-pO-cNB">
+                                <constraint firstAttribute="height" constant="13" id="4oS-pO-cNB">
                                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                 </constraint>
                                 <constraint firstAttribute="width" constant="161" id="Xbx-1Q-nv5"/>

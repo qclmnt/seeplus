@@ -38,9 +38,11 @@ class SeeExperiencePreviewViewController: UIViewController {
         
         self.view.layer.cornerRadius = self.view.frame.height/2
         
-        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(self.doubleTapped))
         doubleTap.numberOfTapsRequired = 2
         self.view.addGestureRecognizer(doubleTap)
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.simpleTapped)))
     }
     
     func configureLayout() {
@@ -55,6 +57,15 @@ class SeeExperiencePreviewViewController: UIViewController {
         self.experienceImageView.image = self.experience.image
         self.experienceLabel.text = self.experience.name
         self.experienceLocationLabel.text = self.experience.location
+    }
+    
+    @objc func simpleTapped() {
+        
+        let dismissRoutingEntry = SeeDismissRoutingEntry()
+        dismissRoutingEntry.completionBlock = {
+            QCAppEnvironment.shared().routing?.route(to: SeeExperienceRoutingEntry(experience: self.experience))
+        }
+        QCAppEnvironment.shared().routing?.route(to: dismissRoutingEntry)
     }
     
     @objc func doubleTapped() {

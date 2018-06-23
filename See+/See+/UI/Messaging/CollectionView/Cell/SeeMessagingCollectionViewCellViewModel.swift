@@ -42,6 +42,7 @@ class SeeMessagingCollectionViewCellViewModel: QCCollectionCellViewModel {
         messagingCell.usernameLabel.text = self.user.username
         messagingCell.messageLabel.text = self.message
         messagingCell.viewModel = self
+        messagingCell.deleteButton.setImage(UIImage(named: SeeMode.activatedMode() == .propose ? "deletePink" : "not-button"), for: .normal)
     }
     
     // MARK: - Delete

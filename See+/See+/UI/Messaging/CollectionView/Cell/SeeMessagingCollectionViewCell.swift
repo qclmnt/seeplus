@@ -17,6 +17,8 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     
+    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appPurple() : UIColor.appRed()
+    
     var bottomLine: CALayer?
     
     var viewModel: SeeMessagingCollectionViewCellViewModel?
@@ -27,9 +29,11 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
         self.usernameLabel.text = "Emmanuel Macron"
+        self.usernameLabel.textColor = self.color
         self.messageLabel.text = "Paris c'est la plus belle ville du monde !"
+        self.messageLabel.textColor = self.color
         
-        self.bottomLine = self.addBottomBorder(color: .appPurple(), borderWidth: 1)
+        self.bottomLine = self.addBottomBorder(color: self.color, borderWidth: 1)
     }
     
     override func layoutSubviews() {
@@ -42,6 +46,7 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
     // MARK: - Action
 
     @IBAction func deleteButtonTouchUpInside(_ sender: UIButton) {
+        self.deleteButton.setImage(UIImage(named: "deleteSelected"), for: .normal)
         self.viewModel?.delete()
     }
 }

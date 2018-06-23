@@ -42,6 +42,7 @@ class SeeMessageViewController: UIViewController {
                                NSLocalizedString("arabic", comment: "")]
     
     let user: SeeUser
+    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appPurple() : UIColor.appRed()
     
     // MARK: - Initialization
     
@@ -63,10 +64,11 @@ class SeeMessageViewController: UIViewController {
         self.messagesCollectionViewModel.load()
         
         self.usernameLabel.text = self.user.username
+        self.usernameLabel.textColor = self.color
         
-        self.bottomLine = self.topView.addBottomBorder(color: .appPurple(), borderWidth: 1)
-        self.messageToolBar.configureWithStyle1(color: .appPurple())
-        self.messageTextField.layer.borderColor = UIColor.appPurple().cgColor
+        self.bottomLine = self.topView.addBottomBorder(color: self.color, borderWidth: 1)
+        self.messageToolBar.configureWithStyle1(color: self.color)
+        self.messageTextField.layer.borderColor = self.color.cgColor
         self.messageTextField.layer.borderWidth = DeviceHelper.isIpad() ? 2 : 1
         self.messageTextField.layer.masksToBounds = true
         self.messageTextField.rightViewMode = .always
@@ -135,10 +137,12 @@ class SeeMessageViewController: UIViewController {
     
     @IBAction func notButtonTouchUpInside(_ sender: UIButton) {
         self.infoLabel.text = NSLocalizedString("decline.exp", comment: "")
+        self.noButton.setImage(UIImage(named: "deleteSelected"), for: .normal)
     }
     
     @IBAction func validateButtonTouchUpInside(_ sender: UIButton) {
         self.infoLabel.text = NSLocalizedString("accepted.exp", comment: "")
+        self.yesButton.setImage(UIImage(named: "yesSelected"), for: .normal)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.infoLabel.text = nil
             guard let image = UIImage(named: "load") else {return}

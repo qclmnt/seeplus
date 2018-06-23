@@ -15,6 +15,7 @@ class SeeMessagingViewController: SeeTabBarViewController {
     }
     
     lazy var messagingViewModel = SeeMessagingListCollectionViewModel()
+    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appPurple() : UIColor.appRed()
     
     // MARK: - Views
     
@@ -44,6 +45,8 @@ class SeeMessagingViewController: SeeTabBarViewController {
         
         self.messagingViewModel.delegate = self
         self.messagingViewModel.load()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadDataView), name: Notification.Name("reloadDataView"), object: nil)
     }
     
     override func viewWillLayoutSubviews() {
@@ -58,13 +61,14 @@ class SeeMessagingViewController: SeeTabBarViewController {
     func configureLayout() {
         
         // Title View
-        self.titleLabel.text = "My messages"
+        self.titleLabel.text = "Messages"
+        self.titleLabel.textColor = self.color
         
         // Header view
-        self.bottomLine = self.headerView.addBottomBorder(color: .appPurple(), borderWidth: 1)
+        self.bottomLine = self.headerView.addBottomBorder(color: self.color, borderWidth: 1)
     }
     
-    func reloadDataView() {
+    @objc func reloadDataView() {
         UIView.performWithoutAnimation {
             self.messagingCollectionView.reloadData()
         }

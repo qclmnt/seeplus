@@ -42,7 +42,7 @@ class SeeProfileExperiencesSection: QCCollectionViewSection {
     
     override func setup() {
         
-        let experiences = SeeMode.experiences(rubric: .castle)
+        let experiences = SeeMode.experiences(rubric: SeeMode.activatedMode() == .discover ? (self.shouldShowDeleteButton ? .castle : .cinema): .art)
         var expCellModels = [SeeProfileExperienceCollectionViewCellViewModel]()
         for exp in experiences {
             expCellModels.append(SeeProfileExperienceCollectionViewCellViewModel(experience: exp,

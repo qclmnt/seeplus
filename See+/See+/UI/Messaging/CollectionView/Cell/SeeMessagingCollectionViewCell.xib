@@ -72,7 +72,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="49"/>
                             </constraint>
                         </constraints>
-                        <state key="normal" image="not-button"/>
+                        <state key="normal" image="deletePink"/>
                         <connections>
                             <action selector="deleteButtonTouchUpInside:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Dpt-sx-w0Y"/>
                         </connections>
@@ -107,7 +107,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="deletePink" width="49" height="49"/>
         <image name="myprofile" width="64" height="64"/>
-        <image name="not-button" width="49" height="49"/>
     </resources>
 </document>
