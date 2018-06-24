@@ -55,7 +55,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-eA-6TV">
-                    <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                    <rect key="frame" x="0.0" y="84" width="375" height="583"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MUQ-0x-NeF">
                         <size key="itemSize" width="50" height="50"/>
@@ -72,7 +72,7 @@
                 <constraint firstItem="bVz-eA-6TV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fnK-fh-7VR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="FRi-ZU-ED5" secondAttribute="top" id="gW2-8I-ZEM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bVz-eA-6TV" secondAttribute="trailing" id="oDS-Vv-QKD"/>
-                <constraint firstItem="bVz-eA-6TV" firstAttribute="top" secondItem="FRi-ZU-ED5" secondAttribute="bottom" constant="8" id="uyf-A4-ZFe"/>
+                <constraint firstItem="bVz-eA-6TV" firstAttribute="top" secondItem="FRi-ZU-ED5" secondAttribute="bottom" id="uyf-A4-ZFe"/>
                 <constraint firstItem="FRi-ZU-ED5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="w5y-Nx-Tsg"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

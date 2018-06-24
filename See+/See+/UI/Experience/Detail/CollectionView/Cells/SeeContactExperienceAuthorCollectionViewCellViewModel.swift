@@ -36,7 +36,15 @@ class SeeContactExperienceAuthorCollectionViewCellViewModel: QCCollectionCellVie
         
         contactCell.viewModel = self
         contactCell.button.setTitleColor(.white, for: .normal)
-        contactCell.button.setTitle("contact me", for: .normal)
+        var titleKey = "contact.me"
+        if let visibleVC = QCAppEnvironment.shared().routing?.visibleViewController(),
+        let tabBarController = visibleVC.tabBarController,
+        let nav = tabBarController.selectedViewController as? SeeNavigationController,
+            let selectedVC = nav.viewControllers.first as? SeeProfileViewController,
+            selectedVC.experiencesViewModel.shouldShowDeleteButton == false {
+            titleKey = "modify"
+        }
+        contactCell.button.setTitle(NSLocalizedString(titleKey, comment: ""), for: .normal)
         
         contactCell.button.configureWithStyle1()
     }
@@ -44,7 +52,15 @@ class SeeContactExperienceAuthorCollectionViewCellViewModel: QCCollectionCellVie
     // MARK: - Action
     
     func routeToMessage() {
-        QCAppEnvironment.shared().routing?.route(to: SeeMessageRoutingEntry(user: self.experience.user))
+        if let visibleVC = QCAppEnvironment.shared().routing?.visibleViewController(),
+            let tabBarController = visibleVC.tabBarController,
+            let nav = tabBarController.selectedViewController as? SeeNavigationController,
+            let selectedVC = nav.viewControllers.first as? SeeProfileViewController,
+            selectedVC.experiencesViewModel.shouldShowDeleteButton == false {
+            
+        } else {
+            QCAppEnvironment.shared().routing?.route(to: SeeMessageRoutingEntry(user: self.experience.user))
+        }
     }
     
 }

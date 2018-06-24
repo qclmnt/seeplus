@@ -23,7 +23,7 @@ class SeeNavigationController: UINavigationController {
     
     lazy var proposeBarButtonItem: UIBarButtonItem = {
         let title = NSLocalizedString("propose", comment: "").uppercased()
-        let titleFormatString = DeviceHelper.isIpad() ? "%@\t" : "%@  "
+        let titleFormatString = DeviceHelper.isIpad() ? "%@\t" : "%@   "
         let barButton = UIBarButtonItem(title: String(format: titleFormatString, title), style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
         barButton.tintColor = .appRed()
         let fontName = SeeMode.activatedMode() == .propose ? "Gotham-Medium" : "Gotham-Book"
@@ -35,7 +35,7 @@ class SeeNavigationController: UINavigationController {
     }()
     lazy var discoverBarButtonItem: UIBarButtonItem = {
         let title = NSLocalizedString("discover", comment: "").uppercased()
-        let titleFormatString = DeviceHelper.isIpad() ? "\t%@\t\t" : "%@  "
+        let titleFormatString = DeviceHelper.isIpad() ? "\t%@\t\t" : "  %@   "
         let barButton = UIBarButtonItem(title: String(format: titleFormatString, title), style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
         barButton.tintColor = .appRed()
 //        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -30, vertical: 0), for: .default)
@@ -46,7 +46,8 @@ class SeeNavigationController: UINavigationController {
         return barButton
     }()
     lazy var languageBarButtonItem: UIBarButtonItem = {
-        let barButton = UIBarButtonItem(title: "FR / EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
+        let title = DeviceHelper.isIpad() ? "FR / EN" : "  FR / EN"
+        let barButton = UIBarButtonItem(title: title, style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
         barButton.tintColor = .appRed()
         if let font = UIFont(name: "Gotham-Book", size: DeviceHelper.isIpad() ? 13 : 10) {
             barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
@@ -83,11 +84,11 @@ class SeeNavigationController: UINavigationController {
     // MARK: - Actions
     
     @objc func logoButtonTouchUpInside() {
-        let signupRoutingEntry = SeeSignupRoutinEntry()
-        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
-                                                           showToolbar: true)
-        
-        AppDelegate.shared()?.window??.rootViewController = navigationController
+//        let signupRoutingEntry = SeeSignupRoutinEntry()
+//        let navigationController = SeeNavigationController(rootViewController: signupRoutingEntry.viewController ?? UIViewController(),
+//                                                           showToolbar: true)
+//
+//        AppDelegate.shared()?.window??.rootViewController = navigationController
     }
     
     @objc func aboutButtonTouchUpInside() {

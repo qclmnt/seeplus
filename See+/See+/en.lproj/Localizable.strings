@@ -104,3 +104,5 @@
 "noct.bleu" = "The Train Bleu\nA first class table";
 "noct.piaules" = "Les Piaules - A youth hostel\nwith a view over Paris";
 "noct.moon" = "The Moonshiner\na hidden cocktail bar";
+"contact.me" = "Contact me";
+"modify" = "Modify";
