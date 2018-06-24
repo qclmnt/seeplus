@@ -17,7 +17,7 @@ class SeeMessagingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     
-    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appPurple() : UIColor.appRed()
+    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appRed() : UIColor.appPurple()
     
     var bottomLine: CALayer?
     

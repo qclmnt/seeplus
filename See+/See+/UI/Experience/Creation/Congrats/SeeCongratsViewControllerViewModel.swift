@@ -25,6 +25,7 @@ class SeeCongratsViewControllerViewModel: SeeWelcomeViewControllerViewModel {
     
     override func buttonAction() {
         AppDelegate.seeShared()?.buildRoot()
+        QCAppEnvironment.shared().routing?.route(to: SeeExperiencePreviewRoutingEntry(experience: SeeExperience(name: "test", location: "test", imageName: "cineFR", author: "test")))
     }
 
 }

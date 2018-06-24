@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 class SeeStartViewController: UIViewController {
 
@@ -65,10 +66,12 @@ class SeeStartViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func liveButtonTouchUpInside(_ sender: UIButton) {
+        Defaults[.connectedUserMode] = 0
         AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarTravellerControllerViewModel())
     }
     
     @IBAction func proposeButtonTouchUpInside(_ sender: UIButton) {
+        Defaults[.connectedUserMode] = 1
         AppDelegate.shared()?.window??.rootViewController = SeeTabBarController(viewModel: SeeTabBarResidentControllerViewModel())
     }
     

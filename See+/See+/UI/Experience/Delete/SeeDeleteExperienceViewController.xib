@@ -30,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzC-kl-hfG">
-                    <rect key="frame" x="75" y="64" width="448.5" height="32"/>
+                    <rect key="frame" x="75" y="61" width="448.5" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="Ul8-am-iRH">
                             <variation key="heightClass=regular-widthClass=regular" constant="48"/>
@@ -48,7 +48,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSC-MM-UuI">
-                    <rect key="frame" x="74.5" y="105" width="448.5" height="32"/>
+                    <rect key="frame" x="74.5" y="102" width="448.5" height="32"/>
                     <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="20"/>
                     <state key="normal" title="Button"/>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -59,7 +59,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB0-Pg-MLH">
-                    <rect key="frame" x="35" y="20" width="528" height="32"/>
+                    <rect key="frame" x="35" y="17" width="528" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="IIA-XO-Oxv">
                             <variation key="heightClass=regular-widthClass=compact" constant="32"/>
@@ -83,7 +83,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="35"/>
                 </constraint>
                 <constraint firstItem="EzC-kl-hfG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.75" id="SHW-NZ-TaU"/>
-                <constraint firstItem="uB0-Pg-MLH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="SZo-aK-HBe">
+                <constraint firstItem="uB0-Pg-MLH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="SZo-aK-HBe">
                     <variation key="heightClass=regular-widthClass=regular" constant="37"/>
                 </constraint>
                 <constraint firstItem="EzC-kl-hfG" firstAttribute="top" secondItem="uB0-Pg-MLH" secondAttribute="bottom" constant="35" id="Vbl-ZC-MWB">

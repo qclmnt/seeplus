@@ -23,24 +23,24 @@ class SeeNavigationController: UINavigationController {
     
     lazy var proposeBarButtonItem: UIBarButtonItem = {
         let title = NSLocalizedString("propose", comment: "").uppercased()
-        let titleFormatString = DeviceHelper.isIpad() ? "%@\t" : "%@\t"
+        let titleFormatString = DeviceHelper.isIpad() ? "%@\t" : "%@  "
         let barButton = UIBarButtonItem(title: String(format: titleFormatString, title), style: .plain, target: self, action: #selector(self.proposeButtonTouchUpInside))
         barButton.tintColor = .appRed()
         let fontName = SeeMode.activatedMode() == .propose ? "Gotham-Medium" : "Gotham-Book"
 //        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -60, vertical: 0), for: .default)
-        if let font = UIFont(name: fontName, size: DeviceHelper.isIpad() ? 13 : 9) {
+        if let font = UIFont(name: fontName, size: DeviceHelper.isIpad() ? 13 : 10) {
             barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
         }
         return barButton
     }()
     lazy var discoverBarButtonItem: UIBarButtonItem = {
         let title = NSLocalizedString("discover", comment: "").uppercased()
-        let titleFormatString = DeviceHelper.isIpad() ? "\t%@\t\t" : "%@"
+        let titleFormatString = DeviceHelper.isIpad() ? "\t%@\t\t" : "%@  "
         let barButton = UIBarButtonItem(title: String(format: titleFormatString, title), style: .plain, target: self, action: #selector(self.discoverButtonTouchUpInside))
         barButton.tintColor = .appRed()
 //        barButton.setTitlePositionAdjustment(UIOffset(horizontal: -30, vertical: 0), for: .default)
         let fontName = SeeMode.activatedMode() == .discover ? "Gotham-Medium" : "Gotham-Book"
-        if let font = UIFont(name: fontName, size: DeviceHelper.isIpad() ? 13 : 9) {
+        if let font = UIFont(name: fontName, size: DeviceHelper.isIpad() ? 13 : 10) {
             barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
         }
         return barButton
@@ -48,7 +48,7 @@ class SeeNavigationController: UINavigationController {
     lazy var languageBarButtonItem: UIBarButtonItem = {
         let barButton = UIBarButtonItem(title: "FR / EN", style: .plain, target: self, action: #selector(self.languageButtonTouchUpInside))
         barButton.tintColor = .appRed()
-        if let font = UIFont(name: "Gotham-Book", size: DeviceHelper.isIpad() ? 13 : 9) {
+        if let font = UIFont(name: "Gotham-Book", size: DeviceHelper.isIpad() ? 13 : 10) {
             barButton.setTitleTextAttributes([NSAttributedStringKey.font: font], for: .normal)
         }
         return barButton
@@ -132,7 +132,9 @@ extension SeeNavigationController : UINavigationControllerDelegate {
         // Right
         var rightBarButtonItems = [UIBarButtonItem]()
         rightBarButtonItems.append(self.languageBarButtonItem)
-        if (navigationController.tabBarController != nil) {
+        if (QCAppEnvironment.shared().routing?.visibleViewController() is SeeConnectionViewController) == false,
+            (QCAppEnvironment.shared().routing?.visibleViewController() is SeeSignUpTourViewController) == false,
+            (QCAppEnvironment.shared().routing?.visibleViewController() is SeeAboutViewController) == false {
             rightBarButtonItems.append(contentsOf: [self.discoverBarButtonItem,
                                                     self.proposeBarButtonItem])
         }

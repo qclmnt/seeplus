@@ -44,11 +44,11 @@ class SeeExperienceDetailCollectionViewSection: QCCollectionViewSection {
         let fontSize = CGFloat(DeviceHelper.isIpad() ? 20 : 14)
         let mutableAttributedString = NSMutableAttributedString(string: "Avis des utilisateurs\n\nJamilabb : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: fontSize)!])
         
-        mutableAttributedString.append(NSAttributedString(string: "Valentin was friendly,\nthe experience has been interesting!\n\n", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]))
+        mutableAttributedString.append(NSAttributedString(string: "He was friendly,\nthe experience has been interesting!\n\n", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]))
         
         mutableAttributedString.append(NSAttributedString(string: "aporobert : ", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Medium", size: fontSize)!]))
         
-        mutableAttributedString.append(NSAttributedString(string: "J’ai adoré ce moment avec Alexandre! Je recommande!", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]))
+        mutableAttributedString.append(NSAttributedString(string: "J’ai adoré ce moment! Je recommande!", attributes: [NSAttributedStringKey.font: UIFont(name: "Gotham-Book", size: fontSize)!]))
         
         return mutableAttributedString
     }

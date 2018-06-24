@@ -40,9 +40,11 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNg-Uc-fql">
-                        <rect key="frame" x="74" y="15" width="309" height="30"/>
+                        <rect key="frame" x="74" y="15" width="309" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="dpQ-Bl-fGp"/>
+                            <constraint firstAttribute="height" constant="30" id="dpQ-Bl-fGp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="26"/>
                         <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,9 +54,11 @@
                         </variation>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-r8-NHw">
-                        <rect key="frame" x="74" y="35" width="309" height="30"/>
+                        <rect key="frame" x="74" y="35" width="309" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="OaK-wk-17m"/>
+                            <constraint firstAttribute="height" constant="30" id="OaK-wk-17m">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
                         </constraints>
                         <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="26"/>
                         <color key="textColor" red="0.95686274510000002" green="0.17254901959999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>

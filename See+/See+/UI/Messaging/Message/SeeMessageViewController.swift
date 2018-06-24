@@ -24,6 +24,9 @@ class SeeMessageViewController: UIViewController {
     @IBOutlet weak var messageToolBarBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var infoLabel: UILabel!
     
+    var notButtonSelected = false
+    var validateButtonSelected = false
+    
     
     lazy var messagesCollectionViewModel = SeeMessageBubblesCollectionViewModel()
     var bottomLine: CALayer?
@@ -42,7 +45,7 @@ class SeeMessageViewController: UIViewController {
                                NSLocalizedString("arabic", comment: "")]
     
     let user: SeeUser
-    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appPurple() : UIColor.appRed()
+    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appRed() : UIColor.appPurple()
     
     // MARK: - Initialization
     
@@ -73,13 +76,14 @@ class SeeMessageViewController: UIViewController {
         self.messageTextField.layer.masksToBounds = true
         self.messageTextField.rightViewMode = .always
         let widthButton = DeviceHelper.isIpad() ? 30 : 25
-        let translateButton = UIButton(frame: CGRect(x: widthButton + 8, y: 0, width: widthButton, height: widthButton))
+        let ratio = DeviceHelper.isIpad() ? 1 : 0.5
+        let translateButton = UIButton(frame: CGRect(x: Int(Double(widthButton) + (8*ratio)), y: 0, width: widthButton, height: widthButton))
         translateButton.setImage(UIImage(named: "translate-button"), for: .normal)
         translateButton.addTarget(self, action: #selector(self.translateButtonTouchUpInside), for: .touchUpInside)
         let sendButton = UIButton(frame: CGRect(x: 0, y: 0, width: widthButton, height: widthButton))
         sendButton.setImage(UIImage(named: "send"), for: .normal)
         sendButton.addTarget(self, action: #selector(self.sendButtonTouchUpInside), for: .touchUpInside)
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: widthButton*2+20, height: widthButton))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: Int(Double(widthButton)*2+(20*ratio)), height: widthButton))
         view.addSubview(sendButton)
         view.addSubview(translateButton)
         self.messageTextField.rightView = view
@@ -137,12 +141,23 @@ class SeeMessageViewController: UIViewController {
     
     @IBAction func notButtonTouchUpInside(_ sender: UIButton) {
         self.infoLabel.text = NSLocalizedString("decline.exp", comment: "")
-        self.noButton.setImage(UIImage(named: "deleteSelected"), for: .normal)
+        self.notButtonSelected = !self.notButtonSelected
+        if self.notButtonSelected {
+            self.noButton.setImage(UIImage(named: "deleteSelected"), for: .normal)
+        } else {
+            self.noButton.setImage(UIImage(named: "deletePink"), for: .normal)
+        }
     }
     
     @IBAction func validateButtonTouchUpInside(_ sender: UIButton) {
         self.infoLabel.text = NSLocalizedString("accepted.exp", comment: "")
-        self.yesButton.setImage(UIImage(named: "yesSelected"), for: .normal)
+        self.validateButtonSelected = !self.validateButtonSelected
+        if self.validateButtonSelected {
+            self.yesButton.setImage(UIImage(named: "yesSelected"), for: .normal)
+        } else {
+            self.yesButton.setImage(UIImage(named: "validate-message"), for: .normal)
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.infoLabel.text = nil
             guard let image = UIImage(named: "load") else {return}

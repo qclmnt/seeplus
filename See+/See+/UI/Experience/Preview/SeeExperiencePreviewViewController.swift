@@ -42,7 +42,10 @@ class SeeExperiencePreviewViewController: UIViewController {
         doubleTap.numberOfTapsRequired = 2
         self.view.addGestureRecognizer(doubleTap)
         
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.simpleTapped)))
+        let simpleTap = UITapGestureRecognizer(target: self, action: #selector(self.simpleTapped))
+        self.view.addGestureRecognizer(simpleTap)
+        
+        simpleTap.require(toFail: doubleTap)
     }
     
     func configureLayout() {

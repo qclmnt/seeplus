@@ -15,7 +15,7 @@ class SeeMessagingViewController: SeeTabBarViewController {
     }
     
     lazy var messagingViewModel = SeeMessagingListCollectionViewModel()
-    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appPurple() : UIColor.appRed()
+    lazy var color = SeeMode.activatedMode() == .propose ? UIColor.appRed() : UIColor.appPurple()
     
     // MARK: - Views
     

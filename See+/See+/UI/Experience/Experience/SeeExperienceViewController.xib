@@ -111,10 +111,10 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVv-uL-Sdl">
-                    <rect key="frame" x="173.5" y="434.5" width="27" height="27"/>
+                    <rect key="frame" x="168" y="429" width="38" height="38"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="49" id="Pp9-jx-nWj">
-                            <variation key="heightClass=regular-widthClass=compact" constant="27"/>
+                            <variation key="heightClass=regular-widthClass=compact" constant="38"/>
                         </constraint>
                         <constraint firstAttribute="width" secondItem="QVv-uL-Sdl" secondAttribute="height" multiplier="1:1" id="kSS-gt-dbZ"/>
                     </constraints>
@@ -136,6 +136,19 @@
                         <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="22"/>
                     </variation>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wG-Cf-XvW">
+                    <rect key="frame" x="279.5" y="58.5" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="3ZN-BV-m4N">
+                            <variation key="heightClass=regular-widthClass=compact" constant="38"/>
+                        </constraint>
+                        <constraint firstAttribute="width" secondItem="2wG-Cf-XvW" secondAttribute="height" multiplier="1:1" id="8bK-7a-qLy"/>
+                    </constraints>
+                    <state key="normal" image="redback"/>
+                    <connections>
+                        <action selector="backButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="nGq-h3-Brq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -143,6 +156,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="20"/>
                 </constraint>
                 <constraint firstItem="QVv-uL-Sdl" firstAttribute="centerY" secondItem="V3B-Ga-i9e" secondAttribute="bottom" id="CKf-kF-Gur"/>
+                <constraint firstItem="2wG-Cf-XvW" firstAttribute="trailing" secondItem="V3B-Ga-i9e" secondAttribute="trailing" id="Idl-vA-KHe"/>
                 <constraint firstItem="rUo-eo-Bai" firstAttribute="leading" secondItem="V3B-Ga-i9e" secondAttribute="leading" id="Nxc-bp-OgE"/>
                 <constraint firstItem="V3B-Ga-i9e" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="SMu-St-YGO"/>
                 <constraint firstItem="rUo-eo-Bai" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="61" id="fkP-CA-t5s">
@@ -151,6 +165,7 @@
                 <constraint firstItem="2NP-1W-cyO" firstAttribute="leading" secondItem="rUo-eo-Bai" secondAttribute="trailing" constant="19" id="l0C-Te-8J1">
                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                 </constraint>
+                <constraint firstItem="2wG-Cf-XvW" firstAttribute="centerY" secondItem="rUo-eo-Bai" secondAttribute="centerY" id="mz9-a9-8ZD"/>
                 <constraint firstItem="2NP-1W-cyO" firstAttribute="centerY" secondItem="rUo-eo-Bai" secondAttribute="centerY" id="qs4-of-hmV"/>
                 <constraint firstItem="QVv-uL-Sdl" firstAttribute="centerX" secondItem="V3B-Ga-i9e" secondAttribute="centerX" id="tDz-x7-OdH"/>
             </constraints>
@@ -162,5 +177,6 @@
         <image name="bignote" width="111" height="14"/>
         <image name="moreBig" width="49" height="49"/>
         <image name="myprofile" width="64" height="64"/>
+        <image name="redback" width="49" height="49"/>
     </resources>
 </document>
